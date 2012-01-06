@@ -4,12 +4,20 @@ CSS
 
 ### Coloque o CSS no &lt;head&gt;:
 
+Mova os estilos inline e elementos <link> do <body> para o <head>. Navegadores bloqueiam a renderização da página até que todos os estilos externos tenham sido baixados. Por isso garanta que eles serão carregados e parseados antes, para o navegador renderizar a página progressivamente.
+
+`Referência:` [Google Speed](http://code.google.com/speed/page-speed/docs/rendering.html#PutCSSInHead)
+
 ### Minifique seu CSS:
+
+Você não precisa de todos aqueles espaços ou quebras de linhas no seu código quando ele está online. Lembre-se que quanto menor o arquivo, mais rápido ele carregará, portanto assegure-se de minificar seu CSS, assim todos esses caracteres extras serão removidos e seu CSS ficará ilegível para humanos, porém exatamente igual para máquina.
+
 
 ### Combine todos os arquivos CSS em um só:
 
 Quanto menos arquivos para carregar, menos requisições HTTP e consequentemente mais velocidade. Por isso combine todos seus arquivos CSS em um só. Isso não quer dizer que você deva deixar seu CSS todo desorganizado. Você pode continuar com seu ciclo normal de desenvolvimento contendo folhas de estilo diferentes para cada modelo de página. Mas lembre-se de combinar todos eles antes de colocar isso no ar.
 
+`Referência:` [Google Speed](http://code.google.com/speed/page-speed/docs/rtt.html#CombineExternalCSS)
 
 ### Prefira &lt;link&gt; ao invés de @import:
 
