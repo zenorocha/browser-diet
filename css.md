@@ -12,7 +12,6 @@ Mova os estilos inline e elementos <link> do <body> para o <head>. Navegadores b
 
 Você não precisa de todos aqueles espaços ou quebras de linhas no seu código quando ele está online. Lembre-se que quanto menor o arquivo, mais rápido ele carregará, portanto assegure-se de minificar seu CSS, assim todos esses caracteres extras serão removidos e seu CSS ficará ilegível para humanos, porém exatamente igual para máquina.
 
-
 ### Combine todos os arquivos CSS em um só:
 
 Quanto menos arquivos para carregar, menos requisições HTTP e consequentemente mais velocidade. Por isso combine todos seus arquivos CSS em um só. Isso não quer dizer que você deva deixar seu CSS todo desorganizado. Você pode continuar com seu ciclo normal de desenvolvimento contendo folhas de estilo diferentes para cada modelo de página. Mas lembre-se de combinar todos eles antes de colocar isso no ar.
