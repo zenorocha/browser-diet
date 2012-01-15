@@ -1,0 +1,92 @@
+/*	--- Reset --- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img { 
+	border: 0; 
+}
+
+ul {
+	list-style: none;
+}
+
+/*	--- Tipografia --- */
+
+h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	font-size: 42px;
+	line-height: 48px;
+	color: white;
+	text-align: center;
+}
+
+/*	--- Seleção --- */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+/* Estilo */
+
+body {
+	background: rgb(232,232,232);
+	color: rgb(60,60,60);
+}
+
+/* Estrutura */
+
+#main {
+	width: 70%;
+	background: white;
+	float: left;
+}
+
+#intro {
+	width: 100%;
+	height: 650px;
+	background: black;
+}
+
+#menu {
+	width: 30%;
+	height: 100%;
+	background: green;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+/* Artigos */
+
+article {
+	margin: 50px 0;
+}
+
+article h1 {
+	color: black;
+	text-align: left;
+}
