@@ -28,19 +28,57 @@ ul {
 /*	--- Tipografia --- */
 
 h1 {
-	font-size: 68px;
+	font-size: 65px;
 	line-height: 72px;
 	letter-spacing: -1px;
 	color: white;
 	text-align: center;
+	color: #e60014;
+	text-transform: uppercase;
+	width: 350px;
+	font-family: 'HorseshoesRegular';
+	text-shadow: 2px 0px #9E0D08;
+	z-index: 2;
+	position: relative;	
+}
+
+h1 .peso {
+	font-size: 200px;
+	line-height: 200px;
+	text-shadow: 6px 0px #9E0D08;
 }
 
 h2 {
-	font-size: 42px;
-	line-height: 48px;
-	color: white;
+	font-size: 50px;
+	line-height: 40px;
+	text-shadow: 0px 0px #000;
+	background: url('../img/subtitle-bg.png') no-repeat;
+	width: 314px;
+	height: 65px;
+	font-family: 'Pacifico', cursive;
+	color: #000;
 	text-align: center;
+	margin: -20px 0 0 20px;
 }
+
+h3 {
+	font-size: 24px;
+	line-height: 48px;
+	text-align: center;
+	background: #e60014;
+	color: #fff600;
+	font-family: 'Magra', sans-serif;
+}
+
+/* --- Cabeçalho --- */
+
+.superman {
+	position: absolute;	
+	top: 30px;
+	left: 200px;
+	z-index: 1;
+}
+
 
 /*	--- Seleção --- */
 
@@ -53,7 +91,7 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 /* Estilo */
 
 body {
-	background: rgb(232,232,232);
+	background: #e60014;
 	color: rgb(60,60,60);
 }
 
@@ -68,7 +106,8 @@ body {
 #intro {
 	width: 100%;
 	height: 650px;
-	background: black;
+	background: #fff600;
+	padding: 125px 0 0 50px;
 }
 
 #menu {
@@ -90,3 +129,19 @@ article h1 {
 	color: black;
 	text-align: left;
 }
+
+/* Fontes */
+
+@font-face {
+    font-family: 'HorseshoesRegular';
+    src: url('../font/horseshoes-webfont.eot');
+    src: url('../font/horseshoes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/horseshoes-webfont.woff') format('woff'),
+         url('../font/horseshoes-webfont.ttf') format('truetype'),
+         url('../font/horseshoes-webfont.svg#HorseshoesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* --- media queries snippets ~ http://nmsdvid.com/snippets/ --- */
