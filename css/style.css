@@ -40,7 +40,6 @@ p {
 ::-moz-selection 	{background: rgb(255,255,158);}
 img::selection 		{background: transparent;}
 img::-moz-selection	{background: transparent;}
-body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 /* --- Estrutura --- */
 
@@ -117,6 +116,30 @@ h3 {
 	top: -130px;
 	left: 200px;
 	z-index: 1;
+}
+
+/*	--- Menu --- */
+
+#menu li {
+	color: #000; 
+	background-color: #f00;
+
+	-webkit-transition: all 1s; 
+	-moz-transition: all 1s;
+	transition: all 1s; 
+
+	text-align: center;
+	height: 30px;
+	border: 1px solid #fff;
+}
+	
+#menu li:hover, #menu li.active {
+	color: #888; 
+	background-color: #0f0;
+}
+
+#menu li a {
+	color: #000;
 }
 
 /* --- Artigos --- */
