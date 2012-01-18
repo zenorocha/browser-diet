@@ -25,9 +25,52 @@ ul {
 	list-style: none;
 }
 
-/*	--- Tipografia --- */
 
-h1 {
+/*	--- Seleção --- */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+/* --- Estrutura --- */
+
+#main {
+	background: #fff600;
+	float: left;
+	margin: 0 200px 0 0;
+}
+
+#intro {
+	width: 100%;
+	height: 400px;
+	padding: 125px 0 0 50px;
+}
+
+#menu {
+	width: 200px;
+	height: 100%;
+	background: #ffb400;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+/*img { max-width:100%; }*/
+
+/*	--- Cabeçalho --- */
+
+h3 {
+	font-size: 1.4em;
+	line-height: 2em;
+	text-align: center;
+	background: #e60014;
+	color: #fff600;
+	font-family: 'Magra', sans-serif;
+}
+
+#intro h1 {
 	font-size: 65px;
 	line-height: 72px;
 	letter-spacing: -1px;
@@ -42,13 +85,13 @@ h1 {
 	position: relative;	
 }
 
-h1 .peso {
+#intro h1 .peso {
 	font-size: 200px;
 	line-height: 200px;
 	text-shadow: 6px 0px #9E0D08;
 }
 
-h2 {
+#intro h2 {
 	font-size: 50px;
 	line-height: 40px;
 	text-shadow: 0px 0px #000;
@@ -61,17 +104,6 @@ h2 {
 	margin: -20px 0 0 20px;
 }
 
-h3 {
-	font-size: 24px;
-	line-height: 48px;
-	text-align: center;
-	background: #e60014;
-	color: #fff600;
-	font-family: 'Magra', sans-serif;
-}
-
-/* --- Cabeçalho --- */
-
 .superman {
 	position: absolute;	
 	top: 30px;
@@ -79,58 +111,42 @@ h3 {
 	z-index: 1;
 }
 
-
-/*	--- Seleção --- */
-
-::selection 	 	{background: rgb(255,255,158);}
-::-moz-selection 	{background: rgb(255,255,158);}
-img::selection 		{background: transparent;}
-img::-moz-selection	{background: transparent;}
-body {-webkit-tap-highlight-color: rgb(255,255,158);}
-
-/* Estilo */
-
-body {
-	background: #e60014;
-	color: rgb(60,60,60);
-}
-
-/* Estrutura */
-
-#main {
-	width: 70%;
-	background: white;
-	float: left;
-}
-
-#intro {
-	width: 100%;
-	height: 650px;
-	background: #fff600;
-	padding: 125px 0 0 50px;
-}
-
-#menu {
-	width: 30%;
-	height: 100%;
-	background: green;
-	position: fixed;
-	top: 0;
-	right: 0;
-}
-
-/* Artigos */
+/* --- Artigos --- */
 
 article {
 	margin: 50px 0;
+	padding-left: 20px;
 }
 
 article h1 {
-	color: black;
-	text-align: left;
+	font-family: 'Pacifico', cursive;
+	color: #e60014;
+	font-size: 36px;
 }
 
-/* Fontes */
+.linha {
+	width: 100%;
+	height: 10px;
+	background: #ffb400;
+	position: relative;
+}
+
+.bola {
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	font-family: 'HorseshoesRegular';
+	color: #e60014;
+	background: #ffb400;
+	display: block;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	padding: 10px;
+	font-size: 36px;
+}
+
+/* --- Fontes --- */
 
 @font-face {
     font-family: 'HorseshoesRegular';
@@ -142,6 +158,51 @@ article h1 {
     font-weight: normal;
     font-style: normal;
 
+}
+
+/* --- Media Queries --- */
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	h3 {
+		font-size: 1.2em;
+	}
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+	
+	h3 {
+		font-size: 0.8em;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	#main {
+		margin: 0;
+	}
+	
+}
+
+/* Landscape Mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	h3 {
+		font-size: 1.0em;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	#main {
+		margin: 0;
+	}
+	
 }
 
 /* --- media queries snippets ~ http://nmsdvid.com/snippets/ --- */
