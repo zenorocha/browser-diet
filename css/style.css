@@ -25,6 +25,14 @@ ul {
 	list-style: none;
 }
 
+/* --- Atribuições Globais --- */
+
+p {
+	margin: 20px 20px 20px 60px;
+}
+
+/*img { max-width:100%; }*/
+
 
 /*	--- Seleção --- */
 
@@ -43,9 +51,10 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 }
 
 #intro {
-	width: 100%;
-	height: 400px;
-	padding: 125px 0 0 50px;
+	width: 650px;
+	height: 350px;
+	margin: 100px auto 0;
+	position: relative;
 }
 
 #menu {
@@ -55,9 +64,8 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 	position: fixed;
 	top: 0;
 	right: 0;
+	z-index: 2;
 }
-
-/*img { max-width:100%; }*/
 
 /*	--- Cabeçalho --- */
 
@@ -68,45 +76,45 @@ h3 {
 	background: #e60014;
 	color: #fff600;
 	font-family: 'Magra', sans-serif;
+	z-index: 2;
+	position: relative;
 }
 
 #intro h1 {
-	font-size: 65px;
-	line-height: 72px;
-	letter-spacing: -1px;
-	color: white;
-	text-align: center;
-	color: #e60014;
-	text-transform: uppercase;
 	width: 350px;
 	font-family: 'HorseshoesRegular';
+	font-size: 4.0em;
+	line-height: 1.0em;
+	color: #e60014;
+	text-align: center;
+	text-transform: uppercase;
 	text-shadow: 2px 0px #9E0D08;
-	z-index: 2;
 	position: relative;	
+	z-index: 2;
 }
 
 #intro h1 .peso {
-	font-size: 200px;
-	line-height: 200px;
+	font-size: 3.1em;
+	line-height: 1em;
 	text-shadow: 6px 0px #9E0D08;
 }
 
 #intro h2 {
-	font-size: 50px;
-	line-height: 40px;
-	text-shadow: 0px 0px #000;
-	background: url('../img/subtitle-bg.png') no-repeat;
 	width: 314px;
 	height: 65px;
+	background: url('../img/subtitle-bg.png') no-repeat;
+	margin: -20px 0 0 20px;
 	font-family: 'Pacifico', cursive;
+	font-size: 3.1em;
+	line-height: 0.8em;
 	color: #000;
 	text-align: center;
-	margin: -20px 0 0 20px;
+	text-shadow: 0px 0px #000;
 }
 
 .superman {
 	position: absolute;	
-	top: 30px;
+	top: -130px;
 	left: 200px;
 	z-index: 1;
 }
@@ -121,7 +129,10 @@ article {
 article h1 {
 	font-family: 'Pacifico', cursive;
 	color: #e60014;
-	font-size: 36px;
+	font-size: 2.4em;
+	margin: 0 0 0 60px;
+	position: relative;
+	z-index: 2;
 }
 
 .linha {
@@ -129,12 +140,13 @@ article h1 {
 	height: 10px;
 	background: #ffb400;
 	position: relative;
+	margin: -10px 0 0 0;
 }
 
 .bola {
-	width: 20px;
-	height: 20px;
-	border-radius: 20px;
+	width: 30px;
+	height: 35px;
+	border-radius: 30px;
 	font-family: 'HorseshoesRegular';
 	color: #e60014;
 	background: #ffb400;
@@ -143,7 +155,8 @@ article h1 {
 	top: -20px;
 	left: 0;
 	padding: 10px;
-	font-size: 36px;
+	font-size: 2.5em;
+	text-align: center;
 }
 
 /* --- Fontes --- */
