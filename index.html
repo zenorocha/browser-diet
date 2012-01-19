@@ -65,6 +65,21 @@
 						
 					</article>
 
+					<article>
+
+						<h1>Não escale imagens no HTML:</h1>
+						<div class="linha"><span class="bola">10</span></div>
+
+						<p>Não use imagens maiores do que você precisa só porque você pode definir a altura e largura delas no HTML.</p>
+
+						<pre class="prettyprint lang-html"><code>&lt;img width="100" height="100" src="logo.jpg" alt="Logo" /&gt; </code></pre>
+
+						<p>Se você precisa de uma imagem com 100x100px então utilize uma imagem de 100x100px ao invés de escalar uma de 500x500px.</p>
+
+						<p>Referência: <a href="http://developer.yahoo.com/performance/rules.html#no_scale">Yahoo Best Practices &ndash; Don&rsquo;t Scale Images in HTML</a></p>
+
+					</article>
+
 				</section>
 
 				<section id="css">
@@ -111,7 +126,7 @@
 
 						<p>O navegador irá fazer o download, parsear e executar principal.css antes de descobrir que precisa fazer isso também com o outro.css,</p>
 
-						<p>Por isso utilize <link>, assim você pode realizar o download em paralelo, resultando em um carregamento mais rápido da página.</p>
+						<p>Por isso utilize <code>&lt;link&gt;</code>, assim você pode realizar o download em paralelo, resultando em um carregamento mais rápido da página.</p>
 
 						<pre class="prettyprint lang-html"><code>&lt;link rel="stylesheet" href="principal.css"&gt;
 &lt;link rel="stylesheet" href="secundario.css"&gt;</code></pre>
