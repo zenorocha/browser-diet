@@ -28,7 +28,8 @@ ul {
 /* --- Atribuições Globais --- */
 
 p {
-	margin: 20px 20px 20px 60px;
+	margin: 20px 60px;
+	font-family: 'Magra', sans-serif;
 }
 
 /*img { max-width:100%; }*/
@@ -59,7 +60,7 @@ img::-moz-selection	{background: transparent;}
 #menu {
 	width: 200px;
 	height: 100%;
-	background: #ffb400;
+	background: rgba(255,180,0, .8);
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -161,7 +162,7 @@ article h1 {
 .linha {
 	width: 100%;
 	height: 10px;
-	background: #ffb400;
+	background: rgba(255,180,0, .8);
 	position: relative;
 	margin: -10px 0 0 0;
 }
@@ -172,7 +173,7 @@ article h1 {
 	border-radius: 30px;
 	font-family: 'HorseshoesRegular';
 	color: #e60014;
-	background: #ffb400;
+	background: rgba(255,180,0, .8);
 	display: block;
 	position: absolute;
 	top: -20px;
@@ -196,7 +197,7 @@ article h1 {
 
 }
 
-/* --- Media Queries --- */
+/* --- Media Queries ~ http://nmsdvid.com/snippets/ --- */
 
 /* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -241,4 +242,33 @@ article h1 {
 	
 }
 
-/* --- media queries snippets ~ http://nmsdvid.com/snippets/ --- */
+/* --- Prettify --- */
+
+pre .str, code .str { color: #FFFF66; } /* string  - green */
+pre .kwd, code .kwd { color: #7AE225; } /* keyword - dark pink */
+pre .com, code .com { color: #428BDD; font-style: italic; } /* comment - gray */
+pre .typ, code .typ { color: #89bdff; } /* type - light blue */
+pre .lit, code .lit { color: #3387CC; } /* literal - blue */
+pre .pun, code .pun { color: #D1EDFF; } /* punctuation - white */
+pre .pln, code .pln { color: #D1EDFF; } /* plaintext - white */
+pre .tag, code .tag { color: #89bdff; } /* html/xml tag    - light blue */
+pre .atn, code .atn { color: #bdb76b; } /* html/xml attribute name  - khaki */
+pre .atv, code .atv { color: #65B042; } /* html/xml attribute value - green */
+pre .dec, code .dec { color: #3387CC; } /* decimal - blue */
+
+pre.prettyprint, code.prettyprint {
+	background-color: #031425;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	border-radius: 8px;
+}
+
+pre.prettyprint {
+	padding: 1em;
+	white-space: pre-wrap;
+	margin: 0 60px;
+	/*font-family: 'Magra', sans-serif;*/
+}

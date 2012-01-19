@@ -47,6 +47,61 @@
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget tortor nunc, commodo auctor purus. Aliquam elit metus, adipiscing a dignissim id, fermentum non nulla. Suspendisse varius, turpis et vestibulum ultricies, sem odio elementum massa, ac porta quam libero eu erat. Aenean eros magna, malesuada in viverra et, tempor non velit. Pellentesque rhoncus adipiscing dui at fermentum. Proin elit quam, varius eu eleifend sed, accumsan in massa. Morbi ac dolor eget ante dictum volutpat. Aliquam porta interdum massa id accumsan. Vivamus eget nisi nisl. Maecenas tellus arcu, porttitor at hendrerit et, hendrerit vel odio. Donec sit amet imperdiet ligula. Curabitur placerat aliquet tellus sit amet consectetur. Curabitur sed odio at nibh interdum sollicitudin quis ut nulla.</p>
 
+						<pre class="prettyprint lang-js">
+
+// the semi-colon before function invocation is a safety net against concatenated 
+// scripts and/or other plugins which may not be closed properly.
+;(function ( $, window, document, undefined ) {
+
+    // undefined is used here as the undefined global variable in ECMAScript 3 is
+    // mutable (ie. it can be changed by someone else). undefined isn't really being
+    // passed in so we can ensure the value of it is truly undefined. In ES5, undefined
+    // can no longer be modified.
+
+    // window and document are passed through as local variables rather than globals
+    // as this (slightly) quickens the resolution process and can be more efficiently
+    // minified (especially when both are regularly referenced in your plugin).
+
+    // Create the defaults once
+    var pluginName = 'defaultPluginName',
+        defaults = {
+            propertyName: "value"
+        };
+
+    // The actual plugin constructor
+    function Plugin( element, options ) {
+        this.element = element;
+
+        // jQuery has an extend method which merges the contents of two or 
+        // more objects, storing the result in the first object. The first object
+        // is generally empty as we don't want to alter the default options for
+        // future instances of the plugin
+        this.options = $.extend( {}, defaults, options) ;
+
+        this._defaults = defaults;
+        this._name = pluginName;
+
+        this.init();
+    }
+
+    Plugin.prototype.init = function () {
+        // Place initialization logic here
+        // You already have access to the DOM element and the options via the instance, 
+        // e.g., this.element and this.options
+    };
+
+    // A really lightweight plugin wrapper around the constructor, 
+    // preventing against multiple instantiations
+    $.fn[pluginName] = function ( options ) {
+        return this.each(function () {
+            if (!$.data(this, 'plugin_' + pluginName)) {
+                $.data(this, 'plugin_' + pluginName, new Plugin( this, options ));
+            }
+        });
+    }
+
+})( jQuery, window, document );</pre>
+
 						<p>Curabitur convallis velit lorem, eget viverra urna. Donec lacinia tellus faucibus augue mollis sollicitudin. Sed nunc nunc, tempus venenatis sodales ut, sagittis quis elit. Nunc pharetra, sapien vel porta rhoncus, arcu erat ultricies tortor, non feugiat ante nunc sed erat. Phasellus interdum, turpis volutpat feugiat pulvinar, dolor orci molestie neque, quis rhoncus enim justo eget lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin pharetra porttitor elementum. Morbi id justo ipsum. Integer quis viverra nulla. Duis ut augue mi. Integer ut turpis mi. Sed rutrum sagittis dui, a luctus tortor placerat non. Phasellus rutrum, odio sit amet dictum adipiscing, metus turpis dignissim nisi, ut laoreet massa augue non massa.</p>
 
 					</article>
@@ -116,16 +171,20 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
 		<script src="js/script.js"></script>
+		<script src="js/prettify/prettify.js"></script>
 
 		<script>
 
 			$(function(){
+
+				prettyPrint();
 
 				var app = new COMOPERDERPESO.App();
 
 				$(window).scroll(function() {
 			        app.highlight();
 			    });
+
 
 		    });
 
