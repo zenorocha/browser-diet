@@ -157,6 +157,7 @@ article h1 {
 	margin: 0 0 0 60px;
 	position: relative;
 	z-index: 2;
+	text-transform: lowercase;
 }
 
 .linha {
