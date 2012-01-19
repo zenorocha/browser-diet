@@ -110,7 +110,7 @@
 
 				<section id="css">
 
-					<article id="lute">
+					<article>
 
 						<h1>Coloque o CSS no &lt;head&gt;</h1>
 						<div class="linha"><span class="bola">10</span></div>
@@ -139,6 +139,27 @@
 
 						<p>Referência: <a href="http://code.google.com/speed/page-speed/docs/rtt.html#CombineExternalCSS">Google Speed</a></p>
 						
+					</article>
+
+					<article>
+						
+						<h1>Prefira &lt;link&gt; ao invés de @import</h1>
+						<div class="linha"><span class="bola">10</span></div>
+
+						<p>Com @import você pode importar um arquivo CSS dentro do outro. Isso é bem útil em alguns casos, porém ao utilizar ele em um CSS externo, o navegador não permite realizar o download dos CSS em paralelo. Suponha que você tenha o principal.css e dentro dele faça:</p>
+
+						<pre class="prettyprint lang-css"><code>@import url("secundario.css")</code></pre>
+
+						<p>O navegador irá fazer o download, parsear e executar principal.css antes de descobrir que precisa fazer isso também com o outro.css,</p>
+
+						<p>Por isso utilize <link>, assim você pode realizar o download em paralelo, resultando em um carregamento mais rápido da página.</p>
+
+						<pre class="prettyprint lang-html"><code>&lt;link rel="stylesheet" href="principal.css"&gt;
+&lt;link rel="stylesheet" href="secundario.css"&gt;</code></pre>
+
+						<p>Referência: <a href="http://code.google.com/speed/page-speed/docs/rtt.html#AvoidCssImport">Google Speed</a></p>
+
+
 					</article>
 
 				</section>
