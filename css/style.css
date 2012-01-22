@@ -37,10 +37,10 @@ p {
 
 /*	--- Seleção --- */
 
-::selection 	 	{background: rgb(255,255,158);}
-::-moz-selection 	{background: rgb(255,255,158);}
-img::selection 		{background: transparent;}
-img::-moz-selection	{background: transparent;}
+::selection 	 	{ background: green; }
+::-moz-selection 	{ background: green; }
+img::selection 		{ background: transparent; }
+img::-moz-selection	{ background: transparent; }
 
 /* --- Estrutura --- */
 
@@ -68,6 +68,11 @@ img::-moz-selection	{background: transparent;}
 }
 
 /*	--- Cabeçalho --- */
+
+#github {
+	position: absolute;
+	z-index: 3;
+}
 
 h3 {
 	font-size: 1.4em;
@@ -148,6 +153,7 @@ h3 {
 article {
 	margin: 50px 0;
 	padding-left: 20px;
+	clear: both;
 }
 
 article h1 {
@@ -182,6 +188,19 @@ article h1 {
 	padding: 10px;
 	font-size: 2.5em;
 	text-align: center;
+}
+
+/* --- Introdução --- */
+
+#introducao p {
+	width: 700px;
+	float: left;
+}
+
+#introducao img {
+	margin: -50px 0 0 -50px;
+	position: relative;
+	z-index: 2;
 }
 
 /* --- Fontes --- */
