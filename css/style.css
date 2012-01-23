@@ -32,7 +32,9 @@ p {
 	font-family: 'Magra', sans-serif;
 }
 
-/*img { max-width:100%; }*/
+/*img { 
+	max-width:100%; 
+}*/
 
 
 /*	--- Seleção --- */
@@ -44,10 +46,14 @@ img::-moz-selection	{ background: transparent; }
 
 /* --- Estrutura --- */
 
+body {
+	-webkit-text-size-adjust: none;
+}
+
 #main {
-	background: #fff600;
+	width: 80%;
 	float: left;
-	margin: 0 200px 0 0;
+	background: #fff600;
 }
 
 #intro {
@@ -58,13 +64,14 @@ img::-moz-selection	{ background: transparent; }
 }
 
 #menu {
-	width: 200px;
+	width: 20%;
 	height: 100%;
-	background: rgba(255,180,0, .8);
+	float: right;
 	position: fixed;
 	top: 0;
 	right: 0;
 	z-index: 2;
+	background: rgba(255,180,0, .8);
 }
 
 /*	--- Cabeçalho --- */
@@ -203,20 +210,6 @@ article h1 {
 	z-index: 2;
 }
 
-/* --- Fontes --- */
-
-@font-face {
-    font-family: 'HorseshoesRegular';
-    src: url('../font/horseshoes-webfont.eot');
-    src: url('../font/horseshoes-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/horseshoes-webfont.woff') format('woff'),
-         url('../font/horseshoes-webfont.ttf') format('truetype'),
-         url('../font/horseshoes-webfont.svg#HorseshoesRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 /* --- Media Queries ~ http://nmsdvid.com/snippets/ --- */
 
 /* Tablet */
@@ -240,7 +233,7 @@ article h1 {
 	}
 
 	#main {
-		margin: 0;
+		width: 100%;
 	}
 	
 }
@@ -257,9 +250,23 @@ article h1 {
 	}
 
 	#main {
-		margin: 0;
+		width: 100%;
 	}
 	
+}
+
+/* --- Fontes --- */
+
+@font-face {
+    font-family: 'HorseshoesRegular';
+    src: url('../font/horseshoes-webfont.eot');
+    src: url('../font/horseshoes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/horseshoes-webfont.woff') format('woff'),
+         url('../font/horseshoes-webfont.ttf') format('truetype'),
+         url('../font/horseshoes-webfont.svg#HorseshoesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /* --- Prettify --- */
