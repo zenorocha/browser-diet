@@ -22,3 +22,12 @@ Assim como o exemplo acima, o download do script é feito de forma assíncrona. 
 `Referência:` [Google Speed - HTML5 Performance](http://code.google.com/speed/articles/html5-performance.html) - [Zeno Rocha - Async Scripts](http://blog.zenorocha.com/post/10361104170/html5-async-scripts?8d59cf40)
 
 
+### Não escale imagens no HTML:
+
+Não use imagens maiores do que você precisa só porque você pode definir a altura e largura delas no HTML.
+
+	<img width="100" height="100" src="logo.jpg" alt="Logo" /> 
+
+Se você precisa de uma imagem com 100x100px então utilize uma imagem de 100x100px ao invés de escalar uma de 500x500px.
+
+`Referência:` [Yahoo Best Practices - Don't Scale Images in HTML](http://developer.yahoo.com/performance/rules.html#no_scale)
