@@ -9,7 +9,7 @@
 2. Instale o Pip: `sudo easy_install pip`
 
 ### Dando início
-`
+
 1. Clone o projeto: `git clone git@github.com:zenorocha/como-perder-peso`
 2. Navegue até ele: `cd como-perder-peso`
 3. Baixe as dependências: `sudo pip install -r requirements.txt`
