@@ -7,6 +7,7 @@ São atributos que devem ser usados em conjunto com a tag `<script>`
 
 Para explicar como esses atributos são úteis para melhorar a performance, é melhor entender o que acontece quando não utilizamos eles.
 
+    #!html
 	<script src="exemplo.js"></script>
 
 Dessa forma, a página aguarda o script terminar de carregar antes de continuar sua renderização e sua execução é feita imediatamente após. Isso pode aumentar significativamente o tempo de carregamento da página.  Algumas vezes esse comportamento é desejado, outras vezes não.

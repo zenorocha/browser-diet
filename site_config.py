@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+
+FLATPAGES_ROOT='content'
+FLATPAGES_EXTENSION=".md"
+CODE_HIGHLIGHT_STYLE="monokai"
+FREEZER_DESTINATION='build'
+
+
+DEBUG=True
+TESTING=True
+LOG_LEVEL='DEBUG'

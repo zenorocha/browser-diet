@@ -114,7 +114,7 @@ h3 {
 #intro h2 {
 	width: 314px;
 	height: 65px;
-	background: url('../img/subtitle-bg.png') no-repeat;
+	background: url('/static/img/subtitle-bg.png') no-repeat;
 	margin: -20px 0 0 20px;
 	font-family: 'Pacifico', cursive;
 	font-size: 3.1em;
