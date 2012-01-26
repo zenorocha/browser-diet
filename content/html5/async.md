@@ -1,4 +1,4 @@
-order: 10
+order: 7
 
 # async & defer:
 

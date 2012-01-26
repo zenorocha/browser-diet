@@ -1,4 +1,4 @@
-order: 11
+order: 8
 
 # Não escale imagens no HTML:
 

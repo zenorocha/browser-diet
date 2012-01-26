@@ -1,4 +1,4 @@
-order: 7
+order: 4
 
 # Prefira &lt;link&gt; ao invés de @import:
 

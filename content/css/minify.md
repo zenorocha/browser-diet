@@ -1,4 +1,4 @@
-order: 8
+order: 5
 
 # Minifique seu CSS:
 

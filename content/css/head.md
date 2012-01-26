@@ -1,4 +1,4 @@
-order: 6
+order: 3
 
 # Coloque o CSS no &lt;head&gt;:
 

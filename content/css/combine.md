@@ -1,4 +1,4 @@
-order: 5
+order: 2
 
 # Combine todos os arquivos CSS em um só:
 

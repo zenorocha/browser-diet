@@ -1,4 +1,4 @@
-order: 9
+order: 6
 
 # Combine imagens utilizando CSS Sprites:
 
