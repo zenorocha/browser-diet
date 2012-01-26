@@ -59,7 +59,7 @@
 		</aside>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-
+		<script src="/static/js/jquery.viewport.js"></script>
 		<script src="/static/js/script.js"></script>
 		<!-- <script src="/static/js/prettify/prettify.js"></script> -->
 
@@ -69,11 +69,35 @@
 
 				// prettyPrint();
 
-				var app = new COMOPERDERPESO.App();
+				var app = new COMOPERDERPESO.App(),
+					did_scroll;
 
 				$(window).scroll(function() {
 			        app.highlight();
+			        did_scroll = true;
 			    });
+
+				setInterval(function(){
+					
+					if (did_scroll) {
+						updateArticlePath();
+						did_scroll = false;
+					}
+
+				}, 250);
+
+				function updateArticlePath() {
+				  
+				  var new_url;
+				  var base_url;
+				  var in_viewport = $('article:in-viewport').first();
+				  
+				  if (history.replaceState) {
+					  new_url = /*base_url +*/ "#" + in_viewport.attr('id');
+					  history.replaceState('', '', new_url);
+				  }
+
+				}
 
 
 		    });
