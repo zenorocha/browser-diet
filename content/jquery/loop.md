@@ -1,6 +1,6 @@
 order: 12
 
-### loop:
+# loop:
 
 Um loop feito com `for` nativo será sempre mais rápido que um loop feito com `$.each()`. Ponto final.
 

@@ -1,6 +1,6 @@
 order: 7
 
-### Prefira &lt;link&gt; ao invés de @import:
+# Prefira &lt;link&gt; ao invés de @import:
 
 Com @import você pode importar um arquivo CSS dentro do outro. Isso é bem útil em alguns casos, porém ao utilizar ele em um CSS externo, o navegador não permite realizar o download dos CSS em paralelo. Suponha que você tenha o principal.css e dentro dele faça:
 

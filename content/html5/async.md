@@ -1,6 +1,6 @@
 order: 10
 
-### async & defer:
+# async & defer:
 
 São atributos que devem ser usados em conjunto com a tag `<script>`
 

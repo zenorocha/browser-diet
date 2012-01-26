@@ -1,6 +1,6 @@
 order: 11
 
-### Não escale imagens no HTML:
+# Não escale imagens no HTML:
 
 Não use imagens maiores do que você precisa só porque você pode definir a altura e largura delas no HTML.
 
