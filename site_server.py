@@ -15,10 +15,8 @@ def pygments_css():
 
 @app.route('/')
 def index():
-    content = ""
-    for page in sorted(pages, key=lambda p: p.meta['order']):
-        content = content + page.html
-    return render_template('base.html', content=content)
+    sorted_pages = sorted(pages, key=lambda p: p.meta['order'])
+    return render_template('home.html', pages=sorted_pages)
 
 @app.route('/<path:path>/')
 def page(path):

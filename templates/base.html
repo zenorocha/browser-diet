@@ -2,10 +2,10 @@
 <html lang="pt-BR">
 
 	<head>
-		
+
 		<meta charset="utf-8"/>
 		<title>Como perder peso (no browser)</title>
-		
+
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -14,14 +14,14 @@
 		<link rel="stylesheet" href="{{ url_for('pygments_css') }}">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
+
 		<!-- Fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 
 		<link href="http://fonts.googleapis.com/css?family=Magra" rel="stylesheet" type="text/css">
 
 	</head>
-	
+
 	<body>
 
 		<div id="main">
@@ -40,7 +40,9 @@
 			</header>
 
 			<section id="content">
-				{{ content|safe }}
+				{% block main %}
+					{{ content|safe }}
+				{% endblock main %}
 			</section>
 
 		</div>
@@ -53,7 +55,7 @@
 				<li><a href="#javascript">JavaScript</a></li>
 				<li><a href="#jquery">jQuery</a></li>
 			</ul>
-			
+
 		</aside>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
@@ -79,5 +81,5 @@
 		</script>
 
 	</body>
-	
+
 </html>
