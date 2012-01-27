@@ -1,5 +1,6 @@
 order: 7
 slug: async-e-defer
+category: html
 
 # async & defer:
 

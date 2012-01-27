@@ -1,5 +1,6 @@
 order: 4
 slug: prefira-link-ao-inves-de-import
+category: css
 
 # Prefira &lt;link&gt; ao invés de @import:
 

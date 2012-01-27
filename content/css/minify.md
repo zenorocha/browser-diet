@@ -1,5 +1,6 @@
 order: 5
 slug: minifique-seu-css
+category: css
 
 # Minifique seu CSS:
 

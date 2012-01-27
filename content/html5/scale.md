@@ -1,5 +1,6 @@
 order: 8
 slug: nao-escale-imagens-no-html
+category: html
 
 # Não escale imagens no HTML:
 

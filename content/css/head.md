@@ -1,5 +1,6 @@
 order: 3
 slug: coloque-css-no-head
+category: css
 
 # Coloque o CSS no &lt;head&gt;:
 

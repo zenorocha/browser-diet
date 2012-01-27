@@ -1,5 +1,6 @@
 order: 1
 slug: intro
+category: introduction
 
 # Introdução
 

@@ -1,5 +1,6 @@
 order: 6
 slug: combine-imagens-usando-css-sprites
+category: css
 
 # Combine imagens utilizando CSS Sprites:
 

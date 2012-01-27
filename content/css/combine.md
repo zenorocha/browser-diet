@@ -1,5 +1,6 @@
 order: 2
 slug: combine-todos-os-arquivos-css
+category: css
 
 # Combine todos os arquivos CSS em um só:
 

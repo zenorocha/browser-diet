@@ -1,5 +1,6 @@
 order: 9
 slug: loop
+category: jquery
 
 # loop:
 
