@@ -1,4 +1,5 @@
 order: 6
+slug: combine-imagens-usando-css-sprites
 
 # Combine imagens utilizando CSS Sprites:
 

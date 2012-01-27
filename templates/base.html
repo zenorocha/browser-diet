@@ -17,7 +17,6 @@
 
 		<!-- Fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-
 		<link href="http://fonts.googleapis.com/css?family=Magra" rel="stylesheet" type="text/css">
 
 	</head>
@@ -30,7 +29,7 @@
 
 			<h3>O guia definitivo de performance para o desenvolvedor front-end</h3>
 
-			<header id="intro">
+			<header class="intro">
 
 				<h1>Como perder <span class="peso">peso</span></h1>
 				<h2>no browser</h2>
@@ -59,47 +58,15 @@
 		</aside>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
 		<script src="/static/js/jquery.viewport.js"></script>
 		<script src="/static/js/script.js"></script>
-		<!-- <script src="/static/js/prettify/prettify.js"></script> -->
 
-		<script type="text/javaScript">
+		<script>
 
-			$(function(){
-
-				// prettyPrint();
-
-				var app = new COMOPERDERPESO.App(),
-					did_scroll;
-
-				$(window).scroll(function() {
-			        app.highlight();
-			        did_scroll = true;
-			    });
-
-				setInterval(function(){
-					
-					if (did_scroll) {
-						updateArticlePath();
-						did_scroll = false;
-					}
-
-				}, 250);
-
-				function updateArticlePath() {
-				  
-				  var new_url;
-				  var base_url;
-				  var in_viewport = $('article:in-viewport').first();
-				  
-				  if (history.replaceState) {
-					  new_url = /*base_url +*/ "#" + in_viewport.attr('id');
-					  history.replaceState('', '', new_url);
-				  }
-
-				}
-
-
+			$(function() {
+				var app = new COMOPERDERPESO.app();
+				app.init();
 		    });
 
 		</script>

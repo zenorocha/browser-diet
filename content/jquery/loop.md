@@ -1,4 +1,5 @@
 order: 9
+slug: loop
 
 # loop:
 

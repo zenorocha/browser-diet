@@ -1,4 +1,5 @@
 order: 5
+slug: minifique-seu-css
 
 # Minifique seu CSS:
 

@@ -1,4 +1,5 @@
 order: 2
+slug: combine-todos-os-arquivos-css
 
 # Combine todos os arquivos CSS em um só:
 

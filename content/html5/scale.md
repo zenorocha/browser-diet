@@ -1,4 +1,5 @@
 order: 8
+slug: nao-escale-imagens-no-html
 
 # Não escale imagens no HTML:
 

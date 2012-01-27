@@ -1,4 +1,5 @@
 order: 4
+slug: prefira-link-ao-inves-de-import
 
 # Prefira &lt;link&gt; ao invés de @import:
 

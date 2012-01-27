@@ -56,7 +56,7 @@ body {
 	background: #fff600;
 }
 
-#intro {
+.intro {
 	width: 650px;
 	height: 350px;
 	margin: 100px auto 0;
@@ -92,7 +92,7 @@ h3 {
 	position: relative;
 }
 
-#intro h1 {
+.intro h1 {
 	width: 350px;
 	font-family: 'HorseshoesRegular';
 	font-size: 4.0em;
@@ -105,13 +105,13 @@ h3 {
 	z-index: 2;
 }
 
-#intro h1 .peso {
+.intro h1 .peso {
 	font-size: 3.1em;
 	line-height: 1em;
 	text-shadow: 6px 0px #9E0D08;
 }
 
-#intro h2 {
+.intro h2 {
 	width: 314px;
 	height: 65px;
 	background: url('/static/img/subtitle-bg.png') no-repeat;

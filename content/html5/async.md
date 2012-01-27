@@ -1,4 +1,5 @@
 order: 7
+slug: async-e-defer
 
 # async & defer:
 

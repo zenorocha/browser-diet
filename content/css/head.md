@@ -1,4 +1,5 @@
 order: 3
+slug: coloque-css-no-head
 
 # Coloque o CSS no &lt;head&gt;:
 
