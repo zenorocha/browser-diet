@@ -2,6 +2,7 @@
 
 from flask import Flask, render_template
 from flaskext.flatpages import FlatPages, pygments_style_defs
+from hungry import *
 
 
 app = Flask(__name__)
@@ -11,7 +12,7 @@ pages = FlatPages(app)
 # for syntax highlight
 @app.route('/pygments.css')
 def pygments_css():
-    return pygments_style_defs(app.config.get('CODE_HIGHLIGHT_STYLE')), 200, {'Content-Type': 'text/css'}
+    return pygments_style_defs(HungryStyle), 200, {'Content-Type': 'text/css'}
 
 @app.route('/')
 def index():
