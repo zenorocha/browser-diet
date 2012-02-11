@@ -1,8 +1,7 @@
-order: 9
+title: loop
 slug: loop
 category: jquery
-
-# loop:
+order: 9
 
 Um loop feito com `for` nativo será sempre mais rápido que um loop feito com `$.each()`. Ponto final.
 

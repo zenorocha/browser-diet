@@ -53,7 +53,7 @@ body {
 #main {
 	width: 80%;
 	float: left;
-	background: #fff600;
+	background: #FFF600 url(/static/img/regua.png) repeat-y top right;
 }
 
 .intro {

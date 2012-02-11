@@ -1,8 +1,7 @@
-order: 6
+title: Combine imagens utilizando CSS Sprites
 slug: combine-imagens-usando-css-sprites
 category: css
-
-# Combine imagens utilizando CSS Sprites:
+order: 6
 
 A técnica mais famosa para reduzir o número de requisições para imagens é através de CSS Sprites. A técnica consiste em atribuir todas as imagens do site em uma só, e depois basta posicioná-las no CSS com `background-position`. Assim dimuimos o número de requisições e permitimos um maior número de downloads em paralelo.
 

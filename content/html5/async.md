@@ -1,8 +1,7 @@
-order: 7
+title: async & defer
 slug: async-e-defer
 category: html
-
-# async & defer:
+order: 7
 
 São atributos que devem ser usados em conjunto com a tag `<script>`
 
