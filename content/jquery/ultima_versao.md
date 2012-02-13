@@ -1,8 +1,7 @@
-order: 10
+title: Use sempre a última versão do jQuery
 slug: ultima-versao
 category: jquery
-
-# Use sempre a última versão do jQuery:
+order: 10
 
 O time de desenvolvedores do jQuery está em constante busca de melhorias. Sendo assim, procure deixar o seu produto com a última versão da biblioteca. Pois a cada release, muitos métodos são reimplementados. Com a reescrita de alguns metodos, o jQuery Core Team, nos disponibiliza melhorias de performance, organização, suporte aos browsers e novas funções.
 
