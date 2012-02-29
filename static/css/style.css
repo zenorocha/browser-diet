@@ -146,13 +146,26 @@ h3 {
 	border: 1px solid #fff;
 }
 	
-#menu li:hover, #menu li.active {
-	color: #888; 
-	background-color: #0f0;
+#menu li:hover, #menu li.active { 
+	background-color: #FFBF00;
 }
 
 #menu li a {
+	color: #FFF;
+	float: left;
+	text-align: center;
+	padding: 5px 0;
+	width: 100%;
+	text-decoration: none;
+	font: 16px "Magra", sans-serif;
+}
+
+#menu li a:hover {
 	color: #000;
+
+	-webkit-transition: all 1s; 
+	-moz-transition: all 1s;
+	transition: all 1s; 
 }
 
 /* --- Artigos --- */
