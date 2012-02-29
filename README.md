@@ -1,7 +1,9 @@
-# Como perder peso (no browser)
-## O guia definitivo de performance para desenvolvimento front-end
+em desenvolvimento
 
 -----------------
+
+# Como perder peso (no browser)
+## O guia definitivo de performance para desenvolvimento front-end
 
 ### Contribuindo
 
