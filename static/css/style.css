@@ -25,30 +25,18 @@ ul {
 	list-style: none;
 }
 
-/* --- Atribuições Globais --- */
+/* --- Global --- */
+
+body {
+	-webkit-text-size-adjust: none;
+}
 
 p {
 	margin: 20px 60px;
 	font-family: 'Magra', sans-serif;
 }
 
-/*img {
-	max-width:100%;
-}*/
-
-
-/*	--- Seleção --- */
-
-::selection 	 	{ background: green; }
-::-moz-selection 	{ background: green; }
-img::selection 		{ background: transparent; }
-img::-moz-selection	{ background: transparent; }
-
-/* --- Estrutura --- */
-
-body {
-	-webkit-text-size-adjust: none;
-}
+/* --- Structure --- */
 
 #main {
 	width: 80%;
@@ -74,7 +62,7 @@ body {
 	background: #ffbf00;
 }
 
-/*	--- Cabeçalho --- */
+/*	--- Header --- */
 
 #github {
 	position: absolute;
@@ -168,7 +156,7 @@ h3 {
 	transition: all 1s;
 }
 
-/* --- Artigos --- */
+/* --- Articles --- */
 
 article {
 	margin: 50px 0;
@@ -210,7 +198,7 @@ article h1 {
 	text-align: center;
 }
 
-/* --- Introdução --- */
+/* --- Introduction --- */
 
 #introducao p {
 	width: 700px;
@@ -238,7 +226,7 @@ article h1 {
 	white-space: pre-wrap;
 }
 
-/* --- Fontes --- */
+/* --- Fonts --- */
 
 @font-face {
     font-family: 'HorseshoesRegular';
@@ -282,3 +270,10 @@ pre.prettyprint {
 	margin: 0 60px;
 	/*font-family: 'Magra', sans-serif;*/
 }
+
+/*	--- Selection --- */
+
+::selection 	 	{ background: green; }
+::-moz-selection 	{ background: green; }
+img::selection 		{ background: transparent; }
+img::-moz-selection	{ background: transparent; }
