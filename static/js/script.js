@@ -8,6 +8,8 @@ window.COMOPERDERPESO = window.COMOPERDERPESO || {};
 
 		menuHighlight = function() {
 
+			// $('#menu').scrollspy();
+
 			// var scroll = $(window).scrollTop(),
 			// 	sections = $('section', '#content'),
 			// 	sectionID = '';
@@ -51,6 +53,8 @@ window.COMOPERDERPESO = window.COMOPERDERPESO || {};
 		return {
 
 			init: function() {
+
+				// $('#menu').scrollspy();
 
 				$(window).scroll(function() {
 					menuHighlight();
