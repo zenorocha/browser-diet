@@ -3,7 +3,7 @@ window.COMOPERDERPESO = window.COMOPERDERPESO || {};
 (function($){
 
 	COMOPERDERPESO.app = function() {
-		
+
 		var didScroll = false,
 
 		menuHighlight = function() {
@@ -13,7 +13,7 @@ window.COMOPERDERPESO = window.COMOPERDERPESO || {};
 			// 	sectionID = '';
 
 			// for (var i = 0; i < sections.length; i++) {
-				
+
 			// 	if (($('#' + sections[i].id).offset().top - 300) > scroll) {
 			// 		sectionID = sections[i].id;
 			// 		break;
@@ -22,10 +22,10 @@ window.COMOPERDERPESO = window.COMOPERDERPESO || {};
 			// }
 
 			//var inViewport = $('article:in-viewport').first().attr('id');
-				
+
 			// $('#menu a').parent().removeClass('active');
 			// $('#menu').find('a[href="#' + sectionID + '"]').parent().addClass('active');
-			
+
 		},
 
 		updatePath = function() {
@@ -47,11 +47,11 @@ window.COMOPERDERPESO = window.COMOPERDERPESO || {};
 			}
 
 		};
-		
+
 		return {
-			
-			init: function() { 
-				
+
+			init: function() {
+
 				$(window).scroll(function() {
 					menuHighlight();
 					didScroll = true;
@@ -70,4 +70,3 @@ window.COMOPERDERPESO = window.COMOPERDERPESO || {};
 	};
 
 }(jQuery));
-	
