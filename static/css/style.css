@@ -1,11 +1,11 @@
 /*	--- Reset --- */
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
-p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
-img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figure, figcaption, hgroup, 
+article, aside, canvas, details, figure, figcaption, hgroup,
 menu, footer, header, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -17,8 +17,8 @@ footer, header, nav, section, audio, video {
 	display: block;
 }
 
-a img { 
-	border: 0; 
+a img {
+	border: 0;
 }
 
 ul {
@@ -32,8 +32,8 @@ p {
 	font-family: 'Magra', sans-serif;
 }
 
-/*img { 
-	max-width:100%; 
+/*img {
+	max-width:100%;
 }*/
 
 
@@ -101,7 +101,7 @@ h3 {
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 2px 0px #9E0D08;
-	position: relative;	
+	position: relative;
 	z-index: 2;
 }
 
@@ -125,7 +125,7 @@ h3 {
 }
 
 .superman {
-	position: absolute;	
+	position: absolute;
 	top: -130px;
 	left: 200px;
 	z-index: 1;
@@ -134,19 +134,19 @@ h3 {
 /*	--- Menu --- */
 
 #menu li {
-	color: #000; 
+	color: #000;
 	background-color: #f00;
 
-	-webkit-transition: all 1s; 
+	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
-	transition: all 1s; 
+	transition: all 1s;
 
 	text-align: center;
 	height: 30px;
 	border: 1px solid #fff;
 }
-	
-#menu li:hover, #menu li.active { 
+
+#menu li:hover, #menu li.active {
 	background-color: #FFBF00;
 }
 
@@ -163,9 +163,9 @@ h3 {
 #menu li a:hover {
 	color: #000;
 
-	-webkit-transition: all 1s; 
+	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
-	transition: all 1s; 
+	transition: all 1s;
 }
 
 /* --- Artigos --- */
@@ -236,51 +236,6 @@ article h1 {
 .codehilite pre {
 	padding: 1em;
 	white-space: pre-wrap;
-}
-
-/* --- Media Queries ~ http://nmsdvid.com/snippets/ --- */
-
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	
-	h3 {
-		font-size: 1.2em;
-	}
-
-}
-
-/* Mobile */
-@media only screen and (max-width: 767px) {
-	
-	h3 {
-		font-size: 0.8em;
-	}
-
-	#menu {
-		display: none;
-	}
-
-	#main {
-		width: 100%;
-	}
-	
-}
-
-/* Landscape Mobile */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-	h3 {
-		font-size: 1.0em;
-	}
-
-	#menu {
-		display: none;
-	}
-
-	#main {
-		width: 100%;
-	}
-	
 }
 
 /* --- Fontes --- */
