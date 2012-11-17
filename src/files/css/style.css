@@ -41,7 +41,7 @@ p {
 #main {
 	width: 80%;
 	float: left;
-	background: #FFF600 url(/static/img/regua.png) repeat-y top right;
+	background: #FFF600 url('../img/regua.png') repeat-y top right;
 }
 
 .intro {
@@ -102,7 +102,7 @@ h3 {
 .intro h2 {
 	width: 314px;
 	height: 65px;
-	background: url('/static/img/subtitle-bg.png') no-repeat;
+	background: url('../img/subtitle-bg.png') no-repeat;
 	margin: -20px 0 0 20px;
 	font-family: 'Pacifico', cursive;
 	font-size: 3.1em;
