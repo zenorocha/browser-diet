@@ -2,6 +2,8 @@
 
 O guia definitivo de performance para desenvolvimento front-end
 
+![image](http://f.cl.ly/items/0H2J2d2r2S402o180B2n/five-geeks.jpg)
+
 ## Contribuindo
 
 Para adicionar novas dicas ou editar dicas existentes, basta se dirigir a pasta [src/documents](https://github.com/zenorocha/como-perder-peso/blob/master/src/documents).
