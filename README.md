@@ -1,3 +1,9 @@
+---
+
+**Atenção**: esse projeto está em fase de desenvolvimento, por favor não leve em consideração o conteúdo redigido até então.
+
+---
+
 # Como perder peso (no browser)
 
 O guia definitivo de performance para desenvolvimento front-end
