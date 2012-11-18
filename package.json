@@ -14,6 +14,6 @@
   "dependencies": {
     "docpad-plugin-eco": "2.x",
     "docpad-plugin-marked": "2.x",
-    "docpad-plugin-partials": "2.x"
+    "docpad-plugin-highlightjs": "2.x"
   }
 }
