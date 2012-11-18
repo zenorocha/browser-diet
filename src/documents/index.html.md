@@ -1,16 +1,8 @@
 ---
-layout: default
 title: 'Introdução'
-slug: intro
 category: introduction
-order: 1
+order: 0
+layout: default
 ---
 
-# Teste
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+E se juntássemos os melhores profissionais que trabalham nos maiores portais do país para criar o guia definitivo de performance para front-end?

@@ -1,11 +1,9 @@
 ---
-layout: default
-title: 'Combine todos os arquivos CSS em um só'
-slug: combine-todos-os-arquivos-css
+title: Combine todos os arquivos CSS em um só
 category: css
-order: 2
+order: 1
 ---
 
-# AutoComplete
+Quanto menos arquivos para carregar, menos requisições HTTP e consequentemente mais velocidade. Por isso combine todos seus arquivos CSS em um só. Isso não quer dizer que você deva deixar seu CSS todo desorganizado. Você pode continuar com seu ciclo normal de desenvolvimento contendo folhas de estilo diferentes para cada modelo de página. Mas lembre-se de combinar todos eles antes de colocar isso no ar.
 
-The AutoComplete component provides suggestions while users type into the field.
+`Referência:` [Google Speed](http://code.google.com/speed/page-speed/docs/rtt.html#CombineExternalCSS)
