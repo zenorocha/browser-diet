@@ -72,3 +72,15 @@ Lista as dependências de módulos do NodeJS.
 ### [publish.sh](https://github.com/zenorocha/como-perder-peso/blob/master/publish.sh)
 
 Shell Script responsável pela publicação do site via [Github Pages](http://pages.github.com).
+
+## Licenças
+
+### Fontes:
+
+* Pacifico por [Vernon Adams](http://www.fontsquirrel.com/license/pacifico)
+* Magra por [FontFuror](http://www.google.com/webfonts/specimen/Magra)
+* Horseshoes por [Lauren Ashpole](http://www.laurenashpole.com/licensing.html)
+
+### Imagens:
+
+* The 56 Geeks Project por [Scott Johnson](http://myextralife.com/56geeks/)
