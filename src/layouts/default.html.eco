@@ -39,6 +39,13 @@
 
 			<section id="content">
 
+				<% for item in @getCollection('documents').sortArray('order':1): %>
+					<article id="<%= item.slug %>">
+					  <h1><%= item.title %></h1>
+					  <div class="linha"><span class="bola"><%= item.order %></span></div>
+					  <%= item.content %>
+					</article>
+	      <% end %>
 
 			</section>
 
