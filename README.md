@@ -81,7 +81,7 @@ Lista as dependências de módulos do NodeJS.
 
 Shell Script responsável pela publicação do site via [Github Pages](http://pages.github.com).
 
-## Licenças
+## Créditos
 
 ### Fontes:
 
