@@ -1,6 +1,6 @@
 ---
-title: 'Introdução'
-category: introduction
+title: 'conheça os guerreiros que vão lhe ajudar nessa batalha!'
+category: team
 order: 0
 layout: default
 ---
