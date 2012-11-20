@@ -211,69 +211,22 @@ article h1 {
 	z-index: 2;
 }
 
-/* --- Syntax Highlight --- */
-
-.codehilitetable {
-	margin: 20px 60px;
-}
-
-.codehilite {
-	border-radius: 8px;
-}
-
-.codehilite pre {
-	padding: 1em;
-	white-space: pre-wrap;
-}
-
-/* --- Fonts --- */
-
-@font-face {
-    font-family: 'HorseshoesRegular';
-    src: url('../font/horseshoes-webfont.eot');
-    src: url('../font/horseshoes-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/horseshoes-webfont.woff') format('woff'),
-         url('../font/horseshoes-webfont.ttf') format('truetype'),
-         url('../font/horseshoes-webfont.svg#HorseshoesRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-/* --- Prettify --- */
-
-pre .str, code .str { color: #FFFF66; } /* string  - green */
-pre .kwd, code .kwd { color: #7AE225; } /* keyword - dark pink */
-pre .com, code .com { color: #428BDD; font-style: italic; } /* comment - gray */
-pre .typ, code .typ { color: #89bdff; } /* type - light blue */
-pre .lit, code .lit { color: #3387CC; } /* literal - blue */
-pre .pun, code .pun { color: #D1EDFF; } /* punctuation - white */
-pre .pln, code .pln { color: #D1EDFF; } /* plaintext - white */
-pre .tag, code .tag { color: #89bdff; } /* html/xml tag    - light blue */
-pre .atn, code .atn { color: #bdb76b; } /* html/xml attribute name  - khaki */
-pre .atv, code .atv { color: #65B042; } /* html/xml attribute value - green */
-pre .dec, code .dec { color: #3387CC; } /* decimal - blue */
-
-pre.prettyprint, code.prettyprint {
-	background-color: #031425;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	-o-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-khtml-border-radius: 8px;
-	border-radius: 8px;
-}
-
-pre.prettyprint {
-	padding: 1em;
-	white-space: pre-wrap;
-	margin: 0 60px;
-	/*font-family: 'Magra', sans-serif;*/
-}
-
 /*	--- Selection --- */
 
 ::selection 	 	{ background: green; }
 ::-moz-selection 	{ background: green; }
 img::selection 		{ background: transparent; }
 img::-moz-selection	{ background: transparent; }
+
+/* --- Fonts --- */
+
+@font-face {
+  font-family: 'HorseshoesRegular';
+  src: url('../webfonts/horseshoes-webfont.eot');
+  src: url('../webfonts/horseshoes-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../webfonts/horseshoes-webfont.woff') format('woff'),
+       url('../webfonts/horseshoes-webfont.ttf') format('truetype'),
+       url('../webfonts/horseshoes-webfont.svg#HorseshoesRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
