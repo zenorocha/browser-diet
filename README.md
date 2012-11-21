@@ -21,24 +21,29 @@ Lá você irá encontrar todas elas em formato [Markdown (.md)](http://pt.wikipe
 1. Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http://nodejs.org/download/), caso você não os tenha ainda.
 
 2. Abra o terminal e baixe o [DocPad](https://github.com/bevry/docpad) através do comando:
-
-		sudo npm install -fg docpad@6.8
+```bash
+sudo npm install -fg docpad@6.8
+```
 
 3. Agora clone o projeto:
-
-		git clone git@github.com:zenorocha/como-perder-peso.git
+```bash
+git clone git@github.com:zenorocha/como-perder-peso.git
+```
 
 4. Depois vá para pasta do projeto:
-
-		cd como-perder-peso
+```bash
+cd como-perder-peso
+```
 
 5. Instale as dependências:
-
-		docpad install
+```bash
+docpad install
+```
 
 6. E finalmente rode:
-
-		docpad run
+```bash
+docpad run
+```
 
 Agora você irá ver o site rodando em `localhost:9778` :D
 
