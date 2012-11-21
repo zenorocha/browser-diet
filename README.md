@@ -1,6 +1,6 @@
 ---
 
-**Atenção**: esse projeto está em fase de desenvolvimento, por favor não leve em consideração o conteúdo redigido até então.
+> **Atenção**: esse projeto está em fase de desenvolvimento, por favor não leve em consideração o conteúdo redigido até então.
 
 ---
 
