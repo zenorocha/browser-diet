@@ -22,7 +22,7 @@ Lá você irá encontrar todas elas em formato [Markdown (.md)](http://pt.wikipe
 
 2. Abra o terminal e baixe o [DocPad](https://github.com/bevry/docpad) através do comando:
 ```bash
-sudo npm install -fg docpad@6.8
+sudo npm install -fg docpad@6.11
 ```
 
 3. Agora clone o projeto:
