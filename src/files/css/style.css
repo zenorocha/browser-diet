@@ -12,11 +12,6 @@ menu, footer, header, nav, section, summary, time, mark, audio, video {
 	border: 0;
 }
 
-article, aside, canvas, figure, figure img, figcaption, hgroup,
-footer, header, nav, section, audio, video {
-	display: block;
-}
-
 a img {
 	border: 0;
 }
