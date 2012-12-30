@@ -29,6 +29,7 @@ ul {
 
 body {
 	-webkit-text-size-adjust: none;
+	background: #FFF600;
 }
 
 p {
@@ -36,30 +37,39 @@ p {
 	font-family: 'Magra', sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
+/* --- Util --- */
+
+.center {
+	width: 960px;
+	margin: 0 auto;
+}
+
 /* --- Structure --- */
 
 #main {
-	width: 80%;
-	float: left;
-	background: #FFF600 url('../img/regua.png') repeat-y top right;
+
+	/*background: #FFF600 url('../img/regua.png') repeat-y top right;*/
 }
 
 .intro {
 	width: 650px;
 	height: 350px;
-	margin: 100px auto 0;
+	margin-top: 100px;
 	position: relative;
 }
 
 #menu {
-	width: 20%;
-	height: 100%;
-	float: right;
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 2;
-	background: #ffbf00;
+	background: #e60014;
+}
+
+/* --- Subtitle --- */
+
+.subtitle {
+	background: #e60014;
 }
 
 /*	--- Header --- */
@@ -69,11 +79,11 @@ p {
 	z-index: 3;
 }
 
-h3 {
+.subtitle h3,
+#menu a {
 	font-size: 1.4em;
 	line-height: 2em;
 	text-align: center;
-	background: #e60014;
 	color: #fff600;
 	font-family: 'Magra', sans-serif;
 	z-index: 2;
@@ -121,7 +131,18 @@ h3 {
 
 /*	--- Menu --- */
 
+#menu ul {
+	width: 500px;
+	margin-top: 70px;
+}
+
 #menu li {
+	text-align: center;
+	display: inline;
+	margin: 0 25px;
+}
+
+/*#menu li {
 	color: #000;
 	background-color: #f00;
 
@@ -154,7 +175,7 @@ h3 {
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;
 	transition: all 1s;
-}
+}*/
 
 /* --- Articles --- */
 

@@ -1,85 +1,75 @@
 <!doctype html>
 <html lang="pt-BR">
+<head>
 
-	<head>
+  <meta charset="utf-8"/>
+  <title>Como perder peso (no browser)</title>
 
-		<meta charset="utf-8"/>
-		<title>Como perder peso (no browser)</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+  <link rel="stylesheet" media="all" href="css/style.css" />
+  <link rel="stylesheet" media="all" href="css/monokai.css" />
 
-		<link rel="stylesheet" media="all" href="css/style.css" />
-		<link rel="stylesheet" media="all" href="css/monokai.css" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
 
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+  <!-- Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Magra" rel="stylesheet" type="text/css">
 
-		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Magra" rel="stylesheet" type="text/css">
+</head>
 
-	</head>
+<body data-spy="scroll">
 
-	<body data-spy="scroll">
+  <div class="subtitle">
+    <h3 class="center">O guia definitivo de performance para o desenvolvedor front-end</h3>
+  </div>
 
-		<div id="main">
+  <!-- <a id="github" href="http://github.com/zenorocha/como-perder-peso/">
+    <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub">
+  </a> -->
 
-			<a id="github" href="http://github.com/zenorocha/como-perder-peso/">
-				<img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub">
-			</a>
+  <header class="intro center">
+    <h1>Como perder <span class="peso">peso</span></h1>
+    <h2>no browser</h2>
+    <img src="img/superman.png" alt="Superman" class="superman" />
+  </header>
 
-			<h3>O guia definitivo de performance para o desenvolvedor front-end</h3>
+  <nav id="menu">
+    <ul class="center">
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#javascript">JavaScript</a></li>
+      <li><a href="#jquery">jQuery</a></li>
+    </ul>
+  </nav>
 
-			<header class="intro">
+  <section id="content" class="center">
+    <% for item in @getCollection('documents').sortArray('order':1): %>
+      <article id="<%= item.slug %>">
+        <h1><%= item.title %></h1>
+        <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <%- item.contentRenderedWithoutLayouts %>
+      </article>
+    <% end %>
+  </section>
 
-				<h1>Como perder <span class="peso">peso</span></h1>
-				<h2>no browser</h2>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js"></script>
 
-				<img src="img/superman.png" alt="Superman" class="superman" />
+  <!-- <script src="js/bootstrap-scrollspy.min.js"></script> -->
+  <script src="js/jquery.viewport.js"></script>
+  <script src="js/script.js"></script>
 
-			</header>
+  <script>
 
-			<section id="content">
+    $(function() {
+      var app = new COMOPERDERPESO.app();
+      app.init();
+    });
 
-				<% for item in @getCollection('documents').sortArray('order':1): %>
-					<article id="<%= item.slug %>">
-					  <h1><%= item.title %></h1>
-					  <div class="linha"><span class="bola"><%= item.order %></span></div>
-					  <%- item.contentRenderedWithoutLayouts %>
-					</article>
-	      <% end %>
+  </script>
 
-			</section>
-
-		</div>
-
-		<aside id="menu">
-
-			<ul>
-				<li><a href="#html">HTML</a></li>
-				<li><a href="#css">CSS</a></li>
-				<li><a href="#javascript">JavaScript</a></li>
-				<li><a href="#jquery">jQuery</a></li>
-			</ul>
-
-		</aside>
-
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js"></script>
-
-		<!-- <script src="js/bootstrap-scrollspy.min.js"></script> -->
-		<script src="js/jquery.viewport.js"></script>
-		<script src="js/script.js"></script>
-
-		<script>
-
-			$(function() {
-				var app = new COMOPERDERPESO.app();
-				app.init();
-	    });
-
-		</script>
-
-	</body>
+</body>
 
 </html>
