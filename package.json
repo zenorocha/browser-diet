@@ -2,12 +2,12 @@
   "name": "como-perder-peso",
   "version": "0.2.0",
   "description": "O guia definitivo para performance em desenvolvimento front-end",
-  "homepage": "http://comoperderpesonobrowser.com",
-  "repository" : {
-    "type" : "git",
-    "url" : "http://github.com/zenorocha/como-perder-peso.git"
+  "homepage": "http://zenorocha.github.com/como-perder-peso",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zenorocha/como-perder-peso.git"
   },
-  "engines" : {
+  "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
   },
