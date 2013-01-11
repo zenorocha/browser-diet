@@ -1,8 +1,7 @@
 ---
 title: async & defer
 slug: async-e-defer
-category: html
-order: 7
+order: 1
 ---
 
 São atributos que devem ser usados em conjunto com a tag `script`
@@ -26,5 +25,3 @@ O download do script é feito de forma assíncrona enquanto o processo de render
 ```
 
 Assim como o exemplo acima, o download do script é feito de forma assíncrona. Mas sua execução se dá apenas quando todo o processo de renderização estiver concluído.
-
-`Referência:` [Google Speed - HTML5 Performance](http://code.google.com/speed/articles/html5-performance.html) - [Zeno Rocha - Async Scripts](http://blog.zenorocha.com/post/10361104170/html5-async-scripts?8d59cf40)

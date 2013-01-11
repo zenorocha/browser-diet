@@ -11,24 +11,20 @@ List of articles that helped you to base your knowledge about certain tip.
 
 ### Web
 
-* [Yahoo! - Best Practices](http://developer.yahoo.com/performance/rules.html)
-* [Google - Make the Web Faster](http://code.google.com/speed/page-speed/docs)
-* [Steve Souders - 14 Rules for Faster-Loading Web Sites](http://stevesouders.com/hpws/rules.php)
+* [Yahoo! Best Practices](http://developer.yahoo.com/performance/rules.html)
+* [Google Speed](http://code.google.com/speed/page-speed/docs)
+* [14 Rules for Faster-Loading Web Sites](http://stevesouders.com/hpws/rules.php)
 * [FrontEnd Development Guidelines](http://taitems.github.com/Front-End-Development-Guidelines/)
 
 ## HTML Tips
 
-1 - Lorem ipsum dolor sit amet.
+1 - async & defer
 
-* [Article X](#)
-* [Article Y](#)
-* [Article Z](#)
+* [Google Speed - HTML5 Performance](http://code.google.com/speed/articles/html5-performance.html)
 
-2 - Lorem ipsum dolor sit amet.
+2 - Não escale imagens no HTML
 
-* [Article X](#)
-* [Article Y](#)
-* [Article Z](#)
+* [Yahoo! Best Practices - Don't Scale Images in HTML](http://developer.yahoo.com/performance/rules.html#no_scale)
 
 3 - Lorem ipsum dolor sit amet.
 
