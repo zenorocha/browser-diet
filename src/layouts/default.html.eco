@@ -6,6 +6,7 @@
   <title>Como perder peso (no browser)</title>
 
   <link rel="stylesheet" media="all" href="css/style.css" />
+  <link rel="stylesheet" media="all" href="css/tips.css" />
 
   <!-- Syntax Highlight -->
   <link rel="stylesheet" media="all" href="css/github.css" />
@@ -13,8 +14,7 @@
   <!-- <link rel="stylesheet" media="all" href="css/solarized-light.css" /> -->
 
   <!-- Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans&Pacifico&Magra' rel='stylesheet' type='text/css'>
-
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans&Pacifico&Magra" rel="stylesheet" type="text/css">
 
 </head>
 
