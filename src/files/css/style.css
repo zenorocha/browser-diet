@@ -21,9 +21,9 @@ body {
 	background: #FFF600;
 }
 
-p {
-	margin: 20px 60px;
-	font-family: 'Magra', sans-serif;
+p, pre {
+	margin: 20px 50px 20px 60px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -168,13 +168,13 @@ a {
 
 /* --- Articles --- */
 
-article {
+.article {
 	margin: 50px 0;
 	padding-left: 20px;
 	clear: both;
 }
 
-article h1 {
+.article h1 {
 	font-family: 'Pacifico', cursive;
 	color: #e60014;
 	font-size: 2.4em;
@@ -223,8 +223,8 @@ article h1 {
 
 /*	--- Selection --- */
 
-::selection 	 	{ background: green; }
-::-moz-selection 	{ background: green; }
+::selection 	 	{ color: #FFF600; background: #e60014; }
+::-moz-selection 	{ color: #FFF600; background: #e60014; }
 img::selection 		{ background: transparent; }
 img::-moz-selection	{ background: transparent; }
 
