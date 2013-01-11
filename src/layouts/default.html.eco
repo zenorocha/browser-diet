@@ -6,11 +6,15 @@
   <title>Como perder peso (no browser)</title>
 
   <link rel="stylesheet" media="all" href="css/style.css" />
-  <link rel="stylesheet" media="all" href="css/monokai.css" />
+
+  <!-- Syntax Highlight -->
+  <link rel="stylesheet" media="all" href="css/github.css" />
+  <!-- <link rel="stylesheet" media="all" href="css/monokai.css" /> -->
+  <!-- <link rel="stylesheet" media="all" href="css/solarized-light.css" /> -->
 
   <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Magra" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans&Pacifico&Magra' rel='stylesheet' type='text/css'>
+
 
 </head>
 
@@ -40,18 +44,31 @@
   </div>
 
   <div id="content" class="center">
+
+    <!-- <div class="article" id="2">
+
+      <h1>performance é tão importante assim?</h1>
+      <p style="margin-left: 60px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus necessitatibus consequatur provident atque pariatur tempore ipsa iste quas rem sunt.</p>
+      <p style="margin-left: 60px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus necessitatibus consequatur provident atque pariatur tempore ipsa iste quas rem sunt.</p>
+      <p style="margin-left: 60px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus necessitatibus consequatur provident atque pariatur tempore ipsa iste quas rem sunt.</p>
+
+    </div> -->
+
     <% for item in @getCollection('documents').sortArray('order':1): %>
-      <div id="<%= item.slug %>">
+      <div class="article" id="<%= item.slug %>">
         <h1><%= item.title %></h1>
+        <% if item.order: %>
         <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <% end %>
         <%- item.contentRenderedWithoutLayouts %>
       </div>
     <% end %>
+
   </div>
 
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js"></script>
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.min.js"></script>
 
-  <!-- <script src="js/bootstrap-scrollspy.min.js"></script> -->
+  <script src="js/bootstrap-scrollspy.min.js"></script>
   <script src="js/jquery.viewport.js"></script>
   <script src="js/script.js"></script>
 
@@ -62,7 +79,7 @@
       app.init();
     });
 
-  </script>
+  </script> -->
 
 </body>
 
