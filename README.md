@@ -90,8 +90,8 @@ Shell Script responsável pela publicação do site via [Github Pages](http://pa
 
 ## Créditos
 
-* [DocPad](https://github.com/bevry/docpad)
-* [Highlight.js](https://github.com/isagalaev/highlight.js)
+* DocPad por [Benjamin Lupton](https://github.com/balupton)
+* Highlight.js por [Ivan Sagalaev](https://github.com/isagalaev/)
 
 ### Fontes:
 
