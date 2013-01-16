@@ -102,3 +102,7 @@ Shell Script responsável pela publicação do site via [Github Pages](http://pa
 ### Imagens:
 
 * The 56 Geeks Project por [Scott Johnson](http://myextralife.com/56geeks/)
+
+## Licença
+
+Todo conteúdo encontra-se sob licença [Creative Commons BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR)
