@@ -1,7 +1,7 @@
 ---
 title: Exemplo JavaScript
 slug: exemplo-js
-order: 4
+order: 12
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illo magni similique ipsa porro fugit esse aliquid eum unde voluptas.

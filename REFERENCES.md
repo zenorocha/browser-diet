@@ -34,23 +34,18 @@ List of articles that helped you to base your knowledge about certain tip.
 
 ## CSS Tips
 
-4 - Lorem ipsum dolor sit amet.
+4 - Nuca use @import
 
-* [Article X](#)
-* [Article Y](#)
-* [Article Z](#)
+* [Steve Souders](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/)
+* [Yahoo Developer](http://developer.yahoo.com/performance/rules.html#csslink)
 
-5 - Lorem ipsum dolor sit amet.
+5 - CSS Sprite
 
-* [Article X](#)
-* [Article Y](#)
-* [Article Z](#)
+* [CSS Sprites](https://developers.google.com/speed/docs/best-practices/rtt?hl=en#SpriteImages)
 
-6 - Lorem ipsum dolor sit amet.
+6 - Combine CSS externos
 
-* [Article X](#)
-* [Article Y](#)
-* [Article Z](#)
+* [Combine CSS](https://developers.google.com/speed/docs/best-practices/rtt#CombineExternalCSS)
 
 ## JavaScript Tips
 
