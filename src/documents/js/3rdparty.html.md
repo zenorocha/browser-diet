@@ -1,7 +1,7 @@
 ---
 title: Carregue código de terceiros de forma assíncrona
-slug: 3rd-party-async-js
-order: 15
+slug:  3rd-party-async-js
+order: 14
 ---
 
 Ferramentas de advertising, em sua grande maioria, fazem o uso de document.write() para entrega de publicidades.  
