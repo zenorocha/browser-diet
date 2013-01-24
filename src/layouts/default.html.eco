@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <title>Como perder peso (no browser)</title>
 
-  <link rel="stylesheet" media="all" href="css/style.css" />
-  <link rel="stylesheet" media="all" href="css/tips.css" />
+  <link rel="stylesheet" media="all" href="<%= @site.assets %>/css/style.css" />
+  <link rel="stylesheet" media="all" href="<%= @site.assets %>/css/tips.css" />
 
   <!-- Syntax Highlight -->
-  <link rel="stylesheet" media="all" href="css/github.css" />
+  <link rel="stylesheet" media="all" href="<%= @site.assets %>/css/github.css" />
   <!-- <link rel="stylesheet" media="all" href="css/monokai.css" /> -->
   <!-- <link rel="stylesheet" media="all" href="css/solarized-light.css" /> -->
 
@@ -31,7 +31,7 @@
   <div class="intro center">
     <h1>Como perder <span class="peso">peso</span></h1>
     <h2>no browser</h2>
-    <img src="img/superman.png" alt="Superman" class="superman" />
+    <img src="<%= @site.assets %>/img/superman.png" alt="Superman" class="superman" />
   </div>
 
   <div id="menu">
