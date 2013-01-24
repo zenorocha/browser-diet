@@ -15,6 +15,7 @@ List of articles that helped you to base your knowledge about certain tip.
 * [Google Speed](http://code.google.com/speed/page-speed/docs)
 * [14 Rules for Faster-Loading Web Sites](http://stevesouders.com/hpws/rules.php)
 * [FrontEnd Development Guidelines](http://taitems.github.com/Front-End-Development-Guidelines/)
+* [Front-end performance for web designers and front-end developers](http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/)
 
 ## HTML Tips
 
