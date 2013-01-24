@@ -74,7 +74,7 @@ Contém todas as dicas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/
 
 ### [src/files](https://github.com/zenorocha/como-perder-peso/tree/master/src/files)
 
-Possui as imagens, arquivos CSS, JS e o [CNAME](https://github.com/zenorocha/como-perder-peso/blob/master/src/files/CNAME), arquivo que indica ao Github Pages o domínio que deve ser usado.
+Possui as imagens, fontes, arquivos CSS e JS.
 
 ### [src/layouts](https://github.com/zenorocha/como-perder-peso/tree/master/src/layouts)
 
@@ -83,10 +83,6 @@ Contém o template padrão da aplicação.
 ### [package.json](https://github.com/zenorocha/como-perder-peso/blob/master/package.json)
 
 Lista as dependências de módulos do NodeJS.
-
-### [publish.sh](https://github.com/zenorocha/como-perder-peso/blob/master/publish.sh)
-
-Shell Script responsável pela publicação do site via [Github Pages](http://pages.github.com).
 
 ## Créditos
 
