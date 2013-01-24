@@ -1,7 +1,7 @@
 ---
 title: Exemplo jQuery
 slug: exemplo-jquery
-order: 5
+order: 11
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni.
