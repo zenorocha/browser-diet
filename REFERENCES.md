@@ -12,10 +12,11 @@ List of articles that helped you to base your knowledge about certain tip.
 ### Web
 
 * [Yahoo! Best Practices](http://developer.yahoo.com/performance/rules.html)
-* [Google Speed](http://code.google.com/speed/page-speed/docs)
+* [Google Speed](https://developers.google.com/speed/pagespeed/?hl=pt-BR)
 * [14 Rules for Faster-Loading Web Sites](http://stevesouders.com/hpws/rules.php)
 * [FrontEnd Development Guidelines](http://taitems.github.com/Front-End-Development-Guidelines/)
 * [Front-end performance for web designers and front-end developers](http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/)
+* [Performance Calendar](http://calendar.perfplanet.com/2012/)
 
 ## HTML Tips
 
