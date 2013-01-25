@@ -40,6 +40,8 @@
 
   <div id="content" class="center">
 
+    <%- @content %>
+
     <!-- <div class="article" id="2">
 
       <h1>performance é tão importante assim?</h1>
