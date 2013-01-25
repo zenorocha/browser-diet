@@ -16,7 +16,7 @@ Para adicionar novas dicas ou editar dicas existentes, basta se dirigir a pasta 
 
 Lá você irá encontrar todas elas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown). Não se preocupe caso você não conheça essa linguagem, é muito similar ao HTML e possui uma curva de aprendizado muito pequena.
 
-Lembre-se também de adicionar as referências que você utilizou para escrever determinada dica no [REFERENCES.md](https://github.com/zenorocha/como-perder-peso/blob/master/REFERENCES.md).
+Lembre-se também de adicionar as referências que você utilizou para escrever determinada dica na wiki [References](https://github.com/zenorocha/como-perder-peso/wiki/References).
 
 ## Primeiros passos
 
