@@ -26,7 +26,7 @@
   <div class="intro center">
     <h1>Como perder <span class="peso">peso</span></h1>
     <h2>no browser</h2>
-    <img src="<%= @site.assets %>/img/superman.png" alt="Superman" class="superman" />
+    <img src="<%= @site.assets %>/img/superman.png" alt="Superman" class="superman" width="745" height="655" />
   </div>
 
   <div id="menu">
