@@ -1,7 +1,7 @@
 ---
 title: async & defer
 slug: async-e-defer
-order: 9
+order: 30
 ---
 
 São atributos que devem ser usados em conjunto com a tag `script`

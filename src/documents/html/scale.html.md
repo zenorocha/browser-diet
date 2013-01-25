@@ -1,7 +1,7 @@
 ---
 title: Não escale imagens no HTML
 slug: nao-escale-imagens-no-html
-order: 10
+order: 31
 ---
 
 Não use imagens maiores do que você precisa, só porque você pode definir a altura e largura delas no HTML.
