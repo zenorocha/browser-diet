@@ -2,7 +2,6 @@ module.exports =
 
     # =================================
     # Template Data
-    # These are variables will be accessible via our templates
 
     templateData:
 
@@ -10,10 +9,20 @@ module.exports =
         # Site Information
 
         site:
-
             # Production URL
             url: 'http://comoperderpesonobrowser.com.br'
             assets: 'http://assets.comoperderpesonobrowser.com.br'
+
+    # =================================
+    # Collections
+
+    collections:
+
+      # Get all sections sorted by numerical order
+      html: -> @getCollection("documents").findAll({ url: $startsWith:'/html' }, [order:1])
+      css: -> @getCollection("documents").findAll({ url: $startsWith:'/css' }, [order:1])
+      js: -> @getCollection("documents").findAll({ url: $startsWith:'/js' }, [order:1])
+      jquery: -> @getCollection("documents").findAll({ url: $startsWith:'/jquery' }, [order:1])
 
     # =================================
     # Environments
