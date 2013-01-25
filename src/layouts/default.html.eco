@@ -5,16 +5,11 @@
   <meta charset="utf-8">
   <title>Como perder peso (no browser)</title>
 
-  <link rel="stylesheet" media="all" href="<%= @site.assets %>/css/style.css" />
-  <link rel="stylesheet" media="all" href="<%= @site.assets %>/css/tips.css" />
-
-  <!-- Syntax Highlight -->
-  <link rel="stylesheet" media="all" href="<%= @site.assets %>/css/github.css" />
-  <!-- <link rel="stylesheet" media="all" href="css/monokai.css" /> -->
-  <!-- <link rel="stylesheet" media="all" href="css/solarized-light.css" /> -->
+  <!-- Style -->
+  <link rel="stylesheet" href="<%= @site.assets %>/css/main.css">
 
   <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans&Pacifico&Magra" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans&Pacifico&Magra">
 
 </head>
 
@@ -54,7 +49,45 @@
 
     </div> -->
 
-    <% for item in @getCollection('documents').sortArray('order':1): %>
+    <h2>HTML</h2>
+
+    <% for item in @getCollection("html").toJSON(): %>
+      <div class="article" id="<%= item.slug %>">
+        <h1><%= item.title %></h1>
+        <% if item.order: %>
+        <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <% end %>
+        <%- item.contentRenderedWithoutLayouts %>
+      </div>
+    <% end %>
+
+    <h2>CSS</h2>
+
+    <% for item in @getCollection("css").toJSON(): %>
+      <div class="article" id="<%= item.slug %>">
+        <h1><%= item.title %></h1>
+        <% if item.order: %>
+        <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <% end %>
+        <%- item.contentRenderedWithoutLayouts %>
+      </div>
+    <% end %>
+
+    <h2>JavaScript</h2>
+
+    <% for item in @getCollection("js").toJSON(): %>
+      <div class="article" id="<%= item.slug %>">
+        <h1><%= item.title %></h1>
+        <% if item.order: %>
+        <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <% end %>
+        <%- item.contentRenderedWithoutLayouts %>
+      </div>
+    <% end %>
+
+    <h2>jQuery</h2>
+
+    <% for item in @getCollection("jquery").toJSON(): %>
       <div class="article" id="<%= item.slug %>">
         <h1><%= item.title %></h1>
         <% if item.order: %>
