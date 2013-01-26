@@ -4,10 +4,14 @@ slug: nao-escale-imagens-no-html
 order: 31
 ---
 
-Não use imagens maiores do que você precisa, só porque você pode definir a altura e largura delas no HTML.
+Defina sempre o `width` e o `height` de uma imagem, isso irá reduzir o tempo de renderização evitando desnecessários repaints e reflows.
 
 ``` html
 <img width="100" height="100" src="logo.jpg" alt="Logo" />
 ```
 
-Se você precisa de uma imagem com 100x100px então utilize uma imagem de 100x100px ao invés de escalar uma de 500x500px.
+Sabendo disso, Joãozinho que tem uma imagem de 700x700px resolve exibí-la na tela em um tamanho de 50x50px.
+
+O que o malandro Joãozinho não sabe é que uma dezena de KBs serão trafegados a mais pela rede desnecessariamente.
+
+Por isso lembre-se, só porque você pode definir a altura e largura de uma imagem no HTML, não quer dizer que deve redimensionar imagens maiores do que precisa.
