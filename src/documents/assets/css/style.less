@@ -1,4 +1,9 @@
-/*	--- Reset --- */
+/* --- Vars --- */
+
+@yellow: #FFF600;
+@red: #E60014;
+
+/* --- Reset --- */
 
 * {
 	margin: 0;
@@ -18,7 +23,7 @@ ul {
 
 body {
 	-webkit-text-size-adjust: none;
-	background: #FFF600;
+	background: @yellow;
 }
 
 p, pre {
@@ -39,11 +44,6 @@ a {
 
 /* --- Structure --- */
 
-#main {
-
-	/*background: #FFF600 url('../img/regua.png') repeat-y top right;*/
-}
-
 .intro {
 	width: 650px;
 	height: 350px;
@@ -52,13 +52,13 @@ a {
 }
 
 #menu {
-	background: #e60014;
+	background: @red;
 }
 
 /* --- Subtitle --- */
 
 .subtitle {
-	background: #e60014;
+	background: @red;
 }
 
 /*	--- Header --- */
@@ -73,7 +73,7 @@ a {
 	font-size: 1.4em;
 	line-height: 2em;
 	text-align: center;
-	color: #fff600;
+	color: @yellow;
 	font-family: 'Magra', sans-serif;
 	z-index: 2;
 	position: relative;
@@ -84,7 +84,7 @@ a {
 	font-family: 'HorseshoesRegular';
 	font-size: 4.0em;
 	line-height: 1.0em;
-	color: #e60014;
+	color: @red;
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 2px 0px #9E0D08;
@@ -176,7 +176,7 @@ a {
 
 .article h1 {
 	font-family: 'Pacifico', cursive;
-	color: #e60014;
+	color: @red;
 	font-size: 2.4em;
 	margin: 0 0 0 60px;
 	position: relative;
@@ -197,7 +197,7 @@ a {
 	height: 35px;
 	border-radius: 30px;
 	font-family: 'HorseshoesRegular';
-	color: #e60014;
+	color: @red;
 	background: #ffbf00;
 	display: block;
 	position: absolute;
@@ -206,6 +206,27 @@ a {
 	padding: 10px;
 	font-size: 2.5em;
 	text-align: center;
+}
+
+/* --- Tips --- */
+
+.img-left {
+  float: left;
+  margin: 10px 0 0 60px;
+}
+
+.content-right {
+  float: right;
+  width: 660px;
+}
+
+.content-right p {
+  margin-left: 10px;
+}
+
+.content-right p.project-leader {
+  float: right;
+  margin-top: 0;
 }
 
 /* --- Introduction --- */
@@ -223,8 +244,8 @@ a {
 
 /*	--- Selection --- */
 
-::selection 	 	{ color: #FFF600; background: #e60014; }
-::-moz-selection 	{ color: #FFF600; background: #e60014; }
+::selection 	 	{ color: @yellow; background: @red; }
+::-moz-selection 	{ color: @yellow; background: @red; }
 img::selection 		{ background: transparent; }
 img::-moz-selection	{ background: transparent; }
 
