@@ -6,7 +6,7 @@
   <title>Como perder peso (no browser)</title>
 
   <!-- Style -->
-  <link rel="stylesheet" href="<%= @site.assets %>/css/main.css">
+  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans&Pacifico&Magra">
