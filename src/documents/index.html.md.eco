@@ -8,7 +8,7 @@ layout: default
 <div class="article">
 
   <div class="img-left">
-    <img src="<%= @site.assets %>/img/17.png" alt="Ilustração - Guerreiro" />
+    <img src="<%= @site.assets %>/img/17.png" alt="Ilustração - Guerreiro" width="200" height="275" />
   </div>
 
   <div class="content-right">
