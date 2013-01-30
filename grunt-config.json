@@ -1,0 +1,22 @@
+{
+  "min": {
+    "js": {
+      "src": ["out/js/bootstrap-scrollspy.min.js",
+              "out/js/jquery.viewport.js",
+              "out/assets/js/script.js"],
+      "dest": "out/assets/js/all.min.js"
+    }
+  },
+  "concat": {
+    "css": {
+      "src": ["out/assets/css/main.css"],
+      "dest": "out/assets/css/all.css"
+    }
+  },
+  "cssmin": {
+    "all": {
+      "src": ["out/assets/css/all.css"],
+      "dest": "out/assets/css/all.min.css"
+    }
+  }
+}
