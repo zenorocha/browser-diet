@@ -60,6 +60,8 @@ O projeto é feito utilizando o [DocPad](https://github.com/bevry/docpad), um st
 |   |-- documents
 |   |-- files
 |   |-- layouts
+|-- grunt-config.json
+|-- grunt.js
 |-- package.json
 `-- publish.sh
 </pre>
