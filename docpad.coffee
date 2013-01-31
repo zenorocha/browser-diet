@@ -44,6 +44,7 @@ module.exports =
       css: -> @getCollection("documents").findAll({ url: $startsWith:'/css' }, [order:1])
       js: -> @getCollection("documents").findAll({ url: $startsWith:'/js' }, [order:1])
       jquery: -> @getCollection("documents").findAll({ url: $startsWith:'/jquery' }, [order:1])
+      bonus: -> @getCollection("documents").findAll({ url: $startsWith:'/bonus' }, [order:1])
 
     # =================================
     # Environments
@@ -59,7 +60,7 @@ module.exports =
     # DocPad Events
 
     events:
-    
+
         # Write After
         # Used to minify our assets with grunt
         writeAfter: (opts,next) ->
