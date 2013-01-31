@@ -24,3 +24,16 @@ layout: default
   </div>
 
 </div>
+
+<div class="article">
+
+  <h1>Performance importa mesmo?</h1>
+  <div class="linha"><span class="bola">??</span></div>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic rerum consectetur deleniti facere repellendus eum quam nostrum quos fugiat corrupti aut dolore explicabo dolorem expedita excepturi tenetur ipsum magni!</p>
+
+  <p>http://www.slideshare.net/keppelen/performance-frontend-front-in-macei</p>
+  <p>http://jaydson.org/talks/x-web-performance/#slide-0</p>
+  <p>http://fellipe.com/slides/performance-javascript/#17</p>
+
+</div>
