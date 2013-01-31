@@ -35,6 +35,7 @@
       <li><a href="#css">CSS</a></li>
       <li><a href="#javascript">JavaScript</a></li>
       <li><a href="#jquery">jQuery</a></li>
+      <li><a href="#bonus">Bônus</a></li>
     </ul>
   </div>
 
@@ -42,16 +43,7 @@
 
     <%- @content %>
 
-    <!-- <div class="article" id="2">
-
-      <h1>performance é tão importante assim?</h1>
-      <p style="margin-left: 60px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus necessitatibus consequatur provident atque pariatur tempore ipsa iste quas rem sunt.</p>
-      <p style="margin-left: 60px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus necessitatibus consequatur provident atque pariatur tempore ipsa iste quas rem sunt.</p>
-      <p style="margin-left: 60px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus necessitatibus consequatur provident atque pariatur tempore ipsa iste quas rem sunt.</p>
-
-    </div> -->
-
-    <h2>HTML</h2>
+    <h2 id="html">HTML</h2>
 
     <% for item in @getCollection("html").toJSON(): %>
       <div class="article" id="<%= item.slug %>">
@@ -63,7 +55,7 @@
       </div>
     <% end %>
 
-    <h2>CSS</h2>
+    <h2 id="css">CSS</h2>
 
     <% for item in @getCollection("css").toJSON(): %>
       <div class="article" id="<%= item.slug %>">
@@ -75,7 +67,7 @@
       </div>
     <% end %>
 
-    <h2>JavaScript</h2>
+    <h2 id="js">JavaScript</h2>
 
     <% for item in @getCollection("js").toJSON(): %>
       <div class="article" id="<%= item.slug %>">
@@ -87,7 +79,7 @@
       </div>
     <% end %>
 
-    <h2>jQuery</h2>
+    <h2 id="jquery">jQuery</h2>
 
     <% for item in @getCollection("jquery").toJSON(): %>
       <div class="article" id="<%= item.slug %>">
@@ -98,6 +90,8 @@
         <%- item.contentRenderedWithoutLayouts %>
       </div>
     <% end %>
+
+    <h2 id="bonus">Bônus</h2>
 
   </div>
 
