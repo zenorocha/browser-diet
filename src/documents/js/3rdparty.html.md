@@ -1,13 +1,13 @@
 ---
 title: Carregue código de terceiros de forma assíncrona
-slug:  3rd-party-async-js
-order: 14
+slug: 3rd-party-async-js
+order: 89
 ---
 
-Ferramentas de advertising, em sua grande maioria, fazem o uso de document.write() para entrega de publicidades.  
+O uso de código de terceiros é muito comum.  
+Seja para embedar um video do youtube, colocar um botão de like, ou botão de tweet, estes códigos nos dão funcionalidades relevantes para um site.  
+O grande problema destes códigos é que nem sempre eles serão entregues de maneira eficiente, seja pela conexão do usuário, ou pela conexão no servidor onde estão hospedados.    
 Isso pode ser o ponto crítico para o carregamento de um site.  
-Estes trechos de código JavaScript, responsáveis por criar publicidades em uma página, ficam hospedados em servidores espalhados pelo mundo.  
-Seja por falha na rede, lentidão nos servidores, ou qualquer outro motivo, uma página que faz o uso destes códigos, está propensa a falha.  
 
 SEMPRE, carregue estes códigos de forma assíncrona.  
 
@@ -19,5 +19,3 @@ script.async = true;
 script.src = url;
 head.appendChild(s);
 ```
-
-Especificamente sobre publicidades, esta abordagem nem sempre é possível.  
