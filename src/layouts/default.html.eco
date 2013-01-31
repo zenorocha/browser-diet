@@ -43,61 +43,78 @@
 
     <%- @content %>
 
-    <h2 id="html">HTML</h2>
+    <h2 id="html" class="topics">HTML</h2>
 
     <% for item in @getCollection("html").toJSON(): %>
-      <div class="article" id="<%= item.slug %>">
-        <h1><%= item.title %></h1>
+      <div class="article">
+        <h1 id="<%= item.slug %>"><a href="#<%= item.slug %>"><%= item.title %></a></h1>
         <% if item.order: %>
-        <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <div class="line">
+          <span class="order"><%= item.order %></span>
+          <a href="#<%= item.slug %>" class="anchor">∞</a>
+        </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
       </div>
     <% end %>
 
-    <h2 id="css">CSS</h2>
+    <h2 id="css" class="topics">CSS</h2>
 
     <% for item in @getCollection("css").toJSON(): %>
-      <div class="article" id="<%= item.slug %>">
-        <h1><%= item.title %></h1>
+      <div class="article">
+        <h1 id="<%= item.slug %>">
+          <a href="#<%= item.slug %>"><%= item.title %></a></h1>
+        </a>
         <% if item.order: %>
-        <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <div class="line">
+          <span class="order"><%= item.order %></span>
+          <a href="#<%= item.slug %>" class="anchor">∞</a>
+        </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
       </div>
     <% end %>
 
-    <h2 id="js">JavaScript</h2>
+    <h2 id="js" class="topics">JavaScript</h2>
 
     <% for item in @getCollection("js").toJSON(): %>
-      <div class="article" id="<%= item.slug %>">
-        <h1><%= item.title %></h1>
+      <div class="article">
+        <h1 id="<%= item.slug %>"><a href="#<%= item.slug %>"><%= item.title %></a></h1>
         <% if item.order: %>
-        <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <div class="line">
+          <span class="order"><%= item.order %></span>
+          <a href="#<%= item.slug %>" class="anchor">∞</a>
+        </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
       </div>
     <% end %>
 
-    <h2 id="jquery">jQuery</h2>
+    <h2 id="jquery" class="topics">jQuery</h2>
 
     <% for item in @getCollection("jquery").toJSON(): %>
-      <div class="article" id="<%= item.slug %>">
-        <h1><%= item.title %></h1>
+      <div class="article">
+        <h1 id="<%= item.slug %>"><a href="#<%= item.slug %>"><%= item.title %></a></h1>
         <% if item.order: %>
-        <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <div class="line">
+          <span class="order"><%= item.order %></span>
+          <a href="#<%= item.slug %>" class="anchor">∞</a>
+        </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
       </div>
     <% end %>
 
-    <h2 id="bonus">Bônus</h2>
+    <h2 id="bonus" class="topics">Bônus</h2>
 
     <% for item in @getCollection("bonus").toJSON(): %>
-      <div class="article" id="<%= item.slug %>">
-        <h1><%= item.title %></h1>
+      <div class="article">
+        <h1 id="<%= item.slug %>"><a href="#<%= item.slug %>"><%= item.title %></a></h1>
         <% if item.order: %>
-        <div class="linha"><span class="bola"><%= item.order %></span></div>
+        <div class="line">
+          <span class="order"><%= item.order %></span>
+          <a href="#<%= item.slug %>" class="anchor">∞</a>
+        </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
       </div>

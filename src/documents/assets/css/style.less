@@ -2,6 +2,7 @@
 
 @yellow: #FFDE00;
 @red: #E60014;
+@orange: #FFBF00;
 
 /* --- Reset --- */
 
@@ -33,6 +34,9 @@ p, pre {
 
 a {
 	text-decoration: none;
+	color: @red;
+	font-weight: bold;
+	border-bottom: 3px solid @orange;
 }
 
 /* --- Util --- */
@@ -63,9 +67,11 @@ a {
 
 /*	--- Header --- */
 
-#github {
+#github-ribbon {
 	position: absolute;
-	z-index: 3;
+	top: 0;
+	right: 0;
+	border: 0;
 }
 
 .subtitle h3,
@@ -82,7 +88,7 @@ a {
 
 .intro h1 {
 	width: 350px;
-	font-family: 'HorseshoesRegular';
+	font-family: 'HorseshoesRegular', sans-serif;
 	font-size: 4.0em;
 	line-height: 1.0em;
 	color: @red;
@@ -112,6 +118,26 @@ a {
 	text-shadow: 0px 0px #000;
 }
 
+.topics {
+	font-family: 'HorseshoesRegular', sans-serif;
+	font-size: 4.0em;
+	line-height: 1.0em;
+	color: @red;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 0px #9E0D08;
+	position: relative;
+	padding: 10px 0 0 0;
+	border-bottom: 10px solid @orange;
+	margin: 100px auto 0;
+}
+
+#html { width: 125px; }
+#css { width: 80px; }
+#js { width: 280px; }
+#jquery { width: 180px; }
+#bonus { width: 150px; }
+
 .superman {
 	position: absolute;
 	top: -130px;
@@ -132,41 +158,6 @@ a {
 	margin: 0 25px;
 }
 
-/*#menu li {
-	color: #000;
-	background-color: #f00;
-
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	transition: all 1s;
-
-	text-align: center;
-	height: 30px;
-	border: 1px solid #fff;
-}
-
-#menu li:hover, #menu li.active {
-	background-color: #FFBF00;
-}
-
-#menu li a {
-	color: #FFF;
-	float: left;
-	text-align: center;
-	padding: 5px 0;
-	width: 100%;
-	text-decoration: none;
-	font: 16px "Magra", sans-serif;
-}
-
-#menu li a:hover {
-	color: #000;
-
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	transition: all 1s;
-}*/
-
 /* --- Articles --- */
 
 .article {
@@ -177,7 +168,6 @@ a {
 
 .article h1 {
 	font-family: 'Pacifico', cursive;
-	color: @red;
 	font-size: 2.4em;
 	margin: 0 0 0 60px;
 	position: relative;
@@ -185,19 +175,42 @@ a {
 	text-transform: lowercase;
 }
 
-.linha {
+.article h1 a {
+	color: @red;
+}
+
+.anchor {
+	color: @orange;
+	font-family: sans-serif;
+	font-size: 40px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: -40px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.article:hover .anchor {
+	color: @red;
+}
+
+.line {
 	width: 100%;
 	height: 10px;
-	background: #ffbf00;
+	background: @orange;
 	position: relative;
 	margin: -10px 0 0 30px;
 }
 
-.bola {
+.order {
 	width: 30px;
 	height: 35px;
 	border-radius: 30px;
-	font-family: 'HorseshoesRegular';
+	font-family: 'HorseshoesRegular', sans-serif;
 	color: @red;
 	background: #ffbf00;
 	display: block;
@@ -245,9 +258,9 @@ a {
 
 /*	--- Selection --- */
 
-::selection 	 	{ color: @yellow; background: @red; }
-::-moz-selection 	{ color: @yellow; background: @red; }
-img::selection 		{ background: transparent; }
+::selection 				{ color: @yellow; background: @red; }
+::-moz-selection 		{ color: @yellow; background: @red; }
+img::selection 			{ background: transparent; }
 img::-moz-selection	{ background: transparent; }
 
 /* --- Fonts --- */

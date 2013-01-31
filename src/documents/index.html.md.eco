@@ -27,8 +27,11 @@ layout: default
 
 <div class="article">
 
-  <h1>Performance importa mesmo?</h1>
-  <div class="linha"><span class="bola">??</span></div>
+  <h1 id="performance-importa"><a href="#performance-importa">performance importa mesmo?</a></h1>
+  <div class="line">
+    <span class="order">??</span>
+    <a href="#performance-importa" class="anchor">∞</a>
+  </div>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic rerum consectetur deleniti facere repellendus eum quam nostrum quos fugiat corrupti aut dolore explicabo dolorem expedita excepturi tenetur ipsum magni!</p>
 
