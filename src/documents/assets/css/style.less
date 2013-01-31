@@ -179,26 +179,45 @@ a {
 	text-transform: lowercase;
 }
 
-.article h1 a {
+.tip-title {
 	color: @red;
 }
 
-.anchor {
+.article .anchor {
 	color: @orange;
 	font-family: sans-serif;
 	font-size: 40px;
 	display: block;
 	position: absolute;
-	right: 0;
-	top: -40px;
+	top: 20px;
+	right: -25px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	border: none;
 }
 
-.article:hover .anchor {
+.article h1:hover .anchor {
+	color: @red;
+}
+
+.edit {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	font-size: 40px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: @orange;
+	border: none;
+}
+
+.edit:hover {
 	color: @red;
 }
 
@@ -245,6 +264,13 @@ a {
 .content-right p.project-leader {
   float: right;
   margin-top: 0;
+}
+
+#top {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	border: 0;
 }
 
 /* --- Introduction --- */

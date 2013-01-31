@@ -13,9 +13,9 @@
 
 </head>
 
-<body data-spy="scroll">
+<body>
 
-  <div class="subtitle">
+  <div id="top-bar" class="subtitle">
     <h3 class="center">O guia definitivo de performance para o desenvolvedor front-end</h3>
   </div>
 
@@ -47,11 +47,14 @@
 
     <% for item in @getCollection("html").toJSON(): %>
       <div class="article">
-        <h1 id="<%= item.slug %>"><a href="#<%= item.slug %>"><%= item.title %></a></h1>
+        <h1 id="<%= item.slug %>">
+          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
+          <a class="anchor" href="#<%= item.slug %>">∞</a>
+        </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a href="#<%= item.slug %>" class="anchor">∞</a>
+          <a class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -63,12 +66,13 @@
     <% for item in @getCollection("css").toJSON(): %>
       <div class="article">
         <h1 id="<%= item.slug %>">
-          <a href="#<%= item.slug %>"><%= item.title %></a></h1>
-        </a>
+          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
+          <a class="anchor" href="#<%= item.slug %>">∞</a>
+        </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a href="#<%= item.slug %>" class="anchor">∞</a>
+          <a class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -79,11 +83,14 @@
 
     <% for item in @getCollection("js").toJSON(): %>
       <div class="article">
-        <h1 id="<%= item.slug %>"><a href="#<%= item.slug %>"><%= item.title %></a></h1>
+        <h1 id="<%= item.slug %>">
+          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
+          <a class="anchor" href="#<%= item.slug %>">∞</a>
+        </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a href="#<%= item.slug %>" class="anchor">∞</a>
+          <a class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -94,11 +101,14 @@
 
     <% for item in @getCollection("jquery").toJSON(): %>
       <div class="article">
-        <h1 id="<%= item.slug %>"><a href="#<%= item.slug %>"><%= item.title %></a></h1>
+        <h1 id="<%= item.slug %>">
+          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
+          <a class="anchor" href="#<%= item.slug %>">∞</a>
+        </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a href="#<%= item.slug %>" class="anchor">∞</a>
+          <a class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -109,11 +119,14 @@
 
     <% for item in @getCollection("bonus").toJSON(): %>
       <div class="article">
-        <h1 id="<%= item.slug %>"><a href="#<%= item.slug %>"><%= item.title %></a></h1>
+        <h1 id="<%= item.slug %>">
+          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
+          <a class="anchor" href="#<%= item.slug %>">∞</a>
+        </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a href="#<%= item.slug %>" class="anchor">∞</a>
+          <a class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -122,6 +135,7 @@
 
   </div>
 
-</body>
+  <a id="top" href="#top-bar"><img src="<%= @site.assets %>/img/top.png" alt="Go up!"></a>
 
+</body>
 </html>
