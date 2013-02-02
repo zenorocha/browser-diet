@@ -1,7 +1,8 @@
 /* --- Vars --- */
 
-@yellow: #FFF600;
+@yellow: #FFDE00;
 @red: #E60014;
+@orange: #FFBF00;
 
 /* --- Reset --- */
 
@@ -33,6 +34,9 @@ p, pre {
 
 a {
 	text-decoration: none;
+	color: @red;
+	font-weight: bold;
+	border-bottom: 3px solid @orange;
 }
 
 /* --- Util --- */
@@ -63,9 +67,11 @@ a {
 
 /*	--- Header --- */
 
-#github {
+#github-ribbon {
 	position: absolute;
-	z-index: 3;
+	top: 0;
+	right: 0;
+	border: 0;
 }
 
 .subtitle h3,
@@ -74,14 +80,15 @@ a {
 	line-height: 2em;
 	text-align: center;
 	color: @yellow;
-	font-family: 'Magra', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	z-index: 2;
 	position: relative;
+	font-weight: normal;
 }
 
 .intro h1 {
 	width: 350px;
-	font-family: 'HorseshoesRegular';
+	font-family: 'HorseshoesRegular', sans-serif;
 	font-size: 4.0em;
 	line-height: 1.0em;
 	color: @red;
@@ -111,6 +118,26 @@ a {
 	text-shadow: 0px 0px #000;
 }
 
+.topics {
+	font-family: 'HorseshoesRegular', sans-serif;
+	font-size: 4.0em;
+	line-height: 1.0em;
+	color: @red;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 2px 0px #9E0D08;
+	position: relative;
+	padding: 10px 0 0 0;
+	border-bottom: 10px solid @orange;
+	margin: 100px auto 0;
+}
+
+#html { width: 125px; }
+#css { width: 80px; }
+#js { width: 280px; }
+#jquery { width: 180px; }
+#bonus { width: 150px; }
+
 .superman {
 	position: absolute;
 	top: -130px;
@@ -121,7 +148,7 @@ a {
 /*	--- Menu --- */
 
 #menu ul {
-	width: 500px;
+	width: 605px;
 	margin-top: 70px;
 }
 
@@ -131,40 +158,9 @@ a {
 	margin: 0 25px;
 }
 
-/*#menu li {
-	color: #000;
-	background-color: #f00;
-
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	transition: all 1s;
-
-	text-align: center;
-	height: 30px;
-	border: 1px solid #fff;
+#menu a {
+	border: 0;
 }
-
-#menu li:hover, #menu li.active {
-	background-color: #FFBF00;
-}
-
-#menu li a {
-	color: #FFF;
-	float: left;
-	text-align: center;
-	padding: 5px 0;
-	width: 100%;
-	text-decoration: none;
-	font: 16px "Magra", sans-serif;
-}
-
-#menu li a:hover {
-	color: #000;
-
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	transition: all 1s;
-}*/
 
 /* --- Articles --- */
 
@@ -176,7 +172,6 @@ a {
 
 .article h1 {
 	font-family: 'Pacifico', cursive;
-	color: @red;
 	font-size: 2.4em;
 	margin: 0 0 0 60px;
 	position: relative;
@@ -184,19 +179,61 @@ a {
 	text-transform: lowercase;
 }
 
-.linha {
-	width: 100%;
-	height: 10px;
-	background: #ffbf00;
-	position: relative;
-	margin: -10px 0 0 30px;
+.tip-title {
+	color: @red;
 }
 
-.bola {
+.article .anchor {
+	color: @orange;
+	font-family: sans-serif;
+	font-size: 40px;
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: -25px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	border: none;
+}
+
+.article h1:hover .anchor {
+	color: @red;
+}
+
+.edit {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	font-size: 40px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: @orange;
+	border: none;
+}
+
+.edit:hover {
+	color: @red;
+}
+
+.line {
+	width: 100%;
+	height: 10px;
+	background: @orange;
+	position: relative;
+	margin: -7px 0 0 30px;
+}
+
+.order {
 	width: 30px;
 	height: 35px;
 	border-radius: 30px;
-	font-family: 'HorseshoesRegular';
+	font-family: 'HorseshoesRegular', sans-serif;
 	color: @red;
 	background: #ffbf00;
 	display: block;
@@ -229,6 +266,13 @@ a {
   margin-top: 0;
 }
 
+#top {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	border: 0;
+}
+
 /* --- Introduction --- */
 
 #introducao p {
@@ -244,9 +288,9 @@ a {
 
 /*	--- Selection --- */
 
-::selection 	 	{ color: @yellow; background: @red; }
-::-moz-selection 	{ color: @yellow; background: @red; }
-img::selection 		{ background: transparent; }
+::selection 				{ color: @yellow; background: @red; }
+::-moz-selection 		{ color: @yellow; background: @red; }
+img::selection 			{ background: transparent; }
 img::-moz-selection	{ background: transparent; }
 
 /* --- Fonts --- */

@@ -1,7 +1,7 @@
 ---
 title: Evite document.write
 slug: evite-document.write-js
-order: 13
+order: 90
 ---
 
 O uso do document.write() faz com que a página fique na dependência do seu retorno para ser completamente carregada.  

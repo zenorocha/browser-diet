@@ -1,6 +1,6 @@
 ---
 title: Evite códigos inline
-slug: nao-escale-imagens-no-html
+slug: evite-codigos-inline
 order: 32
 ---
 
