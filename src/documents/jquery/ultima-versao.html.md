@@ -4,7 +4,7 @@ slug: jquery-ultima-versao
 order: 2
 ---
 
-Os membros do core do jQuery estão sempre buscando trazer novidades para a biblioteca, estes ajustes muitas vezes, estão relacionados a otimização de algoritmos, novas funcionalidades e melhorias da legibilidade. Para descobrir quais foram as modificações realizadas na última versão do jQuery, você deve ficar ligado no blogo do projeto:
+Os membros do core do jQuery estão sempre buscando trazer novidades para a biblioteca, estes ajustes muitas vezes, estão relacionados a otimização de algoritmos, novas funcionalidades e melhorias da legibilidade do código. Para descobrir quais foram as modificações realizadas na última versão do jQuery, você deve ficar ligado no blog do projeto:
 
 http://blog.jquery.com/
 
@@ -14,7 +14,7 @@ Devemos evitar referências para o estático da última versão do jQuery, pois 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 ```
 
-Para descobrir a versão atualmente utilizada do jQuery, execute:
+Para descobrir a versão atualmente utilizada do jQuery, execute no console:
 ```js
 jQuery.fn.jquery
 ```
