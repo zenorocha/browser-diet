@@ -15,14 +15,14 @@ Uso do $.each em jQuery
 	});
 ```
 
-Uso do for (Melhor opção)
+Uso do for sem cache
 ```js
-	for (var i = 0, len = a.length; i < len; i++) {
+	for (var i = 0; i < a.length; i++) {
 		e = a[i];
 	}
 ```
 
-Apesar do for in ser nativo do Javascript, sua performance é muitas vezes pior que o uso do each.jQuery. Como apresentado no item [1], das referências.
+Mas atenção, apesar do for in ser nativo do Javascript, sua performance muitas vezes é pior que o uso do each.jQuery. Como apresentado no item [1], das referências.
 
 Uso do for in (Pior opção)
 ```js
@@ -30,5 +30,18 @@ Uso do for in (Pior opção)
 		e = a[i];
 	}
 ```
+
+Sendo assim, o bom e velho for nos traz uma melhor forma de deixar nossas iterações mais rápidas, e você ainda pode aplicar um cache para o tamanho total do array e conseguirá aumentar o numero de operações por segundo.
+
+Uso do for com cache (Melhor opção, considerando performance e legibilidade)
+```js
+	for (var i = 0, len = a.length; i < len; i++) {
+		e = a[i];
+	}
+```
+
+O uso de while reverso e for reverso é bem discutido na comunidade, e muitas vezes citado como a forma
+mais rápida de se fazer uma iteração com javascript, porém é bastante criticado devido ao fato de deixar o código com uma leitura mais difícil.
+
 
 [1] http://jsperf.com/jquery-each-vs-for-loop/194
