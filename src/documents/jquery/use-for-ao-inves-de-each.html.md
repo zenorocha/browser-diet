@@ -1,6 +1,6 @@
 ---
-title: for vs each vs for in
-slug: for-vs-each-vs-for-in
+title: for vs. each vs. for in vs. while reverso
+slug: for-vs-each-vs-for-in-vs-while-reverso
 order: 3
 ---
 
@@ -41,7 +41,6 @@ Uso do for com cache (Melhor opção, considerando performance e legibilidade)
 ```
 
 O uso de while reverso e for reverso é bem discutido na comunidade, e muitas vezes citado como a forma
-mais rápida de se fazer uma iteração com javascript, porém é bastante criticado devido ao fato de deixar o código com uma leitura mais difícil.
-
+mais rápida de se fazer uma iteração com javascript, porém é bastante criticado devido ao fato de deixar o código com uma leitura mais difícil, e também nem sempre essas formas são mais perfomáticas, como se pode perceber na referência [1].
 
 [1] http://jsperf.com/jquery-each-vs-for-loop/194
