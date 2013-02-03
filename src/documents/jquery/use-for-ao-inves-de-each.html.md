@@ -44,3 +44,4 @@ O uso de while reverso e for reverso é bem discutido na comunidade, e muitas ve
 mais rápida de se fazer uma iteração com javascript, porém é bastante criticado devido ao fato de deixar o código com uma leitura mais difícil, e também nem sempre essas formas são mais perfomáticas, como se pode perceber na referência [1].
 
 [1] http://jsperf.com/jquery-each-vs-for-loop/194
+[2] http://jsfiddle.net/martinaglv/NcRsV/
