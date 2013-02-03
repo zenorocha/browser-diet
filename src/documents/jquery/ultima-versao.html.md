@@ -4,12 +4,15 @@ slug: jquery-ultima-versao
 order: 2
 ---
 
-Os membros do core do jQuery estão sempre buscando trazer novidades para a biblioteca, estes ajustes muitas vezes, estão relacionados a otimização de algoritmos, novas funcionalidades e melhorias da legibilidade.
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+Os membros do core do jQuery estão sempre buscando trazer novidades para a biblioteca, estes ajustes muitas vezes, estão relacionados a otimização de algoritmos, novas funcionalidades e melhorias da legibilidade. Para descobrir quais foram as modificações realizadas na última versão do jQuery, você deve ficar ligado no blogo do projeto:
+
 http://blog.jquery.com/
 
-Ainda podemos destacar que se deve evitar referências para o estático da última versão. Manter uma boa política de testes facilitará bastante essa atualização.
+Devemos evitar referências para o estático da última versão do jQuery, pois isso poderá fazer com que alguns scripts de seu projeto não funcionem corretamente, após a atualização automática do jquery-latest.js.
 
+```html
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+```
 
 Para descobrir a versão atualmente utilizada do jQuery, execute:
 ```js
