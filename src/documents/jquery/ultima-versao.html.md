@@ -18,3 +18,5 @@ Para descobrir a versão atualmente utilizada do jQuery, execute no console:
 ```js
 jQuery.fn.jquery
 ```
+
+Ter o hábito de fazer testes automatizados fará com que você tenha uma atualização de jQuery bem mais tranquila, com relação a erros.
