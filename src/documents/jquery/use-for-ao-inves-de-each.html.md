@@ -4,11 +4,11 @@ slug: for-vs-each-vs-for-in
 order: 3
 ---
 
-Normalmento o uso de funções nativas trazem quase sempre, execuções mais rápidas que as 
-respectivas em da biblioteca jQuery. Sendo assim ao inves de utilizar o método jquery.each, 
+Normalmente o uso das funções nativas do javascript, quase sempre, trazem execuções mais rápidas que as 
+respectivas em jQuery. Sendo assim ao inves de utilizar o método jquery.each, 
 use o for do próprio javascript.
 
-Uso do $.each
+Uso do $.each em jQuery
 ```js
 	$.each(a, function() {
 		e = this;
