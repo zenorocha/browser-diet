@@ -11,25 +11,26 @@ ID e Elementos são mais rápidos, pois são baseados em operações nativas da 
   $("#object").addClass("foo").css("border-color", "#ccc").width(200);
 ```
 
-<strong>context</strong>
+<strong>contexto</strong>
 ```js
 var $test = $('.test', list);
 ```
 Fazendo a utilização de contexto, o jQuery irá fazer a tradução desta linha de código para list.find(".test"), e isso causará uma pequena redução no tempo de execução em relação ao uso da forma mais rápida, fazendo uso do método find().
 
-<strong>selector</strong>
+<strong>seletor multiplo</strong>
 ```js
 var $test = $('#list .test');
 ```
 Essa peculiaridade do Sizzle interpretar o seletor da direita para esquerda, fará com o que essa forma de seleção busque todos os elementos que tem a classe `.test` e depois verifique se o mesmo tem como ancestral  `#list`, está opção é cerca de 77% mais lenta que a mais rápida. [1]
 
 
-<strong>context and find</strong>
+<strong>contexto e find</strong>
 ```js
-var $test = $(list).find('.test');
+var $test = list.find('.test');
 ```
+Com o seletor já em cache, não é necessário mais busca-lo na DOM. 
 
-<strong>created context</strong>
+<strong>context criado</strong>
 ```js
 var $test = $('.test', $('#list'));
 ```
@@ -39,6 +40,8 @@ O jQuery irá fazer a tradução desta linha de código para list.find(".test"),
 ```js
 var $test = $('#list').find('.test');
 ```
+
+O find é executado de forma top-down, ou seja ele irá buscar primeiro o `#list` e posteriormente irá buscar os descendentes que tem como class `.test`. Essa opção é 16% mais lenta que a versão que usa cache para o seletor com find.
 
 <strong>parent/child selector</strong>
 ```js
