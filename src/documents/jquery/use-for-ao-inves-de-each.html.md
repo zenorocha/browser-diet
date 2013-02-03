@@ -5,7 +5,7 @@ order: 3
 ---
 
 Normalmente o uso das funções nativas do javascript, quase sempre, trazem execuções mais rápidas que as 
-respectivas em jQuery. Sendo assim ao inves de utilizar o método jquery.each, 
+respectivas em jQuery. Sendo assim ao invés de utilizar o método jquery.each, 
 use o for do próprio javascript.
 
 Uso do $.each em jQuery
