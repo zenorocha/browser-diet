@@ -1,0 +1,1 @@
+[1] http://jsperf.com/jquery-string-vs-fragmented-creation

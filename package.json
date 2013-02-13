@@ -19,6 +19,7 @@
     "grunt": "~0.3.17",
     "grunt-css": "~0.3.2",
     "bal-util": "~1.15.3",
-    "underscore": "~1.4.3"
+    "underscore": "~1.4.3",
+    "grunt-htmlcompressor": "~0.1.8"
   }
 }
