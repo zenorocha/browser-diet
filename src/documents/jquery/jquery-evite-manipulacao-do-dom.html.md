@@ -4,17 +4,24 @@ slug: jquery-evite-manipular-o-dom
 order: 3
 ---
 
-Manipulação da DOM é uma das tarefas que o javascript realiza de forma mais lenta, sendo assim faça um uso limitado dessa manipulação. Operações com prepend(), append(), after() são muio custosas.
+Manipulação da DOM é uma das tarefas que o JavaScript realiza de forma mais lenta, sendo assim faça um uso limitado dessa manipulação. Operações com `prepend()`, `append()`, `after()` são muio custosas.
 
-Evitando a manipulação da DOM
+Ao invés de fazer isso:
+
 ```js
+for ( var i = 0; i < 100; i++ ) {
+    $('#list').append('<li>' + i + '</li>');
+}
+```
 
-var lista = '';  
+Faça isso:
 
-for ( var i=0; i<100; i++ ) {  
-    lista += '<li>' + i + '</li>';  
-}  
+```js
+var list = '';
 
-$('#lista').html (list);  
+for ( var i = 0; i < 100; i++ ) {
+    list += '<li>' + i + '</li>';
+}
 
+$('#list').html(list);
 ```
