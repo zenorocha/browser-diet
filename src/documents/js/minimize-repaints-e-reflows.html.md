@@ -1,26 +1,36 @@
 ---
 order: 1
-title: Evite a manipulação desnecessária do DOM
+title: Minimize repaints e reflows
 ---
 
-Manipulação do DOM é uma das tarefas que o JavaScript realiza de forma mais lenta, sendo assim faça uso disso apenas quando necessário. Operações como `prepend()`, `append()`, `after()` também são muito custosas.
+Repaints e reflows são causados quando existe alguma re-renderização no DOM quando determinada propriedade ou elemento é alterado.
 
-Portanto, ao invés de fazer isso:
+Repaints são disparados quando a aparência de um elemento é alterada sem alterar seu layout. Nicole Sullivan descreve isso como uma mudança de estilo como o ato de alterar um `background-color`.
+
+Reflows são os mais custosos, causados quando as mudanças alterando o layout da página, como por exemplo alterar o width de um elemento.
+
+Não há dúvida que ambos reflows e repaints devem ser evitados, portanto ao invés de fazer isso:
 
 ```js
-for ( var i = 0; i < 100; i++ ) {
-    $('#list').append('<li>' + i + '</li>');
+var myList = document.getElementById("myList");
+
+for (var i = 0; i < 100; i++) {
+  myList.innerHTML += "<span>" + i + "</span>";
 }
 ```
 
 Faça isso:
 
 ```js
-var list = '';
+var myList = "";
 
-for ( var i = 0; i < 100; i++ ) {
-    list += '<li>' + i + '</li>';
+for (var i = 0; i < 100; i++) {
+  myList += "<span>" + i + "</span>";
 }
 
-$('#list').html(list);
+document.getElementById("myList").innerHTML = myList;
 ```
+
+Assim você evita manipular o DOM a cada iteração do loop, realizando isso apenas uma vez.
+
+[> Resultado no JSPerf](http://jsperf.com/como-perder-peso-dom-manipulation)
