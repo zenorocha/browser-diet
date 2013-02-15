@@ -1,12 +1,11 @@
 ---
+order: 3
 title: Não use jQuery...
-slug: nao-use-jquery
-order: 30
 ---
 
 ...a não ser que seja estritamente necessário :)
 
-JavaScript puro sempre será mais rápido que ele e às vezes pode ser até mais simples que jQuery.
+Às vezes JavaScript puro pode ser até mais simples que jQuery.
 
 Pra que fazer isso?
 
@@ -23,3 +22,7 @@ $('a').on('click', function() {
   console.log( this.id );
 });
 ```
+
+E ainda ser mais rápido.
+
+[> Resultado no JSPerf](http://jsperf.com/como-perder-peso-this-attr-id-vs-this-id)
