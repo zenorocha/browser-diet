@@ -103,4 +103,4 @@ Lista as dependências de módulos do NodeJS.
 
 ## Licença
 
-Todo conteúdo encontra-se sob licença [Creative Commons BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR)
+O código encontra-se sob licença [MIT](http://zenorocha.mit-license.org) e todo conteúdo sob licença [Creative Commons BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR)

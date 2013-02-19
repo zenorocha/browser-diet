@@ -1,22 +1,22 @@
 ---
-title: Sempre utilizar a última versão do jQuery
-slug: jquery-ultima-versao
 order: 2
+title: Use sempre a última versão do jQuery
 ---
 
-Os membros do core do jQuery estão sempre buscando trazer novidades para a biblioteca, estes ajustes muitas vezes, estão relacionados a otimização de algoritmos, novas funcionalidades e melhorias da legibilidade do código. Para descobrir quais foram as modificações realizadas na última versão do jQuery, você deve ficar ligado no blog do projeto:
+Os membros do core do jQuery estão sempre buscando trazer novidades para a biblioteca, estes ajustes muitas vezes, estão relacionados a melhorias da legibilidade do código, novas funcionalidades e principalmente otimização de algoritmos.
 
-http://blog.jquery.com/
-
-Devemos evitar referências para o estático da última versão do jQuery, pois isso poderá fazer com que alguns scripts de seu projeto não funcionem corretamente, após a atualização automática do jquery-latest.js.
+Por isso, use sempre a última versão do jQuery.
 
 ```html
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 ```
 
-Para descobrir a versão atualmente utilizada do jQuery, execute no console:
-```js
-jQuery.fn.jquery
+Mas cuidado! Devemos evitar referências para o arquivo listado acima, pois isso pode lhe causar problemas no futuro, já que a cada nova versão ocorre uma atualização automática nesse script.
+
+Logo, use o link para a versão específica do jQuery que você precisa.
+
+```html
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 ```
 
-Ter o hábito de fazer testes automatizados fará com que você tenha uma atualização de jQuery bem mais tranquila, com relação a erros.
+Já dizia o sábio [Barney Stinson](/assets/img/new-is-always-better.gif): *"New is always better"* :P

@@ -49,12 +49,12 @@
       <div class="article">
         <h1 id="<%= item.slug %>">
           <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a class="anchor" href="#<%= item.slug %>">∞</a>
+          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -67,12 +67,12 @@
       <div class="article">
         <h1 id="<%= item.slug %>">
           <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a class="anchor" href="#<%= item.slug %>">∞</a>
+          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -85,12 +85,12 @@
       <div class="article">
         <h1 id="<%= item.slug %>">
           <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a class="anchor" href="#<%= item.slug %>">∞</a>
+          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -103,12 +103,12 @@
       <div class="article">
         <h1 id="<%= item.slug %>">
           <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a class="anchor" href="#<%= item.slug %>">∞</a>
+          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -121,12 +121,12 @@
       <div class="article">
         <h1 id="<%= item.slug %>">
           <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a class="anchor" href="#<%= item.slug %>">∞</a>
+          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -135,7 +135,7 @@
 
   </div>
 
-  <a id="top" href="#top-bar"><img src="<%= @site.assets %>/img/top.png" alt="Go up!"></a>
+  <a title="Ir para o topo" id="top" href="#top-bar"><img src="<%= @site.assets %>/img/top.png" alt="Go up!"></a>
 
 </body>
 </html>
