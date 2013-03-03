@@ -18,16 +18,5 @@
       "src": ["out/assets/css/all.css"],
       "dest": "out/assets/css/all.min.css"
     }
-  },
-  "htmlcompressor": {
-    "compile": {
-      "files": {
-        "out/index.html": "out/index.html"
-      },
-      "options": {
-        "type": "html",
-        "preserveServerScript": true
-      }
-    }
   }
 }
