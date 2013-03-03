@@ -1,6 +1,6 @@
 ---
 order: 4
-title: for vs. each
+title: Use for ao invés de each
 ---
 
 O uso das funções nativas do JavaScript, quase sempre, trazem execuções mais rápidas que as
@@ -19,4 +19,4 @@ for ( var i = 0, len = a.length; i < len; i++ ) {
 O uso de `while` reverso e `for` reverso é bem discutido na comunidade, e muitas vezes citado como a forma
 mais rápida de se fazer uma iteração com JavaScript, porém é bastante criticado devido ao fato de deixar o código com uma leitura mais difícil.
 
-[> Resultado no JSPerf](http://jsperf.com/jquery-each-vs-for-loop/194)
+[> Resultado no JSPerf](http://jsperf.com/jquery-selectors-context/2)
