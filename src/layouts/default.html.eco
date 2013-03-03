@@ -24,7 +24,7 @@
   </a>
 
   <div class="intro center">
-    <%= @getTitleHTML() =>
+    <%= @getTitleHTML() %>
     <img src="<%= @site.assets %>/img/superman.png" alt="Superman" class="superman" width="745" height="655" />
   </div>
 

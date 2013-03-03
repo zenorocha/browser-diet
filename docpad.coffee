@@ -24,7 +24,7 @@ module.exports =
                 titleHTML: '<h1>Como perder <span class="peso">peso</span></h1><h2>no browser</h2>'
                 url: 'http://browserdiet.com/br'
             assets: 'http://assets.browserdiet.com'
-            
+
         getGruntedStyles: ->
             _ = require 'underscore'
             styles = []
@@ -99,4 +99,4 @@ module.exports =
                 next()
 
             # Chain
-            @
+            
