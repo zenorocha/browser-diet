@@ -6,13 +6,25 @@ module.exports =
     templateData:
 
         # -----------------------------
+        # Language Definition
+
+        lang: 'br'
+
+        # -----------------------------
         # Site Information
 
         site:
-            # Production URL
-            url: 'http://comoperderpesonobrowser.com.br'
-            assets: 'http://assets.comoperderpesonobrowser.com.br'
+            en:
+                title: 'How to lose weight (in the browser)'
+                titleHTML: '<h1>How to lose <span class="peso">weight</span></h1><h2>in the browser</h2>'
+                url: 'http://browserdiet.com'
 
+            br:
+                title: 'Como perder peso (no browser)'
+                titleHTML: '<h1>Como perder <span class="peso">peso</span></h1><h2>no browser</h2>'
+                url: 'http://browserdiet.com/br'
+            assets: 'http://assets.browserdiet.com'
+            
         getGruntedStyles: ->
             _ = require 'underscore'
             styles = []
@@ -34,17 +46,19 @@ module.exports =
                 return value.indexOf('.min.js') > -1
             _.map scripts, (value) ->
                 return value.replace 'out', ''
-    # =================================
-    # Collections
 
-    collections:
+        getLang: ->
+            return @lang.toString()
 
-      # Get all sections sorted by numerical order
-      html: -> @getCollection("documents").findAll({ url: $startsWith:'/html' }, [order:1])
-      css: -> @getCollection("documents").findAll({ url: $startsWith:'/css' }, [order:1])
-      js: -> @getCollection("documents").findAll({ url: $startsWith:'/js' }, [order:1])
-      jquery: -> @getCollection("documents").findAll({ url: $startsWith:'/jquery' }, [order:1])
-      bonus: -> @getCollection("documents").findAll({ url: $startsWith:'/bonus' }, [order:1])
+        getTitle: ->
+            return @site[@getLang()].title
+
+        getTitleHTML: ->
+            return @site[@getLang()].titleHTML
+
+        getUrl: ->
+            currentLang = @lang.toString()
+            return @site[@getLang()].url
 
     # =================================
     # Environments
