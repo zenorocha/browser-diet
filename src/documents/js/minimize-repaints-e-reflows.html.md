@@ -1,6 +1,6 @@
 ---
 order: 1
-title: Minimize repaints e reflows
+title: Minimize Repaints e Reflows
 ---
 
 Repaints e reflows são causados quando existe alguma re-renderização no DOM quando determinada propriedade ou elemento é alterado.

@@ -1,6 +1,6 @@
 ---
 order: 4
-title: for vs. each
+title: for vs. for in vs. while reverso
 ---
 
 O uso das funções nativas do JavaScript, quase sempre, trazem execuções mais rápidas que as
@@ -12,7 +12,7 @@ Já o bom e velho `for` nos trás uma melhor forma de deixar nossas iterações 
 
 ```js
 for ( var i = 0, len = a.length; i < len; i++ ) {
-	e = a[i];
+  e = a[i];
 }
 ```
 

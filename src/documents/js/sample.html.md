@@ -1,7 +1,6 @@
 ---
 ignored: true
 title: Exemplo JavaScript
-slug: exemplo-js
 order: 12
 ---
 
