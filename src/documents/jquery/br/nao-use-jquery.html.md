@@ -7,7 +7,7 @@ title: Não use jQuery...
 
 Às vezes JavaScript puro pode ser até mais simples que jQuery.
 
-Pra que fazer isso?
+Pra que usar o método `attr()` para buscar o ID?
 
 ```js
 $('a').on('click', function() {
@@ -15,7 +15,7 @@ $('a').on('click', function() {
 });
 ```
 
-Se você pode fazer isso?
+Se você pode buscar esse atributo nativamente através do `this`.
 
 ```js
 $('a').on('click', function() {
