@@ -8,21 +8,30 @@ module.exports =
         # -----------------------------
         # Language Definition
 
-        lang: 'br'
+        currentLang: 'br'
+
+        lang:
+            en:
+                title: 'How to lose weight (in the browser)'
+                titleHTML: '<h1>How to lose <span>weight</span></h1><h2>in the browser</h2>'
+                slogan: 'The definitive front-end performance guide'
+                url: 'http://browserdiet.com'
+                bonus: 'Bonus'
+                goTop: 'Go to the top'
+                htmlLang: 'en-US'
+            br:
+                title: 'Como perder peso (no browser)'
+                titleHTML: '<h1>Como perder <span>peso</span></h1><h2>no browser</h2>'
+                slogan: 'O guia definitivo de performance para o desenvolvedor front-end'
+                url: 'http://browserdiet.com/br'
+                bonus: 'Bônus'
+                goTop: 'Ir para o topo'
+                htmlLang: 'pt-BR'
 
         # -----------------------------
         # Site Information
 
         site:
-            en:
-                title: 'How to lose weight (in the browser)'
-                titleHTML: '<h1>How to lose <span class="peso">weight</span></h1><h2>in the browser</h2>'
-                url: 'http://browserdiet.com'
-
-            br:
-                title: 'Como perder peso (no browser)'
-                titleHTML: '<h1>Como perder <span class="peso">peso</span></h1><h2>no browser</h2>'
-                url: 'http://browserdiet.com/br'
             assets: 'http://assets.browserdiet.com'
 
         getGruntedStyles: ->
@@ -48,17 +57,8 @@ module.exports =
                 return value.replace 'out', ''
 
         getLang: ->
-            return @lang.toString()
-
-        getTitle: ->
-            return @site[@getLang()].title
-
-        getTitleHTML: ->
-            return @site[@getLang()].titleHTML
-
-        getUrl: ->
-            currentLang = @lang.toString()
-            return @site[@getLang()].url
+            currentLang = @currentLang.toString()
+            return @lang[currentLang]
 
     # =================================
     # Environments
@@ -99,4 +99,4 @@ module.exports =
                 next()
 
             # Chain
-            
+            @

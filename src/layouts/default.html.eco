@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="<%= @getLang().htmlLang %>">
 <head>
 
   <meta charset="utf-8">
-  <title><%= @getTitle() %></title>
+  <title><%= @getLang().title %></title>
 
   <!-- Style -->
   <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css">
@@ -13,10 +13,10 @@
 
 </head>
 
-<body class="<%= @lang %>">
+<body class="<%= @currentLang %>">
 
   <div id="top-bar" class="subtitle">
-    <h3 class="center">O guia definitivo de performance para o desenvolvedor front-end</h3>
+    <h3 class="center"><%= @getLang().slogan %></h3>
   </div>
 
   <a href="https://github.com/zenorocha/como-perder-peso">
@@ -24,7 +24,7 @@
   </a>
 
   <div class="intro center">
-    <%= @getTitleHTML() %>
+    <%- @getLang().titleHTML %>
     <img src="<%= @site.assets %>/img/superman.png" alt="Superman" class="superman" width="745" height="655" />
   </div>
 
@@ -34,7 +34,7 @@
       <li><a href="#css">CSS</a></li>
       <li><a href="#js">JavaScript</a></li>
       <li><a href="#jquery">jQuery</a></li>
-      <li><a href="#bonus">Bônus</a></li>
+      <li><a href="#bonus"><%= @getLang().bonus %></a></li>
     </ul>
   </div>
 
@@ -44,7 +44,7 @@
 
     <h2 id="html" class="topics">HTML</h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/html/' + @getLang()}, [order:1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/html/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -62,7 +62,7 @@
 
     <h2 id="css" class="topics">CSS</h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @getLang()}, [order:1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -80,7 +80,7 @@
 
     <h2 id="js" class="topics">JavaScript</h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @getLang()}, [order:1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -98,7 +98,7 @@
 
     <h2 id="jquery" class="topics">jQuery</h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/jquery/' + @getLang()}, [order:1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/jquery/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -114,9 +114,9 @@
       </div>
     <% end %>
 
-    <h2 id="bonus" class="topics">Bônus</h2>
+    <h2 id="bonus" class="topics"><%= @getLang().bonus %></h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @getLang()}, [order:1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -134,7 +134,7 @@
 
   </div>
 
-  <a title="Ir para o topo" id="top" href="#top-bar"><img src="<%= @site.assets %>/img/top.png" alt="Go up!"></a>
+  <a title="<%= @getLang().goTop %>" id="top" href="#top-bar"><img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>"></a>
 
 </body>
 </html>
