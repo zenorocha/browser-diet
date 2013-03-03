@@ -86,18 +86,26 @@ Contém o template padrão da aplicação.
 
 Lista as dependências de módulos do NodeJS.
 
+## Contribuidores
+
+### Autores
+
+* [Davidson Fellipe](http://github.com/davidsonfellipe)
+* [Giovanni Keppelen](http://github.com/keppelen)
+* [Jaydson Gomes](http://github.com/jaydson)
+
 ## Créditos
 
 * DocPad por [Benjamin Lupton](https://github.com/balupton)
 * Highlight.js por [Ivan Sagalaev](https://github.com/isagalaev/)
 
-### Fontes:
+### Fontes
 
 * Pacifico por [Vernon Adams](http://www.fontsquirrel.com/license/pacifico)
 * Magra por [FontFuror](http://www.google.com/webfonts/specimen/Magra)
 * Horseshoes por [Lauren Ashpole](http://www.laurenashpole.com/licensing.html)
 
-### Imagens:
+### Imagens
 
 * The 56 Geeks Project por [Scott Johnson](http://myextralife.com/56geeks/)
 
