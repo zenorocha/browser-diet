@@ -1,4 +1,5 @@
 ---
+ignored: true
 title: Exemplo jQuery
 slug: exemplo-jquery
 order: 11

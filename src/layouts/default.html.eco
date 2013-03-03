@@ -46,14 +46,14 @@
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/html/' + @getLang()}, [order:1]).toJSON(): %>
       <div class="article">
-        <h1 id="<%= item.slug %>">
-          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
+        <h1 id="<%= item.basename %>">
+          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
+          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -64,14 +64,14 @@
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @getLang()}, [order:1]).toJSON(): %>
       <div class="article">
-        <h1 id="<%= item.slug %>">
-          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
+        <h1 id="<%= item.basename %>">
+          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
+          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -82,14 +82,14 @@
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @getLang()}, [order:1]).toJSON(): %>
       <div class="article">
-        <h1 id="<%= item.slug %>">
-          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
+        <h1 id="<%= item.basename %>">
+          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
+          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -100,14 +100,14 @@
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/jquery/' + @getLang()}, [order:1]).toJSON(): %>
       <div class="article">
-        <h1 id="<%= item.slug %>">
-          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
+        <h1 id="<%= item.basename %>">
+          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
+          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -118,14 +118,14 @@
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @getLang()}, [order:1]).toJSON(): %>
       <div class="article">
-        <h1 id="<%= item.slug %>">
-          <a class="tip-title" href="#<%= item.slug %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.slug %>">∞</a>
+        <h1 id="<%= item.basename %>">
+          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
+          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
         </h1>
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="<%= item.githubURL %>">✎</a>
+          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>

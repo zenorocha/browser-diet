@@ -1,23 +1,8 @@
 ---
-ignored: true
-title: Exemplo JavaScript
-order: 12
+title: GZip
+slug: gzip
+order: 80
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illo magni similique ipsa porro fugit esse aliquid eum unde voluptas.
-
-```js
-  // Ruim
-  if (foo)
-  {
-    bar();
-  }
-
-  // Bom :)
-  if (foo) {
-    bar();
-  }
-```
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illo magni similique ipsa porro fugit esse aliquid eum unde voluptas?
 

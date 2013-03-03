@@ -1,4 +1,5 @@
 ---
+ignored: true
 title: Seletores
 slug: jquery-seletores
 order: 10
@@ -28,7 +29,7 @@ Essa peculiaridade do Sizzle interpretar o seletor da direita para esquerda, far
 ```js
 var $test = list.find('.test');
 ```
-Com o seletor já em cache, não é necessário mais busca-lo na DOM. 
+Com o seletor já em cache, não é necessário mais busca-lo na DOM.
 
 <strong>context criado</strong>
 ```js
