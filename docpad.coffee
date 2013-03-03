@@ -17,6 +17,7 @@ module.exports =
                 slogan: 'The definitive front-end performance guide'
                 url: 'http://browserdiet.com'
                 bonus: 'Bonus'
+                edit: 'Edit'
                 goTop: 'Go to the top'
                 htmlLang: 'en-US'
             br:
@@ -25,6 +26,7 @@ module.exports =
                 slogan: 'O guia definitivo de performance para o desenvolvedor front-end'
                 url: 'http://browserdiet.com/br'
                 bonus: 'Bônus'
+                edit: 'Editar'
                 goTop: 'Ir para o topo'
                 htmlLang: 'pt-BR'
 

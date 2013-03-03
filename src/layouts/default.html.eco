@@ -42,7 +42,7 @@
 
     <%- @content %>
 
-    <h2 id="html" class="topics">HTML</h2>
+    <!-- <h2 id="html" class="topics">HTML</h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/html/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
@@ -53,7 +53,7 @@
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
+          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -62,7 +62,7 @@
 
     <h2 id="css" class="topics">CSS</h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @currentLang}, [order:1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @currentLang}, [order:-1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -71,16 +71,16 @@
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
+          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
       </div>
-    <% end %>
+    <% end %> -->
 
     <h2 id="js" class="topics">JavaScript</h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @currentLang}, [order:1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @currentLang}, [order:-1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -89,7 +89,7 @@
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
+          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -98,7 +98,7 @@
 
     <h2 id="jquery" class="topics">jQuery</h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/jquery/' + @currentLang}, [order:1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/jquery/' + @currentLang}, {order:1}).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -107,7 +107,7 @@
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
+          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -116,7 +116,7 @@
 
     <h2 id="bonus" class="topics"><%= @getLang().bonus %></h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @currentLang}, [order:1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @currentLang}, [order:-1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -125,7 +125,7 @@
         <% if item.order: %>
         <div class="line">
           <span class="order"><%= item.order %></span>
-          <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
+          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
         </div>
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
@@ -134,7 +134,9 @@
 
   </div>
 
-  <a title="<%= @getLang().goTop %>" id="top" href="#top-bar"><img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>"></a>
+  <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
+    <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>">
+  </a>
 
 </body>
 </html>
