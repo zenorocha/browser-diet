@@ -1,13 +1,16 @@
 ---
 title: Não use seletor universal
 slug: seletor-universal
-order: 8
+order: 1
 ---
 
-Evite usar `seletor universal`, assim você esta obrigando o browser a buscar TODOS os elementos em seu HTMl, e depois aplicar a regra para cada elemento.
+Evite usar seletor universal, assim você está obrigando o navegador a buscar **todos** os elementos em seu HTML, e depois aplicar determinada regra para cada elemento.
+
+<div class="img-right">
+  <img src="http://assets.browserdiet.com/img/4.png" alt="Ilustração - Startrek" width="162" height="275" />
+</div>
 
 ```CSS
-/* MUITO, MUITO RUIM PARA PERFORMANCE */
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +20,6 @@ Evite usar `seletor universal`, assim você esta obrigando o browser a buscar TO
 }
 ```
 
-Você esta dizendo para o browser pegar todos elementos HTML e aplicar essa regra acima, mas depois você aplicará novos atributos a esses elementos, e que muitos deles não aceita tal atributo que você setou no <strong>*</strong>.
+Inclusive muitos elementos podem não aceitar o atributo que você está tentando definir.
 
-Recomendamos que use um CSS Reset, ou se melhor crie o seu proprio, mas tem 2 que são muitos bons para usar em seus projetos, são eles, [Yahoo Reset](http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css) e do [Eric Meyer](http://meyerweb.com/eric/tools/css/reset/).
+Por isso, recomendamos que você use um CSS Reset, ou até crie o seu próprio. Existem alguns muito famosos como um da [Yahoo!](http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css) e outro do [Eric Meyer](http://meyerweb.com/eric/tools/css/reset/).
