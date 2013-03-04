@@ -1,15 +1,30 @@
 ---
-title: Use Sprites CSS
-slug: sprites-css
-order: 3
+order: 1
+title: Use CSS Sprites
 ---
 
-O uso de CSS Sprites é uma tecnica muita importante para sua aplicação, o uso dela pode lhe compensar em milhares de dolares em servidor, pois consiguirá diminuir absurdamente requests HTTP e evitar atrasos de downloads de outros recursos em sua página.
+Essa técnica consiste em agrupar diversas imagens em uma só.
 
-<strong>Recomendações</strong>
+<img id="img-sprite" src="http://assets.browserdiet.com/img/sprite-example.jpg" alt="CSS Sprite Example">
 
-1 - Combine imagens que são carregadas na mesma página e que são carregadas sempre em conjunto. Por exemplo, um conjunto de icones que são carregados em cada página deve ser sprite. Imagens dinâmicas que mudam a cada exibição, ou que são mudadas frequentemente não são boas candidatas para usar sprites.
+E depois posicioná-las através de CSS.
 
-2 - Use Caching em imagens que tem vida longa, caching significa que a imagem não terá de ser re-forçado novamente, uma vez que é armazenada em caching pelo navegador. Assim evitando mais um requisição HTTP.
+```css
+.icon-foo {
+  background-image: url('mySprite.png');
+  background-position: -10px -10px;
+}
 
-3 - Use o [SpriteMe](http://spriteme.org/) para tornar mais fácil a criação de seus sprites CSS.
+.icon-bar {
+  background-image: url('mySprite.png');
+  background-position: -5px -5px;
+}
+```
+
+Isso faz com que diminua absurdamente o número de requisições HTTP e evite atrasos no download de outros recursos da sua página.
+
+Ao montar seu *sprite* evite deixar muito espaço em branco entre as imagens, isso não afeta o peso do arquivo, mas sim o uso de memória para processar o mapa de pixels.
+
+Apesar de extremamente difundida, essa técnica é pouco usada já que os desenvolvedores não utilizam ferramentas que automatizam o processo de geração dessa imagem. Por isso, separamos algumas que podem te ajudar nessa.
+
+ *> Ferramentas úteis: [SpritePad](http://wearekiss.com/spritepad), [Compass](http://compass-style.org/help/tutorials/spriting/), [SpriteMe](http://www.spriteme.org/) e [Sprite Cow](http://www.spritecow.com/).*

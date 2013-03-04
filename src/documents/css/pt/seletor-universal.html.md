@@ -1,7 +1,6 @@
 ---
+order: 4
 title: Não use seletor universal
-slug: seletor-universal
-order: 1
 ---
 
 Evite usar seletor universal, assim você está obrigando o navegador a buscar **todos** os elementos em seu HTML, e depois aplicar determinada regra para cada elemento.
@@ -22,4 +21,6 @@ Evite usar seletor universal, assim você está obrigando o navegador a buscar *
 
 Inclusive muitos elementos podem não aceitar o atributo que você está tentando definir.
 
-Por isso, recomendamos que você use um CSS Reset, ou até crie o seu próprio. Existem alguns muito famosos como um da [Yahoo!](http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css) e outro do [Eric Meyer](http://meyerweb.com/eric/tools/css/reset/).
+Por isso, recomendamos que você use um CSS Reset, ou até crie o seu próprio.
+
+*> Ferramentas úteis: [Yahoo! Reset](http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css), [Normalize](http://necolas.github.com/normalize.css/) e [Eric Meyer's Reset](http://meyerweb.com/eric/tools/css/reset/).*

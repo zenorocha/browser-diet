@@ -1,20 +1,17 @@
 ---
-title: Pense e repense os Key Selector
-slug: key-selector
-order: 7
+order: 6
+title: Pense e repense seu Key Selector
 ---
 
-Key selector é o seletor chave de sua expressão CSS. Na maioria das vezes, os desenvolvedores não ligam para ele. Como funciona `key selector`? Veja exemplo abaixo.
+*Key selector* é o seletor chave da sua expressão CSS. Na maioria das vezes, os desenvolvedores não ligam para ele por não saberem exatamente como funciona.
 
-```CSS
-header nav ul li a { /* Muito Ruim para Performance */ }
+```css
+header nav ul li a {}
 ```
 
-O que acontece é que o browser começa a renderizar sua expressão CSS pela direita, ou seja seu `key selector` e o `a`. E isso exige muito do browser, pois primeiro ele busca todos os elemento `a` em seu HTML, depois todos `li a` e assim até chegar em `header nav ul li a`
+Repare na expressão acima, o que acontece é que o navegador começa a renderizar sua expressão CSS pela direita, ou seja seu *key selector* é `a`. Isso exige muito do browser, pois primeiro ele busca todos os elementos `a` em seu HTML, depois todos `li a` e assim por diante até chegar em `header nav ul li a`.
 
-Tomando a seguinte situação podemos exemplificar isso para que seja mais efetivo e não seja performático para o browser.
-
-```CSS
+```css
 header nav ul li a { /* Muito Ruim */ }
 nav a { /* Ruim */ }
 nav a.nav-link { /* Bom */ }
