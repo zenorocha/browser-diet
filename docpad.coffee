@@ -8,7 +8,7 @@ module.exports =
         # -----------------------------
         # Language Definition
 
-        currentLang: 'br'
+        currentLang: 'pt'
 
         lang:
             en:
@@ -20,7 +20,7 @@ module.exports =
                 edit: 'Edit'
                 goTop: 'Go to the top'
                 htmlLang: 'en-US'
-            br:
+            pt:
                 title: 'Como perder peso (no browser)'
                 titleHTML: '<h1>Como perder <span>peso</span></h1><h2>no browser</h2>'
                 slogan: 'O guia definitivo de performance para o desenvolvedor front-end'
