@@ -25,4 +25,4 @@ $('a').on('click', function() {
 
 E ainda ser mais rápido.
 
-*[> Resultado no JSPerf](http://jsperf.com/como-perder-peso-this-attr-id-vs-this-id)*
+*[> Resultado no JSPerf](http://jsperf.com/browser-diet-this-attr-id-vs-this-id)*

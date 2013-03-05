@@ -33,4 +33,4 @@ document.getElementById("myList").innerHTML = myList;
 
 Assim você evita manipular o DOM a cada iteração do loop, realizando isso apenas uma vez.
 
-*[> Resultado no JSPerf](http://jsperf.com/como-perder-peso-dom-manipulation)*
+*[> Resultado no JSPerf](http://jsperf.com/browser-diet-dom-manipulation)*
