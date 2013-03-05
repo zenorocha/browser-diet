@@ -1,19 +1,17 @@
 ---
+order: 1
 title: Carregue código de terceiros de forma assíncrona
-slug: 3rd-party-async-js
-order: 89
 ---
 
-O uso de código de terceiros é muito comum.  
-Seja para embedar um video do youtube, colocar um botão de like, ou botão de tweet, estes códigos nos dão funcionalidades relevantes para um site.  
-O grande problema destes códigos é que nem sempre eles serão entregues de maneira eficiente, seja pela conexão do usuário, ou pela conexão no servidor onde estão hospedados.    
-Isso pode ser o ponto crítico para o carregamento de um site.  
+Quem nunca carregou um código de terceiros para embedar um vídeo do youtube ou colocar um botão de like/tweet?
 
-SEMPRE, carregue estes códigos de forma assíncrona.  
+O grande problema é que nem sempre esses códigos são entregues de maneira eficiente, seja pela conexão do usuário, ou pela conexão no servidor onde estão hospedados.
+
+Para evitar que isso se torne um ponto crítico no carregamento de um site, sempre carregue estes códigos de forma assíncrona (ou então use *[Friendly iFrames](https://www.facebook.com/note.php?note_id=10151176218703920)*).
 
 ```js
 var script = document.createElement('script'),
-	head = document.getElementsByTagName('head')[0];
+    head = document.getElementsByTagName('head')[0];
 script.type = 'text/javascript';
 script.async = true;
 script.src = url;

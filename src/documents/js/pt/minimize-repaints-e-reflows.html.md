@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 4
 title: Minimize Repaints e Reflows
 ---
 
@@ -33,4 +33,4 @@ document.getElementById("myList").innerHTML = myList;
 
 Assim você evita manipular o DOM a cada iteração do loop, realizando isso apenas uma vez.
 
-[> Resultado no JSPerf](http://jsperf.com/como-perder-peso-dom-manipulation)
+*[> Resultado no JSPerf](http://jsperf.com/como-perder-peso-dom-manipulation)*
