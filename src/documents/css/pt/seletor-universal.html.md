@@ -6,7 +6,7 @@ title: Não use seletor universal
 Evite usar seletor universal, assim você está obrigando o navegador a buscar **todos** os elementos em seu HTML, e depois aplicar determinada regra para cada elemento.
 
 <div class="img-right">
-  <img src="http://assets.browserdiet.com/img/4.png" alt="Ilustração - Startrek" width="162" height="275" />
+  <img src="http://assets.browserdiet.com/img/4.png" alt="Geek #4" width="162" height="275" />
 </div>
 
 ```CSS
