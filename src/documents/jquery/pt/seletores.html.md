@@ -11,4 +11,4 @@ De todas elas, IDs e elementos são mais rápidos, pois são baseados em operaç
   $("#foo");
 ```
 
-[> Resultado no JSPerf](http://jsperf.com/jquery-each-vs-for-loop/194)
+*[> Resultado no JSPerf](http://jsperf.com/jquery-each-vs-for-loop/194)*

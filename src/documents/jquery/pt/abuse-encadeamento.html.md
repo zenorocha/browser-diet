@@ -17,4 +17,4 @@ $("#object").css("border-color","#f0f");
 $("#object").width(200);
 ```
 
-[> Resultado no JSPerf](http://jsperf.com/como-perder-peso-encapsulamento)
+*[> Resultado no JSPerf](http://jsperf.com/como-perder-peso-encapsulamento)*
