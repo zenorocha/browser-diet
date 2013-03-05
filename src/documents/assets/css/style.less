@@ -28,8 +28,17 @@ body {
 }
 
 p, pre {
-	margin: 20px 50px 20px 60px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	margin: 20px 50px 20px 60px;
+}
+
+pre {
+	margin: 0 0 20px 60px;
+	float: left;
+	width: 88%;
 }
 
 a {
@@ -257,15 +266,6 @@ strong {
 	float: right;
 }
 
-#img-sprite {
-	border-radius: 3px;
-}
-
-#geek-fitness {
-	position: relative;
-	margin-top: -30px;
-}
-
 .content-right {
   float: right;
   width: 660px;
@@ -318,4 +318,24 @@ img::-moz-selection	{ background: transparent; }
        url('../webfonts/horseshoes-webfont.svg#HorseshoesRegular') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+/* --- Specific --- */
+
+#async pre {
+	width: 690px;
+	margin-left: 0;
+}
+
+#seletor-universal pre {
+	width: 690px;
+}
+
+#geek-fitness {
+	position: relative;
+	margin-top: -30px;
+}
+
+#img-sprite {
+	border-radius: 3px;
 }
