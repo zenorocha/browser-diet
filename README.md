@@ -90,14 +90,15 @@ Lista as dependências de módulos do NodeJS.
 
 ### Autores
 
-* [Davidson Fellipe](http://github.com/davidsonfellipe)
-* [Giovanni Keppelen](http://github.com/keppelen)
-* [Jaydson Gomes](http://github.com/jaydson)
+* [Davidson Fellipe](https://github.com/davidsonfellipe) (Globo.com)
+* [Giovanni Keppelen](https://github.com/keppelen) (ex-Peixe Urbano)
+* [Jaydson Gomes](https://github.com/jaydson) (Terra)
 
 ### Revisores
 
-* [Renato Mangini](http://github.com/mangini)
-* [Sérgio Lopes](http://github.com/sergiolopes)
+* [Renato Mangini](https://github.com/mangini) (Google)
+* [Sérgio Lopes](https://github.com/sergiolopes) (Caelum)
+* [Marcel Duran](https://github.com/marcelduran) (Twitter)
 
 ## Créditos
 
