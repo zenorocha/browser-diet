@@ -1,29 +1,32 @@
 ---
-title: Coloque seus styles no <head>
-slug: stylesheets-and-top
-order: 1
+order: 2
+title: Estilos no topo, Scripts no rodapé
 ---
 
-Front-end Engineers que se preocupam com performance querem que uma página carregue progressivamente, ou seja, queremos que o navegador exiba seu conteúdo o mais breve possível.
+Quando colocamos as folhas de estilo no `<head>` permitimos que a página renderize progressivamente, o que causa uma percepção ao usuário de que está carregando mais rápido.
 
-O problema com a colocação de folhas de estilo na parte inferior de seu documento, e que atrapalha no carregamento progressivo, como é o caso do Internet Explorer.
+Enquanto que se *colocassemos* próximo ao fim da página, ela seria renderizada sem estilo algum até que o download do CSS terminasse.
 
-A especificação do HTML e claramente falada que folhas de estilo devem ser incluídos no HEAD de seu documento.
+Com relação ao JavaScript, é importante manter a chamada dos scripts no fim do página, já que eles bloqueiam a renderização da página enquanto são carregados e executados.
 
-Exemplo de como deve ficar a chamada de sua folha de estilo.
-
-``` HTML
+```html
 <!doctype html>
-<html lang="pt">
+<html>
 <head>
+
   <meta charset="UTF-8">
-  <title>Use Styles no HEAD de seu documento</title>
+  <title>Browser Diet</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" media="all">
 
 </head>
 <body>
+
+  <p>Lorem ipsum dolor sit amet.</p>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 
 </body>
 </html>

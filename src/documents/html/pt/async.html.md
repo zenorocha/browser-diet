@@ -1,10 +1,7 @@
 ---
-title: async & defer
-slug: async-e-defer
-order: 30
+order: 5
+title: experimente o async & defer
 ---
-
-São atributos que devem ser usados em conjunto com a tag `script`
 
 Para explicar como esses atributos são úteis para melhorar a performance, é melhor entender o que acontece quando não utilizamos eles.
 
@@ -12,7 +9,7 @@ Para explicar como esses atributos são úteis para melhorar a performance, é m
   <script src="exemplo.js"></script>
 ```
 
-Dessa forma, a página aguarda o script terminar de carregar antes de continuar sua renderização e sua execução é feita imediatamente após. Isso pode aumentar significativamente o tempo de carregamento da página.  Algumas vezes esse comportamento é desejado, outras vezes não.
+Dessa forma, a página aguarda o script terminar de carregar antes de continuar sua renderização e sua execução é feita imediatamente após. Isso pode aumentar significativamente o tempo de carregamento da página. Algumas vezes esse comportamento é desejado, outras vezes não.
 
 ``` html
 <script async src="exemplo.js"></script>
