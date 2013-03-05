@@ -20,7 +20,7 @@
   </div>
 
   <a href="https://github.com/zenorocha/como-perder-peso">
-    <img id="github-ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+    <img id="github-ribbon" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" width="149" height="149">
   </a>
 
   <div class="intro center">
@@ -42,7 +42,7 @@
 
     <%- @content %>
 
-    <!-- <h2 id="html" class="topics">HTML</h2>
+    <h2 id="html" class="topics">HTML</h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/html/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
@@ -62,7 +62,7 @@
 
     <h2 id="css" class="topics">CSS</h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @currentLang}, [order:-1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -76,11 +76,11 @@
         <% end %>
         <%- item.contentRenderedWithoutLayouts %>
       </div>
-    <% end %> -->
+    <% end %>
 
     <h2 id="js" class="topics">JavaScript</h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @currentLang}, [order:-1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -116,7 +116,7 @@
 
     <h2 id="bonus" class="topics"><%= @getLang().bonus %></h2>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @currentLang}, [order:-1]).toJSON(): %>
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
@@ -135,7 +135,7 @@
   </div>
 
   <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
-    <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>">
+    <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">
   </a>
 
 </body>
