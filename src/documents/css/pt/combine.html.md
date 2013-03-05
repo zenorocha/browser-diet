@@ -1,6 +1,6 @@
 ---
 order: 3
-title: Combine arquivos CSS
+title: Combine vários arquivos CSS em um só
 ---
 
 Outra boa prática para organização e manutenção é separar seu estilo em diversos arquivos.
