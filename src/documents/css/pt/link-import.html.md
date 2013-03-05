@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 4
 title: Prefira <link> do que @import
 ---
 
