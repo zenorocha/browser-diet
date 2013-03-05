@@ -8,12 +8,12 @@ layout: default
 <div class="article">
 
   <div class="img-left">
-    <img src="<%= @site.assets %>/img/17.png" alt="Ilustração - Guerreiro" width="200" height="275" />
+    <img src="http://assets.browserdiet.com/img/17.png" alt="Geek #17" width="200" height="275" />
   </div>
 
   <div class="content-right">
 
-    <p>E se juntássemos os ninjas que trabalham nos maiores portais para criar o guia definitivo de performance para front-end?</p>
+    <p>E se juntássemos os feras que trabalham em grandes portais para criar o guia definitivo de performance para front-end?</p>
 
     <p>Mas nada daqueles guias chatos feitos para robôs, que tal fazer algo divertido? Que tal juntar Davidson Fellipe **(Globo.com)**, Jaydson Gomes **(Terra)**, Giovanni Keppelen **(ex-Peixe Urbano)**, Briza Bueno **(Americanas.com)** para criar a melhor referência possível?</p>
 
