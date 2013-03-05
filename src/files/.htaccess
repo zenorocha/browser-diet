@@ -1,6 +1,9 @@
 # This .htaccess file is used to speed up this website
+#
+# Created by Sergey Chernyshev
+# Adapted by Zeno Rocha
+#
 # See https://github.com/sergeychernyshev/.htaccess
-
 
 # ----------------------------------------------------------------------
 # Proper MIME type for all files
@@ -187,3 +190,11 @@ AddType text/vtt        vtt
 
 # Remove ETags
 FileETag None
+
+# -------------------------------------------------------------------------
+# Google mod_pagespeed definitions
+# -------------------------------------------------------------------------
+<IfModule pagespeed_module>
+   ModPagespeed on
+   ModPagespeedEnableFilters lazyload_images
+</IfModule>
