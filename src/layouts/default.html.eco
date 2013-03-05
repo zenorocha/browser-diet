@@ -45,7 +45,7 @@
     <h2 id="html" class="topics">HTML</h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/html/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article">
+      <div class="article" id="<%= item.basename %>">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
           <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
@@ -63,7 +63,7 @@
     <h2 id="css" class="topics">CSS</h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article">
+      <div class="article" id="<%= item.basename %>">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
           <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
@@ -81,7 +81,7 @@
     <h2 id="js" class="topics">JavaScript</h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article">
+      <div class="article" id="<%= item.basename %>">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
           <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
@@ -99,7 +99,7 @@
     <h2 id="jquery" class="topics">jQuery</h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/jquery/' + @currentLang}, {order:1}).toJSON(): %>
-      <div class="article">
+      <div class="article" id="<%= item.basename %>">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
           <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
@@ -117,7 +117,7 @@
     <h2 id="bonus" class="topics"><%= @getLang().bonus %></h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article">
+      <div class="article" id="<%= item.basename %>">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
           <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
