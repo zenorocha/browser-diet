@@ -97,6 +97,7 @@ Lista as dependências de módulos do NodeJS.
 ### Revisores
 
 * [Renato Mangini](http://github.com/mangini)
+* [Sérgio Lopes](http://github.com/sergiolopes)
 
 ## Créditos
 
