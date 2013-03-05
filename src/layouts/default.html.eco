@@ -3,6 +3,7 @@
 <head>
 
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><%= @getLang().title %></title>
 
   <!-- Style -->
@@ -23,9 +24,12 @@
     <img id="github-ribbon" src="<%= @site.assets %>/img/github-fork.png" alt="Fork me on GitHub" width="149" height="149">
   </a>
 
-  <div class="intro center">
-    <%- @getLang().titleHTML %>
-    <img src="<%= @site.assets %>/img/superman.png" alt="Superman" class="superman" width="745" height="655" />
+  <div class="center">
+    <div class="intro">  
+      <hgroup class="intro-titles">
+        <%- @getLang().titleHTML %>
+      </hgroup>
+    </div>
   </div>
 
   <div id="menu">
@@ -42,7 +46,7 @@
 
     <%- @content %>
 
-    <h2 id="html" class="topics">HTML</h2>
+    <h2 id="html" class="topics"><span>HTML</span></h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/html/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article" id="<%= item.basename %>">
@@ -60,7 +64,7 @@
       </div>
     <% end %>
 
-    <h2 id="css" class="topics">CSS</h2>
+    <h2 id="css" class="topics"><span>CSS</span></h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article" id="<%= item.basename %>">
@@ -78,7 +82,7 @@
       </div>
     <% end %>
 
-    <h2 id="js" class="topics">JavaScript</h2>
+    <h2 id="js" class="topics"><span>JavaScript</span></h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article" id="<%= item.basename %>">
@@ -96,7 +100,7 @@
       </div>
     <% end %>
 
-    <h2 id="jquery" class="topics">jQuery</h2>
+    <h2 id="jquery" class="topics"><span>jQuery</span></h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/jquery/' + @currentLang}, {order:1}).toJSON(): %>
       <div class="article" id="<%= item.basename %>">
@@ -114,7 +118,7 @@
       </div>
     <% end %>
 
-    <h2 id="bonus" class="topics"><%= @getLang().bonus %></h2>
+    <h2 id="bonus" class="topics"><span><%= @getLang().bonus %></span></h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article" id="<%= item.basename %>">
@@ -135,7 +139,7 @@
   </div>
 
   <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
-    <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">
+    <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>">
   </a>
 
   <script type="text/javascript">

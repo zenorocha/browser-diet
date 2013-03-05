@@ -5,7 +5,7 @@ title: Use CSS Sprites
 
 Essa técnica consiste em agrupar diversas imagens em uma só.
 
-<img id="img-sprite" src="http://assets.browserdiet.com/img/sprite-example.jpg" alt="CSS Sprite Example" width="483" height="21">
+<img id="img-sprite" src="http://assets.browserdiet.com/img/sprite-example.jpg" alt="CSS Sprite Example">
 
 E depois posicioná-las através de CSS.
 

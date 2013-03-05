@@ -7,10 +7,6 @@ layout: default
 
 <div class="article">
 
-  <div class="img-left">
-    <img src="http://assets.browserdiet.com/img/17.png" alt="Geek #17" width="200" height="275" />
-  </div>
-
   <div class="content-right">
 
     <p>E se juntássemos os feras que trabalham em grandes portais para criar o guia definitivo de performance para front-end?</p>
