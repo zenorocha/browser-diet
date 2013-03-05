@@ -1,7 +1,6 @@
 ---
-ignored: true
-order: 80
-title: GZip
+order: 1
+title: Gzip
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illo magni similique ipsa porro fugit esse aliquid eum unde voluptas?

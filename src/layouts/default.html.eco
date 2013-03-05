@@ -25,7 +25,7 @@
   </a>
 
   <div class="center">
-    <div class="intro">  
+    <div class="intro">
       <hgroup class="intro-titles">
         <%- @getLang().titleHTML %>
       </hgroup>
@@ -38,6 +38,8 @@
       <li><a href="#css">CSS</a></li>
       <li><a href="#js">JavaScript</a></li>
       <li><a href="#jquery">jQuery</a></li>
+      <li><a href="#images"><%= @getLang().images %></a></li>
+      <li><a href="#server"><%= @getLang().server %></a></li>
       <li><a href="#bonus"><%= @getLang().bonus %></a></li>
     </ul>
   </div>
@@ -103,6 +105,42 @@
     <h2 id="jquery" class="topics"><span>jQuery</span></h2>
 
     <% for item in @getCollection("documents").findAll({ url: $startsWith: '/jquery/' + @currentLang}, {order:1}).toJSON(): %>
+      <div class="article" id="<%= item.basename %>">
+        <h1 id="<%= item.basename %>">
+          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
+          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
+        </h1>
+        <% if item.order: %>
+        <div class="line">
+          <span class="order"><%= item.order %></span>
+          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
+        </div>
+        <% end %>
+        <%- item.contentRenderedWithoutLayouts %>
+      </div>
+    <% end %>
+
+    <h2 id="images" class="topics"><span><%= @getLang().images %></span></h2>
+
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/images/' + @currentLang}, [order:1]).toJSON(): %>
+      <div class="article" id="<%= item.basename %>">
+        <h1 id="<%= item.basename %>">
+          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
+          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
+        </h1>
+        <% if item.order: %>
+        <div class="line">
+          <span class="order"><%= item.order %></span>
+          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
+        </div>
+        <% end %>
+        <%- item.contentRenderedWithoutLayouts %>
+      </div>
+    <% end %>
+
+    <h2 id="images" class="topics"><span><%= @getLang().server %></span></h2>
+
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/server/' + @currentLang}, [order:1]).toJSON(): %>
       <div class="article" id="<%= item.basename %>">
         <h1 id="<%= item.basename %>">
           <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
