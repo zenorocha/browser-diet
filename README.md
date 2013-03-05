@@ -88,6 +88,10 @@ Lista as dependências de módulos do NodeJS.
 
 ## Contribuidores
 
+### Design
+
+* [Briza Bueno](http://www.brizabueno.com/) (Americanas.com)
+
 ### Autores
 
 * [Davidson Fellipe](https://github.com/davidsonfellipe) (Globo.com)
@@ -96,9 +100,9 @@ Lista as dependências de módulos do NodeJS.
 
 ### Revisores
 
+* [Marcel Duran](https://github.com/marcelduran) (Twitter)
 * [Renato Mangini](https://github.com/mangini) (Google)
 * [Sérgio Lopes](https://github.com/sergiolopes) (Caelum)
-* [Marcel Duran](https://github.com/marcelduran) (Twitter)
 
 ## Créditos
 
@@ -111,7 +115,7 @@ Lista as dependências de módulos do NodeJS.
 * Magra por [FontFuror](http://www.google.com/webfonts/specimen/Magra)
 * Horseshoes por [Lauren Ashpole](http://www.laurenashpole.com/licensing.html)
 
-### Imagens
+### Ilustrações
 
 * The 56 Geeks Project por [Scott Johnson](http://myextralife.com/56geeks/)
 
