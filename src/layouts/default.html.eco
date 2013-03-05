@@ -48,131 +48,19 @@
 
     <%- @content %>
 
-    <h2 id="html" class="topics"><span>HTML</span></h2>
+    <%- @partial('section.html.eco', { sectionTitle: 'HTML', sectionID: 'html', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/html/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article" id="<%= item.basename %>">
-        <h1 id="<%= item.basename %>">
-          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
-        </h1>
-        <% if item.order: %>
-        <div class="line">
-          <span class="order"><%= item.order %></span>
-          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
-        </div>
-        <% end %>
-        <%- item.contentRenderedWithoutLayouts %>
-      </div>
-    <% end %>
+    <%- @partial('section.html.eco', { sectionTitle: 'CSS', sectionID: 'css', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <h2 id="css" class="topics"><span>CSS</span></h2>
+    <%- @partial('section.html.eco', { sectionTitle: 'JavaScript', sectionID: 'js', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/css/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article" id="<%= item.basename %>">
-        <h1 id="<%= item.basename %>">
-          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
-        </h1>
-        <% if item.order: %>
-        <div class="line">
-          <span class="order"><%= item.order %></span>
-          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
-        </div>
-        <% end %>
-        <%- item.contentRenderedWithoutLayouts %>
-      </div>
-    <% end %>
+    <%- @partial('section.html.eco', { sectionTitle: 'jQuery', sectionID: 'jquery', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <h2 id="js" class="topics"><span>JavaScript</span></h2>
+    <%- @partial('section.html.eco', { sectionTitle: @getLang().images, sectionID: 'images', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/js/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article" id="<%= item.basename %>">
-        <h1 id="<%= item.basename %>">
-          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
-        </h1>
-        <% if item.order: %>
-        <div class="line">
-          <span class="order"><%= item.order %></span>
-          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
-        </div>
-        <% end %>
-        <%- item.contentRenderedWithoutLayouts %>
-      </div>
-    <% end %>
+    <%- @partial('section.html.eco', { sectionTitle: @getLang().server, sectionID: 'server', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <h2 id="jquery" class="topics"><span>jQuery</span></h2>
-
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/jquery/' + @currentLang}, {order:1}).toJSON(): %>
-      <div class="article" id="<%= item.basename %>">
-        <h1 id="<%= item.basename %>">
-          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
-        </h1>
-        <% if item.order: %>
-        <div class="line">
-          <span class="order"><%= item.order %></span>
-          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
-        </div>
-        <% end %>
-        <%- item.contentRenderedWithoutLayouts %>
-      </div>
-    <% end %>
-
-    <h2 id="images" class="topics"><span><%= @getLang().images %></span></h2>
-
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/images/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article" id="<%= item.basename %>">
-        <h1 id="<%= item.basename %>">
-          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
-        </h1>
-        <% if item.order: %>
-        <div class="line">
-          <span class="order"><%= item.order %></span>
-          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
-        </div>
-        <% end %>
-        <%- item.contentRenderedWithoutLayouts %>
-      </div>
-    <% end %>
-
-    <h2 id="images" class="topics"><span><%= @getLang().server %></span></h2>
-
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/server/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article" id="<%= item.basename %>">
-        <h1 id="<%= item.basename %>">
-          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
-        </h1>
-        <% if item.order: %>
-        <div class="line">
-          <span class="order"><%= item.order %></span>
-          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
-        </div>
-        <% end %>
-        <%- item.contentRenderedWithoutLayouts %>
-      </div>
-    <% end %>
-
-    <h2 id="bonus" class="topics"><span><%= @getLang().bonus %></span></h2>
-
-    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/bonus/' + @currentLang}, [order:1]).toJSON(): %>
-      <div class="article" id="<%= item.basename %>">
-        <h1 id="<%= item.basename %>">
-          <a class="tip-title" href="#<%= item.basename %>"><%= item.title %></a>
-          <a title="Link" class="anchor" href="#<%= item.basename %>">∞</a>
-        </h1>
-        <% if item.order: %>
-        <div class="line">
-          <span class="order"><%= item.order %></span>
-          <a title="<%= @getLang().edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
-        </div>
-        <% end %>
-        <%- item.contentRenderedWithoutLayouts %>
-      </div>
-    <% end %>
+    <%- @partial('section.html.eco', { sectionTitle: @getLang().bonus, sectionID: 'bonus', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
   </div>
 

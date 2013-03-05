@@ -1,6 +1,6 @@
 {
   "name": "como-perder-peso",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "O guia definitivo para performance em desenvolvimento front-end",
   "homepage": "http://zenorocha.github.com/como-perder-peso",
   "repository": {
@@ -16,6 +16,7 @@
     "docpad-plugin-marked": "2.x",
     "docpad-plugin-less": "~2.1.2",
     "docpad-plugin-highlightjs": "2.x",
+    "docpad-plugin-partials": "2.x",
     "grunt": "~0.3.17",
     "grunt-css": "~0.3.2",
     "bal-util": "~1.15.3",
