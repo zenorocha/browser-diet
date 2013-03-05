@@ -13,7 +13,7 @@ Outra boa prática para organização e manutenção é separar seu estilo em di
 <link rel="stylesheet" href="plugin.css" media="all">
 ```
 
-Porém é preciso realizar uma requisição HTTP para cada um dos arquivos e sabemos que o navegador não consegue lidar com muitos downloads paralelos.
+Porém, é preciso realizar uma requisição HTTP para cada um dos arquivos e sabemos que o navegador não consegue lidar com muitos downloads paralelos.
 
 ```html
 <link rel="stylesheet" href="main.css" media="all">

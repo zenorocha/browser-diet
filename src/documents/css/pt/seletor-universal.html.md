@@ -14,7 +14,7 @@ Evite usar seletor universal, assim você está obrigando o navegador a buscar *
   margin: 0;
   padding: 0;
   border: none;
-  text-deocartion: none;
+  text-decoration: none;
   outline: 0;
 }
 ```
