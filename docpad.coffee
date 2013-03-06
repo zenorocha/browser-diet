@@ -26,7 +26,7 @@ module.exports =
                 title: 'Como perder peso (no browser)'
                 titleHTML: '<h1>Como perder <span>peso</span></h1><h2>no browser</h2>'
                 slogan: 'O guia definitivo de performance para o desenvolvedor front-end'
-                url: 'http://browserdiet.com/br'
+                url: 'http://browserdiet.com/pt'
                 bonus: 'Bônus'
                 images: 'Imagens'
                 server: 'Servidor'
