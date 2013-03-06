@@ -4,7 +4,7 @@
 
 ---
 
-# Como perder peso (no browser)
+# Browser Diet » Como perder peso (no browser)
 
 O guia definitivo de performance para desenvolvimento front-end
 
@@ -26,17 +26,17 @@ Lembre-se também de adicionar as referências que você utilizou para escrever 
 
 2. Abra o terminal e baixe o [DocPad](https://github.com/bevry/docpad) através do comando:
 ```bash
-sudo npm install -fg docpad@6.24
+sudo npm install -fg docpad
 ```
 
 3. Agora clone o projeto:
 ```bash
-git clone git@github.com:zenorocha/browser-diet.git
+git clone git@github.com:<your-github-username>/browser-diet.git
 ```
 
 4. Depois vá para pasta do projeto:
 ```bash
-cd como-perder-peso
+cd browser-diet
 ```
 
 5. Instale as dependências:
@@ -53,7 +53,7 @@ Agora você irá ver o site rodando em `localhost:9778` :D
 
 ### Como faço para rodar a versão em outra língua?
 
-Basta entrar no arquivo [docpad.coffee](https://github.com/zenorocha/browser-diet/blob/master/docpad.coffee) e alterar o valor da variável `currentLang`. 
+Basta entrar no arquivo [docpad.coffee](https://github.com/zenorocha/browser-diet/blob/master/docpad.coffee) e alterar o valor da variável `currentLang`.
 
 Depois é só rodar novamente: `docpad run`.
 

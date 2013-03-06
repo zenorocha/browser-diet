@@ -1,11 +1,11 @@
 {
-  "name": "como-perder-peso",
+  "name": "browser-diet",
   "version": "1.0.0",
   "description": "O guia definitivo para performance em desenvolvimento front-end",
-  "homepage": "http://zenorocha.github.com/como-perder-peso",
+  "homepage": "http://zenorocha.github.com/browser-diet",
   "repository": {
     "type": "git",
-    "url": "http://github.com/zenorocha/browser-diet.git"
+    "url": "http://github.com/zenorocha/browser-diet"
   },
   "engines": {
     "node": "0.8.x",
@@ -16,7 +16,7 @@
     "docpad-plugin-marked": "2.x",
     "docpad-plugin-less": "~2.1.2",
     "docpad-plugin-highlightjs": "2.x",
-    "docpad-plugin-partials": "2.x",
+    "docpad-plugin-partials": "~2.5.0",
     "grunt": "~0.3.17",
     "grunt-css": "~0.3.2",
     "bal-util": "~1.15.3",
