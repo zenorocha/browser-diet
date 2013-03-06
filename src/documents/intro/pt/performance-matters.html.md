@@ -11,7 +11,7 @@ order: ??
   </h1>
   <div class="line">
     <span class="order">??</span>
-    <a title="Editar" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/index.html.md.eco">✎</a>
+    <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/blob/master/src/documents/index.html.md.eco">✎</a>
   </div>
 
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic rerum consectetur deleniti facere repellendus eum quam nostrum quos fugiat corrupti aut dolore explicabo dolorem expedita excepturi tenetur ipsum magni!</p>

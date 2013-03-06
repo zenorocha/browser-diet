@@ -20,7 +20,7 @@
     <h3 class="center"><%= @getLang().slogan %></h3>
   </div>
 
-  <a href="https://github.com/zenorocha/como-perder-peso">
+  <a href="https://github.com/zenorocha/browser-diet">
     <img id="github-ribbon" src="<%= @site.assets %>/img/github-fork.png" alt="Fork me on GitHub" width="149" height="149">
   </a>
 
