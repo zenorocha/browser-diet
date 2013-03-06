@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css">
 
   <!-- Fonts -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans&Pacifico&Magra">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico">
 
 </head>
 
