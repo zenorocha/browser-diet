@@ -24,7 +24,7 @@ Lembre-se também de adicionar as referências que você utilizou para escrever 
 
 2. Abra o terminal e baixe o [DocPad](https://github.com/bevry/docpad) através do comando:
 ```bash
-sudo npm install -fg docpad@6.12
+sudo npm install -fg docpad@6.24
 ```
 
 3. Agora clone o projeto:
