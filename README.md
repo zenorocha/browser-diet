@@ -18,7 +18,9 @@ Lá você irá encontrar todas elas em formato [Markdown (.md)](http://pt.wikipe
 
 Lembre-se também de adicionar as referências que você utilizou para escrever determinada dica na wiki [References](https://github.com/zenorocha/browser-diet/wiki/References).
 
-## Primeiros passos
+## Instruções
+
+### Como faço para rodar o projeto localmente?
 
 1. Instale o [Git](http://git-scm.com/downloads) e o [NodeJS](http://nodejs.org/download/), caso você não os tenha ainda.
 
@@ -48,6 +50,12 @@ docpad run
 ```
 
 Agora você irá ver o site rodando em `localhost:9778` :D
+
+### Como faço para rodar a versão em outra língua?
+
+Basta entrar no arquivo [docpad.coffee](https://github.com/zenorocha/browser-diet/blob/master/docpad.coffee) e alterar o valor da variável `currentLang`. 
+
+Depois é só rodar novamente: `docpad run`.
 
 ## Estrutura
 
@@ -85,12 +93,6 @@ Contém o template padrão da aplicação.
 ### [package.json](https://github.com/zenorocha/browser-diet/blob/master/package.json)
 
 Lista as dependências de módulos do NodeJS.
-
-## Instruções
-
-### Como faço para rodar a versão em outra língua?
-
-Basta entrar no arquivo [docpad.coffee](https://github.com/zenorocha/browser-diet/blob/master/docpad.coffee) e alterar o valor da variável `currentLang`. Depois é só rodar novamente: `docpad run`
 
 ## Contribuidores
 
