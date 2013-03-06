@@ -101,6 +101,7 @@ Lista as dependências de módulos do NodeJS.
 ### Revisores
 
 * [Marcel Duran](https://github.com/marcelduran) (Twitter)
+* [Mike Taylor](https://github.com/miketaylr) (Opera)
 * [Renato Mangini](https://github.com/mangini) (Google)
 * [Sérgio Lopes](https://github.com/sergiolopes) (Caelum)
 
