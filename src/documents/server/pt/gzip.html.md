@@ -3,6 +3,14 @@ order: 1
 title: Gzip
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque illo magni similique ipsa porro fugit esse aliquid eum unde voluptas?
+Boa parte do conteúdo que trafegamos em um site é texto (HTML, CSS, JavaScript, JSON, XML etc). Para esse tipo de conteúdo, é uma boa prática habilitar a compressão GZIP no servidor.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam modi veritatis obcaecati quibusdam eius ratione quo tenetur deserunt assumenda excepturi adipisci nulla non nihil perspiciatis dolor vel aliquid nobis quod cumque numquam reiciendis odio molestiae explicabo laborum dolorem itaque ab. Corrupti quibusdam iste dolorem beatae consequuntur eligendi aut ut debitis!
+O GZIP comprime os dados no servidor antes de enviar via rede para o navegador do usuário. É como zipar um arquivo antes de mandar pra alguém, o tamanho final fica bem menor. Todos os navegadores modernos têm suporte a GZIP, assim como os servidores.
+
+A configuração é específica de servidor, então é difícil falar de todos aqui. Mas costuma ser bem simples. No Apache, por exemplo, você pode editar o arquivo `.htaccess` e habilitar o deflate para os tipos de arquivo que quiser:
+
+```
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript 
+```
+
+Essa configuração costuma ser bem siples de fazer em todos os servidores do mercado (veja na documentação do seu!) e é uma das dicas mais eficientes para se melhorar a performance da página.
