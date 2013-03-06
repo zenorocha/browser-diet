@@ -5,7 +5,7 @@
   "homepage": "http://zenorocha.github.com/como-perder-peso",
   "repository": {
     "type": "git",
-    "url": "http://github.com/zenorocha/como-perder-peso.git"
+    "url": "http://github.com/zenorocha/browser-diet.git"
   },
   "engines": {
     "node": "0.8.x",

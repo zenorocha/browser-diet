@@ -10,7 +10,7 @@
     <% if item.order: %>
     <div class="line">
       <span class="order"><%= item.order %></span>
-      <a title="<%= @edit %>" class="edit" href="https://github.com/zenorocha/como-perder-peso/blob/master/src/documents/<%= item.relativePath %>">✎</a>
+      <a title="<%= @edit %>" class="edit" href="https://github.com/zenorocha/browser-diet/blob/master/src/documents/<%= item.relativePath %>">✎</a>
     </div>
     <% end %>
     <%- item.contentRenderedWithoutLayouts %>
