@@ -12,11 +12,11 @@ O guia definitivo de performance para desenvolvimento front-end
 
 ## Contribuindo
 
-Para adicionar novas dicas ou editar dicas existentes, basta se dirigir a pasta [src/documents](https://github.com/zenorocha/como-perder-peso/blob/master/src/documents).
+Para adicionar novas dicas ou editar dicas existentes, basta se dirigir a pasta [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents).
 
 Lá você irá encontrar todas elas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown). Não se preocupe caso você não conheça essa linguagem, é muito similar ao HTML e possui uma curva de aprendizado muito pequena.
 
-Lembre-se também de adicionar as referências que você utilizou para escrever determinada dica na wiki [References](https://github.com/zenorocha/como-perder-peso/wiki/References).
+Lembre-se também de adicionar as referências que você utilizou para escrever determinada dica na wiki [References](https://github.com/zenorocha/browser-diet/wiki/References).
 
 ## Primeiros passos
 
@@ -29,7 +29,7 @@ sudo npm install -fg docpad@6.24
 
 3. Agora clone o projeto:
 ```bash
-git clone git@github.com:zenorocha/como-perder-peso.git
+git clone git@github.com:zenorocha/browser-diet.git
 ```
 
 4. Depois vá para pasta do projeto:
@@ -68,23 +68,29 @@ O projeto é feito utilizando o [DocPad](https://github.com/bevry/docpad), um st
 
 ### out/
 
-É onde os arquivos gerados são armazenados, uma vez que o DocPad tenha sido rodado. Porém, esse diretório se torna desnecessário no versionamento, por isso está ignorado ([.gitignore](https://github.com/zenorocha/como-perder-peso/blob/master/.gitignore)).
+É onde os arquivos gerados são armazenados, uma vez que o DocPad tenha sido rodado. Porém, esse diretório se torna desnecessário no versionamento, por isso está ignorado ([.gitignore](https://github.com/zenorocha/browser-diet/blob/master/.gitignore)).
 
-### [src/documents](https://github.com/zenorocha/como-perder-peso/blob/master/src/documents)
+### [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents)
 
 Contém todas as dicas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown).
 
-### [src/files](https://github.com/zenorocha/como-perder-peso/tree/master/src/files)
+### [src/files](https://github.com/zenorocha/browser-diet/tree/master/src/files)
 
 Possui as imagens, fontes, arquivos CSS e JS.
 
-### [src/layouts](https://github.com/zenorocha/como-perder-peso/tree/master/src/layouts)
+### [src/layouts](https://github.com/zenorocha/browser-diet/tree/master/src/layouts)
 
 Contém o template padrão da aplicação.
 
-### [package.json](https://github.com/zenorocha/como-perder-peso/blob/master/package.json)
+### [package.json](https://github.com/zenorocha/browser-diet/blob/master/package.json)
 
 Lista as dependências de módulos do NodeJS.
+
+## Instruções
+
+### Como faço para rodar a versão em outra língua?
+
+Basta entrar no arquivo [docpad.coffee](https://github.com/zenorocha/browser-diet/blob/master/docpad.coffee) e alterar o valor da variável `currentLang`. Depois é só rodar novamente: `docpad run`
 
 ## Contribuidores
 
