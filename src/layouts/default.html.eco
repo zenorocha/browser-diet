@@ -2,10 +2,11 @@
 <html lang="<%= @getLang().htmlLang %>">
 <head>
 
-  <title><%= @getLang().title %></title>
+  <title>Browser Diet » <%= @getLang().title %></title>
 
   <!-- Metatags -->
   <meta charset="utf-8">
+  <meta name="description" content="<%= @getLang().slogan %>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Style -->
