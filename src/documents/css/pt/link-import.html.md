@@ -1,15 +1,15 @@
 ---
 order: 4
-title: Prefira <link> do que @import
+title: Prefira <link> a @import
 ---
 
 Há duas maneiras de incluir uma folha de estilo externa na sua página, pode ser através da tag `<link>`:
 
 ```html
-<link rel="stylesheet" href="style.css" media="all">
+<link rel="stylesheet" href="style.css">
 ```
 
-Ou da propriedade `@import`:
+Ou da propriedade `@import` dentro de uma folha de estilo externa ou inline em uma tag `<style>`:
 
 ```css
 @import url('style.css');
