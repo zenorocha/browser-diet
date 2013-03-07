@@ -13,4 +13,4 @@ A configuração é específica de servidor, então é difícil falar de todos a
 AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript 
 ```
 
-Essa configuração costuma ser bem siples de fazer em todos os servidores do mercado (veja na documentação do seu!) e é uma das dicas mais eficientes para se melhorar a performance da página.
+Essa configuração costuma ser bem simples de fazer em todos os servidores do mercado (veja na documentação do seu!) e é uma das dicas mais eficientes para se melhorar a performance da página.
