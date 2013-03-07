@@ -38,7 +38,7 @@ module.exports =
         # Site Information
 
         site:
-            assets: 'http://assets.browserdiet.com'
+            assets: 'http://browserdiet.com'
 
         getGruntedStyles: ->
             _ = require 'underscore'

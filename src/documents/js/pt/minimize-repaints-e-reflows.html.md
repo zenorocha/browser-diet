@@ -12,7 +12,7 @@ Reflows são os mais custosos, causados quando as mudanças alterando o layout d
 Não há dúvida que ambos reflows e repaints devem ser evitados, portanto ao invés de fazer isso:
 
 <div class="img-right">
-  <img id="geek-55" class="icos-geek" src="http://assets.browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
+  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
 ```js

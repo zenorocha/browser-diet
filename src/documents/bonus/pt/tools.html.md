@@ -4,7 +4,7 @@ title: Ferramentas de diagnóstico: suas melhores amigas
 ---
 
 <div class="img-left">
-  <img id="geek-43" src="http://assets.browserdiet.com/img/43.png" alt="Geek #43" width="157" height="275" />
+  <img id="geek-43" src="http://browserdiet.com/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
 
 Se você quer se aventurar nesse mundo, é imprescindível instalar as extensões [YSlow](http://yslow.org/) e [PageSpeed](https://developers.google.com/speed/pagespeed/insights_extensions?hl=pt-BR) no seu *Chrome* ou *Firefox*, elas serão suas melhores amigas a partir desse momento.
