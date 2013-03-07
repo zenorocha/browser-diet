@@ -6,7 +6,7 @@ title: experimente o async & defer
 Para explicar como esses atributos são úteis para melhorar a performance, é melhor entender o que acontece quando não utilizamos eles.
 
 <div class="img-left">
-  <img id="geek-20" src="http://assets.browserdiet.com/img/20.png" alt="Geek #20" width="118" height="275" />
+  <img id="geek-20" class="icos-geek" src="http://assets.browserdiet.com/img/20.png" alt="Geek #20" width="118" height="275" />
 </div>
 
 ``` html
