@@ -64,9 +64,6 @@ strong {
 
 .intro {
 	position: relative;
-
-	background: url(../img/superman.png) no-repeat top right;
-	background-size: (555 / 16em) (517 / 16em);
 	line-height: (517 / 16em);
 
 	max-width: 51em;
@@ -76,6 +73,42 @@ strong {
 #menu {
 	background: @red;
 }
+
+/*	--- Superman --- */
+.superman {
+  display: inline-block;
+  padding: 6em;
+  overflow: hidden;
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+	.superman-raios {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: -1;
+
+	  height: 560 / 16em;
+	  width: 537 / 16em;
+
+	  -webkit-animation: 20s superman infinite linear;
+	     -moz-animation: 20s superman infinite linear;
+	       -o-animation: 20s superman infinite linear;
+	          animation: 20s superman infinite linear;
+	}
+	.superman-geek {
+		height: 393 / 16em;
+		width: 320 / 16em;
+	}
+
+	@-webkit-keyframes superman { to { -webkit-transform: rotate(360deg); } }
+	@-moz-keyframes superman    { to {    -moz-transform: rotate(360deg); } }
+	@-o-keyframes superman      { to {      -o-transform: rotate(360deg); } }
+	@keyframes superman         { to {         transform: rotate(360deg); } }
+
 
 /* --- Subtitle --- */
 
@@ -158,7 +191,8 @@ strong {
 	.intro { font-size: 90%;}
 }
 @media (max-width: 45em) {
-	.intro { font-size: 95%; background-position: 170% top; }
+	.intro { font-size: 95%; }
+	.superman { padding-right: 0; }
 }
 @media (max-width: 40em) {
 	.intro { font-size: 80%;}
@@ -172,7 +206,6 @@ strong {
 @media (max-width: 27em) {
 	.intro {
 		font-size: 60%;
-		background-image: url(../img/superman-small.png);
 	}
 	.intro h1,
 	.intro h1 span,
