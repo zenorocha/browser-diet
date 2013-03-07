@@ -7,6 +7,10 @@ title: Não use jQuery...
 
 Às vezes JavaScript puro pode ser até mais simples que jQuery.
 
+<div class="img-right">
+  <img id="geek-6" src="http://assets.browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
+</div>
+
 Pra que usar o método `attr()` para buscar o ID?
 
 ```js
