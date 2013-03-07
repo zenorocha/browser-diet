@@ -28,10 +28,10 @@
     <div class="center">
       <h3><%= @getLang().slogan %></h3>
       <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">
-        <img src="<%= @site.assets %>/img/flag-english.png" alt="USA Flag">
+        <img src="<%= @site.assets %>/img/flag-english.png" alt="USA Flag" width="32" height="32">
       </a>
       <a id="flag-pt" class="flags" href="http://browserdiet.com/pt/" title="Português">
-        <img src="<%= @site.assets %>/img/flag-portuguese.png" alt="Brazilian Flag">
+        <img src="<%= @site.assets %>/img/flag-portuguese.png" alt="Brazilian Flag" width="32" height="32">
       </a>
     </div>
   </div>
@@ -81,7 +81,7 @@
   </div>
 
   <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
-    <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>">
+    <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">
   </a>
 
   <script type="text/javascript">
