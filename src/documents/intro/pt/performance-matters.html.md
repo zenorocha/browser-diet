@@ -1,6 +1,6 @@
 ---
+order: 2
 title: Performance importa mesmo?
-order: ??
 ---
 
 <div class="article">

@@ -1,8 +1,6 @@
 ---
+order: 1
 title: 'Conheça os guerreiros que vão te ajudar nessa!'
-category: team
-order: 0
-layout: default
 ---
 
 <div class="article">
