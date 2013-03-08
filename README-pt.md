@@ -1,20 +1,16 @@
----
-
-> **Atenção**: esse projeto está em fase de desenvolvimento, por favor não leve em consideração o conteúdo redigido até então.
+*[Read in English](https://github.com/zenorocha/browser-diet/blob/master/README.md)*
 
 ---
 
-# Browser Diet » Como perder peso (no browser)
+# Como perder peso (no browser)
 
-O guia definitivo de performance para desenvolvimento front-end
+O guia definitivo de performance para o desenvolvedor front-end
 
 ![image](http://f.cl.ly/items/0H2J2d2r2S402o180B2n/five-geeks.jpg)
 
 ## Contribuindo
 
-Para adicionar novas dicas ou editar dicas existentes, basta se dirigir a pasta [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents).
-
-Lá você irá encontrar todas elas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown). Não se preocupe caso você não conheça essa linguagem, é muito similar ao HTML e possui uma curva de aprendizado muito pequena.
+Para adicionar novas dicas ou editar dicas existentes, basta se dirigir a pasta [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents). Lá você irá encontrar todas elas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown).
 
 Lembre-se também de adicionar as referências que você utilizou para escrever determinada dica na wiki [References](https://github.com/zenorocha/browser-diet/wiki/References).
 
@@ -66,12 +62,9 @@ O projeto é feito utilizando o [DocPad](https://github.com/bevry/docpad), um st
 |-- out/
 |-- src/
 |   |-- documents
-|   |-- files
 |   |-- layouts
-|-- grunt-config.json
-|-- grunt.js
-|-- package.json
-`-- publish.sh
+|   |-- partials
+`-- package.json
 </pre>
 
 ### out/
@@ -80,21 +73,21 @@ O projeto é feito utilizando o [DocPad](https://github.com/bevry/docpad), um st
 
 ### [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents)
 
-Contém todas as dicas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown).
-
-### [src/files](https://github.com/zenorocha/browser-diet/tree/master/src/files)
-
-Possui as imagens, fontes, arquivos CSS e JS.
+Contém todas as dicas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown), além das imagens, fontes, arquivos CSS e JS.
 
 ### [src/layouts](https://github.com/zenorocha/browser-diet/tree/master/src/layouts)
 
 Contém o template padrão da aplicação.
 
+### [src/partials](https://github.com/zenorocha/browser-diet/tree/master/src/partials)
+
+Contém blocos de código reaproveitáveis.
+
 ### [package.json](https://github.com/zenorocha/browser-diet/blob/master/package.json)
 
 Lista as dependências de módulos do NodeJS.
 
-## Contribuidores
+## Time
 
 ### Design
 
@@ -121,7 +114,7 @@ Lista as dependências de módulos do NodeJS.
 ### Fontes
 
 * Pacifico por [Vernon Adams](http://www.fontsquirrel.com/license/pacifico)
-* Magra por [FontFuror](http://www.google.com/webfonts/specimen/Magra)
+* Open Sans por []()
 * Horseshoes por [Lauren Ashpole](http://www.laurenashpole.com/licensing.html)
 
 ### Ilustrações
