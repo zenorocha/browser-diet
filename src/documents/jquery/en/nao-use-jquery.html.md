@@ -1,0 +1,28 @@
+---
+order: 5
+title: Don't use jQuery...
+---
+
+...unless it's absolutely necessary. :)
+
+Sometimes vanilla JavaScript can be even simpler than jQuery.
+
+Why use the `attr()` method to search for an ID?
+
+```js
+$('a').on('click', function() {
+  console.log( $(this).attr('id') );
+});
+```
+
+If you can can get this attribute natively through `this`:
+
+```js
+$('a').on('click', function() {
+  console.log( this.id );
+});
+```
+
+And it's faster.
+
+*[> Results on JSPerf](http://jsperf.com/browser-diet-this-attr-id-vs-this-id)*
