@@ -2,7 +2,7 @@
 <html lang="<%= @getLang().htmlLang %>">
 <head>
 
-  <title>Browser Diet » <%= @getLang().title %></title>
+  <title><%= @getLang().title %></title>
 
   <!-- Metatags -->
   <meta charset="utf-8">
@@ -45,7 +45,7 @@
       <hgroup class="intro-titles">
         <%- @getLang().titleHTML %>
       </hgroup>
-      
+
       <div class="superman">
         <img src="<%= @site.assets %>/img/superman.png" alt="Superman" class="superman-geek">
         <img src="<%= @site.assets %>/img/raios.png" alt="" class="superman-raios">
