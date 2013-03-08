@@ -1,8 +1,6 @@
 ---
+order: 1
 title: 'Meet the warriors who will help you out with this!'
-category: team
-order: 0
-layout: default
 ---
 
 <div class="article">
