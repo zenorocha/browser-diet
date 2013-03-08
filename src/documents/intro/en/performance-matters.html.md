@@ -1,6 +1,6 @@
 ---
+order: 2
 title: Does performance really matter?
-order: ??
 ---
 
 <div class="article">
@@ -14,16 +14,6 @@ order: ??
     <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/blob/master/src/documents/index.html.md.eco">✎</a>
   </div>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio hic rerum consectetur deleniti facere repellendus eum quam nostrum quos fugiat corrupti aut dolore explicabo dolorem expedita excepturi tenetur ipsum magni!</p>
-
-  <!-- http://www.slideshare.net/keppelen/performance-frontend-front-in-macei
-
-  http://jaydson.org/talks/x-web-performance/
-
-  http://fellipe.com/slides/performance-javascript/
-
-  http://www.slideshare.net/davidsonfellipe/jqueryperf
-
-  http://www.slideshare.net/luiztiago/por-que-investir-em-performance-frontend -->
+  <p>Of course it matters and you know it. So why do we keep doing slow sites that leads to a bad user experience? This is a practical guide that will show you how to make websites faster. Let's not waste time showing millionaires performance cases, let's get straight to the point!</p>
 
 </div>
