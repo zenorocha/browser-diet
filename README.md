@@ -10,9 +10,9 @@ The definitive front-end performance guide.
 
 ## Contributing
 
-If you want to add new tips ou edit the existing ones, just go to [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents) folder. There you can find all of them in [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown) format.
+If you want to add new tips or edit the existing ones, just go to the [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents) folder. There you can find all of them in [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown) format.
 
-Remember to add references on each tip that you wrote at [References](https://github.com/zenorocha/browser-diet/wiki/References) wiki.
+Remember to add references on each tip that you write at [References](https://github.com/zenorocha/browser-diet/wiki/References) wiki.
 
 ## Instructions
 
@@ -45,15 +45,13 @@ docpad install
 docpad run
 ```
 
-Now you can see the website running in `localhost:9778` :D
+Now you can see the website running at `localhost:9778` :D
 
-### How can I run other language version?
+### How can I run another language version?
 
-Como faço para rodar a versão em outra língua?
+Simply go to the [docpad.coffee](https://github.com/zenorocha/browser-diet/blob/master/docpad.coffee) file and change the value of the `currentLang` variable.
 
-Basta entrar no arquivo [docpad.coffee](https://github.com/zenorocha/browser-diet/blob/master/docpad.coffee) e alterar o valor da variável `currentLang`.
-
-Depois é só rodar novamente: `docpad run`.
+Then you just need to run `docpad run` again.
 
 ## Structure
 
@@ -71,7 +69,7 @@ This project uses [DocPad](https://github.com/bevry/docpad), a static generator 
 
 ### out/
 
-This is where the generated files are stored, once DocPad has been runned. However, this directory is unnecessary in versioning, so it is ignored ([.gitignore](https://github.com/zenorocha/browser-diet/blob/master/.gitignore)).
+This is where the generated files are stored, once DocPad has been run. However, this directory is unnecessary for versioning, so it is ignored ([.gitignore](https://github.com/zenorocha/browser-diet/blob/master/.gitignore)).
 
 ### [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents)
 
