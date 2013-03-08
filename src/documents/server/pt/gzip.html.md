@@ -10,7 +10,11 @@ O GZIP comprime os dados no servidor antes de enviar via rede para o navegador d
 A configuração é específica de servidor, então é difícil falar de todos aqui. Mas costuma ser bem simples. No Apache, por exemplo, você pode editar o arquivo `.htaccess` e habilitar o deflate para os tipos de arquivo que quiser:
 
 ```
-AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript 
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript
 ```
 
 Essa configuração costuma ser bem simples de fazer em todos os servidores do mercado (veja na documentação do seu!) e é uma das dicas mais eficientes para se melhorar a performance da página.
