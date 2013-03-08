@@ -21,7 +21,6 @@ Remember to add references on each tip that you wrote at [References](https://gi
 1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have them already.
 
 2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
-
 ```bash
 sudo npm install -fg docpad
 ```
