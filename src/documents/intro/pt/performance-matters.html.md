@@ -15,6 +15,6 @@ title: Performance importa mesmo?
     <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/blob/master/src/documents/index.html.md.eco">✎</a>
   </div>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eos asperiores at ducimus error tempora veritatis atque placeat laudantium reiciendis est sit ullam nulla repudiandae inventore earum et incidunt excepturi.</p>
+  <p>É claro que importa e você sabe disso. Então por que continuamos fazendo sites lentos que prejudicam a experiência do usuário? Esse é um guia prático que vai te mostrar como fazer sites mais rápidos. Não vamos perder tempo mostrando cases milionários de performance, vamos direto ao ponto!</p>
 
 </div>
