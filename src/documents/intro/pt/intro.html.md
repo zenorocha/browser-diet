@@ -13,7 +13,7 @@ title: 'Conheça os guerreiros que vão te ajudar nessa!'
 
     <p>Foi isso mesmo que fizéssemos! E iremos te ajudar nessa batalha de criar sites cada vez mais rápidos.</p>
 
-    <p class="project-leader">&mdash; Zeno Rocha, líder do projeto.</p>
+    <p class="project-leader">&mdash; [Zeno Rocha](https://github.com/zenorocha), líder do projeto.</p>
 
   </div>
 
