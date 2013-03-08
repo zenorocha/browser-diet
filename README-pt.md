@@ -4,7 +4,7 @@
 
 # Como perder peso (no browser)
 
-O guia definitivo de performance para o desenvolvedor front-end
+O guia definitivo de performance para o desenvolvedor front-end.
 
 ![image](http://f.cl.ly/items/0H2J2d2r2S402o180B2n/five-geeks.jpg)
 
@@ -114,7 +114,7 @@ Lista as dependências de módulos do NodeJS.
 ### Fontes
 
 * Pacifico por [Vernon Adams](http://www.fontsquirrel.com/license/pacifico)
-* Open Sans por []()
+* Open Sans por [Steve Matteson](http://www.google.com/webfonts/specimen/Open+Sans)
 * Horseshoes por [Lauren Ashpole](http://www.laurenashpole.com/licensing.html)
 
 ### Ilustrações
