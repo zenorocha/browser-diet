@@ -8,7 +8,7 @@ De fato seletores é um dos assuntos mais importantes na utilização do jQuery.
 De todas elas, IDs e elementos são mais rápidos, pois são baseados em operações nativas do DOM:
 
 ```js
-  $("#foo");
+$("#foo");
 ```
 
 *[> Resultado no JSPerf](http://jsperf.com/browser-diet-jquery-selectors)*
