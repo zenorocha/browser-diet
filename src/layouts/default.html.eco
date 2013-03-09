@@ -85,9 +85,9 @@
 
   </div>
 
-  <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
+  <!-- <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
     <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">
-  </a>
+  </a> -->
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
