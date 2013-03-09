@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 10
 title: Take advantage of method chaining
 ---
 

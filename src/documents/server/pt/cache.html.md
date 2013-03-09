@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 4
 title: Habilite o cache dos arquivos
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title: Ferramentas de diagnóstico: suas melhores amigas
 ---
 

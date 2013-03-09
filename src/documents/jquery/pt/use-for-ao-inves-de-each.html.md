@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 9
 title: Use for ao invés de each
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 12
 title: Use sempre a última versão do jQuery
 ---
 

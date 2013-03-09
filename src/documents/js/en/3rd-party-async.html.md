@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 18
 title: Load 3rd party content asynchronously
 ---
 

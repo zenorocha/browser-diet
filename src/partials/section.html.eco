@@ -1,6 +1,6 @@
 <h2 id="<%= @sectionID %>" class="topics"><span><%= @sectionTitle %></span></h2>
 
-<% for item in @docs.findAll({ url: $startsWith: '/' + @sectionID + '/' + @lang}, [order:1]).toJSON(): %>
+<% for item in @docs.findAll({ url: $startsWith: '/' + @sectionID + '/' + @lang}, [order:-1]).toJSON(): %>
 
   <div class="article" id="<%= item.basename %>">
     <h1 id="<%= item.basename %>">

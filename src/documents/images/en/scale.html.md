@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 6
 title: Don't scale images in markup
 ---
 

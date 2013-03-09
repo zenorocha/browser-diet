@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 5
 title: Optimize your images
 ---
 

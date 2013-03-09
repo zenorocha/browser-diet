@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 4
 title: Enable smart caching
 ---
 
@@ -10,7 +10,7 @@ This type of configuration is done on the server (and will depend on which serve
 ```
 ExpiresActive On
 ExpiresByType image/gif "access plus 6 months"
-ExpiresByType image/jpeg "access plus 6 months" 
+ExpiresByType image/jpeg "access plus 6 months"
 ExpiresByType image/png "access plus 6 months"
 ExpiresByType text/css "access plus 6 months"
 ExpiresByType text/javascript "access plus 6 months"

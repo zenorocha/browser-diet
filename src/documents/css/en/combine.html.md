@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 22
 title: Combining multiple CSS files
 ---
 
@@ -19,7 +19,7 @@ However, an HTTP request is required for each one of these files (and we know th
 <link rel="stylesheet" href="main.css" media="all">
 ```
 
-So combine your CSS. Having a smaller number of files will result in a smaller number of requests and a faster loading page. 
+So combine your CSS. Having a smaller number of files will result in a smaller number of requests and a faster loading page.
 
 Want to have the best of both worlds? Automate this process through a build tool.
 

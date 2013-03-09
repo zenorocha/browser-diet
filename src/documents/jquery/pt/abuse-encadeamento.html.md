@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 10
 title: Abuse do encadeamento de métodos
 ---
 

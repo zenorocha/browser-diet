@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 24
 title: Try out async and defer
 ---
 
