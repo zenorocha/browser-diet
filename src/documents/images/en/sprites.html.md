@@ -5,7 +5,7 @@ title: Use CSS Sprites
 
 This technique is all about grouping various images into a single file.
 
-<img id="img-sprite" src="http://assets.browserdiet.com/img/sprite-example.jpg" alt="CSS Sprite Example">
+<img id="img-sprite" src="http://browserdiet.com/img/sprite-example.jpg" alt="CSS Sprite Example">
 
 And then positioning them with CSS.
 

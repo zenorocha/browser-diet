@@ -6,7 +6,7 @@ title: Don't use the universal selector
 Avoid using the universal selector as it forces the browser to search over **all**  HTML elements in the page, and after apply the rule to each one.
 
 <div class="img-right">
-  <img src="http://assets.browserdiet.com/img/4.png" alt="Geek #4" class="icos-geek" width="162" height="275" />
+  <img src="http://browserdiet.com/img/4.png" alt="Geek #4" class="icos-geek" width="162" height="275" />
 </div>
 
 ```CSS
