@@ -11,4 +11,4 @@ If you'd like to venture into this world of web performance, it's crucial to ins
 
 Or, if you prefer online tools, visit the [WebPageTest](http://www.webpagetest.org/), [HTTP Archive](http://httparchive.org/) or [PageSpeed](http://pagespeed.googlelabs.com/) sites.
 
-In general each will analise your site's performance and create a report that gives your site a grade coupled with invaluable advice to help you resolve the potential problems.
+In general each will analyse your site's performance and create a report that gives your site a grade coupled with invaluable advice to help you resolve the potential problems.
