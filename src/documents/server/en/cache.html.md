@@ -20,3 +20,5 @@ ExpiresByType application/javascript "access plus 6 months"
 These instructions cache images, CSS and JS for 6 months&mdash;it's recommended to cache them for at least one month. Other servers can be similarly configured.
 
 One important thing to remember is that once cached, the browser won't request a new file anymore. If we need to change the content of the file, it won't work in the way we might expect. To send a new version, we need to change the name of the file. One way to do this is to add some form of versioning or a timestamp to the filename. For example, instead of `home.js` you can use `home-v1.js` and when you need to update the file, change the name to `home-v2.js`, etc. Another common form of cache-busting is to use a GET parameter in the URL: `home.js?v=1` and `home.js?v=2`.
+
+*> Usefull tools: [Assetgraph-builder](https://github.com/One-com/assetgraph-builder).*
