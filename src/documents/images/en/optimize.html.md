@@ -10,3 +10,5 @@ There are tools that exist for image optimization that will remove all this unne
 All these tools are simple to use and generate smaller files that won't degrade image quality&mdash;in other words, they perform *lossless* compression. Another way to optimize images is to compress them at the cost of visual quality. We call these *lossy* optimizations.
 
 When you export a JPEG, for example, you can choose the quality level (a number between 0 and 100).  Thinking about performance, always choose the lowest number possible where the visual quality is still acceptable. There's an online tool that will help you lower JPEG quality without perceptibly affecting visual quality, [JPEGmini](http://jpegmini.com/). Another common lossy technique is to reduce the color palette in a PNG or to convert PNG-24 files into PNG-8.
+
+*> Usefull tools: [Assetgraph-builder](https://github.com/One-com/assetgraph-builder#image-optimization-and-processing).*
