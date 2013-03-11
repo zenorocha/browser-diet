@@ -15,4 +15,4 @@ The first option, despite reducing the number of HTTP requests, actually increas
 
 The second option not only improves the organization of your code, but also makes it possible for the browser to cache it. This option should be preferred for the majority of cases, especially when working with large files and the cost of inlining is larger.
 
-*> Usefull tools: [Assetgraph-builder](https://github.com/One-com/assetgraph-builder).*
+*> Useful tools: [Assetgraph-builder](https://github.com/One-com/assetgraph-builder).*
