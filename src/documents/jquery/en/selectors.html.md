@@ -3,12 +3,12 @@ order: 11
 title: Selectors
 ---
 
-De fato seletores é um dos assuntos mais importantes na utilização do jQuery. Há várias formas de selecionar um elemento no DOM, porém isso não quer dizer que elas tem a mesma performance, você pode buscar um elemento através de classe, id ou usar os métodos `find()`, `children()`.
+Selectors is one of the most important issues in the use of jQuery. There are many differents ways to select an element from the DOM, but that doesn't mean they have the same performance, you can select an element using classes, IDs or methods like `find()`, `children()`.
 
-De todas elas, IDs e elementos são mais rápidos, pois são baseados em operações nativas do DOM:
+Among all of them, select an ID is the fastest one, because its based on a native DOM operation:
 
 ```js
 $("#foo");
 ```
 
-*[> Resultado no JSPerf](http://jsperf.com/browser-diet-jquery-selectors)*
+*[> Results on JSPerf](http://jsperf.com/browser-diet-jquery-selectors)*
