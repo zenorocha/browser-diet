@@ -29,4 +29,4 @@ This will shave bytes from the filesize, which results in faster downloads, pars
 
 For those that use pre-processors like *Sass*, *Less* and *Stylus*, it's possible to configure your compiled CSS output to be minified.
 
-*> Usefull tools: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [CSS Minifier](http://www.cssminifier.com/) e [cssmin.js](http://www.phpied.com/cssmin-js/).*
+*> Usefull tools: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [CSS Minifier](http://www.cssminifier.com/), [cssmin.js](http://www.phpied.com/cssmin-js/), [Assetgraph-builder](https://github.com/One-com/assetgraph-builder).*
