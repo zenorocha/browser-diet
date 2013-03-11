@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css">
 
   <!-- Fonts -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="<%= @site.assets %>/img/favicon.ico">
