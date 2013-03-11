@@ -23,65 +23,71 @@
 
 <body class="<%= @currentLang %>">
 
-  <div id="top-bar" class="subtitle">
-    <div class="center">
-      <h3><%= @getLang().slogan %></h3>
-      <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">
-        <img src="<%= @site.assets %>/img/flag-english.png" alt="USA Flag" width="32" height="32">
-      </a>
-      <a id="flag-pt" class="flags" href="http://browserdiet.com/pt/" title="Português">
-        <img src="<%= @site.assets %>/img/flag-portuguese.png" alt="Brazilian Flag" width="32" height="32">
-      </a>
-    </div>
-  </div>
+  <div id="header">
 
-  <a href="https://github.com/zenorocha/browser-diet">
-    <img id="github-ribbon" src="<%= @site.assets %>/img/github-fork.png" alt="Fork me on GitHub" width="149" height="149">
-  </a>
-
-  <div class="center">
-    <div class="intro">
-      <hgroup class="intro-titles">
-        <%- @getLang().titleHTML %>
-      </hgroup>
-
-      <div class="superman">
-        <img class="superman-geek" src="<%= @site.assets %>/img/superman.png" alt="Superman" width="320" height="393">
-        <img class="superman-raios" src="<%= @site.assets %>/img/raios.png" alt="" width="537" height="560">
+    <div id="top-bar" class="subtitle">
+      <div class="center">
+        <h3><%= @getLang().slogan %></h3>
+        <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">
+          <img src="<%= @site.assets %>/img/flag-english.png" alt="USA Flag" width="32" height="32">
+        </a>
+        <a id="flag-pt" class="flags" href="http://browserdiet.com/pt/" title="Português">
+          <img src="<%= @site.assets %>/img/flag-portuguese.png" alt="Brazilian Flag" width="32" height="32">
+        </a>
       </div>
     </div>
+
+    <a href="https://github.com/zenorocha/browser-diet">
+      <img id="github-ribbon" src="<%= @site.assets %>/img/github-fork.png" alt="Fork me on GitHub" width="149" height="149">
+    </a>
+
+    <div class="center">
+      <div class="intro">
+        <hgroup class="intro-titles">
+          <%- @getLang().titleHTML %>
+        </hgroup>
+
+        <div class="superman">
+          <img class="superman-geek" src="<%= @site.assets %>/img/superman.png" alt="Superman" width="320" height="393">
+          <img class="superman-raios" src="<%= @site.assets %>/img/raios.png" alt="" width="537" height="560">
+        </div>
+      </div>
+    </div>
+
+    <div id="menu">
+      <ul class="center">
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#js">JavaScript</a></li>
+        <li><a href="#jquery">jQuery</a></li>
+        <li><a href="#images"><%= @getLang().images %></a></li>
+        <li><a href="#server"><%= @getLang().server %></a></li>
+        <li><a href="#bonus"><%= @getLang().bonus %></a></li>
+      </ul>
+    </div>
+
   </div>
 
-  <div id="menu">
-    <ul class="center">
-      <li><a href="#html">HTML</a></li>
-      <li><a href="#css">CSS</a></li>
-      <li><a href="#js">JavaScript</a></li>
-      <li><a href="#jquery">jQuery</a></li>
-      <li><a href="#images"><%= @getLang().images %></a></li>
-      <li><a href="#server"><%= @getLang().server %></a></li>
-      <li><a href="#bonus"><%= @getLang().bonus %></a></li>
-    </ul>
-  </div>
+  <div id="content">
+    <div class="center">
 
-  <div id="content" class="center">
+      <%- @content %>
 
-    <%- @content %>
+      <%- @partial('section.html.eco', { sectionTitle: 'HTML', sectionID: 'html', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <%- @partial('section.html.eco', { sectionTitle: 'HTML', sectionID: 'html', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+      <%- @partial('section.html.eco', { sectionTitle: 'CSS', sectionID: 'css', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <%- @partial('section.html.eco', { sectionTitle: 'CSS', sectionID: 'css', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+      <%- @partial('section.html.eco', { sectionTitle: 'JavaScript', sectionID: 'js', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <%- @partial('section.html.eco', { sectionTitle: 'JavaScript', sectionID: 'js', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+      <%- @partial('section.html.eco', { sectionTitle: 'jQuery', sectionID: 'jquery', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <%- @partial('section.html.eco', { sectionTitle: 'jQuery', sectionID: 'jquery', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+      <%- @partial('section.html.eco', { sectionTitle: @getLang().images, sectionID: 'images', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <%- @partial('section.html.eco', { sectionTitle: @getLang().images, sectionID: 'images', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+      <%- @partial('section.html.eco', { sectionTitle: @getLang().server, sectionID: 'server', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <%- @partial('section.html.eco', { sectionTitle: @getLang().server, sectionID: 'server', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+      <%- @partial('section.html.eco', { sectionTitle: @getLang().bonus, sectionID: 'bonus', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
-    <%- @partial('section.html.eco', { sectionTitle: @getLang().bonus, sectionID: 'bonus', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
-
+    </div>
   </div>
 
   <!-- <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
