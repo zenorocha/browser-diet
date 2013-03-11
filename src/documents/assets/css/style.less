@@ -24,7 +24,6 @@ ul {
 
 body {
 	-webkit-text-size-adjust: none;
-	background: @yellow;
 }
 
 p, pre {
@@ -65,7 +64,7 @@ strong {
 .intro {
 	position: relative;
 	line-height: (517 / 16em);
-
+	z-index: 1;
 	max-width: 51em;
 	overflow: hidden;
 	margin-left: auto;
@@ -73,6 +72,14 @@ strong {
 
 #menu {
 	background: @red;
+}
+
+#header {
+	background: @yellow;
+}
+
+#content {
+	background: #fff;
 }
 
 /*	--- Superman --- */
@@ -287,8 +294,7 @@ strong {
 /* --- Articles --- */
 
 .article {
-	margin: 5% 0;
-	padding-left: 2%;
+	padding: 4% 0 0 2%;
 	clear: both;
 }
 
