@@ -23,4 +23,4 @@ Logo, use o link para a versão específica do jQuery que você precisa.
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 ```
 
-Já dizia o sábio [Barney Stinson](/assets/img/new-is-always-better.gif): *"New is always better"* :P
+Já dizia o sábio [Barney Stinson](/img/new-is-always-better.gif): *"New is always better"* :P
