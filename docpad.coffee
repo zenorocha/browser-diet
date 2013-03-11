@@ -8,7 +8,7 @@ module.exports =
         # -----------------------------
         # Language Definition
 
-        currentLang: 'pt'
+        currentLang: 'en'
 
         lang:
             en:

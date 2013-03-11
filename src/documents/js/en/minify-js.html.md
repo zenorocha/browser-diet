@@ -3,7 +3,7 @@ order: 14
 title: Minify your script
 ---
 
-Assim como no CSS, para manter um código legível é bom escrever comentários e ter cuidado com indentação.
+Just like CSS, to maintain readible code, it's a good idea to write comments and use indentation:
 
 ```js
 BrowserDiet.app = function() {
@@ -19,12 +19,12 @@ BrowserDiet.app = function() {
 };
 ```
 
-Só que para a máquina, nada disso importa. Por isso, lembre-se de comprimir seu JavaScript através de uma ferramenta automatizada.
+But to the browser, none of this actually matters. For this reason, always remember to minify your JavaScript through automated tools.
 
 ```js
 BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 ```
 
-Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.
+This will shave bytes from the filesize, which results in faster downloads, parsing and execution.
 
-*> Ferramentas úteis: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [Google Closure Compiler](http://code.google.com/closure/compiler/) e [UglifyJS](https://github.com/mishoo/UglifyJS).*
+*> Useful tools: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [Google Closure Compiler](http://code.google.com/closure/compiler/) and [UglifyJS](https://github.com/mishoo/UglifyJS).*

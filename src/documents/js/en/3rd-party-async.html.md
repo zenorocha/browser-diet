@@ -3,13 +3,11 @@ order: 18
 title: Load 3rd party content asynchronously
 ---
 
-Quem nunca carregou um código de terceiros para embedar um vídeo do YouTube ou colocar um botão de like/tweet?
+Who never loaded a third-party content  to embed a Youtube video or like/tweet button?
 
-O grande problema é que nem sempre esses códigos são entregues de maneira eficiente, seja pela conexão do usuário, ou pela conexão no servidor onde estão hospedados. Ou esse serviço pode estar temporariamente fora do ar ou mesmo ser bloqueado pelo firewall do usuário ou da empresa dele.
+The big problem is that these codes aren't always delivered efficiently, either by user's connection, or the connection to the server where they are hosted. Or this service might be temporarily down or even be blocked by the user's or his company's firewall.
 
-Para evitar que isso se torne um ponto crítico no carregamento de um site ou, pior, trave o carregamento da página toda, sempre carregue estes códigos de forma assíncrona (ou então use *[Friendly iFrames](https://www.facebook.com/note.php?note_id=10151176218703920)*).
-
-* > Video: [comparação de uma mesma página normal vs simulação onde embed de terceiros está inacessível](http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d).
+To avoid it becoming a critical issue when loading a site or worse, lock the entire page load, always load these codes asynchronously (or use *[Friendly iFrames](https://www.facebook.com/note.php?note_id=10151176218703920)*).
 
 ```js
 var script = document.createElement('script'),
@@ -18,3 +16,5 @@ script.async = true;
 script.src = url;
 scripts.parentNode.insertBefore(script, scripts);
 ```
+
+*> Video: [comparison of a normal page vs a page where an inaccessible 3rd party content is loaded](http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d).*

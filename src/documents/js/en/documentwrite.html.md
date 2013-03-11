@@ -3,17 +3,17 @@ order: 16
 title: Avoid document.write
 ---
 
-O uso do `document.write` faz com que a página fique na dependência do seu retorno para ser completamente carregada.
+The use of `document.write` causes a dependency to the page on its return to be fully loaded.
 
-Essa (má) prática já foi abolida há anos pelos desenvolvedores, mas ainda existem casos onde seu uso ainda é necessário, como no fallback síncrono de algum arquivo JavaScript.
+This (bad) practice has been abolished for years by developers, but there are still cases where its use is still required, as in synchronous fallback for some JavaScript file.
 
-O [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/), por exemplo, faz o uso desta técnica para carregar o jQuery localmente, caso a *CDN* do Google não responda.
+[HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/), for example, uses this technique to load jQuery locally if Google's *CDN* doesn't respond.
 
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 ```
-**> Atenção:** `document.write` executado durante ou após o evento `window.onload` substitui todo o conteúdo da página atual. Exemplo:
+**> Attention:** *`document.write` performed during or after `window.onload` event replaces the entire content of the current page.*
 
 ```html
 <span>foo</span>
@@ -23,7 +23,7 @@ O [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/), por exemplo, 
   };
 </script>
 ```
-O resultado da página final será somente *bar* e não *foobar* como esperado. O mesmo ocorre quando executado após o evento `window.onload`. Exemplo:
+The result of the final page will be only *bar* and not *foobar* as expected. The same occurs when it runs after `window.onload` event.
 
 ```html
 <span>foo</span>
@@ -36,4 +36,4 @@ O resultado da página final será somente *bar* e não *foobar* como esperado. 
   };
 </script>
 ```
-O resultado será o mesmo do exemplo anterior caso a função agendada pelo `setTimeout` seja executada após evento `window.onload`.
+The result will be the same as the previous example if the function scheduled by `setTimeout` is executed after `window.onload` event.

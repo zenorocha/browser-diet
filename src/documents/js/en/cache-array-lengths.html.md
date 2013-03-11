@@ -3,43 +3,43 @@ order: 17
 title: Cache array lengths
 ---
 
-O loop é sem dúvida é uma das partes mais importantes com relação a performance no JavaScript. Busque otimizar a lógica dentro de um loop para que cada iteração seja feita de forma eficiente.
+The loop is undoubtedly one of the most important parts related to JavaScript performance. Try to optimize the logic inside a loop so that each iteration is done efficiently.
 
-Um modo para fazer isso é armazenando o tamanho do array que será percorrido, assim ele não precisa ser recalculado toda vez que o loop for iterado.
+One way to do this is to store the size of the array that will be covered, so it doesn't need to be recalculated every time the loop is iterated.
 
 ```js
 var arr = new Array(1000);
 
 for (var i = 0; i < arr.length; i++) {
-  // Ruim - o tamanho precisa ser calculado 1000 vezes
+  // Bad - size needs to be recalculated 1000 times
 }
 
 for (var i = 0, len = arr.length; i < len; i++) {
-  // Bom - o tamanho só é calculado 1 vez e depois armazenado
+  // Good - size is calculated only 1 time and then stored
 }
 ```
 
-*[> Resultado no JSPerf](http://jsperf.com/browser-diet-cache-array-length/)*
+*[> Results on JSPerf](http://jsperf.com/browser-diet-cache-array-length/)*
 
-**> Observação:** *Embora engines de browsers modernos otimizam automaticamente esse processo, continua sendo uma boa prática atender o legado de browsers que ainda perduram.*
+**> Note:** *Although modern browsers engines automatically optimize this process, remains a good practice to suit the legacy browsers that still linger.*
 
-Em iterações sobre coleções HTML como uma lista de Nodes (*NodeList*) geradas por exemplo através de `document.getElementsByTagName('a')`, isto é particularmente crítico e essencial. Essas coleções são consideradas "vivas", ou seja, são automaticamente atualizadas quando há alterações no elemento à qual pertencem.
+In iterations over collections in HTML as a list of Nodes (*NodeList*) generated for example by `document.getElementsByTagName('a')` this is particularly critical. These collections are considered "live", i.e. they are automatically updated when there are changes in the element to which they belong.
 
 ```js
 var links = document.getElementsById('a');
 
 for (var i = 0; i < links.length; i++) {
-  // Ruim - a cada iteração a lista de links será recalculada para verificar se houve mudança
+  // Bad - each iteration the list of links will be recalculated to see if there was a change
 }
 
 for (var i = 0, len = links.length; i < len; i++) {
-  // Bom - o tamanho da lista é primeiramente obtido e armazenado e comparado a cada iteração
+  // Good - the list size is first obtained and stored, then compared each iteration
 }
 
-// Péssimo: exemplo de loop infinito
+// Terrible: infinite loop example
 for (var i = 0; i < links.length; i++) {
   document.body.appendChild(document.createElement('a'));
-  // a cada iteração a lista de links aumenta nunca satisfazendo a condição de término do loop
-  // isso não aconteceria se o tamnho da lista fosse armazenado e usado como condição
+  // each iteration the list of links increases, never satisfying the termination condition of the loop
+  // this would not happen if the size of the list was stored and used as a condition
 }
 ```

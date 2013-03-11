@@ -3,7 +3,7 @@ order: 13
 title: Combine multiple JS files into one
 ---
 
-Outra boa prática para organização e manutenção é separar seu script em diversos arquivos.
+Another best practice for organization and maintenance of scripts is to separate them into modular components.
 
 ```html
 <script src="navbar.js"></script>
@@ -13,14 +13,14 @@ Outra boa prática para organização e manutenção é separar seu script em di
 <script src="plugin.js"></script>
 ```
 
-Porém, é preciso realizar uma requisição HTTP para cada um dos arquivos e sabemos que o navegador não consegue lidar com muitos downloads paralelos.
+However, an HTTP request is required for each one of these files (and we know that browsers can only download a limited number resources in parallel).
 
 ```html
 <script src="main.js"></script>
 ```
 
-Logo, combine seu JS. Quanto menor for o número de arquivos, menor será o número de requisições feitas e mais rápida sua página carregará.
+So combine your JS. Having a smaller number of files will result in a smaller number of requests and a faster loading page.
 
-Quer ter o melhor dos dois mundos? Automatize esse processo através de uma ferramenta de build.
+Want to have the best of both worlds? Automate this process through a build tool.
 
-*> Ferramentas úteis: [Grunt](http://gruntjs.com/).*
+*> Useful tools: [Grunt](http://gruntjs.com/).*
