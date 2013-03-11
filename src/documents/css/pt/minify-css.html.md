@@ -22,7 +22,7 @@ Para manter um código legível é bom escrever comentários e ter cuidado com i
 Só que para a máquina, nada disso importa. Por isso, lembre-se de comprimir seu CSS através de uma ferramenta automatizada.
 
 ```css
-.center{width:960px;margin:0 auto;}.intro{margin:100px;position:relative;}
+.center{width:960px;margin:0 auto}.intro{margin:100px;position:relative}
 ```
 
 Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.
