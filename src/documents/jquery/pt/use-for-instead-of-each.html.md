@@ -8,7 +8,7 @@ respectivas em jQuery. Sendo assim, ao invés de utilizar o método `jQuery.each
 
 Mas atenção, apesar do `for in` ser nativo, sua performance muitas vezes é pior que o `jQuery.each`.
 
-Já o bom e velho `for` nos trás uma melhor forma de deixar nossas iterações mais rápidas, e você ainda pode aplicar um cache para o tamanho total do array e conseguirá aumentar o número de operações por segundo.
+Já o bom e velho `for` nos traz uma melhor forma de deixar nossas iterações mais rápidas, e você ainda pode aplicar um cache para o tamanho total do array e conseguirá aumentar o número de operações por segundo.
 
 ```js
 for ( var i = 0, len = a.length; i < len; i++ ) {
