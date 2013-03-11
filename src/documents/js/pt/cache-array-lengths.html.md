@@ -33,13 +33,13 @@ for (var i = 0; i < links.length; i++) {
 }
 
 for (var i = 0, len = links.length; i < len; i++) {
-  // Bom - o tamanho da lista é primeiramente obtido e armazenado e comparado a cada iteração
+  // Bom - o tamanho da lista é primeiramente obtido e armazenado, depois comparado a cada iteração
 }
 
 // Péssimo: exemplo de loop infinito
 for (var i = 0; i < links.length; i++) {
   document.body.appendChild(document.createElement('a'));
-  // a cada iteração a lista de links aumenta nunca satisfazendo a condição de término do loop
-  // isso não aconteceria se o tamnho da lista fosse armazenado e usado como condição
+  // a cada iteração a lista de links aumenta, nunca satisfazendo a condição de término do loop
+  // isso não aconteceria se o tamanho da lista fosse armazenado e usado como condição
 }
 ```

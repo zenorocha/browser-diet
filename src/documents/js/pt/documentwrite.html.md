@@ -13,7 +13,7 @@ O [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/), por exemplo, 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 ```
-**> Atenção:** `document.write` executado durante ou após o evento `window.onload` substitui todo o conteúdo da página atual. Exemplo:
+**> Atenção:** *`document.write` executado durante ou após o evento `window.onload` substitui todo o conteúdo da página atual.*
 
 ```html
 <span>foo</span>
@@ -23,7 +23,7 @@ O [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/), por exemplo, 
   };
 </script>
 ```
-O resultado da página final será somente *bar* e não *foobar* como esperado. O mesmo ocorre quando executado após o evento `window.onload`. Exemplo:
+O resultado da página final será somente *bar* e não *foobar* como esperado. O mesmo ocorre quando executado após o evento `window.onload`.
 
 ```html
 <span>foo</span>
