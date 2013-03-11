@@ -24,4 +24,4 @@ But to the browser, none of this actually matters. For this reason, it can be us
 
 This will shave bytes from the filesize, and as a result, your users will enjoy faster downloads, parsing and execution.
 
-*> Usefull tools: [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
+*> Useful tools: [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
