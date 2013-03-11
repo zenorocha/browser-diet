@@ -7,7 +7,7 @@ title: Diagnosis tools: your best friend
   <img id="geek-43" class="icos-geek" src="http://browserdiet.com/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
 
-If you'd like to venture into this world of web performance, it's crucial to install the [YSlow](http://yslow.org/) and [PageSpeed](https://developers.google.com/speed/pagespeed/insights_extensions?hl=pt-BR) extensions in your browser&mdash;they'll be your best friends from now on.
+If you'd like to venture into this world of web performance, it's crucial to install the [YSlow](http://yslow.org/) and [PageSpeed](https://developers.google.com/speed/pagespeed/insights_extensions) extensions in your browser&mdash;they'll be your best friends from now on.
 
 Or, if you prefer online tools, visit the [WebPageTest](http://www.webpagetest.org/), [HTTP Archive](http://httparchive.org/) or [PageSpeed](http://pagespeed.googlelabs.com/) sites.
 
