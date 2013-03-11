@@ -20,7 +20,7 @@ But be careful! We should avoid referencing the file like we've just done as thi
 Instead, link to the latest version of jQuery that you need specifically.
 
 ```html
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 ```
 
 Just like the wise [Barney Stinson](/img/new-is-always-better.gif) says, *"New is always better"* :P
