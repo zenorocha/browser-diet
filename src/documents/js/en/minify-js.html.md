@@ -3,7 +3,7 @@ order: 14
 title: Minify your script
 ---
 
-Just like CSS, to maintain readible code, it's a good idea to write comments and use indentation:
+Just like CSS, to maintain readable code, it's a good idea to write comments and use indentation:
 
 ```js
 BrowserDiet.app = function() {
