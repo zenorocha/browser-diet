@@ -9,15 +9,14 @@ The core jQuery team is always looking to bring improvments to the library, thro
   <img id="geek-36" class="icos-geek" src="http://browserdiet.com/img/36.png" alt="Geek #36" width="144" height="275" />
 </div>
 
-For this reason, always use the latest version of jQuery.
+For this reason, always use the latest version of jQuery. The latest released version is always available here, if you want to copy it to a local file on your own server:
 
 ```html
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+http://code.jquery.com/jquery-latest.js
 ```
 
-But be careful! We should avoid referencing the file like we've just done as this can create problems in the future as newer versions are automatically served to that URL.
-
-Instead, link to the latest version of jQuery that you need specifically.
+But _never_ reference that URL in a `<script>` tag, it may create problems in the future as newer versions are automatically served to to your site
+before you've had a chance to test them. Instead, link to the latest version of jQuery that you need specifically.
 
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
