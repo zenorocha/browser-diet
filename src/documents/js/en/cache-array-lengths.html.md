@@ -26,7 +26,7 @@ for (var i = 0, len = arr.length; i < len; i++) {
 In iterations over collections in HTML as a list of Nodes (*NodeList*) generated for example by `document.getElementsByTagName('a')` this is particularly critical. These collections are considered "live", i.e. they are automatically updated when there are changes in the element to which they belong.
 
 ```js
-var links = document.getElementsById('a');
+var links = document.getElementsByTagName('a');
 
 for (var i = 0; i < links.length; i++) {
   // Bad - each iteration the list of links will be recalculated to see if there was a change
