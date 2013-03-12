@@ -14,3 +14,5 @@ A primeira opção, apesar de reduzir o número de requisições, aumenta o tama
 *> Evite escrever manualmente o CSS/JS no meio do HTML (prefira alguma ferramenta que automatize este processo).*
 
 Já a segunda opção, não só melhora a organização do seu código, como também possibilita que eles sejam armazenados no cache do navegador. Prefira essa opção para a maior parte dos casos, quando lidamos com arquivos grandes e o custo de colocá-lo inline é maior.
+
+*> Ferramentas úteis: [Assetgraph-builder](https://github.com/One-com/assetgraph-builder).*
