@@ -8,7 +8,6 @@
   <meta charset="utf-8">
   <meta name="description" content="<%= @getLang().slogan %>">
   <meta name="keywords" content="front-end, web performance, cache, compress, minify, combine">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Schema.org -->
   <meta itemprop="name" content="<%= @getLang().title %>">
