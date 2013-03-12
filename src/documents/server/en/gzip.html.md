@@ -10,7 +10,11 @@ GZIP compresses data on the server before sending it over the network to the use
 Configuration is set up on the server. On Apache, for example, you can edit the `.htaccess` file and turn on GZIP for the types of files that you want:
 
 ```
-AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/javascript
 ```
 
 All popular servers as just as simple to set up (consult the docs for yours!) and it's one of the most effective tips for improving page performance.
