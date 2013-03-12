@@ -58,19 +58,18 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="menu">
-      <ul class="center">
-        <li><a href="#html">HTML</a></li>
-        <li><a href="#css">CSS</a></li>
-        <li><a href="#js">JavaScript</a></li>
-        <li><a href="#jquery">jQuery</a></li>
-        <li><a href="#images"><%= @getLang().images %></a></li>
-        <li><a href="#server"><%= @getLang().server %></a></li>
-        <li><a href="#bonus"><%= @getLang().bonus %></a></li>
-      </ul>
-    </div>
-
+  <div id="menu">
+    <ul class="center">
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#js">JavaScript</a></li>
+      <li><a href="#jquery">jQuery</a></li>
+      <li><a href="#images"><%= @getLang().images %></a></li>
+      <li><a href="#server"><%= @getLang().server %></a></li>
+      <li><a href="#bonus"><%= @getLang().bonus %></a></li>
+    </ul>
   </div>
 
   <div id="content">
@@ -95,9 +94,36 @@
     </div>
   </div>
 
-  <!-- <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
+   <a title="<%= @getLang().goTop %>" id="top" href="#top-bar" class="animate">
     <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">
-  </a> -->
+  </a>
+
+
+  <!-- SCRIPTS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    $('.animate').bind('click',function(e){
+        var id = $(this).attr('href');
+
+        e.preventDefault();
+        $('html,body').animate({scrollTop: $(''+id+'').offset().top},'slow');
+    });
+
+    $(function () {
+      $(window).scroll(function () {
+        console.log( $(this).scrollTop() )
+        if ($(this).scrollTop() > 560) {
+          $("#menu").addClass("fixing-menu");
+          $("#github-ribbon").hide();
+          $("#top").show();
+        } else {
+          $("#menu").removeClass("fixing-menu");
+          $("#github-ribbon").show();
+          $("#top").hide();
+        }
+      });
+    });
+  </script>
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
