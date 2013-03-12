@@ -10,9 +10,7 @@ O guia definitivo de performance para o desenvolvedor front-end.
 
 ## Contribuindo
 
-Para adicionar novas dicas ou editar dicas existentes, basta se dirigir a pasta [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents). Lá você irá encontrar todas elas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown).
-
-Lembre-se também de adicionar as referências que você utilizou para escrever determinada dica na wiki [References](https://github.com/zenorocha/browser-diet/wiki/References).
+Para adicionar novas dicas ou editar dicas existentes, basta se dirigir a pasta [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents). Lá você irá encontrar todas elas em formato [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown). Lembre-se também de adicionar as referências de cada dica na wiki [References](https://github.com/zenorocha/browser-diet/wiki/References).
 
 ## Instruções
 
@@ -88,6 +86,8 @@ Contém blocos de código reaproveitáveis.
 Lista as dependências de módulos do NodeJS.
 
 ## Time
+
+* [Zeno Rocha](https://github.com/zenorocha) (Liferay)
 
 ### Design
 

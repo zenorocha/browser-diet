@@ -10,9 +10,7 @@ The definitive front-end performance guide.
 
 ## Contributing
 
-If you want to add new tips or edit the existing ones, just go to the [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents) folder. There you can find all of them in [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown) format.
-
-Remember to add references on each tip that you write at [References](https://github.com/zenorocha/browser-diet/wiki/References) wiki.
+If you want to add new tips or edit the existing ones, just go to the [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents) folder. There you can find all of them in [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown) format. Remember to add references on each tip that you write at [References](https://github.com/zenorocha/browser-diet/wiki/References) wiki.
 
 ## Instructions
 
@@ -62,8 +60,8 @@ This project uses [DocPad](https://github.com/bevry/docpad), a static generator 
 |-- out/
 |-- src/
 |   |-- documents
-|   |-- files
 |   |-- layouts
+|   |-- partials
 `-- package.json
 </pre>
 
@@ -73,21 +71,23 @@ This is where the generated files are stored, once DocPad has been run. However,
 
 ### [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents)
 
-Contains all tips in [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown) format.
-
-### [src/files](https://github.com/zenorocha/browser-diet/tree/master/src/files)
-
-Contains images, fonts, CSS and JS files.
+Contains all tips in [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown) format, in addition to images, fonts, CSS and JS files.
 
 ### [src/layouts](https://github.com/zenorocha/browser-diet/tree/master/src/layouts)
 
 Contains the default template.
+
+### [src/partials](https://github.com/zenorocha/browser-diet/tree/master/src/partials)
+
+Contains reusable blocks of code.
 
 ### [package.json](https://github.com/zenorocha/browser-diet/blob/master/package.json)
 
 Lists all NodeJS dependencies.
 
 ## Team
+
+* [Zeno Rocha](https://github.com/zenorocha) (Liferay)
 
 ### Design
 
