@@ -9,7 +9,7 @@ title: That's it for today!
 
 We hope that after reading this guide you can get your site in shape. :)
 
-And remember, like all things in life, [there's no such thing as a silver bullet](http://www.cs.nott.ac.uk/~cah/G51ISS/Documents/NoSilverBullet.html). Performance tuning of your application is a worthwhile venture, but should not be the sole basis of all your development decisions&mdash;at times you'll need to weigh out the costs and beneifts.
+And remember, like all things in life, [there's no such thing as a silver bullet](http://www.cs.nott.ac.uk/~cah/G51ISS/Documents/NoSilverBullet.html). Performance tuning of your application is a worthwhile venture, but should not be the sole basis of all your development decisions&mdash;at times you'll need to weigh out the costs and benefits.
 
 Want to learn more? Check out the [References](https://github.com/zenorocha/browser-diet/wiki/References) that we used to write this guide.
 
