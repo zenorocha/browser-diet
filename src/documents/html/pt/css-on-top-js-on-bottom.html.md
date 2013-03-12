@@ -1,5 +1,5 @@
 ---
-order: 26
+order: 27
 title: Estilos no topo, Scripts no rodapé
 ---
 

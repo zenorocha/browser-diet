@@ -1,5 +1,5 @@
 ---
-order: 25
+order: 26
 title: Comprima seu HTML
 ---
 

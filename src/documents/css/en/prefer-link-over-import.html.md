@@ -1,5 +1,5 @@
 ---
-order: 20
+order: 21
 title: Prefer <link> over @import
 ---
 
