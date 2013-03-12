@@ -21,7 +21,7 @@ After:
 }
 ```
 
-All browsers from IE8 and above support this inlining technique.
+All browsers from IE8 and above support this base64-encoded technique.
 
 Both this method and the CSS spriting method require build time tools to be maintainable. This method has the advantage of not requiring manual spriting placement as it keeps your images in individual files during development.
 
