@@ -23,4 +23,4 @@ There will also be many elements that certain attributes just won't have any eff
 
 For this reason, we recommend that you use a CSS Reset, or roll your own.
 
-*> Useful tools: [Yahoo! Reset](http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css), [Normalize](http://necolas.github.com/normalize.css/) e [Eric Meyer's Reset](http://meyerweb.com/eric/tools/css/reset/).*
+*> Useful tools: [Yahoo! Reset](http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css), [Normalize](http://necolas.github.com/normalize.css/) and [Eric Meyer's Reset](http://meyerweb.com/eric/tools/css/reset/).*
