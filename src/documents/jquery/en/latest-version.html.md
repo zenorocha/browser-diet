@@ -15,7 +15,7 @@ For this reason, always use the latest version of jQuery, which is always availa
 http://code.jquery.com/jquery-latest.js
 ```
 
-But _never_ reference that URL in a `<script>` tag, it may create problems in the future as newer versions are automatically served to to your site
+But _never_ reference that URL in a `<script>` tag, it may create problems in the future as newer versions are automatically served to your site
 before you've had a chance to test them. Instead, link to the latest version of jQuery that you need specifically.
 
 ```html
