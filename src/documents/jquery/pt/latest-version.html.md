@@ -9,15 +9,13 @@ Os membros do core do jQuery estão sempre buscando trazer novidades para a bibl
   <img id="geek-36" class="icos-geek" src="http://browserdiet.com/img/36.png" alt="Geek #36" width="144" height="275" />
 </div>
 
-Por isso, use sempre a última versão do jQuery.
+Por isso, use sempre a última versão do jQuery que está sempre disponível aqui, caso você queira copiar para um arquivo local:
 
 ```html
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+http://code.jquery.com/jquery-latest.js
 ```
 
-Mas cuidado! Devemos evitar referências para o arquivo listado acima, pois isso pode lhe causar problemas no futuro, já que a cada nova versão ocorre uma atualização automática nesse script.
-
-Logo, use o link para a versão específica do jQuery que você precisa.
+Mas _nunca_ referencie aquela URL na sua tag `<script>`, isso pode criar problemas no futuro já que novas versões são automaticamente servidas no seu site antes mesmo de você ter a chance de testá-las. Em vez disso, use a última versão específica do jQuery que você precisa.
 
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
