@@ -3,7 +3,7 @@ order: 3
 title: GZIP
 ---
 
-A large percentange of a site's content is simple text (HTML, CSS, JavaScript, JSON, XML, etc.). For this kind of content, it's good practice to turn on GZIP compression at the server level.
+A large percentage of a site's content is simple text (HTML, CSS, JavaScript, JSON, XML, etc.). For this kind of content, it's good practice to turn on GZIP compression at the server level.
 
 GZIP compresses data on the server before sending it over the network to the user's browser, which decodes it on the fly for the user. It's just like zipping up a file before sending to someone to make it smaller. All modern browsers and servers support GZIP.
 
