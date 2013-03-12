@@ -3,7 +3,7 @@ order: 24
 title: Minify your stylesheets
 ---
 
-To maintain readible code, it's a good idea to write comments and use indentation:
+To maintain readable code, it's a good idea to write comments and use indentation:
 
 ```css
 .center {

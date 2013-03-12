@@ -3,7 +3,7 @@ order: 26
 title: Minify your HTML
 ---
 
-To maintain readible code, it's a good idea to write comments and use indentation.
+To maintain readable code, it's a good idea to write comments and use indentation.
 
 ```html
 <p>Lorem ipsum dolor sit amet.</p>
