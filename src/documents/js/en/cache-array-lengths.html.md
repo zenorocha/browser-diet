@@ -8,13 +8,20 @@ The loop is undoubtedly one of the most important parts related to JavaScript pe
 One way to do this is to store the size of the array that will be covered, so it doesn't need to be recalculated every time the loop is iterated.
 
 ```js
-var arr = new Array(1000);
+var arr = new Array(1000),
+    i;
 
-for (var i = 0; i < arr.length; i++) {
+for (i = 0; i < arr.length; i++) {
   // Bad - size needs to be recalculated 1000 times
 }
+```
+```js
 
-for (var i = 0, len = arr.length; i < len; i++) {
+var arr = new Array(1000),
+    len = arr.length,
+    i;
+
+for (i = 0; i < len; i++) {
   // Good - size is calculated only 1 time and then stored
 }
 ```
@@ -26,18 +33,28 @@ for (var i = 0, len = arr.length; i < len; i++) {
 In iterations over collections in HTML as a list of Nodes (*NodeList*) generated for example by `document.getElementsByTagName('a')` this is particularly critical. These collections are considered "live", i.e. they are automatically updated when there are changes in the element to which they belong.
 
 ```js
-var links = document.getElementsById('a');
+var links = document.getElementsById('a'),
+    i;
 
-for (var i = 0; i < links.length; i++) {
+for (i = 0; i < links.length; i++) {
   // Bad - each iteration the list of links will be recalculated to see if there was a change
 }
+```
+```js
+var links = document.getElementsById('a'),
+    len = links.length,
+    i;
 
-for (var i = 0, len = links.length; i < len; i++) {
+for (i = 0; i < len; i++) {
   // Good - the list size is first obtained and stored, then compared each iteration
 }
+```
+```js
+var links = document.getElementsById('a'),
+    i;
 
 // Terrible: infinite loop example
-for (var i = 0; i < links.length; i++) {
+for (i = 0; i < links.length; i++) {
   document.body.appendChild(document.createElement('a'));
   // each iteration the list of links increases, never satisfying the termination condition of the loop
   // this would not happen if the size of the list was stored and used as a condition
