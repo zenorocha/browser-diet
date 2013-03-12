@@ -27,4 +27,4 @@ Ambos esse método e CSS sprites precisam de ferramentas de build para serem de 
 
 Entretanto tem a desvantagem de aumentar consideravelmente o tamanho do seu HTML/CSS se você possuir imagens grandes. Não é recomendado utilizar esse método se você não está utilizando a técnica de gzip no seu HTML/CSS durante as requisições HTTP já que a sobrecarga de tamanho pode anular os ganhos de velocidade sobre minimizar o número de requisições HTTP.
 
-*> Ferramentas úteis: [data: URI Generator](http://dopiaza.org/tools/datauri/index.php)*
+*> Ferramentas úteis: [mod_pagespeed](https://developers.google.com/speed/docs/mod_pagespeed/filter-image-optimize) e [data: URI Generator](http://dopiaza.org/tools/datauri/index.php).*
