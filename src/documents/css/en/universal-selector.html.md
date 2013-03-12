@@ -21,6 +21,6 @@ Avoid using the universal selector as it forces the browser to search over **all
 
 There will also be many elements that certain attributes just won't have any effect on.
 
-For this reason, we recommend that you use a CSS Reset, our roll your own.
+For this reason, we recommend that you use a CSS Reset, or roll your own.
 
 *> Useful tools: [Yahoo! Reset](http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css), [Normalize](http://necolas.github.com/normalize.css/) e [Eric Meyer's Reset](http://meyerweb.com/eric/tools/css/reset/).*
