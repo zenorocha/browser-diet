@@ -3,7 +3,7 @@ order: 10
 title: Take advantage of method chaining
 ---
 
-Chaining means you can execute a jQuery method one right after the other, without needing to re-specify a selector. Nearly all jQuery methods allow chaining by returning a jQuery object.
+Chaining means you can execute one jQuery method right after the other, without needing to re-specify a selector. Nearly all jQuery methods allow chaining by returning a jQuery object.
 
 ```js
 $("#object").addClass("foo").css("border-color", "#ccc").width(200);
