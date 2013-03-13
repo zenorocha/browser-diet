@@ -87,7 +87,6 @@ Una lista con todas las dependencias de NodeJS.
 
 ## Equipo
 
-
 * [Zeno Rocha](https://github.com/zenorocha) (Liferay)
 
 ### Diseño
@@ -106,6 +105,11 @@ Una lista con todas las dependencias de NodeJS.
 * [Mike Taylor](https://github.com/miketaylr) (Opera)
 * [Renato Mangini](https://github.com/mangini) (Google)
 * [Sérgio Lopes](https://github.com/sergiolopes) (Caelum)
+
+### Traducciones
+
+* [Mike Taylor](https://github.com/miketaylr) (Inglés)
+* [Emilio Cobos Álvarez](https://github.com/ecoal95) (Español)
 
 ## Créditos
 

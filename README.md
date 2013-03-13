@@ -106,6 +106,11 @@ Lists all NodeJS dependencies.
 * [Renato Mangini](https://github.com/mangini) (Google)
 * [Sérgio Lopes](https://github.com/sergiolopes) (Caelum)
 
+### Translations
+
+* [Mike Taylor](https://github.com/miketaylr) (English)
+* [Emilio Cobos Álvarez](https://github.com/ecoal95) (Spanish)
+
 ## Credits
 
 * DocPad by [Benjamin Lupton](https://github.com/balupton)

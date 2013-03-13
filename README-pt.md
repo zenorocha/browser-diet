@@ -106,6 +106,11 @@ Lista as dependências de módulos do NodeJS.
 * [Renato Mangini](https://github.com/mangini) (Google)
 * [Sérgio Lopes](https://github.com/sergiolopes) (Caelum)
 
+### Traduções
+
+* [Mike Taylor](https://github.com/miketaylr) (Inglês)
+* [Emilio Cobos Álvarez](https://github.com/ecoal95) (Espanhol)
+
 ## Créditos
 
 * DocPad por [Benjamin Lupton](https://github.com/balupton)
