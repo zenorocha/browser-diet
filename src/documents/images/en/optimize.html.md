@@ -9,6 +9,8 @@ There are tools that exist for image optimization that will remove all this unne
 
 Another way to optimize images is to compress them at the cost of visual quality. We call these *lossy* optimizations.  When you export a JPEG, for example, you can choose the quality level (a number between 0 and 100).  Thinking about performance, always choose the lowest number possible where the visual quality is still acceptable. Another common lossy technique is to reduce the color palette in a PNG or to convert PNG-24 files into PNG-8.
 
+To improve user perceived performance, you should also transform all your JPEG files in progressive ones. Progressive JPEGs have great browser support, are very simple to create and have no significant performance penalty. The upside is that the image will appear sooner on the page ([see demo](http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg)).
+
 *> Useful **online** tools: [Kraken.io](http://kraken.io), [Smush.it](http://www.smushit.com), [TinyPNG](http://tinypng.org/), [JPEGmini](http://jpegmini.com/).*
 
 *> Useful **desktop** tools: [ImageOptim](http://imageoptim.com/) (Mac), [RIOT](http://luci.criosweb.ro/riot/download/) (Windows), [ImageAlpha](http://pngmini.com/) (Mac).*
