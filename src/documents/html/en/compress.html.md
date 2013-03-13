@@ -24,4 +24,4 @@ But to the browser, none of this actually matters. For this reason, it can be us
 
 This will shave bytes from the filesize, and as a result, your users will enjoy faster downloads, parsing and execution.
 
-*> Useful tools: [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
+*> Useful tools: [HTML Minifier](http://kangax.github.com/html-minifier/) and [HTML Compressor](http://code.google.com/p/htmlcompressor/). Both available as [GruntJS](http://gruntjs.com/) plugins: [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin) and [grunt-htmlcompressor](https://github.com/jney/grunt-htmlcompressor) respectively.*
