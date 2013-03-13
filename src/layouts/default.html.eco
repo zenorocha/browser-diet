@@ -97,10 +97,9 @@
 
   <div id="footer">
     <div class="center">
-      <p>Develop by <em>Zeno Rocha</em> ● Design by <em>Briza Bueno</em> ● Illustrations by <em>Scott Johnson</em></p>
+      <p><%= @getLang().credits %></p>
     </div>
   </div>
-
 
   <!-- <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
     <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">

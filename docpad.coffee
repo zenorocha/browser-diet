@@ -22,6 +22,7 @@ module.exports =
                 edit: 'Edit'
                 goTop: 'Go to the top'
                 htmlLang: 'en-US'
+                credits: 'Develop by <em>Zeno Rocha</em> ● Design by <em>Briza Bueno</em> ● Illustrations by <em>Scott Johnson</em>'
             pt:
                 title: 'Como perder peso (no browser)'
                 titleHTML: '<h1>Como perder <span>peso</span></h1><h2>no browser</h2>'
@@ -33,6 +34,7 @@ module.exports =
                 edit: 'Editar'
                 goTop: 'Ir para o topo'
                 htmlLang: 'pt-BR'
+                credits: 'Desenvolvido por <em>Zeno Rocha</em> ● Design por <em>Briza Bueno</em> ● Ilustrações por <em>Scott Johnson</em>'
 
         # -----------------------------
         # Site Information
