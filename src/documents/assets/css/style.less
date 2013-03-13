@@ -334,6 +334,14 @@ strong {
 	text-align: center;
 }
 
+body {
+  counter-reset: order 25;
+}
+	.rule-counter:before {
+		counter-increment: order -1;
+		content: counter(order);
+	}
+
 /* --- Tips --- */
 
 .img-left {

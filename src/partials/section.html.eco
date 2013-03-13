@@ -9,7 +9,7 @@
     </h1>
     <% if item.order: %>
     <div class="line">
-      <span class="order"><%= item.order %></span>
+      <span class="order rule-counter"></span>
       <a title="<%= @edit %>" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/<%= item.relativePath %>">✎</a>
     </div>
     <% end %>
