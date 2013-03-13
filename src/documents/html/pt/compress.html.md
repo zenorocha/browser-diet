@@ -24,4 +24,4 @@ Só que para a máquina, nada disso importa. Por isso, lembre-se de comprimir se
 
 Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.
 
-*> Ferramentas úteis: [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
+*> Ferramentas úteis: [HTML Minifier](http://kangax.github.com/html-minifier/) e [HTML Compressor](http://code.google.com/p/htmlcompressor/). Ambas disponíveis como plugin para [GruntJS](http://gruntjs.com/): [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin) e [grunt-htmlcompressor](https://github.com/jney/grunt-htmlcompressor) respectivamente.*
