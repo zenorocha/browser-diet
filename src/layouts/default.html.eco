@@ -101,30 +101,7 @@
 
   <!-- SCRIPTS -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-    $('.animate').bind('click',function(e){
-        var id = $(this).attr('href');
-
-        e.preventDefault();
-        $('html,body').animate({scrollTop: $(''+id+'').offset().top},'slow');
-    });
-
-    $(function () {
-      $(window).scroll(function () {
-        console.log( $(this).scrollTop() )
-        if ($(this).scrollTop() > 560) {
-          $("#menu").addClass("fixing-menu");
-          $("#github-ribbon").hide();
-          $("#top").show();
-        } else {
-          $("#menu").removeClass("fixing-menu");
-          $("#github-ribbon").show();
-          $("#top").hide();
-        }
-      });
-    });
-  </script>
-
+  <script src="<%= @site.assets %>/js/main.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-4114546-34']);
