@@ -1,0 +1,16 @@
+---
+order: 5
+title: Optimiza tus imágenes
+---
+
+Los archivos de imágenes contienen muchísima información inútil en la Web. Por ejemplo una foto JPEG puede tener metadatos *Exif* sobre la cámara (fecha, modelo de cámara, ubicación, etc.). Una imagen PNG contiene información sobre colores, metadatos, y a veces incluso una miniatura incrustada. Nada de esto es usado por el navegador y contribuye al aumento del tamaño del archivo.
+
+Hay herramientas para la optimización de imágenes que borrarán estos datos innecesarios y te darán un archivo más ligero sin afectar a la calidad. Decimos que hacen una *compresión sin pérdida*.
+
+Otra forma de optimizar imágenes es comprimirlas a cambio de calidad visual. Llamamos a esto una *optimización con pérdida*. Cuando exportas un JPEG, por ejemplo, puedes escoger el nivel de calidad (un número del uno al 100). Pensando en el rendimiento, siempre escoge el menor número posible mientras la calidad visual sea aceptable. Otra forma común de optimizar con pérdida es reducir la paleta de colores en un PNG, o convertir archivos PNG-24 en PNG-8.
+
+*> Herramientas **online**: [Kraken.io](http://kraken.io), [Smush.it](http://www.smushit.com), [TinyPNG](http://tinypng.org/), [JPEGmini](http://jpegmini.com/).*
+
+*> Herramientas **de escritorio**: [ImageOptim](http://imageoptim.com/) (Mac), [RIOT](http://luci.criosweb.ro/riot/download/) (Windows), [ImageAlpha](http://pngmini.com/) (Mac).*
+
+Hay también varias herramientas de línea de comandos como *pngout*, *jpegtran*, *gifsicle*, *imgopt* y más.
