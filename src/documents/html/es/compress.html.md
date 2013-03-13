@@ -1,9 +1,9 @@
 ---
 order: 24
-title: Minify your HTML
+title: Comprime tu HTML
 ---
 
-To maintain readable code, it's a good idea to write comments and use indentation.
+Para mantener un código legible, es una buena idea escribir comentarios y usar indentación:
 
 ```html
 <p>Lorem ipsum dolor sit amet.</p>
@@ -16,7 +16,7 @@ To maintain readable code, it's a good idea to write comments and use indentatio
 </ul>
 ```
 
-Pero para el navegador, eso no importa. Por eso, recuerda siempre comprimir tu HTML mediante herramientas automatizadas.
+Pero para el navegador, eso no importa. Por eso, recuerda siempre comprimir tu CSS mediante herramientas automatizadas.
 
 ```html
 <p>Lorem ipsum dolor sit amet.</p><ul><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li></ul>
