@@ -1,5 +1,5 @@
 ---
-order: 17
+order: 16
 title: Avoid document.write
 ---
 

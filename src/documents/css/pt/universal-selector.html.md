@@ -1,5 +1,5 @@
 ---
-order: 22
+order: 21
 title: Não use seletor universal
 ---
 

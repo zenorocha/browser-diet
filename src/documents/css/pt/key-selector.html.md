@@ -1,5 +1,5 @@
 ---
-order: 20
+order: 19
 title: Pense e repense seu Key Selector
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 19
+order: 18
 title: Carregue código de terceiros de forma assíncrona
 ---
 

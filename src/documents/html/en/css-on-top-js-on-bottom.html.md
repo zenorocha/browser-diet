@@ -1,5 +1,5 @@
 ---
-order: 27
+order: 26
 title: Styles up top, scripts down bottom
 ---
 
