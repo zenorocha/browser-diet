@@ -5,6 +5,10 @@ title: Combine multiple JS files into one
 
 Another best practice for organization and maintenance of scripts is to separate them into modular components.
 
+<div class="img-right">
+  <img id="geek-47" class="icos-geek" src="http://browserdiet.com/img/47.png" alt="Geek #47" width="174" height="275" />
+</div>
+
 ```html
 <script src="navbar.js"></script>
 <script src="component.js"></script>
