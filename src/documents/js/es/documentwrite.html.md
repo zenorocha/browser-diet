@@ -3,6 +3,8 @@ order: 16
 title: Evita document.write
 ---
 
+El uso de `document.write` hace que la página dependa de su valor de retorno para cargar completamente.
+
 Esta (mala) práctica ha sido evitada por los desarrolladores, pero aún hay casos donde es necesaria, como un fallback para algún archivo Javascript.
 
 [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/), por ejemplo, usa esta técnica para cargar jQuery localmente si la *CDN* de Google no responde.
