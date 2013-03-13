@@ -41,7 +41,7 @@ module.exports =
                 slogan: 'La guía definitiva para el rendimiento front-end'
                 url: 'http://browserdiet.com/es'
                 bonus: 'Bonus'
-                images: 'Imágenes'
+                images: 'Imagenes'
                 server: 'Servidor'
                 edit: 'Editar'
                 goTop: 'Ir arriba'
