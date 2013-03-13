@@ -21,7 +21,7 @@ And then positioning them with CSS.
 }
 ```
 
-As a result, you've dramatically reduced the number of HTTP requests and avoided any potential delay of other resouces on your page.
+As a result, you've dramatically reduced the number of HTTP requests and avoided any potential delay of other resources on your page.
 
 When using your *sprite*, avoid leaving too much white space between images. This won't affect the size of the file, but will have an effect on memory consumption.
 
