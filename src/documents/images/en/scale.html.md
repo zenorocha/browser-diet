@@ -13,4 +13,4 @@ Knowing this, John Q. Developer who has a *700x700px* image decides to use this 
 
 What Mr. Developer doesn't realize is that dozens of unnecessary *kilobytes* will be sent over the wire.
 
-Alway keep in mind: just because you can define with width and height of an image in HTML doesn't mean you should do this to scale down large images.
+Always keep in mind: just because you can define with width and height of an image in HTML doesn't mean you should do this to scale down large images.
