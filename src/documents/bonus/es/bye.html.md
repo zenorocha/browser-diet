@@ -13,6 +13,6 @@ Y recuerda, como todo en la vida, [no hay una solución milagrosa](http://www.cs
 
 ¿Quiéres aprender más? Échale un ojo a las [Referencias](https://github.com/zenorocha/browser-diet/wiki/References) que usamos para escribir esta guía.
 
-¿Alguna sugerencia? Envía un tweet a [@zenorocha](http://twitter.com/zenorocha/) o una [pull request](https://github.com/zenorocha/browser-diet) en Github.
+¿Alguna sugerencia? Envía un tweet a [@BrowserDiet](http://twitter.com/browserdiet/) o una [pull request](https://github.com/zenorocha/browser-diet) en Github.
 
 No te olvides de compartir con tus amigos, hagamos una web más rápida para todos. \o/
