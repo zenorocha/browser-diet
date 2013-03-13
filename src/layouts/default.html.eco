@@ -97,7 +97,7 @@
 
   <div id="footer">
     <div class="center">
-      <p><%= @getLang().credits %></p>
+      <p><%- @getLang().credits %></p>
     </div>
   </div>
 
