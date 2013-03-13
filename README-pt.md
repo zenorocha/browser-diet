@@ -1,4 +1,4 @@
-*[Read in English](https://github.com/zenorocha/browser-diet/blob/master/README.md)*
+*[Read in English](https://github.com/zenorocha/browser-diet/blob/master/README.md)  ● [Leer en Español](https://github.com/zenorocha/browser-diet/blob/master/README-es.md)*
 
 ---
 
