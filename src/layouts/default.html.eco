@@ -39,6 +39,9 @@
         <a id="flag-pt" class="flags" href="http://browserdiet.com/pt/" title="Português">
           <img src="<%= @site.assets %>/img/flag-portuguese.png" alt="Brazilian Flag" width="32" height="32">
         </a>
+        <a id="flag-es" class="flags" href="http://browserdiet.com/" title="Español">
+          <img src="<%= @site.assets %>/img/flag-spanish.png" alt="Spain Flag" width="32" height="32">
+        </a>
       </div>
     </div>
 
