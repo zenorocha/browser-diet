@@ -16,7 +16,7 @@ Para mantener un código legible, es una buena idea escribir comentarios y usar 
 </ul>
 ```
 
-Pero para el navegador, eso no importa. Por eso, recuerda siempre comprimir tu CSS mediante herramientas automatizadas.
+Pero para el navegador, eso no importa. Por eso, recuerda siempre comprimir tu HTML mediante herramientas automatizadas.
 
 ```html
 <p>Lorem ipsum dolor sit amet.</p><ul><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li></ul>
