@@ -16,12 +16,12 @@ To maintain readable code, it's a good idea to write comments and use indentatio
 </ul>
 ```
 
-Pero para el navegador, eso no importa. Por eso, recuerda siempre comprimir tu HTML mediante herramientas automatizadas.
+But to the browser, none of this actually matters. For this reason, it can be useful to minify your HTML with automated tools.
 
 ```html
 <p>Lorem ipsum dolor sit amet.</p><ul><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li></ul>
 ```
 
-Esto quitará bytes al archivo, lo que resultará en un proceso de descarga, análisis y ejecución más rápido.
+This will shave bytes from the filesize, and as a result, your users will enjoy faster downloads, parsing and execution.
 
-*> Herramientas útiles: [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
+*> Useful tools: [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
