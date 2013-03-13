@@ -5,7 +5,7 @@ title: Evita código en línea
 
 Hay dos formas básicas de incluir CSS o Javascript en tu página
 
-**1) En línea:** El CSS es definido dentro de una etiqueta `<style` y el JavaScript dentdo de una etiqueta `<script>`.
+**1) En línea:** El CSS es definido dentro de una etiqueta `<style>` y el JavaScript dentdo de una etiqueta `<script>`.
 
 **2) Externo:** El CSS es cargado desde una etiqueta `<link>` y el Javascript desde el atributo `src` de la etiqueta `<script>`.
 
