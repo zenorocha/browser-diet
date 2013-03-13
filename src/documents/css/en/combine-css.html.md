@@ -1,5 +1,5 @@
 ---
-order: 22
+order: 21
 title: Combining multiple CSS files
 ---
 

@@ -1,4 +1,5 @@
 ---
+ignored: true
 order: 21
 title: Não use seletor universal
 ---

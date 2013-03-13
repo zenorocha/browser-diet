@@ -12,10 +12,15 @@ header nav ul li a {}
 Take a look at the above expression. What happens is the browser begins evaluating the CSS expression beginning from the right&mdash;in this case the *key selector* is `a`. This particular expression is asking the browser to do a lot of work. First it finds all the `a` elements in the HTML, after all the `li` elements that contain an `a` element, and so on until it finds `header nav ul li a`.
 
 ```css
-header nav ul li * { /* Bad */ }
 header nav ul li a { /* Worse */ }
 nav a { /* Bad */ }
 nav a.nav-link { /* Better */ }
 nav .nav-link { /* Better */ }
 .nav-link { /* Better */ }
+```
+
+Above all, avoid using the universal selector (`*`) as the key selector as it forces the browser to search over **all** HTML elements in the page.
+
+```css
+.foo > *
 ```
