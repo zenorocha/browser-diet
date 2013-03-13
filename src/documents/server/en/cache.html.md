@@ -3,7 +3,7 @@ order: 4
 title: Enable smart caching
 ---
 
-The best way to optimize requests made from your page is to not make requests, obviously. And one of the most useful ways to avoid unecessary requests is to let the browser cache assets. By default, the browser is left to decide how long to cache files. But we can control the exact time that a file will be kept in cache.
+The best way to optimize requests made from your page is to not make requests, obviously. And one of the most useful ways to avoid unnecessary requests is to let the browser cache assets. By default, the browser is left to decide how long to cache files. But we can control the exact time that a file will be kept in cache.
 
 <div class="img-right">
   <img id="geek-15" class="icos-geek" src="http://browserdiet.com/img/15.png" alt="Geek #15" width="141" height="275" />
