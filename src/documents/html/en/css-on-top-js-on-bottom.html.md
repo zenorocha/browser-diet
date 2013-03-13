@@ -9,6 +9,10 @@ But if we put them at the end of the page, the page will be rendered without sty
 
 On the other hand, when dealing with JavaScript, it's important to place scripts at the bottom of the page as they block rendering while they're being loaded and executed.
 
+<div class="img-right">
+  <img id="geek-32" class="icos-geek" src="http://browserdiet.com/img/32.png" alt="Geek #32" width="139" height="275" />
+</div>
+
 ```html
 <!doctype html>
 <html>
