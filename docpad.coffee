@@ -37,7 +37,7 @@ module.exports =
                 credits: 'Desenvolvido por <em>Zeno Rocha</em> ● Design por <em>Briza Bueno</em> ● Ilustrações por <em>Scott Johnson</em>'
             es:
                 title: 'Cómo perder peso (en el navegador)'
-                titleHTML: '<h1>Cómo perder <span>peso</span></h1><h2>en el navegador</h2>'
+                titleHTML: '<h1>Como perder <span>peso</span></h1><h2>en el navegador</h2>'
                 slogan: 'La guía definitiva para el rendimiento front-end'
                 url: 'http://browserdiet.com/es'
                 bonus: 'Bonus'
