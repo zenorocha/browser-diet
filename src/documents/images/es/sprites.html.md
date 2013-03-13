@@ -27,4 +27,4 @@ Cuando estás usando tu *sprite*, evita dejar demasiado espacio en blanco entre 
 
 Y pese a que casi todo el mundo conoce las sprites, esta técnica no está demasiado extendida&mdash;tal vez debido a que los desarrolladores no usan herramientas automatizadas para generar sprites. Hemos seleccionado algunas que pueden ayudarte con esto.
 
- *> Herramientas útiles: [SpritePad](http://wearekiss.com/spritepad), [Compass](http://compass-style.org/help/tutorials/spriting/), [SpriteMe](http://www.spriteme.org/) and [Sprite Cow](http://www.spritecow.com/).*
+ *> Herramientas útiles: [SpritePad](http://wearekiss.com/spritepad), [Compass](http://compass-style.org/help/tutorials/spriting/), [SpriteMe](http://www.spriteme.org/), [Sprite Cow](http://www.spritecow.com/) e [glue](https://github.com/jorgebastida/glue).*
