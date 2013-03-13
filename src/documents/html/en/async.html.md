@@ -1,9 +1,9 @@
 ---
 order: 23
-title: Try out async and defer
+title: Try out async
 ---
 
-To explain how these attributes are useful for better performance, it's better to understand what happens when we don't use them.
+To explain how this attribute is useful for better performance, it's better to understand what happens when we don't use it.
 
 <div class="img-left">
   <img id="geek-20" class="icos-geek" src="http://browserdiet.com/img/20.png" alt="Geek #20" width="118" height="275" />
@@ -19,10 +19,4 @@ In this form, the page has to wait for the script to be fully downloaded, parsed
 <script async src="example.js"></script>
 ```
 
-The script is downloaded asynchronously while the rest of the page continues to get parsed. The script is guaranteed to be executed as soon as the download is complete.
-
-``` html
-<script defer src="example.js"></script>
-```
-
-Just like the example above, the script is downloaded in an asynchronous manner. But it's executed only when the page has been completely parsed.
+The script is downloaded asynchronously while the rest of the page continues to get parsed. The script is guaranteed to be executed as soon as the download is complete. Keep in mind that multiple async scripts will be executed in no specific order.
