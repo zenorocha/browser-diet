@@ -10,6 +10,15 @@ Chaining means you can execute one jQuery method right after the other, without 
 $("#object").addClass("foo").css("border-color", "#ccc").width(200);
 ```
 
+For readability, you can split chains in several lines.
+
+```js
+$("#object")
+   .addClass("foo")
+   .css("border-color", "#ccc")
+   .width(200)
+```
+
 Tests show not chaining can be slower.
 
 ```js
