@@ -5,6 +5,10 @@ title: Carga contenido de terceros asíncronamente
 
 ¿Quién nunca ha cargado contenido de terceros para incrustar un video de YouTube o un botón de like/tweet?
 
+<div class="img-right">
+  <img id="geek-46" class="icos-geek" src="http://browserdiet.com/img/46.png" alt="Geek #46" width="158" height="275" />
+</div>
+
 El gran problema es que esos códigos no son siempre distribuidos eficientemente, ya sea por la conexión del usuairo, o la conexión del servidor donde se alojan. O este servido puede estar caído temporalmente o incluso estar bloqueado por el firewall del usuario o su compañía.
 
 Para evitar que esto se convierta en un problema crítico, o peor, bloquee la carga de la página completamente, siempre carga estos códigos asíncronamente (o usa *[Friendly iFrames](https://www.facebook.com/note.php?note_id=10151176218703920)*).
