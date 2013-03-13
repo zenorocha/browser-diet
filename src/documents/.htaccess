@@ -5,6 +5,12 @@
 #
 # See https://github.com/sergeychernyshev/.htaccess
 
+# --------------------------------------------------------------------------------------
+# Specify a character set:
+# https://developers.google.com/speed/docs/best-practices/rendering#SpecifyCharsetEarly
+# --------------------------------------------------------------------------------------
+AddCharset UTF-8 .html
+
 # ----------------------------------------------------------------------
 # Proper MIME type for all files
 #
