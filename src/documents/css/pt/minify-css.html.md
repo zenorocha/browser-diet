@@ -27,6 +27,6 @@ Só que para a máquina, nada disso importa. Por isso, lembre-se de comprimir se
 
 Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.
 
-Para aqueles que usam pré-processadores como *Sass*, *Less* e *Stylus*, é possível configurar a compilação para gerar o código já minificado.
+Para aqueles que usam pré-processadores como [Sass](http://sass-lang.com/), [Less](http://lesscss.org/) e [Stylus](http://learnboost.github.com/stylus/), é possível configurar a compilação para gerar o código já minificado.
 
 *> Ferramentas úteis: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [CSS Minifier](http://www.cssminifier.com/) e [cssmin.js](http://www.phpied.com/cssmin-js/).*
