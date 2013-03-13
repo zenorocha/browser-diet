@@ -1,9 +1,9 @@
 ---
 order: 23
-title: Prueba async y defer
+title: Prueba async
 ---
 
-Para explicar cómo estos atributos son útiles para el rendimiento, es mejor entender qué pasa cuando no los usamos.
+Para explicar cómo esto atributo es útile para el rendimiento, es mejor entender qué pasa cuando no lo usamos.
 
 <div class="img-left">
   <img id="geek-20" class="icos-geek" src="http://browserdiet.com/img/20.png" alt="Geek #20" width="118" height="275" />
@@ -19,10 +19,5 @@ De esta forma, la página tiene que esperar a que el script sea descargado, anal
 <script async src="example.js"></script>
 ```
 
-El script es descargado asíncronamente mientras el resto de la página sigue siendo analizada. El script se ejecutará en cuanto se acabe de descargar.
+El script es descargado asíncronamente mientras el resto de la página sigue siendo analizada. El script se ejecutará en cuanto se acabe de descargar. Tenga en cuenta que varios scripts asincrónicos se ejecutará sin un orden específico.
 
-``` html
-<script defer src="example.js"></script>
-```
-
-Al igual que en el ejemplo anterior, el script es descargado asíncronamente. Pero es ejecutado sólo cuando la página haya sido completamente cargada.
