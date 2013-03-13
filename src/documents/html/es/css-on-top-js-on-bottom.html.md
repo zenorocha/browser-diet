@@ -25,11 +25,9 @@ Por otro lado, cuando tratamos con JavaScript, es importante poner los scripts a
 
 ```html
 <body>
-
   <p>Lorem ipsum dolor sit amet.</p>
 
   <!-- JS -->
   <script src="script.js"></script>
-
 </body>
 ```
