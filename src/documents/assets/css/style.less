@@ -190,16 +190,21 @@ strong {
 		position: relative;
 	}
 
-	.flags {
-		position: absolute;
-		top: 7px;
-		border: 0;
-	}
-
 }
-#flag-es { right: 0; }
-#flag-pt { right: 40px; }
-#flag-en { right: 80px; }
+
+.flags {
+  position: absolute;
+  top: 7px;
+  border: 0;
+  text-indent: -9999px;
+  width: 34px;
+  height: 34px;
+  background: url(/assets/img/flag-sprite.png);
+}
+
+#flag-en { background-position: 0 0; 		right: 80px; }
+#flag-es { background-position: 0 32px; right: 40px; }
+#flag-pt { background-position: 0 64px; right: 0; }
 
 /*	--- Topics --- */
 
