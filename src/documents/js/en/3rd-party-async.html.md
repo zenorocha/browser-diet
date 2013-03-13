@@ -3,7 +3,7 @@ order: 18
 title: Load 3rd party content asynchronously
 ---
 
-Who never loaded a third-party content  to embed a Youtube video or like/tweet button?
+Who has never loaded a third-party content to embed a Youtube video or like/tweet button?
 
 The big problem is that these codes aren't always delivered efficiently, either by user's connection, or the connection to the server where they are hosted. Or this service might be temporarily down or even be blocked by the user's or his company's firewall.
 
