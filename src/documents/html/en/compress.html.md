@@ -22,7 +22,7 @@ But to the browser, none of this actually matters. For this reason, it can be us
 <p>Lorem ipsum dolor sit amet.</p><ul><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li></ul>
 ```
 <div class="img-right">
-  <img id="htmlcompression-table" src="/assets/img/htmlcompressor-table.jpg" alt="HTML Compression Sample Results">
+  <img id="htmlcompression-table" src="http://browserdiet.com/img/htmlcompressor-table.jpg" alt="HTML Compression Sample Results">
 </div>
 
 This will shave bytes by removing extra whitespaces, comments and other unneeded characters without breaking the content structure.

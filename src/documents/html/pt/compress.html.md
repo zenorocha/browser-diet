@@ -22,6 +22,16 @@ Só que para a máquina, nada disso importa. Por isso, lembre-se de comprimir se
 <p>Lorem ipsum dolor sit amet.</p><ul><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li></ul>
 ```
 
-Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.
+<div class="img-right">
+  <img id="htmlcompression-table" src="http://browserdiet.com/img/htmlcompressor-table.jpg" alt="HTML Compression Sample Results">
+</div>
 
-*> Ferramentas úteis: [HTML Minifier](http://kangax.github.com/html-minifier/) e [HTML Compressor](http://code.google.com/p/htmlcompressor/). Ambas disponíveis como plugin para [GruntJS](http://gruntjs.com/): [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin) e [grunt-htmlcompressor](https://github.com/jney/grunt-htmlcompressor) respectivamente.*
+Isso irá economizar muitos e muitos byte ao remover espaços extra, comentários e outros caracteres desnecessários sem quebrar a estrutura do conteúdo.
+
+Como resultado, seus usuários ficarão felizes com a aceleração do download, análise e tempo de execução.
+
+No lado direito você pode ver alguns exemplos de resultado do [HTML Compressor](https://code.google.com/p/htmlcompressor/) com as configurações padrão.
+
+*> Ferramentas úteis: [HTML Minifier](http://kangax.github.com/html-minifier/) e [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
+
+*Ambas disponíveis como plugin para [GruntJS](http://gruntjs.com/): [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin) e [grunt-htmlcompressor](https://github.com/jney/grunt-htmlcompressor) respectivamente.*
