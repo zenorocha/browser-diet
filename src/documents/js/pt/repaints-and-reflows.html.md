@@ -16,25 +16,30 @@ Não há dúvida que ambos reflows e repaints devem ser evitados, portanto ao in
 </div>
 
 ```js
-var myList = document.getElementById("myList");
+var div = document.getElementById("to-measure"),
+    lis = document.getElementsByTagName('li'),
+    i, len;
 
-for (var i = 0; i < 100; i++) {
-  myList.innerHTML += "<span>" + i + "</span>";
+for (i = 0, len = lis.length; i < len; i++) {
+  lis[i].style.width = div.offsetWidth + 'px';
 }
 ```
 
 Faça isso:
 
 ```js
-var myList = "";
+var div = document.getElementById("to-measure"),
+    lis = document.getElementsByTagName('li'),
+    widthToSet = div.offsetWidth,
+    i, len;
 
-for (var i = 0; i < 100; i++) {
-  myList += "<span>" + i + "</span>";
+for (i = 0, len = lis.length; i < len; i++) {
+  lis[i].style.width = widthToSet + 'px';
 }
-
-document.getElementById("myList").innerHTML = myList;
 ```
 
-Assim você evita manipular o DOM a cada iteração do loop, realizando isso apenas uma vez.
+Quando você define o `style.width`, o navegador precisa recalcular o layout. Normalmente, uma mudança de estilo em muitos elementos realiza apenas um reflow, já que o navegador não precisa pensar sobre ele até que necessite atualizar a tela. Entretanto, no primeiro exemplo, nós pedimos por `offsetWidth`, que é a largura de layout do elemento, então o navegador precisa recalcular o layout.
 
-*[> Resultado no JSPerf](http://jsperf.com/browser-diet-dom-manipulation)*
+Se você precisar ler informações do layout na página, faça de uma vez só antes de definir qualquer coisa que altere o layout, como no segundo exemplo.
+
+*[> Demo](http://jsbin.com/aqavin/2/quiet)*
