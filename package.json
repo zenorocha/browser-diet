@@ -17,8 +17,9 @@
     "docpad-plugin-less": "~2.1.2",
     "docpad-plugin-highlightjs": "2.x",
     "docpad-plugin-partials": "~2.5.0",
-    "grunt": "~0.3.17",
-    "grunt-css": "~0.3.2",
+    "grunt-cli": "0.1.6",
+    "grunt": "~0.4.0",
+    "grunt-yui-compressor": "0.2.1",
     "bal-util": "~1.15.3",
     "underscore": "~1.4.3",
     "grunt-htmlcompressor": "~0.1.8"

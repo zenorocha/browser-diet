@@ -42,4 +42,6 @@ for (var id in scriptList) {
 
 Certifique-se de nomear cada script de forma única. Por exemplo `someother` virá 'Flattr' ou 'Delicious'.
 
+*> Mais informações sobre [carregar botões sociais de forma assíncrona](http://www.phpied.com/social-button-bffs/)*
+
 *> Vídeo: [comparação de uma página normal vs uma página onde o código de terceiros está inacessível](http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d).*
