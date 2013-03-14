@@ -23,7 +23,7 @@ scripts.parentNode.insertBefore(script, scripts);
 
 Alternatively, if you want to load multiple 3rd party widgets, you can asyncronously load them with the following script:
 
-```
+```js
 var script,
     scripts = document.getElementsByTagName('script')[0],
     scriptList = {

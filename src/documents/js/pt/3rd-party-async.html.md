@@ -23,7 +23,7 @@ scripts.parentNode.insertBefore(script, scripts);
 
 Se você quiser carregar múltiplos widgets de terceiros, você pode utilizar o script assíncrono a seguir:
 
-```
+```js
 var script,
     scripts = document.getElementsByTagName('script')[0],
     scriptList = {
