@@ -16,10 +16,11 @@ There is no doubt that excessive reflows and repaints should be avoided, so inst
 </div>
 
 ```js
-var div = document.getElementById("to-measure");
-var lis = document.getElementsByTagName('li');
+var div = document.getElementById("to-measure"),
+    lis = document.getElementsByTagName('li'),
+    i, len;
 
-for (var i = 0, len = lis.length; i < len; i++) {
+for (i = 0, len = lis.length; i < len; i++) {
   lis[i].style.width = div.offsetWidth + 'px';
 }
 ```
@@ -27,11 +28,12 @@ for (var i = 0, len = lis.length; i < len; i++) {
 Do this:
 
 ```js
-var div = document.getElementById("to-measure");
-var lis = document.getElementsByTagName('li');
-var widthToSet = div.offsetWidth;
+var div = document.getElementById("to-measure"),
+    lis = document.getElementsByTagName('li'),
+    widthToSet = div.offsetWidth,
+    i, len;
 
-for (var i = 0, len = lis.length; i < len; i++) {
+for (i = 0, len = lis.length; i < len; i++) {
   lis[i].style.width = widthToSet + 'px';
 }
 ```
