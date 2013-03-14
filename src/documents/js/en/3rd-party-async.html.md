@@ -21,4 +21,25 @@ script.src = url;
 scripts.parentNode.insertBefore(script, scripts);
 ```
 
+Alternatively, if you want to load multiple 3rd party widgets, you can asyncronously load them with the following script:
+
+```
+var script,
+    scripts = document.getElementsByTagName('script')[0],
+    scriptList = {
+      'plusone'  : '//apis.google.com/js/plusone.js',
+      'twitter'  : '//platform.twitter.com/widgets.js',
+      'someother': '//s.widgetsite.com/widget.js'
+    };
+
+for (var id in scriptList) {
+  script = document.createElement('script');
+  script.async = true;
+  script.src = scriptList[id];
+  scripts.parentNode.insertBefore(script, scripts);
+}
+```
+
+Make sure to name each script uniquely. E.G `someother` becomes 'Flattr', or 'Delicious'.
+
 *> Video: [comparison of a normal page vs a page where an inaccessible 3rd party content is loaded](http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d).*
