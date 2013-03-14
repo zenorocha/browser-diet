@@ -21,4 +21,25 @@ script.src = url;
 scripts.parentNode.insertBefore(script, scripts);
 ```
 
+Se você quiser carregar múltiplos widgets de terceiros, você pode utilizar o script assíncrono a seguir:
+
+```
+var script,
+    scripts = document.getElementsByTagName('script')[0],
+    scriptList = {
+      'plusone'  : '//apis.google.com/js/plusone.js',
+      'twitter'  : '//platform.twitter.com/widgets.js',
+      'someother': '//s.widgetsite.com/widget.js'
+    };
+
+for (var id in scriptList) {
+  script = document.createElement('script');
+  script.async = true;
+  script.src = scriptList[id];
+  scripts.parentNode.insertBefore(script, scripts);
+}
+```
+
+Certifique-se de nomear cada script de forma única. Por exemplo `someother` virá 'Flattr' ou 'Delicious'.
+
 *> Vídeo: [comparação de uma página normal vs uma página onde o código de terceiros está inacessível](http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d).*
