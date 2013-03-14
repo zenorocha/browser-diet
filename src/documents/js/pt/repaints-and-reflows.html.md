@@ -9,7 +9,7 @@ Repaints são disparados quando a aparência de um elemento é alterada sem alte
 
 Reflows são os mais custosos, causados quando as mudanças alterando o layout da página, como por exemplo alterar o width de um elemento.
 
-Não há dúvida que ambos reflows e repaints devem ser evitados, portanto ao invés de fazer isso:
+Não há dúvida que ambos reflows e repaints excessivos devem ser evitados, portanto ao invés de fazer isso:
 
 <div class="img-right">
   <img id="geek-55" class="icos-geek" src="http://browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
