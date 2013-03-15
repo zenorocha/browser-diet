@@ -11,8 +11,8 @@ Another way to optimize images is to compress them at the cost of visual quality
 
 To improve user perceived performance, you should also transform all your JPEG files in progressive ones. Progressive JPEGs have great browser support, are very simple to create and have no significant performance penalty. The upside is that the image will appear sooner on the page ([see demo](http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg)).
 
-*> Useful **online** tools: [Kraken.io](http://kraken.io), [Smush.it](http://www.smushit.com), [TinyPNG](http://tinypng.org/), [JPEGmini](http://jpegmini.com/).*
+*> Useful **online** tools: [Kraken.io](http://kraken.io), [Smush.it](http://www.smushit.com), [TinyPNG](http://tinypng.org/), and [JPEGmini](http://jpegmini.com/).*
 
-*> Useful **desktop** tools: [ImageOptim](http://imageoptim.com/) (Mac), [RIOT](http://luci.criosweb.ro/riot/download/) (Windows), [ImageAlpha](http://pngmini.com/) (Mac).*
+*> Useful **desktop** tools: [ImageOptim](http://imageoptim.com/) (Mac), [RIOT](http://luci.criosweb.ro/riot/download/) (Windows), and [ImageAlpha](http://pngmini.com/) (Mac).*
 
-There are also various commandline tools like *pngout*, *jpegtran*, *gifsicle*, *imgopt* and more.
+There are also various commandline tools like *pngout*, *jpegtran*, *gifsicle*, *imgopt*, and more.
