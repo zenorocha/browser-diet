@@ -24,20 +24,23 @@ scripts.parentNode.insertBefore(script, scripts);
 Se você quiser carregar múltiplos widgets de terceiros, você pode utilizar o script assíncrono a seguir:
 
 ```js
-var script,
-    scripts = document.getElementsByTagName('script')[0],
-    scriptList = {
-      'plusone'  : '//apis.google.com/js/plusone.js',
-      'twitter'  : '//platform.twitter.com/widgets.js',
-      'someother': '//s.widgetsite.com/widget.js'
-    };
+(function() {
+    var script,
+        scripts = document.getElementsByTagName('script')[0],
+        scriptList = {
+          'plusone'  : '//apis.google.com/js/plusone.js',
+          'twitter'  : '//platform.twitter.com/widgets.js',
+          'someother': '//s.widgetsite.com/widget.js'
+        },
+        id;
 
-for (var id in scriptList) {
-  script = document.createElement('script');
-  script.async = true;
-  script.src = scriptList[id];
-  scripts.parentNode.insertBefore(script, scripts);
-}
+    for (id in scriptList) {
+      script = document.createElement('script');
+      script.async = true;
+      script.src = scriptList[id];
+      scripts.parentNode.insertBefore(script, scripts);
+    }
+}());
 ```
 
 Certifique-se de nomear cada script de forma única. Por exemplo `someother` virá 'Flattr' ou 'Delicious'.
