@@ -202,9 +202,16 @@ strong {
 	position: relative;
 	font-weight: normal;
 	
-	@media (max-width: 515px) {
-		font-size: 3.0em;
+	@media (max-width: 825px) {
 		margin-bottom: .5em;
+		
+		span {
+			display: block;
+		}
+	}
+	
+	@media (max-width: 550px) {
+		font-size: 3.0em;
 	}
 }
 
@@ -228,6 +235,10 @@ strong {
 	@media (max-width: 825px) {
 		background-size: auto;
 	}
+	
+	@media (max-width: 550px) {
+		font-size: 3.0em;
+	}
 }
 
 /*	--- Languages --- */
@@ -244,7 +255,7 @@ strong {
 		top: 7px;
 		border: 0;
 		
-		@media (max-width: 630px) {
+		@media (max-width: 750px) {
 			position: static;
 			top: auto;
 		}
@@ -259,6 +270,12 @@ strong {
 	}
 }
 #flag-en { right: 40px; 
+	@media (max-width: 630px) {
+		right: auto;
+	}
+}
+
+#flag-es { 
 	@media (max-width: 630px) {
 		right: auto;
 	}
@@ -307,6 +324,10 @@ strong {
 
 #menu a {
 	border: 0;
+	
+	@media (max-width: 715px) {
+		font-size: 1em;
+	}
 }
 
 /* --- Articles --- */
@@ -327,6 +348,10 @@ strong {
 	.tip-title {
 		border: 0;
 		line-height: 1.25;
+		
+		@media (max-width: 500px) {
+			font-size: .75em;
+		}
 	}
 
 	a {
@@ -362,10 +387,9 @@ strong {
 
 @media (max-width: 860px) {
 	.article .anchor {
-		position: static;
-		top: auto;
 		right: auto;
-		display: inline-block;
+		left: -60px;
+		top: 0;
 	}
 }
 
