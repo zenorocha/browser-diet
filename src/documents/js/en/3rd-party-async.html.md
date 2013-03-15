@@ -21,29 +21,7 @@ script.src = url;
 scripts.parentNode.insertBefore(script, scripts);
 ```
 
-Alternatively, if you want to load multiple 3rd party widgets, you can asyncronously load them with the following script:
-
-```js
-(function() {
-    var script,
-        scripts = document.getElementsByTagName('script')[0],
-        scriptList = {
-          'plusone'  : '//apis.google.com/js/plusone.js',
-          'twitter'  : '//platform.twitter.com/widgets.js',
-          'someother': '//s.widgetsite.com/widget.js'
-        },
-        id;
-
-    for (id in scriptList) {
-      script = document.createElement('script');
-      script.async = true;
-      script.src = scriptList[id];
-      scripts.parentNode.insertBefore(script, scripts);
-    }
-}());
-```
-
-Make sure to name each script uniquely. E.G `someother` becomes 'Flattr', or 'Delicious'.
+Alternatively, if you want to load multiple 3rd party widgets, you can asyncronously load them with using [this script](https://gist.github.com/zenorocha/5161860).
 
 *> More info on [asynchronously loading social buttons](http://www.phpied.com/social-button-bffs/)*
 

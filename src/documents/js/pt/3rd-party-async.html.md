@@ -21,29 +21,7 @@ script.src = url;
 scripts.parentNode.insertBefore(script, scripts);
 ```
 
-Se você quiser carregar múltiplos widgets de terceiros, você pode utilizar o script assíncrono a seguir:
-
-```js
-(function() {
-    var script,
-        scripts = document.getElementsByTagName('script')[0],
-        scriptList = {
-          'plusone'  : '//apis.google.com/js/plusone.js',
-          'twitter'  : '//platform.twitter.com/widgets.js',
-          'someother': '//s.widgetsite.com/widget.js'
-        },
-        id;
-
-    for (id in scriptList) {
-      script = document.createElement('script');
-      script.async = true;
-      script.src = scriptList[id];
-      scripts.parentNode.insertBefore(script, scripts);
-    }
-}());
-```
-
-Certifique-se de nomear cada script de forma única. Por exemplo `someother` virá 'Flattr' ou 'Delicious'.
+Se você quiser carregar múltiplos widgets de terceiros de forma assíncrona use [esse script](https://gist.github.com/zenorocha/5161860).
 
 *> Mais informações sobre [carregar botões sociais de forma assíncrona](http://www.phpied.com/social-button-bffs/)*
 
