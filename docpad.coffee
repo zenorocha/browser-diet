@@ -57,7 +57,7 @@ module.exports =
         getGruntedStyles: ->
             _ = require 'underscore'
             styles = []
-            gruntConfig = require('./grunt-config.json')
+            gruntConfig = require('./Gruntfile.js')
             _.each gruntConfig, (value, key) ->
                 styles = styles.concat _.flatten _.pluck value, 'dest'
             styles = _.filter styles, (value) ->
@@ -68,7 +68,7 @@ module.exports =
         getGruntedScripts: ->
             _ = require 'underscore'
             scripts = []
-            gruntConfig = require('./grunt-config.json')
+            gruntConfig = require('./Gruntfile.js')
             _.each gruntConfig, (value, key) ->
                 scripts = scripts.concat _.flatten _.pluck value, 'dest'
             scripts = _.filter scripts, (value) ->
@@ -110,7 +110,7 @@ module.exports =
             # Execute
             balUtil.spawn command, {cwd:rootPath,output:true}, ->
                 src = []
-                gruntConfig = require './grunt-config.json'
+                gruntConfig = require './Gruntfile.js'
                 _.each gruntConfig, (value, key) ->
                     src = src.concat _.flatten _.pluck value, 'src'
                 _.each src, (value) ->
