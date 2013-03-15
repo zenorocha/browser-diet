@@ -3,9 +3,11 @@ order: 26
 title: Evite códigos inline
 ---
 
-Existem duas formas básicas de você lidar com CSS ou JavaScript na sua página.
+Existem três formas básicas de você lidar com CSS e duas para Javascript.
 
-**1) Inline:** onde o CSS é definido dentro da tag `<style>` e o JavaScript dentro da tag `<script>`
+**1) Inline:** onde o CSS é definido dentro do atributo `style`.
+
+**2) Incorporado:** onde o CSS é definido dentro da tag `<style>` e o JavaScript dentro da tag `<script>`
 
 **2) Externo:** onde o CSS é carregado na tag `<link>` e o JavaScript através do atributo `src` da tag `<script>`
 
