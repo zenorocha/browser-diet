@@ -14,6 +14,17 @@ module.exports = function(grunt) {
         src: ['out/assets/css/main.css'],
         dest: 'out/assets/css/all.min.css'
       }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace:true,
+        },
+        files: {
+          'out/index.html' : 'out/index.html'
+        }
+      }
     }
   };
   grunt.initConfig(gruntConfig);
@@ -24,5 +35,6 @@ module.exports = function(grunt) {
     tasks.push(keys[i]);
   }
   grunt.loadNpmTasks('grunt-yui-compressor');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.registerTask('default', tasks);
 };
