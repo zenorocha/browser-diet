@@ -9,32 +9,37 @@ Los repaints se ejecutan cuando la apariencia de un elemento cambia sin cambiar 
 
 Reflows son los más costosos, ya que son causados por cambiar la estructura de la página, como cambiar el ancho de un elemento.
 
-No hay duda de que tanto reflows como repaints deberían de ser evitados, así que en vez de hacer esto:
+No hay duda de que excesivos reflows y repaints deberían de ser evitados, así que en vez de hacer esto:
 
 <div class="img-right">
   <img id="geek-55" class="icos-geek" src="http://browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
 ```js
-var myList = document.getElementById("myList");
+var div = document.getElementById("to-measure"),
+    lis = document.getElementsByTagName('li'),
+    i, len;
 
-for (var i = 0; i < 100; i++) {
-  myList.innerHTML += "<span>" + i + "</span>";
+for (i = 0, len = lis.length; i < len; i++) {
+  lis[i].style.width = div.offsetWidth + 'px';
 }
 ```
 
 Haz esto:
 
 ```js
-var myList = "";
+var div = document.getElementById("to-measure"),
+    lis = document.getElementsByTagName('li'),
+    anchoAConfigurar = div.offsetWidth,
+    i, len;
 
-for (var i = 0; i < 100; i++) {
-  myList += "<span>" + i + "</span>";
+for (i = 0, len = lis.length; i < len; i++) {
+  lis[i].style.width = anchoAConfigurar + 'px';
 }
-
-document.getElementById("myList").innerHTML = myList;
 ```
 
-De esa forma evitas manipular el DOM cada iteración del loop, haciendo esto sólo una vez.
+Cuando estableces `style.width`, el navegador necesita recalcular la estructura. Normalmente, cambiar los estilos de varios elementos sólo resulta en un reflow. Sin embargo, en el primer ejemplo, usamos continuamente `offsetWidth`, que fuerza al navegador a recalcular la estructura cada iteración.
 
-*[> Resultados en JSPerf](http://jsperf.com/browser-diet-dom-manipulation)*
+Si necesitas leer datos sobre la estructura de la página, hazlo todo junto antes de establecer algún valor que cambie la estructora, tal y como en el segundo ejemplo
+
+*[> Demo](http://jsbin.com/aqavin/2/quiet)*
