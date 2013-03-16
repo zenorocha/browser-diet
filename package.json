@@ -19,6 +19,7 @@
     "docpad-plugin-partials": "~2.5.0",
     "grunt-cli": "0.1.6",
     "grunt": "~0.4.0",
+    "grunt-contrib-htmlmin": "0.1.1",
     "grunt-yui-compressor": "0.2.1",
     "bal-util": "~1.15.3",
     "underscore": "~1.4.3",
