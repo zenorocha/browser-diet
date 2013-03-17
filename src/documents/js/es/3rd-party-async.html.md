@@ -21,7 +21,7 @@ script.src = url;
 scripts.parentNode.insertBefore(script, scripts);
 ```
 
-Alternativamente, si quieres cargar varios widgets de terceros, puedes cargarlos asíncronamente con [esto script](https://gist.github.com/zenorocha/5161860).
+Alternativamente, si quieres cargar varios widgets de terceros, puedes cargarlos asíncronamente con [este script](https://gist.github.com/zenorocha/5161860).
 
 *> Más información sobre [cargar los botones sociales asíncronamente](http://www.phpied.com/social-button-bffs/)*
 

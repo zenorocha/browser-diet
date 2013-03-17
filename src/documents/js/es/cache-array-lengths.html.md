@@ -24,7 +24,7 @@ for (i = 0, len = arr.length; i < len; i++) {
 
 **> Nota:** *Pese a que los navegadores modernos automáticamente optimizan este proceso, sigue siendo una buena práctica para adaptarse a los navegadores antiguos que aún perduran.*
 
-En iteraciones sobre coleciones en HTML como una lista de nodos (`NodeList`) generada por ejemplo por `document.getElementsByTagName('a')` esto es particularmente crítuco. Estas colecciones son consideradas *vivas*, es decir, son automáticamente actualizadas cuando hay cambios en el elemento que les pertenece.
+En iteraciones sobre colecciones en HTML como una lista de nodos (`NodeList`) generada por ejemplo por `document.getElementsByTagName('a')` esto es particularmente crítuco. Estas colecciones son consideradas *vivas*, es decir, son automáticamente actualizadas cuando hay cambios en el elemento que les pertenece.
 
 ```js
 var links = document.getElementsByTagName('a'),
