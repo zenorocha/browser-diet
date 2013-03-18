@@ -24,7 +24,7 @@ oReq.send();
 
 Con jQuery:
 
-```
+```js
 $.ajax({
 	url: 'tuArchivo.txt',
 	// type: 'POST', // Mal
