@@ -13,4 +13,4 @@ Mas nada daqueles guias chatos feitos para robôs, que tal fazer algo divertido?
 
 Foi isso mesmo que fizemos! E iremos te ajudar nessa batalha de criar sites cada vez mais rápidos.
 
-<p class="project-leader">&mdash; [Zeno Rocha](https://github.com/zenorocha), líder do projeto.</p>
+<p class="project-leader">&mdash; [Zeno Rocha](http://zenorocha.com/), líder do projeto.</p>

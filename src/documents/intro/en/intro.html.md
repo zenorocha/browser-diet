@@ -13,4 +13,4 @@ And not just one of those boring guides made for robots, what if we did somethin
 
 That's exactly what we've done! And we'll guide you in this battle to create even faster sites.
 
-<p class="project-leader">&mdash; [Zeno Rocha](https://github.com/zenorocha), project lead.</p>
+<p class="project-leader">&mdash; [Zeno Rocha](http://zenorocha.com/), project lead.</p>

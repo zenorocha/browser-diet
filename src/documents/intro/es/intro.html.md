@@ -13,4 +13,4 @@ Y no sólo una de esas aburridas guías hechas para robots, ¿y si hiciéramos a
 
 ¡Eso es exactamente lo que hemos hecho! Y nosotros te guiaremos en esta batalla para crear sitios incluso más rápidos.
 
-<p class="project-leader">&mdash; [Zeno Rocha](https://github.com/zenorocha), líder del proyecto.</p>
+<p class="project-leader">&mdash; [Zeno Rocha](http://zenorocha.com/), líder del proyecto.</p>
