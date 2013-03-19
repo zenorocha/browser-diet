@@ -34,4 +34,4 @@ No lado direito você pode ver alguns exemplos de resultado do [HTML Compressor]
 
 *> Ferramentas úteis: [HTML Minifier](http://kangax.github.com/html-minifier/), [Django HTMLmin](https://github.com/cobrateam/django-htmlmin) e [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
 
-*Ambas disponíveis como plugin para [GruntJS](http://gruntjs.com/): [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin) e [grunt-htmlcompressor](https://github.com/jney/grunt-htmlcompressor) respectivamente.*
+*HTML Minifier e HTML Compressor possuem plugins para [GruntJS](http://gruntjs.com/): [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin) e [grunt-htmlcompressor](https://github.com/jney/grunt-htmlcompressor) respectivamente.*
