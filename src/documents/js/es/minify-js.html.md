@@ -27,4 +27,4 @@ BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 
 Esto quitará bytes al archivo, lo que resultará en un proceso de descarga, análisis y ejecución más rápido.
 
-*> Herramientas útiles: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [Google Closure Compiler](http://code.google.com/closure/compiler/) y [UglifyJS](https://github.com/mishoo/UglifyJS).*
+*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*

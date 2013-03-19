@@ -38,3 +38,5 @@ El resultado de la página final será sólo *bar* y no *foobar* como se esperar
 </script>
 ```
 El resultado será el mismo que el ejemplo anterior si la función programada por `setTimeout` es ejecutada tras `window.onload`.
+
+*> [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#avoid-documentwrite)*

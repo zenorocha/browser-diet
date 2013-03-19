@@ -22,3 +22,5 @@ Pero _nunca_ uses esa url en una etiqueta `<script>`, puede crear problemas en e
 ```
 
 Como el sabio [Barney Stinson](/img/new-is-always-better.gif) dice, *"Lo nuevo es siempre mejor"* :P
+
+*> [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#always-use-the-latest-version-of-jquery)*

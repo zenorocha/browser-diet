@@ -18,3 +18,5 @@ AddOutputFilterByType DEFLATE application/javascript
 ```
 
 Todos los servidores populares son igual de fáciles de configurar (consulta la documentación para el tuyo!) y es uno de los trucos más efectivos para mejorar el rendimiento de la página.
+
+*> [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#gzip)*

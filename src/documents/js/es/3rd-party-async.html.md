@@ -23,6 +23,4 @@ scripts.parentNode.insertBefore(script, scripts);
 
 Alternativamente, si quieres cargar varios widgets de terceros, puedes cargarlos asíncronamente con [este script](https://gist.github.com/zenorocha/5161860).
 
-*> Más información sobre [cargar los botones sociales asíncronamente](http://www.phpied.com/social-button-bffs/)*
-
-*> Video: [comparación de una página normal vs una página donde se carga un contenido de terceros inaccessible](http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d).*
+*> [Video](http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#load-3rd-party-content-asynchronously)*

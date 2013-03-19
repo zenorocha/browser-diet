@@ -14,3 +14,5 @@ Sabiendo esto, Pepe, desarrollador que tiene una imagen de *700x700px* decide us
 De lo que Pepe no se da cuenta es que se enviarán docenas de *kilobytes* innecesarios.
 
 Siempre ten en mente: sólo porque puedas definir el alto y el ancho de una imágen en HTML, no significa que debas usarlo para reducir el tamaño de imágenes grandes.
+
+*> [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#dont-rescale-images-in-markup)*

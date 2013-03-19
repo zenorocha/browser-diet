@@ -21,3 +21,4 @@ De esta forma, la página tiene que esperar a que el script sea descargado, anal
 
 El script es descargado asíncronamente mientras el resto de la página sigue siendo analizada. El script se ejecutará en cuanto se acabe de descargar. Tenga en cuenta que varios scripts asincrónicos se ejecutará sin un orden específico.
 
+*> [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#try-out-async)*

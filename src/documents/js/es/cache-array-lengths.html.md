@@ -45,3 +45,5 @@ for (i = 0; i < links.length; i++) {
   // esto no pasaría si el tamaño fuera almacenado y usado como una condición
 }
 ```
+
+*> [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#cache-array-lengths)*

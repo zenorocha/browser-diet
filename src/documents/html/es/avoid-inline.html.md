@@ -18,4 +18,4 @@ Las dos primeras opciones, pese a que reducen el número de solicitudes HTTP, au
 
 La tercera opción nó solo mejora la organización de tu código, sino que también hace posible al navegador cachearlo. Esta opción suele ser la mejor en la mayoría de los casos, sobre todo cuando estás trabajando con archivos grandes y una gran cantidad de páginas.
 
-*> Herramientas útiles: [Assetgraph-builder](https://github.com/One-com/assetgraph-builder).*
+*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*

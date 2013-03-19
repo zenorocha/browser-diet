@@ -26,3 +26,5 @@ Estas instrucciones cahean las imágenes, CSS y JS durante 6 meses&mdash;es reco
 Una cosa importante para recordar es que una vez cacheado, el navegador no solicitará un archivo nuevo otra vez. Si necesitamos cambiar el contenido del archivo, no funcionará tal y como esperamos, para enviar una nueva versión, necesitamos cambiar el nombre del archivo. Una forma de hacerlo es añadir alguna tipo de versión o fecha al archivo. Por ejemplo, en vez de `home.js` puedes usar `home-v1.js`, y cuando necesitas actualizar el archivo, cambiar el nombre a `home-v2.js`, etc.
 
 Otra forma común de saltarse la caché es usar un parámetro GET en la URL: `home.js?v=1` y `home.js?v=2`. Éste método tiene l a desventaja de que algunos proxies ignoran los parámetros GET, lo que añadido a las reglas de caché, te hace incapaz de eliminar la caché en ellos cuando lo necesitas.
+
+*> [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#enable-smart-caching)*

@@ -42,4 +42,4 @@ Cuando estableces `style.width`, el navegador necesita recalcular la estructura.
 
 Si necesitas leer datos sobre la estructura de la página, hazlo todo junto antes de establecer algún valor que cambie la estructora, tal y como en el segundo ejemplo
 
-*[> Demo](http://jsbin.com/aqavin/2/quiet)*
+*> [Demo](http://jsbin.com/aqavin/2/quiet) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#minimize-repaints-and-reflows)*

@@ -31,3 +31,5 @@ Por otro lado, cuando tratamos con JavaScript, es importante poner los scripts a
   <script src="script.js"></script>
 </body>
 ```
+
+*> [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#styles-up-top-scripts-down-bottom)*
