@@ -27,4 +27,6 @@ When using your *sprite*, avoid leaving too much white space between images. Thi
 
 And despite nearly everyone knowing about sprites, this technique isn't widely used&mdash;perhaps due to developers not using automated tools to generate sprites. We've highlighted a few that can help you out with this.
 
- *> Useful tools: [SpritePad](http://wearekiss.com/spritepad), [Compass](http://compass-style.org/help/tutorials/spriting/), [SpriteMe](http://www.spriteme.org/), [Sprite Cow](http://www.spritecow.com/) and [glue](https://github.com/jorgebastida/glue).*
+ *> Auto-sprite generator: [TexturePacker](http://www.codeandweb.com/texturepacker) - useful tool for auto generating both the sprite and your CSS from a folder of images.  Can be integrated into your build script.*
+
+ *> Other useful tools: [SpritePad](http://wearekiss.com/spritepad), [Compass](http://compass-style.org/help/tutorials/spriting/), [SpriteMe](http://www.spriteme.org/), [Sprite Cow](http://www.spritecow.com/) and [glue](https://github.com/jorgebastida/glue).*
