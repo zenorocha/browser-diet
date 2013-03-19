@@ -27,4 +27,4 @@ So combine your CSS. Having a smaller number of files will result in a smaller n
 
 Want to have the best of both worlds? Automate this process through a build tool.
 
-*> Useful tools: [Grunt](http://gruntjs.com/).*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [References](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

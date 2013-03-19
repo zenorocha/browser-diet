@@ -16,3 +16,5 @@ Or through the `@import` directive (inside an external stylesheet or in an inlin
 ```
 
 When you use the second option through an external stylesheet, the browser is incapable of downloading the asset in parallel, which can block the download of other assets.
+
+*> [References](https://github.com/zenorocha/browser-diet/wiki/References#prefer--over-import)*

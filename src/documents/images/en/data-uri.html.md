@@ -27,4 +27,4 @@ Both this method and the CSS spriting method require build time tools to be main
 
 However has the disadvantage of growing the size of your HTML/CSS considerably if you have large images. It is not recommended to use this method if you aren't gzipping your HTML/CSS during HTTP requests as the size overhead might negate the speed gains you get from minimizing the number of HTTP requests.
 
-*> Useful tools: [mod_pagespeed](https://developers.google.com/speed/docs/mod_pagespeed/filter-image-optimize), [data: URI Generator](http://dopiaza.org/tools/datauri/index.php), and [data-uri.js](https://github.com/heldr/datauri).*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri) / [References](https://github.com/zenorocha/browser-diet/wiki/References#data-uri)*

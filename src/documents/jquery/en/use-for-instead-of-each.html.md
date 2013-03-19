@@ -17,4 +17,4 @@ for ( var i = 0, len = a.length; i < len; i++ ) {
 
 The use of reverse `while` and reverse `for` loops is a hot topic in the community and are frequently cited as the fastest form of iteration. However it's typically avoided for being less legible.
 
-*[> Results on JSPerf](http://jsperf.com/browser-diet-jquery-each-vs-for-loop)*
+*> [Results on JSPerf](http://jsperf.com/browser-diet-jquery-each-vs-for-loop) / [References](https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each)*

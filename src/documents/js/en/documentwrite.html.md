@@ -37,3 +37,5 @@ The result of the final page will be only *bar* and not *foobar* as expected. Th
 </script>
 ```
 The result will be the same as the previous example if the function scheduled by `setTimeout` is executed after `window.onload` event.
+
+*> [References](https://github.com/zenorocha/browser-diet/wiki/References#avoid-documentwrite)*

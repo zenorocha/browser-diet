@@ -20,3 +20,5 @@ In this form, the page has to wait for the script to be fully downloaded, parsed
 ```
 
 The script is downloaded asynchronously while the rest of the page continues to get parsed. The script is guaranteed to be executed as soon as the download is complete. Keep in mind that multiple async scripts will be executed in no specific order.
+
+*> [References](https://github.com/zenorocha/browser-diet/wiki/References#try-out-async)*

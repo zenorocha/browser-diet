@@ -17,4 +17,4 @@ The first two options, despite reducing the number of HTTP requests, actually in
 
 The third option not only improves the organization of your code, but also makes it possible for the browser to cache it. This option should be preferred for the majority of cases, especially when working with large files and lots of pages.
 
-*> Useful tools: [Assetgraph-builder](https://github.com/One-com/assetgraph-builder).*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code) / [References](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*

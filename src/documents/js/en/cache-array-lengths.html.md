@@ -45,3 +45,5 @@ for (i = 0; i < links.length; i++) {
   // this would not happen if the size of the list was stored and used as a condition
 }
 ```
+
+*> [References](https://github.com/zenorocha/browser-diet/wiki/References#cache-array-lengths)*
