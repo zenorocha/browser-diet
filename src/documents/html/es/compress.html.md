@@ -32,6 +32,6 @@ Como resultado, tus usuarios disfrutarán de un proceso de descarga, análisis y
 
 A la derecha verás algunos ejemplos de los resultados de [HTML Compressor](https://code.google.com/p/htmlcompressor/) con la configuración por defecto.
 
-*> Herramientas útiles: [HTML Minifier](http://kangax.github.com/html-minifier/) y [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
+*> Herramientas útiles: [HTML Minifier](http://kangax.github.com/html-minifier/), [Django HTMLmin](https://github.com/cobrateam/django-htmlmin) y [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
 
 *Ambos disponibles como plugins para [GruntJS](http://gruntjs.com/): [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin) y [grunt-htmlcompressor](https://github.com/jney/grunt-htmlcompressor) respectivamente.*
