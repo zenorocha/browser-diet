@@ -22,3 +22,5 @@ Mas _nunca_ referencie aquela URL na sua tag `<script>`, isso pode criar problem
 ```
 
 Já dizia o sábio [Barney Stinson](/img/new-is-always-better.gif): *"New is always better"* :P
+
+*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#always-use-the-latest-version-of-jquery)*

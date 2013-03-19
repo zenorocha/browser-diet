@@ -29,4 +29,4 @@ $('a').on('click', function() {
 
 E ainda ser mais rápido.
 
-*[> Resultado no JSPerf](http://jsperf.com/browser-diet-this-attr-id-vs-this-id)*
+*> [Resultado no JSPerf](http://jsperf.com/browser-diet-this-attr-id-vs-this-id) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery)*

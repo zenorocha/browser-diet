@@ -32,6 +32,4 @@ Como resultado, seus usuários ficarão felizes com a aceleração do download, 
 
 No lado direito você pode ver alguns exemplos de resultado do [HTML Compressor](https://code.google.com/p/htmlcompressor/) com as configurações padrão.
 
-*> Ferramentas úteis: [HTML Minifier](http://kangax.github.com/html-minifier/), [Django HTMLmin](https://github.com/cobrateam/django-htmlmin) e [HTML Compressor](http://code.google.com/p/htmlcompressor/).*
-
-*HTML Minifier e HTML Compressor possuem plugins para [GruntJS](http://gruntjs.com/): [grunt-contrib-htmlmin](https://github.com/gruntjs/grunt-contrib-htmlmin) e [grunt-htmlcompressor](https://github.com/jney/grunt-htmlcompressor) respectivamente.*
+*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-html) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-html)*

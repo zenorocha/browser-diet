@@ -26,3 +26,5 @@ A configuração acima habilita um cache de 6 meses para imagens, CSS e JS — o
 Um ponto importante é que, uma vez cacheado, o browser não refaz mais o request. Se precisarmos alterar o conteúdo daquele arquivo, não conseguimos. Pra enviar uma versão nova, precisamos mudar o nome do arquivo. Uma forma recomendada é colocar algum tipo de código de versão ou timestamp no nome do arquivo. Por exemplo, ao invés de `home.js`, você pode usar `home-v1.js` e, quando precisar atualizar o arquivo, renomeia ele pra `home-v2.js`.
 
 Outra forma comum é passar um parâmetro GET na URL: `home.js?v=1` e `home.js?v=2`. Esse método tem a desvantagem sobre a alternativa de renomear já que alguns proxies na internet ignoram parâmetros GET, mas aderem as regras de cache, o que lhe permite utilizá-las quando precisar.
+
+*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#enable-smart-caching)*

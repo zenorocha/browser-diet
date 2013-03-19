@@ -29,4 +29,4 @@ Isso irá economizar muitos e muitos bytes, acelerando assim o download, anális
 
 Para aqueles que usam pré-processadores como [Sass](http://sass-lang.com/), [Less](http://lesscss.org/) e [Stylus](http://learnboost.github.com/stylus/), é possível configurar a compilação para gerar o código já minificado.
 
-*> Ferramentas úteis: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [CSS Minifier](http://www.cssminifier.com/) e [cssmin.js](http://www.phpied.com/cssmin-js/).*
+*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*

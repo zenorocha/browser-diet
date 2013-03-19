@@ -27,4 +27,4 @@ Logo, combine seu JS. Quanto menor for o número de arquivos, menor será o núm
 
 Quer ter o melhor dos dois mundos? Automatize esse processo através de uma ferramenta de build.
 
-*> Ferramentas úteis: [Grunt](http://gruntjs.com/).*
+*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

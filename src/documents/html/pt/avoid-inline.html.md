@@ -17,4 +17,4 @@ As duas primeiras opções, apesar de reduzirem o número de requisições, aume
 
 Já a terceira opção, não só melhora a organização do seu código, como também possibilita que eles sejam armazenados no cache do navegador. Prefira essa opção para a maior parte dos casos, quando lidamos com arquivos grandes e muitas páginas.
 
-*> Ferramentas úteis: [Assetgraph-builder](https://github.com/One-com/assetgraph-builder).*
+*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*

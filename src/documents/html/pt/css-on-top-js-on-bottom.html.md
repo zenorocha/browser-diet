@@ -31,3 +31,5 @@ Com relação ao JavaScript, é importante manter a chamada dos scripts no fim d
   <script src="script.js"></script>
 </body>
 ```
+
+*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#styles-up-top-scripts-down-bottom)*

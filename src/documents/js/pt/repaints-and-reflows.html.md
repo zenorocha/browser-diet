@@ -42,4 +42,4 @@ Quando você define o `style.width`, o navegador precisa recalcular o layout. No
 
 Se você precisar ler informações do layout na página, faça de uma vez só antes de definir qualquer coisa que altere o layout, como no segundo exemplo.
 
-*[> Demo](http://jsbin.com/aqavin/2/quiet)*
+*> [Demo](http://jsbin.com/aqavin/2/quiet) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#minimize-repaints-and-reflows)*

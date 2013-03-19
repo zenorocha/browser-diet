@@ -18,3 +18,5 @@ AddOutputFilterByType DEFLATE application/javascript
 ```
 
 Essa configuração costuma ser bem simples de fazer em todos os servidores do mercado (veja na documentação do seu!) e é uma das dicas mais eficientes para se melhorar a performance da página.
+
+*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#gzip)*

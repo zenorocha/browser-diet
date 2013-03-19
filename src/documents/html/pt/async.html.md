@@ -20,3 +20,5 @@ Dessa forma, a página aguarda o script terminar de carregar antes de continuar 
 ```
 
 O download do script é feito de forma assíncrona enquanto o processo de renderização da página continua a ser feito. O script é executado depois que o download estiver completo. Tenha em mente que caso tenha vários scripts com async, eles  serão executados em nenhuma ordem específica.
+
+*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#try-out-async)*

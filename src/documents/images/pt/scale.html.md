@@ -14,3 +14,5 @@ Sabendo disso, Joãozinho que tem uma imagem de *700x700px* resolve exibí-la em
 O que o malandro Joãozinho não sabe é que uma dezena de *KBs* serão trafegados a mais pela rede desnecessariamente.
 
 Por isso, lembre-se: só porque você pode definir a altura e largura de uma imagem no HTML, não quer dizer que deve redimensionar imagens maiores do que precisa.
+
+*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#dont-rescale-images-in-markup)*
