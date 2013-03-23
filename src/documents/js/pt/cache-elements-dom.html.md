@@ -14,3 +14,5 @@ var largura = elemento.clientWidth;
 
 elemento.className = "nova-classe";
 ```
+
+*> [Resultados no JSPerf](http://jsperf.com/browser-diet-dom-manipulation)*

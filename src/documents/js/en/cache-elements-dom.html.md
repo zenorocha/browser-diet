@@ -14,3 +14,5 @@ var width = elemento.clientWidth;
 
 element.className = "new-class";
 ```
+
+*> [Results on JSPerf](http://jsperf.com/browser-diet-dom-manipulation)*
