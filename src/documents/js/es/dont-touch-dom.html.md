@@ -10,8 +10,7 @@ No, ahora en serio, navegar por los elementos del DOM es costoso. Aunque los mot
 Una de las alternativas más simples a adoptar es guardar un elemento en una variable cuando tiene que ser usado más de una vez, por lo que sólo se consulta al DOM una vez.
 
 ```js
-// Fatal!
-// really bad!
+// fatal!
 for (var i = 0; i < 100; i++) {
   document.getElementById("mi-elemento").innerHTML += "<span>" + i + "</span>";
 }
