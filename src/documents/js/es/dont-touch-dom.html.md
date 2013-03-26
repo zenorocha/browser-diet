@@ -1,6 +1,6 @@
 ---
 order: 14
-title: Cachea los elementos del DOM
+title: Evita manipulaciones del DOM innecesarias
 ---
 
 Cada vez que tocas el DOM sin necesidad muere un panda.
