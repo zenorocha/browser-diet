@@ -9,8 +9,8 @@ Una de las más simples alternativas se adoptará, cuando un elemento tiene que 
 
 ```js
 var element = document.getElementById("my-element");
-var height = elemento.clientHeight;
-var width = elemento.clientWidth;
+var height = element.clientHeight;
+var width = element.clientWidth;
 
 element.className = "new-class";
 ```
