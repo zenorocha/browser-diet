@@ -1,18 +1,32 @@
 ---
 order: 14
-title: Cachea los elementos de la DOM ya ha visitados
+title: Cachea los elementos del DOM
 ---
 
-Navegar por los elementos DOM es costoso. Aunque los motores de JavaScript son cada vez más potentes y rápidos, siempre prefieren optimizar las consultas máximos en el árbol DOM.
+Cada vez que tocas el DOM sin necesidad muere un panda.
 
-Una de las más simples alternativas se adoptará, cuando un elemento tiene que ser visitada más de una vez, guardarlo en una variable, por lo que no necesita más de una consulta en el DOM.
+No, ahora en serio, navegar por los elementos del DOM es costoso. Aunque los motores de JavaScript son cada vez más potentes y rápidos, siempre es preferible optimizar al máximo las consultas al DOM tree.
+
+Una de las alternativas más simples a adoptar es guardar un elemento en una variable cuando tiene que ser usado más de una vez, por lo que sólo se consulta al DOM una vez.
 
 ```js
-var element = document.getElementById("my-element");
-var height = element.clientHeight;
-var width = element.clientWidth;
+// Fatal!
+// really bad!
+for (var i = 0; i < 100; i++) {
+  document.getElementById("mi-elemento").innerHTML += "<span>" + i + "</span>";
+}
+```
 
-element.className = "new-class";
+
+```js
+// mucho mejor :)
+var miLista = "";
+
+for (var i = 0; i < 100; i++) {
+  miLista += "<span>" + i + "</span>";
+}
+
+document.getElementById("mi-elemento").innerHTML = miLista;
 ```
 
 *> [Resultados en JSPerf](http://jsperf.com/browser-diet-dom-manipulation)*
