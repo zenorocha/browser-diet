@@ -14,7 +14,9 @@ Uma das alternativas mais simples de serem adotadas é, quando um elemento tiver
 for (var i = 0; i < 100; i++) {
   document.getElementById("myList").innerHTML += "<span>" + i + "</span>";
 }
+```
 
+```js
 // bem melhor :)
 var myList = "";
 

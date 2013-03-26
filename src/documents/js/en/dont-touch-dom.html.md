@@ -14,7 +14,9 @@ One of the simplest alternatives to be adopted is, when an element has to be acc
 for (var i = 0; i < 100; i++) {
   document.getElementById("myList").innerHTML += "<span>" + i + "</span>";
 }
+```
 
+```js
 // much better :)
 var myList = "";
 
