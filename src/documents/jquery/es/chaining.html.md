@@ -10,7 +10,7 @@ Encadenar métodos significa que puedes ejecutar un método de jQuery justo desp
 $("#object").addClass("foo").css("border-color", "#ccc").width(200);
 ```
 
-Los test demuestrant que no encadenar es más lento.
+Los test demuestran que no encadenar es más lento.
 
 ```js
 $("#object").addClass("foo");
