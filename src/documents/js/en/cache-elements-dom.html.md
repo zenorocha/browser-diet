@@ -5,7 +5,7 @@ title: Cache DOM elements already visited
 
 Browse by DOM elements is costly. Although the JavaScript engines become increasingly powerful and fast, always prefer to optimize maximum queries in the DOM tree.
 
-One of the simplest alternatives is to be adopted is, when an element has to be accessed more than once, save it in a variable, so you don't need more than one query in the DOM.
+One of the simplest alternatives to be adopted is, when an element has to be accessed more than once, save it in a variable, so you don't need more than one query in the DOM.
 
 ```js
 var element = document.getElementById("my-element");
