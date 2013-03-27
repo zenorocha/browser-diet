@@ -272,33 +272,13 @@ strong {
   background: url(http://browserdiet.com/img/flag-sprite.png);
   @media (max-width: 767px) {
 		position: static;
-		top: auto;
+		display: inline-block;
 	}
 }
 
-#flag-en {
-	right: 80px;
-	background-position: 0 0;
-	@media (max-width: 630px) {
-		right: auto;
-	}
-}
-
-#flag-es {
-	right: 40px;
-	background-position: 0 32px;
-	@media (max-width: 630px) {
-		right: auto;
-	}
-}
-
-#flag-pt {
-	right: 0;
-	background-position: 0 64px;
-	@media (max-width: 630px) {
-		right: auto;
-	}
-}
+#flag-en { right: 80px; background-position: 0 0; }
+#flag-es { right: 40px; background-position: 0 32px; }
+#flag-pt { right: 0; background-position: 0 64px; }
 
 /*	--- Topics --- */
 
@@ -379,10 +359,10 @@ strong {
 		padding: 0 .25em;
 	}
 }
+
 .tip-title {
 	color: @red;
 }
-
 
 .article .anchor,
 .article .edit {
@@ -394,13 +374,11 @@ strong {
 	top: 20px;
 	right: 0;
 	border: none;
-
 	-webkit-transition: all 0.2s ease-in-out;
 	   -moz-transition: all 0.2s ease-in-out;
 	    -ms-transition: all 0.2s ease-in-out;
 	     -o-transition: all 0.2s ease-in-out;
 	        transition: all 0.2s ease-in-out;
-	border: none;
 }
 
 
