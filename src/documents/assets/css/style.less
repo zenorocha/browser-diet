@@ -450,7 +450,22 @@ body {
 }
 
 .img-right {
+
 	float: right;
+
+	@media (max-width: 550px) {
+    float: none;
+    img {
+      margin: auto;
+    }
+  }
+
+ }
+
+#htmlcompression-table {
+  @media (max-width: 550px) {
+    display: block;
+  }
 }
 
 .project-leader {
