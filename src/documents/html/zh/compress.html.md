@@ -3,7 +3,7 @@ order: 24
 title: 压缩你的HTML
 ---
 
-为了保持代码的可读性，最好的方法是在代码中添加注视和使用缩进。
+为了保持代码的可读性，最好的方法是在代码中添加注释和使用缩进。
 
 ```html
 <p>Lorem ipsum dolor sit amet.</p>
