@@ -1,6 +1,6 @@
 ---
 order: 8
-title: Use CSS Sprites
+title: 使用CSS Sprites
 ---
 
 这个技术就是将各种图片整合到一个文件中去。

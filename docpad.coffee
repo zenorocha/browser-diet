@@ -8,7 +8,7 @@ module.exports =
         # -----------------------------
         # Language Definition
 
-        currentLang: 'zh'
+        currentLang: 'en'
 
         lang:
             en:
@@ -50,7 +50,7 @@ module.exports =
             zh:
                 title: 'How to lose weight (in the browser)'
                 titleHTML: '<h1>How to lose <span>weight</span></h1><h2>in the browser</h2>'
-                slogan: '决定性的前端性能指南'
+                slogan: '权威的前端性能指南'
                 url: 'http://browserdiet.com'
                 bonus: 'Bonus'
                 images: 'Images'
