@@ -29,9 +29,13 @@ body {
 p, pre {
 	font-family: 'Open Sans', sans-serif;
 	margin: 1.5em 0;
-	padding: 0 7%;
+	padding: 0 2%;
 	word-break: break-word;
 	line-height: 1.5em;
+
+	@media (min-width: 600px) {
+		padding: 0 7%;
+	}
 }
 
 a {
@@ -179,7 +183,7 @@ strong {
 	font-weight: normal;
 
 	@media (max-width: 550px) {
-		font-size: 1em;
+		font-size: 0.95em;
 	}
 }
 
@@ -301,6 +305,10 @@ strong {
 	text-align: center;
 	font-weight: normal;
 
+	@media (max-width: 550px) {
+		margin-top: 36px;
+	}
+
 	span {
 		display: inline-block;
 		padding: 0 3px;
@@ -337,8 +345,12 @@ strong {
 /* --- Articles --- */
 
 .article {
-	padding: 4% 0 0 2%;
+	padding-top: 4%;
 	clear: both;
+
+	@media (min-width: 600px) {
+		padding-left: 2%;
+	}
 }
 
 .article h1 {
@@ -462,12 +474,6 @@ body {
 
  }
 
-#htmlcompression-table {
-  @media (max-width: 550px) {
-    display: block;
-  }
-}
-
 .project-leader {
 	float: right;
 	margin-top: 0;
@@ -526,9 +532,24 @@ img::-moz-selection	{ background: transparent; }
 
 /* --- Specific --- */
 
-#article-async pre { margin-right: 120px; }
+#article-async pre { 
+	margin-right: 120px; 
+
+	@media (max-width: 550px) {
+		margin-right: 0;
+	}
+}
 #performance-matters { margin-top: -20px; }
-#htmlcompression-table { margin: 0 60px 0 10px;}
+#htmlcompression-table { 
+	margin: 0 60px 0 10px;
+	max-width: 100%;
+
+  @media (max-width: 550px) {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 /* --- Geeks --- */
 
