@@ -57,8 +57,8 @@
         </hgroup>
 
         <div class="superman">
-          <img class="superman-geek" src="<%= @site.assets %>/img/superman.png" alt="Superman" width="320" height="393">
-          <img class="superman-raios" src="<%= @site.assets %>/img/raios.png" alt="" width="537" height="560">
+          <img class="superman-geek" src="<%= @site.assets %>/img/superman.png" alt="Superman">
+          <img class="superman-raios" src="<%= @site.assets %>/img/raios.png" alt="">
         </div>
       </div>
     </div>

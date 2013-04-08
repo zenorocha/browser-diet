@@ -66,6 +66,10 @@ strong {
 	max-width: 51em;
 	overflow: hidden;
 	margin-left: auto;
+
+	@media (max-width: 550px) {
+		line-height: (450 / 16em);
+	}
 }
 
 #menu {
@@ -87,25 +91,18 @@ strong {
   overflow: hidden;
 
   position: absolute;
-  top: -30px;
+  top: -30 / 16em;
   right: -50px;
   z-index: -1;
 
-  @media (max-width: 767px) {
-  	position: relative;
-  	top: auto;
-  	right: auto;
-  	display: block;
-  }
-
-  @media (max-width: 515px) {
-  	padding: 3.5em 5em 5em;
+  @media (max-width: 420px) {
+  	padding: 3em;
   }
 }
 	.superman-raios {
 	  position: absolute;
 	  top: 0;
-	  left: -45px;
+	  left: -45 / 16em;
 	  z-index: -1;
 
 	  height: 560 / 16em;
@@ -115,33 +112,10 @@ strong {
 	     -moz-animation: 20s superman infinite linear;
 	       -o-animation: 20s superman infinite linear;
 	          animation: 20s superman infinite linear;
-
-		@media (max-width: 767px) {
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-		}
-
-		@media (max-width: 515px) {
-			width: 100%;
-			height: auto;
-		}
 	}
 	.superman-geek {
 		height: 393 / 16em;
 		width: 320 / 16em;
-
-		@media (max-width: 767px) {
-			display: block;
-			margin: auto;
-		}
-
-		@media (max-width: 515px) {
-			width: 100%;
-			height: auto;
-		}
 	}
 
 	@-webkit-keyframes superman { to { -webkit-transform: rotate(360deg); } }
@@ -187,16 +161,21 @@ strong {
 	}
 }
 
+.intro {
+	font-size: 0.5em;
+
+	@media (min-width: 400px) { font-size: 0.55em; }
+	@media (min-width: 450px) { font-size: 0.6em; }
+	@media (min-width: 570px) { font-size: 0.7em; }
+	@media (min-width: 690px) { font-size: 0.8em; }
+	@media (min-width: 800px) { font-size: 0.9em; }
+	@media (min-width: 910px) { font-size: 1em; }
+}
+
 .intro-titles {
 	display: inline-block;
 	width: 350 / 16em;
 	vertical-align: middle;
-
-	@media (max-width: 767px) {
-		width: auto;
-		display: block;
-		margin-top: 2.5em;
-	}
 }
 
 .intro h1 {
@@ -211,18 +190,6 @@ strong {
 	font-weight: normal;
 
 	span { font-size: 2em; }
-
-	@media (max-width: 676px) {
-		margin-bottom: .5em;
-
-		span {
-			display: block;
-		}
-	}
-
-	@media (max-width: 550px) {
-		font-size: 3.0em;
-	}
 }
 
 .intro h1 span {
@@ -243,21 +210,6 @@ strong {
 	font-weight: normal;
 	font-size: 2.6em;
 	line-height: 1.2em;
-
-	@media (max-width: 767px) {
-		background-size: auto;
-	}
-
-	@media (max-width: 550px) {
-		font-size: 2em;
-		padding-top: .25em;
-		padding-bottom: .5em;
-	}
-
-	@media (max-width: 320px) {
-		font-size: 1.75em;
-		background-size: 90%;
-	}
 }
 
 /*	--- Languages --- */
