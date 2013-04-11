@@ -358,7 +358,8 @@ strong {
 		top: 0;
 	}
 
-	.article .edit { // remove from small views, since github doesn't have a mobile site
+	.article .edit,
+	.article .anchor {
 		display: none;
 	}
 }
@@ -488,15 +489,15 @@ img::-moz-selection	{ background: transparent; }
 
 /* --- Specific --- */
 
-#article-async pre { 
-	margin-right: 120px; 
+#article-async pre {
+	margin-right: 120px;
 
 	@media (max-width: 550px) {
 		margin-right: 0;
 	}
 }
 #performance-matters { margin-top: -20px; }
-#htmlcompression-table { 
+#htmlcompression-table {
 	margin: 0 60px 0 10px;
 	max-width: 100%;
 
