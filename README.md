@@ -111,6 +111,7 @@ Lists all NodeJS dependencies.
 * [Mike Taylor](https://github.com/miketaylr) (English)
 * [Emilio Cobos Álvarez](https://github.com/ecoal95) (Spanish)
 * [Lukasz Jakub Adamczuk](https://github.com/lukasz-jakub-adamczuk) (Polish)
+* [Fordlee](https://github.com/fordlee404) (Chinese)
 
 ## Credits
 
