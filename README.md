@@ -1,7 +1,3 @@
-*[Leia em Português](https://github.com/zenorocha/browser-diet/blob/master/README-pt.md) ● [Leer en Español](https://github.com/zenorocha/browser-diet/blob/master/README-es.md)*
-
----
-
 # How to lose weight (in the browser)
 
 The definitive front-end performance guide.
