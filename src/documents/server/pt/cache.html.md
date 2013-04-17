@@ -3,7 +3,7 @@ order: 4
 title: Habilite o cache dos arquivos
 ---
 
-A melhor forma de otimizar os requests da sua página é não fazer requests na página, claro. E uma das maneiras mais úteis pra evitar requisições desnecessárias, é deixar o navegador fazer cache dos arquivos. Por padrão, o navegador não faz cache das coisas, pra evitar ficar com arquivos desatualizados. Mas nós podemos indicar que determinado arquivo pode ser, sim, guardado em cache.
+A melhor forma de otimizar os requests da sua página é não fazer requests na página, claro. E uma das maneiras mais úteis pra evitar requisições desnecessárias é deixar o navegador fazer cache dos arquivos. Por padrão, o navegador não faz cache das coisas, pra evitar ficar com arquivos desatualizados. Mas nós podemos indicar que determinado arquivo pode ser, sim, guardado em cache.
 
 <div class="img-right">
   <img id="geek-15" class="icos-geek" src="http://browserdiet.com/img/15.png" alt="Geek #15" width="141" height="275" />
