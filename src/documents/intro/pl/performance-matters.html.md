@@ -6,7 +6,7 @@ title: Czy wydajnie oznacza lepiej?
 <div class="article">
 
   <h1 id="performance-matters">
-    <a class="tip-title" href="#performance-matters">Czy wydajność ma znaczenie?</a>
+    <a class="tip-title" href="#performance-matters">Czy wydajnie oznacza lepiej?</a>
     <a title="Link" class="anchor" href="#performance-matters">∞</a>
   </h1>
   <div class="line">
