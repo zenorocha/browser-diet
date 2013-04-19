@@ -34,4 +34,4 @@ Z drugiej strony, jeśli omawiamy JavaScript, bardzo ważne jest umieszczenie sk
 </body>
 </html>
 ```
-*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#styles-up-top-scripts-down-bottom)
+*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#styles-up-top-scripts-down-bottom).*
