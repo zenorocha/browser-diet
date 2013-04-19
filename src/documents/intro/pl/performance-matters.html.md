@@ -1,6 +1,6 @@
 ---
 order: 2
-title: Czy wydajność ma znaczenie?
+title: Czy wydajnie oznacza lepiej?
 ---
 
 <div class="article">
