@@ -1,6 +1,6 @@
 ---
 order: 25
-title: Używaj atrybutów `async` i `defer`
+title: Spróbuj asynchronicznie
 ---
 
 Najlepszym wyjaśnieniem wpływu podanych atrybutów na lepszą wydajność, będzie zrozumienie tego, co dzieje się bez ich stosowania.
@@ -21,8 +21,4 @@ W tym przypadku, strona czeka do momentu, w którym skrypt zostanie całkowicie 
 
 Skrypt jest pobierany asynchronicznie, a pozostała część stony jest nadal analizowana. Mamy gwarancję uruchomienia skryptu tuż po zakończeniu jego pobierania.
 
-``` html
-<script defer src="example.js"></script>
-```
-
-Poobnie jak poprzednia skrypt jest pobierany asynchronicznie. Jednak uruchomiany jest dopiero w momencie zakończenia analizy strony.
+*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#try-out-async)*
