@@ -1,5 +1,5 @@
 ---
-order: 18
+order: 17
 title: Buforuj długość tablicy
 ---
 
@@ -44,3 +44,5 @@ for (var i = 0; i < links.length; i++) {
   // Byłoby inaczej, gdyby rozmiar listy był przechowywany i używany jako warunek pętli
 }
 ```
+
+*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#cache-array-lengths*
