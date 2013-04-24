@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 13
 title: Minimalizuj kod JS
 ---
 
@@ -27,4 +27,4 @@ BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 
 Takie golenie rozmiaru pliku, pozwoli w rezultacie na szybsze pobieranie, analizowanie i uruchamianie strony.
 
-*> Przydatne narzędzia: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [Google Closure Compiler](http://code.google.com/closure/compiler/) i [UglifyJS](https://github.com/mishoo/UglifyJS).*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*
