@@ -45,4 +45,4 @@ for (var i = 0; i < links.length; i++) {
 }
 ```
 
-*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#cache-array-lengths*
+*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#cache-array-lengths)*
