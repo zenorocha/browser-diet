@@ -38,4 +38,4 @@ Wynikiem ostatecznej strony będzie *bar*, a nie *foobar*, jakbyśmy oczekiwali.
 ```
 Wynik będzie taki sam, jak w poprzednim przykładzie, jeśli funkcja zaplanowana przez `setTimeout` zostanie wykonana po zdarzeniu `window.onload`.
 
-*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#avoid-documentwrite)*
+*> [Demo](http://jsbin.com/aqavin/2/quiet) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#avoid-documentwrite)*
