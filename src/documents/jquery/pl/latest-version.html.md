@@ -1,5 +1,5 @@
 ---
-order: 13
+order: 11
 title: Zawsze używaj najnowszej wersji jQuery
 ---
 
@@ -22,3 +22,5 @@ Jednak _nigdy_ nie używaj tego adresu w znaczniku `<script>`, ponieważ spowodu
 ```
 
 Tak jak mądry [Barney Stinson](/img/new-is-always-better.gif) mówi, *"Nowe jest zawsze lepsze"* :P
+
+*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#always-use-the-latest-version-of-jquery)*
