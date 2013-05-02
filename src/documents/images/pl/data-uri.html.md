@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 6
 title: Data URI
 ---
 
@@ -27,4 +27,4 @@ Zarówno metoda kodowania base64, jak i CSS sprites wymagają odpowiednich narz�
 
 Wadą tego rozwiązania jest rosnący rozmiar HTML/CSS, jeśli mamy duże obrazy. Technika ta nie jest zalecana, jeżeli wynikowy kod HTML/CSS nie jest kompresowany, ponieważ wiele większy rozmiar plików i dłuższy czas pobierania będzie nieadekwatny do zysków ze zmniejszenia liczby żądań HTTP.
 
-*> Przydatne narzędzia: [mod_pagespeed](https://developers.google.com/speed/docs/mod_pagespeed/filter-image-optimize) i [data: URI Generator](http://dopiaza.org/tools/datauri/index.php).*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#data-uri)*
