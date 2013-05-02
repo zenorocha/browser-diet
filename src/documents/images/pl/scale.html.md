@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 6
 title: Nie skaluj obrazów w znacznikach
 ---
 
