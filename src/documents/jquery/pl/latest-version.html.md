@@ -1,6 +1,6 @@
 ---
 order: 11
-title: Zawsze używaj najnowszej wersji jQuery
+title: Zawsze korzystaj z najnowszej wersji jQuery
 ---
 
 Główny zespół jQuery zawsze stara się wnieść poprawki do biblioteki, dzięki lepszej czytelności kodu, nowym funkcjonalnościom i optymalizacji istniejących algorytmów.
