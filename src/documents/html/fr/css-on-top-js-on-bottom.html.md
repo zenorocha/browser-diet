@@ -3,7 +3,7 @@ order: 25
 title: Les styles en haut, les scripts en bas
 ---
 
-Quand nous ajoutons les feuilles de stule dans le `<head>`, nous permettons à la page de s'afficher progressivement, ce qui donne l'impression à nos utilisateurs que la page se charge rapidement.
+Quand nous ajoutons les feuilles de style dans le `<head>`, nous permettons à la page de s'afficher progressivement, ce qui donne l'impression à nos utilisateurs que la page se charge rapidement.
 
 ```html
 <head>
