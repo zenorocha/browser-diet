@@ -17,4 +17,6 @@ script.src = url;
 scripts.parentNode.insertBefore(script, scripts);
 ```
 
-*> Wideo: [porównanie normalnej strony i strony z niedostępnym kodem zewnętrznym](http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d).*
+Ewentualnie, jeśli chcesz załadować kilka niezależnych wtyczek, możesz asynchronicznie załadować je z pomocą [tego skryptu](https://gist.github.com/zenorocha/5161860).
+
+*> [Wideo](http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#load-3rd-party-content-asynchronously)*

@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 19
 title: Preferuj <link> ponad @import
 ---
 
@@ -16,3 +16,5 @@ lub poprzez dyrektywę `@import` (wewnątrz pliku ze stylami lub w środku znacz
 ```
 
 Druga opcja, w przypadku stylów zewnętrznych blokuje w przeglądarce pobieranie równoległe, co dalej ogranicza pobieranie kolejnych zasobów.
+
+*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#prefer--over-import)*

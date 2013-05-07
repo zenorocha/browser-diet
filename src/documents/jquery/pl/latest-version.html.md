@@ -1,6 +1,6 @@
 ---
-order: 13
-title: Zawsze używaj najnowszej wersji jQuery
+order: 11
+title: Zawsze korzystaj z najnowszej wersji jQuery
 ---
 
 Główny zespół jQuery zawsze stara się wnieść poprawki do biblioteki, dzięki lepszej czytelności kodu, nowym funkcjonalnościom i optymalizacji istniejących algorytmów.
@@ -22,3 +22,5 @@ Jednak _nigdy_ nie używaj tego adresu w znaczniku `<script>`, ponieważ spowodu
 ```
 
 Tak jak mądry [Barney Stinson](/img/new-is-always-better.gif) mówi, *"Nowe jest zawsze lepsze"* :P
+
+*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#always-use-the-latest-version-of-jquery)*
