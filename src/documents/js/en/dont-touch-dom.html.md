@@ -3,11 +3,11 @@ order: 14
 title: Avoid unnecessary DOM manipulations
 ---
 
-Everytime you touch the DOM without needing to do that a panda dies.
+Everytime you touch the DOM, unnecessarily, a panda dies.
 
-Seriously, browse by DOM elements is costly. Although JavaScript engines become increasingly powerful and fast, always prefer to optimize maximum queries in the DOM tree.
+Seriously, navigating the DOM is costly. Even though JavaScript engines have become increasingly powerful and fast, always try to optimize queries of the DOM.
 
-One of the simplest alternatives to be adopted is, when an element has to be accessed more than once, save it in a variable, so you don't need more than one query in the DOM.
+One of the simplest practices to adopt is, when an element has to be accessed more than once, save it in a variable, so you don't need to query the DOM multiple times.
 
 ```js
 // really bad!
