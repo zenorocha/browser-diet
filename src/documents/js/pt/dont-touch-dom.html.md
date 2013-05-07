@@ -7,7 +7,7 @@ Toda vez que você toca no DOM sem realmente precisar, um panda morre.
 
 Sério, navegar por elementos do DOM é custoso. Apesar das engines JavaScript estarem cada vez mais poderosas e rápidas, prefira sempre otimizar ao máximo as consultas na árvore do DOM.
 
-Uma das alternativas mais simples de serem adotadas é, quando um elemento tiver que ser acessado mais de uma vez, guarde-o em uma váriavel, assim você não precisará fazer mais do que uma consulta no DOM.
+Uma das alternativas mais simples de serem adotadas é: quando um elemento precisar ser acessado mais de uma vez, guarde-o numa váriavel, e assim você não vai fazer mais do que uma consulta no DOM.
 
 ```js
 // muito ruim!
