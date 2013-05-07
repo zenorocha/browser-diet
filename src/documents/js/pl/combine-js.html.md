@@ -1,6 +1,6 @@
 ---
-order: 14
-title: Łączenie wielu plików JS w jeden
+order: 12
+title: Scalanie wielu plików JS w jeden
 ---
 
 Bardzo dobrym rozwiązaniem dla organizacji i obsługi skryptów jest rozdzielenie ich na osobne moduły.
@@ -23,4 +23,4 @@ Połącz swoje pliki JS. Mniejsza liczba plików, daje w rezultacie mniejszą li
 
 Chcesz najlepszych wyników? Automatyzacja tego procesu poprzez narzędzia budowania.
 
-*> Przydatne narzędzia: [Grunt](http://gruntjs.com/).*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

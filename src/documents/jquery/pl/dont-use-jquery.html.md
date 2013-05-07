@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 8
 title: Nie używaj jQuery...
 ---
 
@@ -29,4 +29,4 @@ $('a').on('click', function() {
 
 Do tego szybciej.
 
-*[> Wyniki w JSPerf](http://jsperf.com/browser-diet-this-attr-id-vs-this-id)*
+*> [Wyniki w JSPerf](http://jsperf.com/browser-diet-this-attr-id-vs-this-id) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery)*
