@@ -18,3 +18,5 @@ AddOutputFilterByType DEFLATE application/javascript
 ```
 
 Wszystkie popularne serwery konfiguruje się równie łatwo (sprawdź dokumentacji swojego!) i jest to jeden z najbardziej skutecznych sposobów poprawy wydajności strony.
+
+*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#gzip)*

@@ -14,3 +14,5 @@ Wiedząc, o tym programista Jan K. ma obraz *700x700px* i decyduje się na jego 
 Co, czy pan programista nie zdaje sobie sprawy, że dziesiątki niepotrzebnych *kilobajtów* zostaną przesłane przez sieć.
 
 Zawsze miej na uwadze. Możliwość określenia szerokości i wysokości obrazu w HTML nie oznacza, że powienieneś to robić, aby zmniejszyć duże obrazy.
+
+*> [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#dont-rescale-images-in-markup)*

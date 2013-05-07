@@ -1,5 +1,5 @@
 ---
-order: 24
+order: 21
 title: Minimalizuj swoje arkusze
 ---
 
@@ -27,6 +27,6 @@ Jednak dla przeglądarki nie ma to znaczenia. Z tego powodu pamiętaj zawsze o m
 
 Takie golenie rozmiaru pliku, pozwoli w rezultacie na szybsze pobieranie, analizowanie i uruchamianie strony.
 
-Osoby, które używają pre-procesorów jak *Sass*, *Less* i *Stylus*, mają możliwość ustawienia minimlizowania przetworzonych stylów CSS.
+Osoby, które używają pre-procesorów jak [Sass](http://sass-lang.com/), [Less](http://lesscss.org/) i [Stylus](http://learnboost.github.com/stylus/), mają możliwość ustawienia minimlizowania przetworzonych stylów CSS.
 
-*> Przydatne narzędzia: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [CSS Minifier](http://www.cssminifier.com/) e [cssmin.js](http://www.phpied.com/cssmin-js/).*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*

@@ -1,6 +1,6 @@
 ---
-order: 17
-title: Unikay document.write
+order: 15
+title: Unikaj document.write
 ---
 
 Używanie `document.write` powoduje, że strona jest zależna, a w konsekwencji ponownie ładowana.
@@ -37,3 +37,5 @@ Wynikiem ostatecznej strony będzie *bar*, a nie *foobar*, jakbyśmy oczekiwali.
 </script>
 ```
 Wynik będzie taki sam, jak w poprzednim przykładzie, jeśli funkcja zaplanowana przez `setTimeout` zostanie wykonana po zdarzeniu `window.onload`.
+
+*> [Demo](http://jsbin.com/aqavin/2/quiet) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#avoid-documentwrite)*

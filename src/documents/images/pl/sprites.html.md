@@ -1,6 +1,6 @@
 ---
-order: 8
-title: Używaj sprite'ów CSS
+order: 7
+title: Korzystaj ze sprite'ów CSS
 ---
 
 Technika ta polega na grupowaniu różnych obrazów w jednym pliku.
@@ -25,6 +25,6 @@ W rezultacie, znacznie zmniejszamy liczbę żądań HTTP i unikamy potencjalnych
 
 Kiedy używamy *ikonek*, unikamy pozostawiania zbyt dużej pustej przestrzeni miedzy obrazami. Nie ma to wpływu na rozmiar pliku, ale ma wpływ na zużycie pamięci.
 
-Pomimo szerokiej wiedzy na temat sprite'ów, ta technika nie jest często stosowana&mdash;może, ze względu na brak stsowania narzędzi do automatycznego generowania sprite'ów. Poniżej przedstawiamy listę narzędzi, które okażą się bardzo pomocne.
+Pomimo szerokiej wiedzy na temat sprite'ów, technika ta nie jest często stosowana&mdash;może, ze względu na brak stosowania narzędzi do automatycznego generowania sprite'ów. Poniżej przedstawiamy listę narzędzi, które okażą się bardzo pomocne.
 
- *> Przydatne narządzia: [SpritePad](http://wearekiss.com/spritepad), [Compass](http://compass-style.org/help/tutorials/spriting/), [SpriteMe](http://www.spriteme.org/) i [Sprite Cow](http://www.spritecow.com/).*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)
