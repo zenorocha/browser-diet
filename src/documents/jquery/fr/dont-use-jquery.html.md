@@ -19,7 +19,7 @@ $('a').on('click', function() {
 });
 ```
 
-Si vous pouvez obtenir cet attribue nativement avec un `this` :
+Si vous pouvez obtenir cet attribut nativement avec un `this` :
 
 ```js
 $('a').on('click', function() {
