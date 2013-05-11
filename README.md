@@ -101,16 +101,15 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 
 #### Reviewers
 
-* [Marcel Duran](https://github.com/marcelduran) (Twitter)
-* [Mike Taylor](https://github.com/miketaylr) (Opera)
-* [Renato Mangini](https://github.com/mangini) (Google)
-* [Sérgio Lopes](https://github.com/sergiolopes) (Caelum)
+[![Marcel Duran](http://gravatar.com/avatar/87ce1e1fe50034eb0f7b6eaeb5dd9a76?s=70)](https://github.com/marcelduran) | [![Renato Mangini](http://gravatar.com/avatar/61ffaf1af13c5626d3cd975275b2ddfd?s=70)](https://github.com/mangini) | [![Sérgio Lopes](http://gravatar.com/avatar/3244c236c487924b4309fdd53cbb8633?s=70)](https://github.com/sergiolopes)
+--- | --- | --- | --- | --- | --- | ---
+[Marcel Duran](https://github.com/marcelduran)<br>Twitter | [Renato Mangini](https://github.com/mangini)<br>Google | [Sérgio Lopes](https://github.com/sergiolopes)<br>Caelum
 
 #### Translations
 
 [![Mike Taylor](http://gravatar.com/avatar/8d8b46576d7de08d9e1500587c0fa8ce?s=70)](https://github.com/miketaylr) | [![Emilio Álvarez](http://gravatar.com/avatar/87488b8b39dcff7dc6f34b062dbfce37?s=70)](https://github.com/ecoal95) | [![Lukasz Jakub](http://gravatar.com/avatar/7351c99c580e5aaf32212220d66dc3ba?s=70)](https://github.com/lukasz-jakub-adamczuk) | [![Fordlee](http://gravatar.com/avatar/a0f1f645387cf64667f804e134ce89d1?s=70)](https://github.com/fordlee404)
 --- | --- | --- | --- | --- | --- | ---
-[Mike Taylor](https://github.com/miketaylr)<br>(English) | [Emilio Álvarez](https://github.com/ecoal95)<br>(Spanish) | [Lukasz Jakub](https://github.com/lukasz-jakub-adamczuk)<br>(Polish) | [Fordlee](https://github.com/fordlee404)<br>(Chinese)
+[Mike Taylor](https://github.com/miketaylr)<br>English | [Emilio Álvarez](https://github.com/ecoal95)<br>Spanish | [Lukasz Jakub](https://github.com/lukasz-jakub-adamczuk)<br>Polish | [Fordlee](https://github.com/fordlee404)<br>Chinese
 
 ## Credits
 
