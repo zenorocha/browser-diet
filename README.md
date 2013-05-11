@@ -83,7 +83,13 @@ Lists all NodeJS dependencies.
 
 ## Team
 
-* [Zeno Rocha](https://github.com/zenorocha) (Liferay)
+BrowserDiet was made with love by these people and a bunch of awesome [contributors](https://github.com/zenorocha/browser-diet/graphs/contributors).
+
+### Creator
+
+[![Zeno Rocha](http://gravatar.com/avatar/e190023b66e2b8aa73a842b106920c93?s=70)](http://zenorocha.com) |
+--- |
+[Zeno Rocha](http://zenorocha.com)
 
 ### Design
 
