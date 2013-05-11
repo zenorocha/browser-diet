@@ -87,17 +87,21 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 
 #### Creator
 
-* [Zeno Rocha](http://zenorocha.com) (Liferay)
+[![Zeno Rocha](http://gravatar.com/avatar/e190023b66e2b8aa73a842b106920c93?s=70)](http://zenorocha.com) |
+--- | --- | --- | --- | --- | --- | ---
+[Zeno Rocha](http://zenorocha.com)<br>Liferay |
 
 #### Design
 
-* [Briza Bueno](http://www.brizabueno.com/) (Americanas.com)
+[![Briza Bueno](http://gravatar.com/avatar/c272a0a8972473fdf231f2b2d897c242?s=70)](http://www.brizabueno.com/) |
+--- | --- | --- | --- | --- | --- | ---
+[Briza Bueno](http://www.brizabueno.com/)<br>Americanas.com |
 
 #### Authors
 
-* [Davidson Fellipe](https://github.com/davidsonfellipe) (Globo.com)
-* [Giovanni Keppelen](https://github.com/keppelen) (ex-Peixe Urbano)
-* [Jaydson Gomes](https://github.com/jaydson) (Terra)
+[![Davidson Fellipe](http://gravatar.com/avatar/054c583ad5dc09a861874e14dcb43e4c?s=70)](https://github.com/davidsonfellipe) | [![Giovanni Keppelen](http://gravatar.com/avatar/8f5c490b5b30ac6d655eced70cea4e5f?s=70)](https://github.com/keppelen) | [![Jaydson Gomes](http://gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=70)](https://github.com/jaydson)
+--- | --- | --- | --- | --- | --- | ---
+[Davidson Fellipe](https://github.com/davidsonfellipe)<br>Globo.com | [Giovanni Keppelen](https://github.com/keppelen)<br>ex-Peixe Urbano | [Jaydson Gomes](https://github.com/jaydson)<br>Terra
 
 #### Reviewers
 
