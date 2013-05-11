@@ -89,13 +89,13 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 
 [![Zeno Rocha](http://gravatar.com/avatar/e190023b66e2b8aa73a842b106920c93?s=70)](http://zenorocha.com) |
 --- | --- | --- | --- | --- | --- | ---
-[Zeno Rocha](http://zenorocha.com)<br>Liferay |
+[Zeno Rocha](http://zenorocha.com)<br>Liferay, Inc. |
 
 #### Design
 
 [![Briza Bueno](http://gravatar.com/avatar/c272a0a8972473fdf231f2b2d897c242?s=70)](http://www.brizabueno.com/) |
 --- | --- | --- | --- | --- | --- | ---
-[Briza Bueno](http://www.brizabueno.com/)<br>Americanas.com |
+[Briza Bueno](http://www.brizabueno.com/)<br>Americanas |
 
 #### Authors
 
