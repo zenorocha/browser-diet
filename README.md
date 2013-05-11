@@ -87,9 +87,7 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 
 ### Creator
 
-[![Zeno Rocha](http://gravatar.com/avatar/e190023b66e2b8aa73a842b106920c93?s=70)](http://zenorocha.com) |
---- |
-[Zeno Rocha](http://zenorocha.com)
+* [Zeno Rocha](http://zenorocha.com) (Liferay)
 
 ### Design
 
