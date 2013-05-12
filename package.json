@@ -1,6 +1,6 @@
 {
   "name": "browser-diet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The definitive front-end performance guide",
   "homepage": "http://zenorocha.github.com/browser-diet",
   "repository": {
@@ -10,6 +10,9 @@
   "engines": {
     "node": "0.8.x",
     "npm": "1.1.x"
+  },
+  "scripts": {
+    "test": "docpad generate"
   },
   "dependencies": {
     "docpad-plugin-eco": "2.x",

@@ -5,7 +5,7 @@ title: Data URI
 
 Esta técnica es una alternativa a usar sprites.
 
-Una [Data-URI](http://en.wikipedia.org/wiki/Data_URI_scheme) es una forma de poner en línea el contenido de la URI a la que apuntarías normalmente. En este ejemplo estamus usándolo para poner en línea el contenido de un background-image para reducir el número de solicitudes HTTP requeridas para cargar la página.
+Una [Data-URI](http://en.wikipedia.org/wiki/Data_URI_scheme) es una forma de poner en línea el contenido de la URI a la que apuntarías normalmente. En este ejemplo estamos usándolo para poner en línea el contenido de un background-image para reducir el número de solicitudes HTTP requeridas para cargar la página.
 
 Antes:
 ```css

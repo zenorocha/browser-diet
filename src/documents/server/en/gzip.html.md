@@ -17,6 +17,6 @@ AddOutputFilterByType DEFLATE text/css
 AddOutputFilterByType DEFLATE application/javascript
 ```
 
-All popular servers as just as simple to set up (consult the docs for yours!) and it's one of the most effective tips for improving page performance.
+All popular servers are as just as simple to set up (consult the docs for yours!) and it's one of the most effective tips for improving page performance.
 
 *> [References](https://github.com/zenorocha/browser-diet/wiki/References#gzip)*
