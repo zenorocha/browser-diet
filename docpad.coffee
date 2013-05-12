@@ -1,5 +1,7 @@
 module.exports =
 
+    prompts: false,
+
     # =================================
     # Template Data
 

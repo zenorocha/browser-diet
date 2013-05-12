@@ -1,6 +1,6 @@
 ---
-order: 23
-title: Łączenie wielu plików CSS
+order: 20
+title: Scalanie wielu plików CSS
 ---
 
 Kolejna dobra praktyka dla organizacji i obsługi stylów to dzielenie ich na mniejsze moduły.
@@ -23,4 +23,4 @@ Połącz swoje pliki CSS. Mniejsza liczba plików, daje w rezultacie mniejszą l
 
 Chcesz najlepszych wyników? Automatyzacja tego procesu poprzez narzędzia budowania.
 
-*> Przydatne narzędzia: [Grunt](http://gruntjs.com/).*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References##combining-multiple-css-files)*
