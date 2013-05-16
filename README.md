@@ -16,7 +16,7 @@ If you want to add new tips or edit the existing ones, just go to the [src/docum
 
 2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
 ```bash
-sudo npm install -fg docpad
+[sudo] npm install -fg docpad
 ```
 
 3. Now clone it:
