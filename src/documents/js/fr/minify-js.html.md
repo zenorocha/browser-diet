@@ -3,20 +3,20 @@ order: 14
 title: Minifiez votre JavaScript
 ---
 
-Tout comme en CSS, pour obtenir du code lisible, c'est une bonne idée d'écrire des commentaires et d'utiliser de l'indentation:
+Tout comme en CSS, pour obtenir du code lisible, c'est une bonne idée d'écrire des commentaires et d'utiliser de l'indentation :
 
 ```js
 BrowserDiet.app = function() {
-var foo = true;
-return {
-bar: function() {
-// faire quelque chose
-}
-};
+  var foo = true;
+    return {
+      bar: function() {
+        // faire quelque chose
+    }
+  };
 };
 ```
 
-Mais pour le navigateur, rien de cela n'a d'importance. Pour cette raison, il faut toujours se rappeler de minifier votre JavaScript avec des outils automatisés.
+Mais tout ceci n'a aucun intérêt pour le navigateur. C'est pour cela qu'il faut toujours vous rappeler de minimifier votre JavaScript par des outils automatiques.
 
 ```js
 BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}

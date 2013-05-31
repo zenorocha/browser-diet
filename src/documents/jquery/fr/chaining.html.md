@@ -1,10 +1,10 @@
 ---
 ignored: true
 order: 11
-title: Tirez parti des méthodes chainées
+title: Tirez partie des méthodes chainées
 ---
 
-Chainer veut dire que vous exécutez une méthode jQuery l'une aprés l'autre, sans avoir besoin de re-spécifier un selecteur. Quasiment toutes les méthodes jQuery autorisent le chainage en retournant un objet jQuery.
+Chainer veut dire que vous exécutez les méthodes jQuery l'une aprés l'autre, sans avoir besoin de re-spécifier un sélecteur. Quasiment toutes les méthodes jQuery autorisent le chainage en retournant un objet jQuery.
 
 ```js
 $("#object").addClass("foo").css("border-color", "#ccc").width(200);

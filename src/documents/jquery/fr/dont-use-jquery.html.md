@@ -1,11 +1,11 @@
 ---
 order: 9
-title: N'utilisez pas jQuery
+title: N'utilisez pas jQuery ...
 ---
 
-...sauf si vous en avez absolument besoin. :)
+... sauf si vous en avez absolument besoin. :)
 
-Parfois du javascript de base peut-être plus simple que jQuery.
+Parfois du JavaScript de base peut-être plus simple que jQuery.
 
 <div class="img-right">
   <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />

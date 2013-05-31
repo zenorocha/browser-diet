@@ -23,8 +23,8 @@ Cependant, une requête HTTP est nécessaire pour chacun de ces fichiers (et nou
 <link rel="stylesheet" href="main.css" media="all">
 ```
 
-Alors combiner vos CSS. Avoir moins de fichiers se résultera à un nombre moindre de requêtes et un chargement de page plus rapide.
+Combinez donc vos CSS. Avoir moins de fichiers produira moins de requêtes et un temps de chargement de page plus rapide.
 
-Vous voulez avoir le meilleur des deux mondes? Automatiser ce processus à travers un outil de build.
+Vous voulez avoir le meilleur des deux mondes ? Automatisez ce processus à travers un outil de build.
 
 *> [Outils](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [Références](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*
