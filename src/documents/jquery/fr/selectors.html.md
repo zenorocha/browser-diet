@@ -1,11 +1,11 @@
 ---
 order: 12
-title: Selecteurs
+title: Sélecteurs
 ---
 
-Selecteurs sont un des plus important problème lié à l'utilisation de jQuery. Il y beaucoup de façon différentes de selectionner un element du DOM, mais cela ne veut pas dire qu'ils ont les même performances, vous pouvez selectionner en utilisants les classes, les IDs ou des méthodes comme `find()`, `children()`. 
+Les sélecteurs sont l'un des problèmes les plus importants lié à l'utilisation de jQuery. Il y beaucoup de façons différentes de sélectionner un élément du DOM, mais cela ne veut pas dire qu'elles ont toutes les mêmes performances. Vous pouvez sélectionner en utilisant les classes, les IDs ou des méthodes comme `find()`, `children()`.
 
-Parmis toutes celle-ci, selectionner par ID est la plus rapide, car elle est basé sur une opération native du DOM :
+Parmi toutes celles-ci, sélectionner par ID est la méthode la plus rapide car elle est basée sur une opération native du DOM :
 
 ```js
 $("#foo");
