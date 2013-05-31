@@ -3,13 +3,13 @@ order: 20
 title: Préférez <link> à @import
 ---
 
-Il ya deux façons d'inclure une feuille de style externe dans votre page: soit via la balise `<link>`:
+Il y a deux façons d'inclure une feuille de style externe dans votre page : soit via la balise `<link>` :
 
 ```html
 <link rel="stylesheet" href="style.css">
 ```
 
-Ou à travers la directive `@import` (à l'intérieur d'une feuille de style externe ou dans une balise `<style>`):
+Soit avec la directive `@import` (à l'intérieur d'une feuille de style externe ou dans une balise `<style>`) :
 
 ```css
 @import url('style.css');
