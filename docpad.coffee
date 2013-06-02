@@ -10,7 +10,7 @@ module.exports =
         # -----------------------------
         # Language Definition
 
-        currentLang: 'en'
+        currentLang: 'fr'
 
         lang:
             en:
@@ -73,6 +73,18 @@ module.exports =
                 goTop: 'Go to the top'
                 htmlLang: 'zh-CN'
                 credits: 'Develop by <em>Zeno Rocha</em> ● Design by <em>Briza Bueno</em> ● Illustrations by <em>Scott Johnson</em>'
+            fr:
+                title: 'Comment perdre du poids (dans le navigateur)'
+                titleHTML: '<h1>Comment perdre du <span>poids</span></h1><h2>dans le navigateur</h2>'
+                slogan: 'Le guide ultime des performances côté client'
+                url: 'http://browserdiet.com'
+                bonus: 'Bonus'
+                images: 'Images'
+                server: 'Serveur'
+                edit: 'Éditer'
+                goTop: 'Aller vers le haut'
+                htmlLang: 'fr-FR'
+                credits: 'Développé par <em>Zeno Rocha</em> ● Désigné par <em>Briza Bueno</em> ● Illustrations par <em>Scott Johnson</em>'
 
         # -----------------------------
         # Site Information
