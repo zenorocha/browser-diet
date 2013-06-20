@@ -3,7 +3,7 @@ order: 5
 title: Optimize your images
 ---
 
-Image files contains a lot of information that is useless on the Web. For example, a JPEG photo can have *Exif* metadata from the camera (date, camera model, location, etc.). A PNG contains information about colors, metadata, and sometimes even a miniature embedded thumbnail. None of this is used by the browser and contributes to filesize bloat.
+Image files contain a lot of information that is useless on the Web. For example, a JPEG photo can have *Exif* metadata from the camera (date, camera model, location, etc.). A PNG contains information about colors, metadata, and sometimes even a miniature embedded thumbnail. None of this is used by the browser and contributes to filesize bloat.
 
 There are tools that exist for image optimization that will remove all this unnecessary data and give you a slimmer file without degrading quality. We say they perform *lossless* compression.
 
