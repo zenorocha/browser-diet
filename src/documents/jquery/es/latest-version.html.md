@@ -1,6 +1,6 @@
 ---
 order: 12
-title: Usa siempre la última verisón de jQuery
+title: Usa siempre la última versión de jQuery
 ---
 
 El equipo de jQuery siempre está buscando mejorar la librería, mediante mejor legibilidad del código, nuevas funcionalidades, y optimización de algoritmos existentes.
