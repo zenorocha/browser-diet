@@ -25,7 +25,7 @@ But to the browser, none of this actually matters. For this reason, it can be us
   <img id="htmlcompression-table" src="http://browserdiet.com/img/htmlcompressor-table.jpg" alt="HTML Compression Sample Results">
 </div>
 
-This will shave bytes by removing extra whitespaces, comments and other unneeded characters without breaking the content structure.
+This will shave bytes by removing extra whitespaces, comments and other unneeded characters without breaking the content structure. Actually the only -small and fixable- break that could eventually happen is regarding to `inline-block` styled elements, as [well explained here](http://css-tricks.com/fighting-the-space-between-inline-block-elements/) by Chris Coyier.
 
 As a result, your users will enjoy faster downloads, parsing and execution.
 
