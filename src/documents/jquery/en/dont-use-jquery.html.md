@@ -1,32 +1,38 @@
 ---
 order: 9
-title: Don't use jQuery...
+title: Don't always use jQuery...
 ---
 
-...unless it's absolutely necessary. :)
-
-Sometimes vanilla JavaScript can be even simpler than jQuery.
+Sometimes vanilla JavaScript can be easier and more performant the jQuery.
 
 <div class="img-right">
   <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
 </div>
 
-Why use the `attr()` method to search for an ID?
+Consider the following html:
+
+```html
+<div id="text">Let's change this text</div>
+```
+
+Instead of doing this:
 
 ```js
-$('a').on('click', function() {
-  console.log( $(this).attr('id') );
+$('#text').html('The text is changed').css({
+	backgroundColor: 'red',
+	color: 'yellow'
 });
 ```
 
 If you can can get this attribute natively through `this`:
 
 ```js
-$('a').on('click', function() {
-  console.log( this.id );
-});
+var text = document.getElementById('text');
+text.innerHTML = 'The text is changed';
+text.style.backgroundColor = 'red';
+text.style.color = 'yellow';
 ```
 
-And it's faster.
+It may not be as pretty, but it's simple and MUCH faster. Check out the JSPerf results.
 
-*> [Results on JSPerf](http://jsperf.com/browser-diet-this-attr-id-vs-this-id) / [References](https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery)*
+*> [Results on JSPerf](http://jsperf.com/jquery-vs-javascript-performance-text)*
