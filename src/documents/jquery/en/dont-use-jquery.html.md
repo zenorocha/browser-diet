@@ -24,7 +24,7 @@ $('#text').html('The text is changed').css({
 });
 ```
 
-If you can can get this attribute natively through `this`:
+Use plain javacsript:
 
 ```js
 var text = document.getElementById('text');
@@ -33,6 +33,6 @@ text.style.backgroundColor = 'red';
 text.style.color = 'yellow';
 ```
 
-It may not be as pretty, but it's simple and MUCH faster. Check out the JSPerf results.
+It's simple and MUCH faster. Check out the JSPerf results.
 
 *> [Results on JSPerf](http://jsperf.com/jquery-vs-javascript-performance-text)*
