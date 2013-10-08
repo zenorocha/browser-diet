@@ -8,23 +8,19 @@ The loop is undoubtedly one of the most important parts related to JavaScript pe
 One way to do this is to store the size of the array that will be covered, so it doesn't need to be recalculated every time the loop is iterated.
 
 ```js
-var arr = new Array(1000);
+var arr = new Array(1000),
+    len, i;
 
-for (var i = 0; i < arr.length; i++) {
+for (i = 0; i < arr.length; i++) {
   // Bad - size needs to be recalculated 1000 times
 }
 
-for (var i = 0, len = arr.length; i < len; i++) {
+for (i = 0, len = arr.length; i < len; i++) {
   // Good - size is calculated only 1 time and then stored
-}
-
-var i = 0, len = arr.length;
-for (i; i < len; i++) {
-  // Best - size is pre-calculated before the loop is initialized
 }
 ```
 
-*[> Results on JSPerf](http://jsperf.com/browser-diet-cache-array-length/11/)*
+*[> Results on JSPerf](http://jsperf.com/browser-diet-cache-array-length/10/)*
 
 **> Note:** *Although modern browsers engines automatically optimize this process, remains a good practice to suit the legacy browsers that still linger.*
 
