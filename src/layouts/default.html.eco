@@ -17,7 +17,7 @@
   <meta itemprop="description" content="<%= @getLang().slogan %>">
 
   <!-- Style -->
-  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css?v=40">
+  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css?v=44">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
@@ -48,6 +48,9 @@
         </a>
         <a id="flag-zh" class="flags" href="http://browserdiet.com/zh/" title="中国的">
           中国的
+        </a>
+        <a id="flag-fr" class="flags" href="http://browserdiet.com/fr/" title="Français">
+          Français
         </a>
       </div>
     </div>
