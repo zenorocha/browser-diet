@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 14
 title: Minify your script
 ---
 
@@ -27,4 +27,4 @@ BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 
 This will shave bytes from the filesize, which results in faster downloads, parsing and execution.
 
-*> Useful tools: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [Google Closure Compiler](http://code.google.com/closure/compiler/) and [UglifyJS](https://github.com/mishoo/UglifyJS).*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [References](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*

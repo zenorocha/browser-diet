@@ -4,7 +4,7 @@ title: That's it for today!
 ---
 
 <div class="img-right">
-  <img id="geek-31" class="icos-geek" src="http://browserdiet.com/img/31.png" alt="Geek #31" width="162" height="275" />
+  <img id="geek-31" src="http://browserdiet.com/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
 
 We hope that after reading this guide you can get your site in shape. :)
@@ -13,6 +13,6 @@ And remember, like all things in life, [there's no such thing as a silver bullet
 
 Want to learn more? Check out the [References](https://github.com/zenorocha/browser-diet/wiki/References) that we used to write this guide.
 
-Have suggestions? Send a tweet to [@zenorocha](http://twitter.com/zenorocha/) or a [pull request](https://github.com/zenorocha/browser-diet) on Github.
+Have suggestions? Send a tweet to [@BrowserDiet](http://twitter.com/browserdiet/) or a [pull request](https://github.com/zenorocha/browser-diet) on Github.
 
 Don't forget to share with your friends, let's make a faster web for everyone. \o/

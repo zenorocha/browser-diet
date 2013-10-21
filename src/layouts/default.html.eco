@@ -6,6 +6,7 @@
 
   <!-- Metatags -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="<%= @getLang().slogan %>">
   <meta name="keywords" content="front-end, web performance, cache, compress, minify, combine">
 
@@ -16,7 +17,7 @@
   <meta itemprop="description" content="<%= @getLang().slogan %>">
 
   <!-- Style -->
-  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css">
+  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css?v=44">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
@@ -34,10 +35,22 @@
       <div class="center">
         <h3><%= @getLang().slogan %></h3>
         <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">
-          <img src="<%= @site.assets %>/img/flag-english.png" alt="USA Flag" width="32" height="32">
+          English
+        </a>
+        <a id="flag-es" class="flags" href="http://browserdiet.com/es/" title="Español">
+          Español
         </a>
         <a id="flag-pt" class="flags" href="http://browserdiet.com/pt/" title="Português">
-          <img src="<%= @site.assets %>/img/flag-portuguese.png" alt="Brazilian Flag" width="32" height="32">
+          Português
+        </a>
+        <a id="flag-pl" class="flags" href="http://browserdiet.com/pl/" title="Polski">
+          Polski
+        </a>
+        <a id="flag-zh" class="flags" href="http://browserdiet.com/zh/" title="中国的">
+          中国的
+        </a>
+        <a id="flag-fr" class="flags" href="http://browserdiet.com/fr/" title="Français">
+          Français
         </a>
       </div>
     </div>
@@ -53,23 +66,24 @@
         </hgroup>
 
         <div class="superman">
-          <img class="superman-geek" src="<%= @site.assets %>/img/superman.png" alt="Superman" width="320" height="393">
-          <img class="superman-raios" src="<%= @site.assets %>/img/raios.png" alt="" width="537" height="560">
+          <img class="superman-geek" src="<%= @site.assets %>/img/superman.png" alt="Superman">
+          <img class="superman-raios" src="<%= @site.assets %>/img/raios.png" alt="">
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="menu">
-    <ul class="center">
-      <li><a href="#html">HTML</a></li>
-      <li><a href="#css">CSS</a></li>
-      <li><a href="#js">JavaScript</a></li>
-      <li><a href="#jquery">jQuery</a></li>
-      <li><a href="#images"><%= @getLang().images %></a></li>
-      <li><a href="#server"><%= @getLang().server %></a></li>
-      <li><a href="#bonus"><%= @getLang().bonus %></a></li>
-    </ul>
+    <div id="menu">
+      <ul class="center">
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#js">JavaScript</a></li>
+        <li><a href="#jquery">jQuery</a></li>
+        <li><a href="#images"><%= @getLang().images %></a></li>
+        <li><a href="#server"><%= @getLang().server %></a></li>
+        <li><a href="#bonus"><%= @getLang().bonus %></a></li>
+      </ul>
+    </div>
+
   </div>
 
   <div id="content">
@@ -94,37 +108,42 @@
     </div>
   </div>
 
-   <a title="<%= @getLang().goTop %>" id="top" href="#top-bar" class="animate">
+  <div id="footer">
+    <div class="center">
+      <p><%- @getLang().credits %></p>
+    </div>
+  </div>
+
+  <!-- <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
     <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">
-  </a>
+  </a> -->
+  <script type="text/javascript">
+    var header = document.getElementById('header');
+    var menu = document.getElementById('menu');
+    var offset = header.clientHeight - menu.clientHeight;
 
+    isSticky = function() {
+      return new RegExp('sticky').test(menu.className);
+    }
 
-  <!-- SCRIPTS -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>
-    $('.animate').bind('click',function(e){
-        var id = $(this).attr('href');
+    fix = function(e, name) {
+      if (!isSticky()) { menu.className += (menu.className ? ' sticky' : 'sticky'); }
+    }
 
-        e.preventDefault();
-        $('html,body').animate({scrollTop: $(''+id+'').offset().top},'slow');
-    });
+    unfix = function(e, name) {
+      if (isSticky()) {
+        menu.className=menu.className.replace(new RegExp('sticky'),'');
+      }
+    }
 
-    $(function () {
-      $(window).scroll(function () {
-        console.log( $(this).scrollTop() )
-        if ($(this).scrollTop() > 560) {
-          $("#menu").addClass("fixing-menu");
-          $("#github-ribbon").hide();
-          $("#top").show();
-        } else {
-          $("#menu").removeClass("fixing-menu");
-          $("#github-ribbon").show();
-          $("#top").hide();
-        }
-      });
-    });
+    checkScroll = function() {
+      var scrollPosition = (window.pageYOffset !== undefined) ? window.pageYOffset :
+        (document.documentElement || document.body.parentNode || document.body).scrollTop;
+      (scrollPosition > offset) ? fix() : unfix();
+    }
+
+    window.onscroll = checkScroll;
   </script>
-
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-4114546-34']);

@@ -1,5 +1,5 @@
 ---
-order: 13
+order: 12
 title: Always use the latest version of jQuery
 ---
 
@@ -23,3 +23,5 @@ before you've had a chance to test them. Instead, link to the latest version of 
 ```
 
 Just like the wise [Barney Stinson](/img/new-is-always-better.gif) says, *"New is always better"* :P
+
+*> [References](https://github.com/zenorocha/browser-diet/wiki/References#always-use-the-latest-version-of-jquery)*

@@ -27,4 +27,4 @@ Ao montar seu *sprite*, evite deixar muito espaço em branco entre as imagens, i
 
 Apesar de extremamente difundida, essa técnica é pouco usada já que os desenvolvedores não utilizam ferramentas que automatizam o processo de geração dessa imagem. Por isso, separamos algumas que podem te ajudar nisso.
 
- *> Ferramentas úteis: [SpritePad](http://wearekiss.com/spritepad), [Compass](http://compass-style.org/help/tutorials/spriting/), [SpriteMe](http://www.spriteme.org/) e [Sprite Cow](http://www.spritecow.com/).*
+*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*

@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 14
 title: Comprima seu script
 ---
 
@@ -27,4 +27,4 @@ BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 
 Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.
 
-*> Ferramentas úteis: [YUI Compressor](http://developer.yahoo.com/yui/compressor/), [Google Closure Compiler](http://code.google.com/closure/compiler/) e [UglifyJS](https://github.com/mishoo/UglifyJS).*
+*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*

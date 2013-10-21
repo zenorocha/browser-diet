@@ -13,6 +13,6 @@ Lembre-se que, como tudo na vida, [não existe bala de prata](http://www.cs.nott
 
 Quer saber mais? Consulte as [Referências](https://github.com/zenorocha/browser-diet/wiki/References) que usamos para escrever esse guia.
 
-Tem sugestões? Envie um tweet para [@zenorocha](http://twitter.com/zenorocha/) ou um [pull request](https://github.com/zenorocha/browser-diet) no Github.
+Tem sugestões? Envie um tweet para [@BrowserDiet](http://twitter.com/browserdiet/) ou um [pull request](https://github.com/zenorocha/browser-diet) no Github.
 
 Compartilhe com seus amiguinhos, vamos criar uma web mais rápida para todos \o/

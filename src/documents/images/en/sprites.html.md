@@ -21,10 +21,10 @@ And then positioning them with CSS.
 }
 ```
 
-As a result, you've dramatically reduced the number of HTTP requests and avoided any potential delay of other resouces on your page.
+As a result, you've dramatically reduced the number of HTTP requests and avoided any potential delay of other resources on your page.
 
 When using your *sprite*, avoid leaving too much white space between images. This won't affect the size of the file, but will have an effect on memory consumption.
 
 And despite nearly everyone knowing about sprites, this technique isn't widely used&mdash;perhaps due to developers not using automated tools to generate sprites. We've highlighted a few that can help you out with this.
 
- *> Useful tools: [SpritePad](http://wearekiss.com/spritepad), [Compass](http://compass-style.org/help/tutorials/spriting/), [SpriteMe](http://www.spriteme.org/) and [Sprite Cow](http://www.spritecow.com/).*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites) / [References](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*

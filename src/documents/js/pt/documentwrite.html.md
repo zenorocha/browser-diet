@@ -1,5 +1,5 @@
 ---
-order: 17
+order: 16
 title: Evite document.write
 ---
 
@@ -37,3 +37,5 @@ O resultado da página final será somente *bar* e não *foobar* como esperado. 
 </script>
 ```
 O resultado será o mesmo do exemplo anterior caso a função agendada pelo `setTimeout` seja executada após evento `window.onload`.
+
+*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#avoid-documentwrite)*

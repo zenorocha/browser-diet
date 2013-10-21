@@ -1,4 +1,5 @@
 ---
+ignored: true
 order: 11
 title: Take advantage of method chaining
 ---

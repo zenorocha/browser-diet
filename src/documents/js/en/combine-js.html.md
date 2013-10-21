@@ -1,9 +1,13 @@
 ---
-order: 14
+order: 13
 title: Combine multiple JS files into one
 ---
 
 Another best practice for organization and maintenance of scripts is to separate them into modular components.
+
+<div class="img-right">
+  <img id="geek-47" class="icos-geek" src="http://browserdiet.com/img/47.png" alt="Geek #47" width="174" height="275" />
+</div>
 
 ```html
 <script src="navbar.js"></script>
@@ -23,4 +27,4 @@ So combine your JS. Having a smaller number of files will result in a smaller nu
 
 Want to have the best of both worlds? Automate this process through a build tool.
 
-*> Useful tools: [Grunt](http://gruntjs.com/).*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [References](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

@@ -1,6 +1,4 @@
 .DS_Store
 node_modules
 out
-TEAM.md
-TODO.md
 *.sh

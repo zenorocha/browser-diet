@@ -1,6 +1,6 @@
 ---
 order: 6
-title: Don't scale images in markup
+title: Don't rescale images in markup
 ---
 
 Always define the `width` and `height` attributes of an image. This will help avoid unnecessary repaints and reflows during rendering.
@@ -13,4 +13,6 @@ Knowing this, John Q. Developer who has a *700x700px* image decides to use this 
 
 What Mr. Developer doesn't realize is that dozens of unnecessary *kilobytes* will be sent over the wire.
 
-Alway keep in mind: just because you can define with width and height of an image in HTML doesn't mean you should do this to scale down large images.
+Always keep in mind: just because you can define with width and height of an image in HTML doesn't mean you should do this to rescale down large images.
+
+*> [References](https://github.com/zenorocha/browser-diet/wiki/References#dont-rescale-images-in-markup)*

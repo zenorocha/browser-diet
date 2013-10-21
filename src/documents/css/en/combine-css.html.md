@@ -1,9 +1,13 @@
 ---
-order: 23
+order: 21
 title: Combining multiple CSS files
 ---
 
 Another best practice for organization and maintenance of styles is to separate them into modular components.
+
+<div class="img-right">
+  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/img/9.png" alt="Geek #9" width="122" height="275" />
+</div>
 
 ```html
 <link rel="stylesheet" href="structure.css" media="all">
@@ -23,4 +27,4 @@ So combine your CSS. Having a smaller number of files will result in a smaller n
 
 Want to have the best of both worlds? Automate this process through a build tool.
 
-*> Useful tools: [Grunt](http://gruntjs.com/).*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [References](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

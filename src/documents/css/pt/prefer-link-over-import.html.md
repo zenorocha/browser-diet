@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 20
 title: Prefira <link> a @import
 ---
 
@@ -16,3 +16,5 @@ Ou da propriedade `@import` dentro de uma folha de estilo externa ou inline em u
 ```
 
 Quando você utiliza a segunda opção a partir de uma folha de estilo externa, o navegador é incapaz de realizar o download em paralelo, o que causa atraso na cascata de carregamento dos arquivos.
+
+*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#prefer--over-import)*

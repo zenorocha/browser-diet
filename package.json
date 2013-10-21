@@ -1,6 +1,6 @@
 {
   "name": "browser-diet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The definitive front-end performance guide",
   "homepage": "http://zenorocha.github.com/browser-diet",
   "repository": {
@@ -11,14 +11,18 @@
     "node": "0.8.x",
     "npm": "1.1.x"
   },
+  "scripts": {
+    "test": "docpad generate"
+  },
   "dependencies": {
     "docpad-plugin-eco": "2.x",
     "docpad-plugin-marked": "2.x",
     "docpad-plugin-less": "~2.1.2",
     "docpad-plugin-highlightjs": "2.x",
     "docpad-plugin-partials": "~2.5.0",
-    "grunt": "~0.3.17",
-    "grunt-css": "~0.3.2",
+    "grunt-cli": "0.1.6",
+    "grunt": "~0.4.0",
+    "grunt-yui-compressor": "0.2.1",
     "bal-util": "~1.15.3",
     "underscore": "~1.4.3",
     "grunt-htmlcompressor": "~0.1.8"
