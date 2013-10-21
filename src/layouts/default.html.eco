@@ -117,7 +117,33 @@
   <!-- <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
     <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">
   </a> -->
+  <script type="text/javascript">
+    var header = document.getElementById('header');
+    var menu = document.getElementById('menu');
+    var offset = header.clientHeight - menu.clientHeight;
 
+    isSticky = function() {
+      return new RegExp('sticky').test(menu.className);
+    }
+
+    fix = function(e, name) {
+      if (!isSticky()) { menu.className += (menu.className ? ' sticky' : 'sticky'); }
+    }
+
+    unfix = function(e, name) {
+      if (isSticky()) {
+        menu.className=menu.className.replace(new RegExp('sticky'),'');
+      }
+    }
+
+    checkScroll = function() {
+      var scrollPosition = (window.pageYOffset !== undefined) ? window.pageYOffset :
+        (document.documentElement || document.body.parentNode || document.body).scrollTop;
+      (scrollPosition > offset) ? fix() : unfix();
+    }
+
+    window.onscroll = checkScroll;
+  </script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-4114546-34']);
