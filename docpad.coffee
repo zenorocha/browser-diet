@@ -90,7 +90,7 @@ module.exports =
         # Site Information
 
         site:
-            assets: 'http://browserdiet.com'
+            assets: 'http://browserdiet.com/assets'
 
         getGruntedStyles: ->
             _ = require 'underscore'
