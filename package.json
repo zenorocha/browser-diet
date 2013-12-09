@@ -15,16 +15,18 @@
     "test": "docpad generate"
   },
   "dependencies": {
-    "docpad-plugin-eco": "2.x",
-    "docpad-plugin-marked": "2.x",
-    "docpad-plugin-less": "~2.1.2",
-    "docpad-plugin-highlightjs": "2.x",
-    "docpad-plugin-partials": "~2.5.0",
-    "grunt-cli": "0.1.6",
-    "grunt": "~0.4.0",
-    "grunt-yui-compressor": "0.2.1",
     "bal-util": "~1.15.3",
-    "underscore": "~1.4.3",
-    "grunt-htmlcompressor": "~0.1.8"
+    "docpad": "6.40.0",
+    "docpad-plugin-eco": "2.x",
+    "docpad-plugin-highlightjs": "2.x",
+    "docpad-plugin-less": "~2.1.2",
+    "docpad-plugin-marked": "2.x",
+    "docpad-plugin-partials": "~2.5.0",
+    "underscore": "~1.4.3"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-cli": "0.1.6",
+    "grunt-contrib-cssmin": "~0.7.0"
   }
 }
