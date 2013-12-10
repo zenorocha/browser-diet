@@ -86,6 +86,7 @@ module.exports =
                 goTop: 'Aller vers le haut'
                 htmlLang: 'fr-FR'
                 credits: 'Développé par <em>Zeno Rocha</em> ● Désigné par <em>Briza Bueno</em> ● Illustrations par <em>Scott Johnson</em>'
+                perfCalendar: 'C\'est Noël, c\'est donc le temps du <a href="http://calendar.perfplanet.com/2013/">PerfCalendar</a>, le moment de l\'année que les fondus de performance préfèrent !'
 
         # -----------------------------
         # Site Information
