@@ -25,6 +25,7 @@ module.exports =
                 goTop: 'Go to the top'
                 htmlLang: 'en-US'
                 credits: 'Develop by <em>Zeno Rocha</em> ● Design by <em>Briza Bueno</em> ● Illustrations by <em>Scott Johnson</em>'
+                perfCalendar: 'It\'s Christmas time, which means that is <a href="http://calendar.perfplanet.com/2013/">PerfCalendar</a> time, the speed geek\'s favorite part of the year!'
             pt:
                 title: 'Como perder peso (no browser)'
                 titleHTML: '<h1>Como perder <span>peso</span></h1><h2>no browser</h2>'
