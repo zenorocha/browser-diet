@@ -47,6 +47,14 @@ Simply go to the [docpad.coffee](https://github.com/zenorocha/browser-diet/blob/
 
 Then you just need to run `docpad run` again.
 
+## Browser Support
+
+We do care about it.
+
+![IE](https://raw.github.com/paulirish/browser-logos/master/ie/ie_48x48.png) | ![Chrome](https://raw.github.com/paulirish/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/paulirish/browser-logos/master/firefox/firefox_48x48.png) | ![Opera](https://raw.github.com/paulirish/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/paulirish/browser-logos/master/safari/safari_48x48.png)
+--- | --- | --- | --- | --- |
+IE 9+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
+
 ## Structure
 
 This project uses [DocPad](https://github.com/bevry/docpad), a static generator in NodeJS, and here's the basic structure:
