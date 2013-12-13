@@ -85,6 +85,18 @@ module.exports =
                 goTop: 'Aller vers le haut'
                 htmlLang: 'fr-FR'
                 credits: 'Développé par <em>Zeno Rocha</em> ● Désigné par <em>Briza Bueno</em> ● Illustrations par <em>Scott Johnson</em>'
+            cs:
+              title: 'Jak shodit váhu (v prohlížeči)'
+              titleHTML: '<h1>Jak shodit <span>váhu</span></h1><h2>v prohlížeči</h2>'
+              slogan: 'Definitivní příručka pro výkon webu'
+              url: 'http://browserdiet.com'
+              bonus: 'Bonus'
+              images: 'Obrázky'
+              server: 'Server'
+              edit: 'Editovat'
+              goTop: 'Nahoru'
+              htmlLang: 'cs-CZ'
+              credits: 'Vytvořil <em>Zeno Rocha</em> ● Design <em>Briza Bueno</em> ● Grafika <em>Scott Johnson</em>'
 
         # -----------------------------
         # Site Information

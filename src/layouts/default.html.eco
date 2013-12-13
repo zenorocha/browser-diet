@@ -52,6 +52,9 @@
         <a id="flag-fr" class="flags" href="http://browserdiet.com/fr/" title="Français">
           Français
         </a>
+        <a id="flag-cs" class="flags" href="http://browserdiet.com/cs/" title="Česky">
+          česky
+        </a>
       </div>
     </div>
 
