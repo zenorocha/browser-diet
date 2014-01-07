@@ -138,6 +138,10 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 
 * The 56 Geeks Project by [Scott Johnson](http://myextralife.com/56geeks/)
 
+#### Flag icons
+* GoSquared 2600 Flag Icon Set by [GoSquared](https://www.gosquared.com/resources/flag-icons/)
+
+
 ## License
 
 Code is under [MIT](http://zenorocha.mit-license.org) license and content is under [Creative Commons BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US)
