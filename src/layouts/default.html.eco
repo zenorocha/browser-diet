@@ -71,9 +71,7 @@
         </div>
       </div>
 
-      <p class="perfcalendar">It's Christmas time, which means that is <a
-        href="http://calendar.perfplanet.com/2013/">PerfCalendar</a> time, the
-        speed geek's favorite part of the year!</p>
+      <p class="perfcalendar"><%- @getLang().perfCalendar %></p>
 
     </div>
 
