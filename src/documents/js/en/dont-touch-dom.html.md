@@ -29,9 +29,6 @@ document.getElementById("myList").innerHTML = myList;
 
 ```js
 // much *much* better :)
-// NB: you'll have to hide the element first if you don't want to see all the
-//   contents being generated
-
 var myListHTML = document.getElementById("myList").innerHTML;
 
 for (var i = 0; i < 100; i++) {
@@ -39,4 +36,4 @@ for (var i = 0; i < 100; i++) {
 }
 ```
 
-*> [Results on JSPerf](http://jsperf.com/browser-diet-dom-manipulation/5)*
+*> [Results on JSPerf](http://jsperf.com/browser-diet-dom-manipulation/11)*
