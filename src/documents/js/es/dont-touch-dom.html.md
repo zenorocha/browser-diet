@@ -28,4 +28,12 @@ for (var i = 0; i < 100; i++) {
 document.getElementById("mi-elemento").innerHTML = miLista;
 ```
 
-*> [Resultados en JSPerf](http://jsperf.com/browser-diet-dom-manipulation)*
+```js
+// mucho mucho mejor :)
+var myListHTML = document.getElementById("myList").innerHTML;
+
+for (var i = 0; i < 100; i++) {
+  myListHTML += "<span>" + i + "</span>";
+}
+
+*> [Resultados en JSPerf](http://jsperf.com/browser-diet-dom-manipulation/11)*
