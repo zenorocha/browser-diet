@@ -17,7 +17,7 @@
   <meta itemprop="description" content="<%= @getLang().slogan %>">
 
   <!-- Style -->
-  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css?v=44">
+  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css?v=48">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
@@ -69,14 +69,10 @@
         </hgroup>
 
         <div class="superman">
-          <img class="superman-geek" src="<%= @site.assets %>/img/superman-santa.png" alt="Superman">
+          <img class="superman-geek" src="<%= @site.assets %>/img/superman.png" alt="Superman">
           <img class="superman-raios" src="<%= @site.assets %>/img/raios.png" alt="">
         </div>
       </div>
-
-      <p class="perfcalendar">It's Christmas time, which means that is <a
-        href="http://calendar.perfplanet.com/2013/">PerfCalendar</a> time, the
-        speed geek's favorite part of the year!</p>
 
     </div>
 
