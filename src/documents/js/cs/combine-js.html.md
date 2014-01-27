@@ -17,7 +17,7 @@ Další doporučovanou technikou pro organizaci a správu skriptů je rozdělen�
 <script src="plugin.js"></script>
 ```
 
-Pak je ale třeba pro každý takový soubor jeden HTTP request (a je známo, že prohlížeče mohou stahovat jen jen omezený počet zdrojů souběžně).
+Pak je ale třeba pro každý takový soubor jeden HTTP request (a je známo, že prohlížeče mohou stahovat jen omezený počet zdrojů souběžně).
 
 ```html
 <script src="main.js"></script>
@@ -25,6 +25,6 @@ Pak je ale třeba pro každý takový soubor jeden HTTP request (a je známo, ž
 
 Tak tedy kombinujte své JS. Menší počet souborů vede k menšímu počtu requestů a rychlejšímu načtení stránky.
 
-Chcete využít to nejlepší z obou světů? Automatizujte tento proces pomocí buidlovacích nástrojů.
+Chcete využít to nejlepší z obou světů? Automatizujte tento proces pomocí buildovacích nástrojů.
 
 *> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

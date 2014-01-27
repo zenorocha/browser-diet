@@ -23,7 +23,7 @@ Tato (špatná) praktika je developery už roky zavrhována, přesto ale existuj
   };
 </script>
 ```
-Výsledek finální stránky bude pouze *bar* a nikoliv *foobar*, jak by se dalo čekat. To samé nastane pokud se spustí po události `window.onload`.
+Výsledek finální stránky bude pouze *bar* a nikoliv *foobar*, jak by se dalo čekat. To samé nastane, pokud se spustí po události `window.onload`.
 
 ```html
 <span>foo</span>

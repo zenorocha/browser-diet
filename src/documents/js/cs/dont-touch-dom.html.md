@@ -1,9 +1,9 @@
 ---
 order: 14
-title: Vyhněte se zbytečným manimulacím v DOM
+title: Vyhněte se zbytečným manipulacím v DOM
 ---
 
-Pokaždé, když sahnete na DOM zbytečně, jedno koťátko zemře.
+Pokaždé, když sáhnete na DOM zbytečně, jedno koťátko zemře.
 
 Vážně, průchod DOMem je nákladný. I přes to, že jsou dnes JavaScriptové enginy výrazně rychlejší a vykonnější, vždy se snažte optimalizovat dotazy nad DOM.
 

@@ -3,7 +3,7 @@ order: 9
 title: Nepoužívejte JQuery za každou cenu...
 ---
 
-Občas může být čistý JavaScript jednodušší a výkonější, než jQuery.
+Občas může být čistý JavaScript jednodušší a výkonější než jQuery.
 
 <div class="img-right">
   <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
@@ -24,7 +24,7 @@ $('#text').html('The content is changed').css({
 });
 ```
 
-Použijte prostý JavaScript:
+použijte prostý JavaScript:
 
 ```js
 var text = document.getElementById('text');

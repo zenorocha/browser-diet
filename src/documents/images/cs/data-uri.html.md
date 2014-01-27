@@ -25,6 +25,6 @@ Všechny prohlížeče od IE8 a vyšší podporují techniku kódování pomocí
 
 Stejně tak jako CSS sprity, i tato metoda potřebuje nástroje, které činnost zautomatizují v okamžiku buildu. Tato metoda je výhodná v tom, že obrázky mohou být každý ve svém souboru a při vývoji tak nekomplikuje práci.
 
-Naopak, nevýhoda je ve značně narůstající velikosti HTML/CSS, jestliže máte velké obrázky. Využití metody se nedoporučuje, pokud nepoužíváte gzipování vašich HTML/CSS. Režie pro zakódování a vložení do stránky může negativně převážit zrychlení získané nižším počtem HTTP požadavků.
+Naopak nevýhoda je ve značně narůstající velikosti HTML/CSS, jestliže máte velké obrázky. Využití metody se nedoporučuje, pokud nepoužíváte gzipování vašich HTML/CSS. Režie pro zakódování a vložení do stránky může negativně převážit zrychlení získané nižším počtem HTTP požadavků.
 
 *> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#data-uri)*
