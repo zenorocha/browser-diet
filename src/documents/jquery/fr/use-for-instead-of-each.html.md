@@ -17,4 +17,17 @@ for ( var i = 0, len = a.length; i < len; i++ ) {
 
 L'utilisation de `while` inversé et de boucle `for` inversée est un sujet sensible dans la communauté et ces itérations sont souvent cités comme les formes les plus rapides. Cependant, on les évite souvent car elles sont moins lisibles.
 
+```js
+// while inversé
+while ( i-- ) {
+  // ...
+}
+
+// for inversé
+for ( var i = array.length; i--; ) {
+  // ...
+}
+```
+
+Check who has the best performance on the link below:
 *> [Resultats sur JSPerf](http://jsperf.com/browser-diet-jquery-each-vs-for-loop) / [References](https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each)*

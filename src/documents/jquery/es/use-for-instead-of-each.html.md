@@ -17,4 +17,16 @@ for ( var i = 0, len = a.length; i < len; i++ ) {
 
 El uso de los loops `while` y `for` de forma inversa es un tema caliente de discusión en la comunidad, y son citados frecuentemente como la forma más rápida de iteración. Sin embargo suele ser evitado por ser menos legible.
 
+```js
+// while inverso
+while ( i-- ) {
+  // ...
+}
+
+// for inverso
+for ( var i = array.length; i--; ) {
+  // ...
+}
+```
+
 *> [Resultados en JSPerf](http://jsperf.com/browser-diet-jquery-each-vs-for-loop) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each)*
