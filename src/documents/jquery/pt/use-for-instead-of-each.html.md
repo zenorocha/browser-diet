@@ -19,4 +19,16 @@ for ( var i = 0, len = a.length; i < len; i++ ) {
 O uso de `while` reverso e `for` reverso é bem discutido na comunidade, e muitas vezes citado como a forma
 mais rápida de se fazer uma iteração com JavaScript, porém é bastante criticado devido ao fato de deixar o código com uma leitura mais difícil.
 
+```js
+while( i-- ){
+  // ...
+}
+
+for(var i = array.length; i--; ){
+  // ...
+}
+```
+
+
+
 *> [Resultado no JSPerf](http://jsperf.com/browser-diet-jquery-each-vs-for-loop) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each)*
