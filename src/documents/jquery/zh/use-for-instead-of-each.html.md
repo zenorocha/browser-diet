@@ -17,4 +17,16 @@ for ( var i = 0, len = a.length; i < len; i++ ) {
 
 在社区中，关于`while`和`for`循环的反向使用问题是一个热门话题，而这经常被认为是最快的迭代方式。然而实际上，这通常只是为了防止循环不够清晰。
 
+```js
+// 逆转 while
+while ( i-- ) {
+  // ...
+}
+
+// 逆转 for
+for ( var i = array.length; i--; ) {
+  // ...
+}
+```
+
 *> [Results on JSPerf](http://jsperf.com/browser-diet-jquery-each-vs-for-loop) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each)*

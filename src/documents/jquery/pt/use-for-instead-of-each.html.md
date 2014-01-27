@@ -20,16 +20,14 @@ mais rápida de se fazer uma iteração com JavaScript, porém é bastante criti
 
 ```js
 // while reverso
-while( i-- ){
+while ( i-- ) {
   // ...
 }
 
 // for reverso
-for(var i = array.length; i--; ){
+for ( var i = array.length; i--; ) {
   // ...
 }
 ```
-
-No link abaixo você pode observar qual das opções tem melhor performance.
 
 *> [Resultado no JSPerf](http://jsperf.com/browser-diet-jquery-each-vs-for-loop) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each)*
