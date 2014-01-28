@@ -15,6 +15,6 @@ První dvě varianty, nehledě na to, že snižují počet HTTP požadavků, ve 
 
 *> Vyhněte se psaní CSS/JS uvnitř vašeho HTML (raději jej automatizujte pomocí nástrojů).*
 
-Třetí varianta nejen zlepšuje organizaci vašeho kódu, ale také umožňuje prohlížečům aktivovat kešování. Tato varianta by měla být preferována pro naprostou většinu případů, zvláště, pokud pracujete s velkými soubory a mnoha stránkami.
+Třetí varianta nejen zlepšuje organizaci vašeho kódu, ale také umožňuje prohlížečům aktivovat kešování. Tato varianta by měla být preferována pro naprostou většinu případů, zvláště pokud pracujete s velkými soubory a mnoha stránkami.
 
 *> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*

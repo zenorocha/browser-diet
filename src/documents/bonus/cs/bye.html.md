@@ -11,7 +11,7 @@ Doufáme, že po přečtení této příručky dovedete dát vaše stránky do f
 
 A nezapomeňte, jak už to v životě chodí, [neexistuje nic takového, jako stříbrná kulka](http://www.cs.nott.ac.uk/~cah/G51ISS/Documents/NoSilverBullet.html). Ladění výkonu vaší aplikace je chvályhodný počin, neměl by být ale tím jediným, co při vývoji řešíte&mdash;celou dobu musíte zvažovat náklady a přidanou hodnotu.
 
-Chcete se dozvědět více? Mrkněte na [zdroje](https://github.com/zenorocha/browser-diet/wiki/References) které jsme použili k napsání této příručky.
+Chcete se dozvědět více? Mrkněte na [zdroje](https://github.com/zenorocha/browser-diet/wiki/References), které jsme použili k napsání této příručky.
 
 Máte tipy? Tweetněte je na [@BrowserDiet](http://twitter.com/browserdiet/) nebo udělejte [pull request](https://github.com/zenorocha/browser-diet) na Githubu.
 

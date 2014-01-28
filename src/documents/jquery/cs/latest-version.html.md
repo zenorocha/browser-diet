@@ -9,14 +9,14 @@ Vývojáři jádra JQuery se stále snaží vylepšovat knihovnu, ať už jde o 
   <img id="geek-36" class="icos-geek" src="http://browserdiet.com/img/36.png" alt="Geek #36" width="144" height="275" />
 </div>
 
-Proto vždy používejte nejnovější verzi JQuery, která je vždy dostupná zde, pokud si ji chcete uložit k sobě do souboru:
+Proto vždy používejte nejnovější verzi JQuery. Dostupná je zde, pokud si ji chcete uložit k sobě do souboru:
 
 ```html
 http://code.jquery.com/jquery-latest.js
 ```
 
 _Nikdy_ ji ale z této URL neodkazujte v tagu `<script>`, můžete si tak zadělat na problémy, protože je vždy poskytována nejnovější verze
-dříve, než máte šanci otestovat ji. Místo toho raději linkujte poslední verzi, kterou máte ozkoušenou.
+dříve, než máte šanci ji otestovat. Místo toho raději linkujte poslední verzi, kterou máte odzkoušenou.
 
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

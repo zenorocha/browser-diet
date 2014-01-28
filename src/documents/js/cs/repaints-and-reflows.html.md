@@ -5,9 +5,9 @@ title: Minimalizujte Repaints a Reflows
 
 Repaints a reflows se vyskytují v případě, že existuje proces překreslující DOM, když se změní nějaká vlastnost elementu.
 
-Repaint je spuštěn v případě, že se mění vzhled elementu bez toho, aby se změnil jeho layout. Nicole Sullivan jako příklad uvádí změnu stylů, třeba `background-color`.
+Repaint je spuštěn v případě, že se změní vzhled elementu bez toho, aby se změnil jeho layout. Nicole Sullivan jako příklad uvádí změnu stylů, třeba `background-color`.
 
-Reflow je mnohem nákladnější, proztože je způsoben změnou layoutu stránky, jako například změna šířky elementu.
+Reflow je mnohem nákladnější, protože je způsoben změnou layoutu stránky, jako je například změna šířky elementu.
 
 Není pochyb, že je dobré se těmto náročným repaints a reflows vyhnout, takže například místo tohoto:
 
@@ -25,7 +25,7 @@ for (i = 0, len = lis.length; i < len; i++) {
 }
 ```
 
-Zkuste toto:
+zkuste toto:
 
 ```js
 var div = document.getElementById("to-measure"),
@@ -38,8 +38,8 @@ for (i = 0, len = lis.length; i < len; i++) {
 }
 ```
 
-Když nastavíte `style.width`, prohlížeč musí přepočítat layout. Obvykle je několik změn stylů elementů spojeno do jednoho reflow, protože to prohlížeč nemusí řešit, dokud nedojde k aktualizaci obrazovky. Každopádně  prvním příkladě jsme používali `offsetWidth`, což je šířka layoutu elementu, prohlížeč tedy musí přepočítat layout.
+Když nastavíte `style.width`, prohlížeč musí přepočítat layout. Obvykle je několik změn stylů elementů spojeno do jednoho reflow, protože to prohlížeč nemusí řešit, dokud nedojde k aktualizaci obrazovky. Každopádně  v prvním příkladě jsme používali `offsetWidth`, což je šířka layoutu elementu, prohlížeč tedy musí přepočítat layout.
 
-Pokud potřebujete číst data layoutu ze stránky, udělejte tak naráz, předtím, než začnete nastavovat cokoliv, co mění layout, jak je ukázáno v druhém příkladě.
+Pokud potřebujete číst data layoutu ze stránky, udělejte tak naráz - předtím, než začnete nastavovat cokoliv, co mění layout, jak je ukázáno v druhém příkladě.
 
 *> [Demo](http://jsbin.com/aqavin/2/quiet) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#minimize-repaints-and-reflows)*

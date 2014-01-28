@@ -17,7 +17,7 @@ Další doporučovaná technika pro organizaci a správu stylů je rozdělení n
 <link rel="stylesheet" href="plugin.css" media="all">
 ```
 
-Pak je ale třeba pro každý takový soubor jeden HTTP request (a je známo, že prohlížeče mohou stahovat jen jen omezený počet zdrojů souběžně).
+Pak je ale třeba pro každý takový soubor jeden HTTP request (a je známo, že prohlížeče mohou stahovat jen omezený počet zdrojů souběžně).
 
 ```html
 <link rel="stylesheet" href="main.css" media="all">

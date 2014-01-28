@@ -3,7 +3,7 @@ order: 25
 title: Styly nahoru/scripty dolů
 ---
 
-Když vložíme styly do `<head>`, umožníme tak progresivní vykreslení stránky, uživateli se tak zdá, že se stránka načítá rychleji.
+Když vložíme styly do `<head>`, umožníme tak progresivní vykreslení stránky. Uživateli se tak zdá, že se stránka načítá rychleji.
 
 ```html
 <head>

@@ -25,6 +25,6 @@ Ale prohlížeči na ničem z toho nezáleží. Proto vždy pamatujte na minimal
 BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 ```
 
-To ořeže přebytečné byty ze souboru, což vede k rychlejšímu stažení, parsování a spuštění.
+Minimalizace ořeže přebytečné byty ze souboru, což vede k rychlejšímu stažení, parsování a spuštění.
 
 *> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*

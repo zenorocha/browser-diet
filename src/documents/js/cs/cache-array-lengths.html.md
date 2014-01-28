@@ -3,9 +3,9 @@ order: 17
 title: Kešujte délku pole
 ---
 
-Smyčka je nepochybně jedna z nejpodstatnějších částí ovlivňujících výkon JavaScriptu. Zkuste optimalizovat logiku uvnitř smyčky, tak aby každá iterace byla vykonána užitečně.
+Smyčka je nepochybně jedna z nejpodstatnějších částí ovlivňujících výkon JavaScriptu. Zkuste optimalizovat logiku uvnitř smyčky tak, aby každá iterace byla vykonána užitečně.
 
-Jedna z cest, jak toho dosahnout, je uložit si délku pole, se kterým se pracuje, aby nemusela být opakovaně zjišťována v každé iteraci.
+Jedna z cest, jak toho dosáhnout, je uložit si délku pole, se kterým se pracuje, aby nemusela být opakovaně zjišťována v každé iteraci.
 
 ```js
 var arr = new Array(1000),

@@ -11,4 +11,4 @@ Pokud chcete proniknout do světa optimalizací výkonu webu, je zásadní nains
 
 Pokud preferujete online nástroje, navštivte [WebPageTest](http://www.webpagetest.org/), [HTTP Archive](http://httparchive.org/), nebo [PageSpeed](http://pagespeed.googlelabs.com/).
 
-V zásade každý nástroj analyzuje výkon stránky a vytvoří report, který stránku ohodnotí a přidá neocenitelné rady, které pomohou vyřešit případné problémy.
+V zásadě každý nástroj analyzuje výkon stránky a vytvoří report, který stránku ohodnotí a přidá neocenitelné rady, které pomohou vyřešit případné problémy.
