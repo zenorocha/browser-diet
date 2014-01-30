@@ -28,7 +28,7 @@ Use plain JavaScript:
 
 ```js
 var text = document.getElementById('text');
-text.innerHTML = 'The text is changed';
+text.innerHTML = 'The content is changed';
 text.style.backgroundColor = 'red';
 text.style.color = 'yellow';
 ```

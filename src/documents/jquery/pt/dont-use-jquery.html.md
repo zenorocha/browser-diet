@@ -1,32 +1,38 @@
 ---
 order: 9
-title: Não use jQuery...
+title: Não use jQuery sempre...
 ---
 
-...a não ser que seja estritamente necessário :)
-
-Às vezes JavaScript puro pode ser até mais simples que jQuery.
+Às vezes JavaScript puro pode ser mais fácil e mais performático que jQuery.
 
 <div class="img-right">
   <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
 </div>
 
-Pra que usar o método `attr()` para buscar o ID?
+Considere o seguinte HTML:
 
-```js
-$('a').on('click', function() {
-  console.log( $(this).attr('id') );
-});
+```html
+<div id="text">Vamos mudar esse conteúdo.</div>
 ```
 
-Se você pode buscar esse atributo nativamente através do `this`.
+Ao invés de fazer isso:
 
 ```js
-$('a').on('click', function() {
-  console.log( this.id );
-});
+$('#text').html('O conteúdo mudou').css({
+  backgroundColor: 'red',
+    color: 'yellow'
+  });
 ```
 
-E ainda ser mais rápido.
+Usamos JavaScript puro:
 
-*> [Resultado no JSPerf](http://jsperf.com/browser-diet-this-attr-id-vs-this-id) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery)*
+```js
+var text = document.getElementById('text');
+text.innerHTML = 'O conteúdo mudou';
+text.style.backgroundColor = 'red';
+text.style.color = 'yellow';
+```
+
+É simples e **muito** mais rápido.
+
+*> [Resultado no JSPerf](http://jsperf.com/jquery-vs-javascript-performance-text) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery)*
