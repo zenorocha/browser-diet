@@ -18,7 +18,7 @@ Consider the following HTML:
 Instead of doing this:
 
 ```js
-$('#text').html('The content is changed').css({
+$('#text').html('The content has changed').css({
   backgroundColor: 'red',
   color: 'yellow'
 });
@@ -28,7 +28,7 @@ Use plain JavaScript:
 
 ```js
 var text = document.getElementById('text');
-text.innerHTML = 'The content is changed';
+text.innerHTML = 'The content has changed';
 text.style.backgroundColor = 'red';
 text.style.color = 'yellow';
 ```
