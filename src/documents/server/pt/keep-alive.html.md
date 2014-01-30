@@ -19,4 +19,4 @@ A configuração é específica de servidor, então é difícil falar de todos a
 
 Essa configuração costuma ser bem simples de fazer em todos os servidores do mercado (veja na documentação do seu!).
 
-*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#keep-alive)*
+*> [Referências](https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive)*
