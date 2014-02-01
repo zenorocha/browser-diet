@@ -5,9 +5,9 @@ title: Vyhněte se inline/vloženému kódu
 
 Existují tři základní cesty, jak vložit CSS nebo JavaScript do stránky:
 
-**1) Inline:** CSS je definováno uvnitř `style` atributu a JavaScript například uvnitř `onclick` atributu u libovolné HTML značky;
+**1) Inline:** CSS je definováno uvnitř `style` atributu a JavaScript například uvnitř `onclick` atributu u libovolné HTML značky.
 
-**2) Vložené:** CSS je definováno uvnitř `<style>` tagu a JavaScript uvnitř `<script>` tagu;
+**2) Vložené:** CSS je definováno uvnitř `<style>` tagu a JavaScript uvnitř `<script>` tagu.
 
 **3) Externí:** CSS je nahráno z `<link>` a JavaScript z `src` atributu tagu `<script>`.
 
