@@ -25,7 +25,7 @@ Ale prohlížeči na ničem z toho nezáleží. Proto vždy pamatujte na minimal
 .center{width:960px;margin:0 auto}.intro{margin:100px;position:relative}
 ```
 
-Minimalizace ořeže přebytečné byty ze souboru, což vede k rychlejšímu stažení, parsování a spuštění.
+Minimalizace ořeže přebytečné bajty ze souboru, což vede k rychlejšímu stažení, parsování a spuštění.
 
 Pro ty, kteří používají pre-procesory jako [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), a [Stylus](http://learnboost.github.com/stylus/), je možné nakonfigurovat, aby byl kompilovaný CSS výstup minimalizován.
 
