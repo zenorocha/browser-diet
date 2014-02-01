@@ -1,5 +1,5 @@
 ---
-order: 13
+order: 14
 title: Minimalizuj kod JS
 ---
 

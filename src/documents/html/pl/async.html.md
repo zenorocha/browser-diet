@@ -1,5 +1,5 @@
 ---
-order: 25
+order: 23
 title: Spróbuj asynchronicznie
 ---
 
@@ -13,7 +13,7 @@ Najlepszym wyjaśnieniem wpływu podanych atrybutów na lepszą wydajność, bę
 <script src="example.js"></script>
 ```
 
-W tym przypadku, strona czeka do momentu, w którym skrypt zostanie całkowicie pobrany, przeanalizowany i wykonany, zanim przejdzie do analizowani i generowania HTML. Takie działanie powoduje dodatkowy narzut na czas ładowania strony. Przeważnie jest to zachowanie nieporządane.
+W tym przypadku, strona czeka do momentu, w którym skrypt zostanie całkowicie pobrany, przeanalizowany i wykonany, zanim przejdzie do analizowania i generowania HTML. Takie działanie powoduje dodatkowy narzut na czas ładowania strony. Przeważnie jest to zachowanie nieporządane.
 
 ``` html
 <script async src="example.js"></script>

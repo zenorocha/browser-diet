@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 8
 title: Korzystaj ze sprite'ów CSS
 ---
 

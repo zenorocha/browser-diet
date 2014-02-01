@@ -1,5 +1,5 @@
 ---
-order: 27
+order: 25
 title: Style na górze, skrypty na dole
 ---
 

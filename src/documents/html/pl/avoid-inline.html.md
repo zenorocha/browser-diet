@@ -1,11 +1,11 @@
 ---
-order: 28
+order: 26
 title: Unikaj kodu wbudowanego
 ---
 
 Istnieją trzy podstawowe sposoby na dołączanie CSS lub JavaScriptu na twojej stronie:
 
-**1) Liniowy:** kod CSS jest zdefiniowany w znaczniku `<style>`, a kod JavaScript w atrybucie `<onclick>` dowolnego znacznika HTML.
+**1) Liniowy:** kod CSS jest zdefiniowany w znaczniku `<style>`, a kod JavaScript w atrybucie `onclick` dowolnego znacznika HTML.
 
 **2) Wbudowany:** kod CSS jest zdefiniowany w znaczniku `<style>`, a kod JavaScript w znaczniku `<script>`.
 

@@ -1,9 +1,13 @@
 ---
-order: 20
+order: 21
 title: Scalanie wielu plików CSS
 ---
 
 Kolejna dobra praktyka dla organizacji i obsługi stylów to dzielenie ich na mniejsze moduły.
+
+<div class="img-right">
+  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/img/9.png" alt="Geek #9" width="122" height="275" />
+</div>
 
 ```html
 <link rel="stylesheet" href="structure.css" media="all">
@@ -23,4 +27,4 @@ Połącz swoje pliki CSS. Mniejsza liczba plików, daje w rezultacie mniejszą l
 
 Chcesz najlepszych wyników? Automatyzacja tego procesu poprzez narzędzia budowania.
 
-*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References##combining-multiple-css-files)*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*
