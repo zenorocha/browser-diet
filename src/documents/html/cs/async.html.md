@@ -13,7 +13,7 @@ Abychom vysvětlili, jak je tento atribut užitečný pro lepší výkon, je dob
 <script src="example.js"></script>
 ```
 
-V tomto případě musí stránka čekat, až je skript plně stažen, naparsován a spuštěn, před tím, než může být zpracováno a vykresleno další HTML. To může značně prodloužit čas načtení vaší stránky. Občas je takové chování požadováno, obecně však ne.
+V tomto případě musí stránka čekat, dokud není skript celý stažený, naparsovaný a spuštěný, před tím, než může být zpracováno a vykresleno další HTML. To může značně prodloužit čas načítání vaší stránky. Občas je takové chování požadováno, obecně však ne.
 
 ``` html
 <script async src="example.js"></script>
