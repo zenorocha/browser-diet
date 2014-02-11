@@ -93,17 +93,23 @@ Lists all NodeJS dependencies.
 
 BrowserDiet was made with love by these people and a bunch of awesome [contributors](https://github.com/zenorocha/browser-diet/graphs/contributors).
 
+#### Maintainer
+
+[![Djalma Araújo](http://gravatar.com/avatar/be74fd9a577ea5ef1ab2e7c71bcfa4b5?s=70)](https://github.com/djalmaaraujo) |
+--- | --- | --- | --- | --- | --- | ---
+[Djalma Araújo](https://github.com/djalmaaraujo)<br>Wobo, Inc. |
+
 #### Creator
 
-[![Zeno Rocha](http://gravatar.com/avatar/e190023b66e2b8aa73a842b106920c93?s=70)](http://zenorocha.com) |
+[![Zeno Rocha](http://gravatar.com/avatar/e190023b66e2b8aa73a842b106920c93?s=70)](https://github.com/zenorocha) |
 --- | --- | --- | --- | --- | --- | ---
-[Zeno Rocha](http://zenorocha.com)<br>Liferay, Inc. |
+[Zeno Rocha](https://github.com/zenorocha)<br>Liferay, Inc. |
 
 #### Design
 
-[![Briza Bueno](http://gravatar.com/avatar/c272a0a8972473fdf231f2b2d897c242?s=70)](http://www.brizabueno.com/) |
+[![Briza Bueno](http://gravatar.com/avatar/c272a0a8972473fdf231f2b2d897c242?s=70)](https://github.com/brizabueno) |
 --- | --- | --- | --- | --- | --- | ---
-[Briza Bueno](http://www.brizabueno.com/)<br>Americanas |
+[Briza Bueno](https://github.com/brizabueno)<br>Americanas |
 
 #### Authors
 
