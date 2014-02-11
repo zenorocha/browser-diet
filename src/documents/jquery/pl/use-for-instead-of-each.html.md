@@ -18,12 +18,12 @@ for ( var i = 0, len = a.length; i < len; i++ ) {
 Używanie odwrotnych pętli `while` i `for` stanowi gorący temat w środowisku programistycznym jako najszybsze sposoby iterowania elementów. Niestety są unikane, ze względu na mniejszą czytelność.
 
 ```js
-// odwrotnych while
+// odwrotna petla while
 while ( i-- ) {
   // ...
 }
 
-// odwrotnych for
+// odwrotna petla for
 for ( var i = array.length; i--; ) {
   // ...
 }

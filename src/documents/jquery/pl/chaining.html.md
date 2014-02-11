@@ -1,6 +1,7 @@
 ---
+ignored: true
 order: 11
-title: Wykorzystaj możliwość łańcuchowego wywoływania
+title: Wykorzystaj zalety wywoływania metod po sobie
 ---
 
 Łańcuchowe wywołanie oznacza, że możesz wywołać jedną metodę jQuery zaraz po drugiej bez konieczności ponownego określania selektora. Praktycznie wszystkie metody jQuery umożliwiają łańcucowe wywołanie poprzez zwrot obiektu jQuery.

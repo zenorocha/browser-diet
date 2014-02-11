@@ -1,9 +1,7 @@
 ---
-order: 8
-title: Nie używaj jQuery...
+order: 9
+title: Nie zawsze korzystaj z jQuery...
 ---
-
-...chyba, że jest to absolutnie konieczne. :)
 
 Czasami czysty JavaScript może być jeszcze prostszy niż jQuery.
 
@@ -11,22 +9,30 @@ Czasami czysty JavaScript może być jeszcze prostszy niż jQuery.
   <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
 </div>
 
-Czemu używasz metody `attr()` do znalezienia wartości ID?
+Rozważmy następujący kod HTML:
+
+```html
+<div id="text">Zmieńmy treść tego tekstu</div>
+```
+
+Zamiast robić to w taki sposób:
 
 ```js
-$('a').on('click', function() {
-  console.log( $(this).attr('id') );
+$('#text').html('Treść zmieniła się').css({
+  backgroundColor: 'red',
+  color: 'yellow'
 });
 ```
 
-Przecież dostaniesz ten sam atrybut natywnie poprzez `this`:
+Użyj samego JavaScriptu:
 
 ```js
-$('a').on('click', function() {
-  console.log( this.id );
-});
+var text = document.getElementById('text');
+text.innerHTML = 'Treść zmieniła się';
+text.style.backgroundColor = 'red';
+text.style.color = 'yellow';
 ```
 
-Do tego szybciej.
+Tak jest prościej i **o wiele** szybciej.
 
-*> [Wyniki w JSPerf](http://jsperf.com/browser-diet-this-attr-id-vs-this-id) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery)*
+*> [Wyniki w JSPerf](http://jsperf.com/jquery-vs-javascript-performance-text) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery)*

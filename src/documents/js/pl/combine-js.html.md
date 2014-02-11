@@ -1,9 +1,13 @@
 ---
-order: 12
+order: 13
 title: Scalanie wielu plików JS w jeden
 ---
 
 Bardzo dobrym rozwiązaniem dla organizacji i obsługi skryptów jest rozdzielenie ich na osobne moduły.
+
+<div class="img-right">
+  <img id="geek-47" class="icos-geek" src="http://browserdiet.com/img/47.png" alt="Geek #47" width="174" height="275" />
+</div>
 
 ```html
 <script src="navbar.js"></script>

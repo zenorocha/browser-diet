@@ -1,6 +1,6 @@
 ---
 order: 17
-title: Buforuj długość tablicy
+title: Buforuj rozmiar tablicy
 ---
 
 Pętla jest bez wątpienia jednym z najważniejszych elementów związanych z wydajności JavaScript. Optymalizacja logiki wewnątrz pętli jest ważna, ponieważ każda z operacji jest wykonywana wielokrotnie.
@@ -23,8 +23,7 @@ for (var i = 0, len = arr.length; i < len; i++) {
 
 **> Uwaga:** *Chociaż silniki nowoczesnych przeglądarek automatycznie optymalizują ten proces, pamiętaj o dobrych praktykach programistycznych w starszych przeglądarkach.*
 
-
-Przetwarzanie kolekcji w HTML jako listy węzłów (*NodeList*) generowanej przykładowo przez `document.getElementsByTagName('a')` jest krytyczne. Takie kolekcje są traktowane "dynamicznie", co oznacza automatyczne aktualizowanie w przypadku zmian w elemenci nadrzędnym.
+Przetwarzanie kolekcji w HTML jako listy węzłów (*NodeList*) generowanej przykładowo przez `document.getElementsByTagName('a')` jest krytyczne. Takie kolekcje są traktowane "dynamicznie", co oznacza automatyczne aktualizowanie w przypadku zmian w elemencie nadrzędnym.
 
 ```js
 var links = document.getElementsByTagName('a');

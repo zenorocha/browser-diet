@@ -1,6 +1,6 @@
 ---
-order: 19
-title: Preferuj <link> ponad @import
+order: 20
+title: Preferuj <link> zamiast @import
 ---
 
 Istnieją dwa sposoby na dołączenie zewnętrznych arkuszy stylów do twojej strony: poprzez znacznik `<link>`:
