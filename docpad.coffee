@@ -10,7 +10,7 @@ module.exports =
         # -----------------------------
         # Language Definition
 
-        currentLang: 'en'
+        currentLang: 'jp'
 
         lang:
             en:
@@ -97,6 +97,18 @@ module.exports =
                 goTop: 'Nahoru'
                 htmlLang: 'cs-CZ'
                 credits: 'Vytvořil <em>Zeno Rocha</em> ● Design <em>Briza Bueno</em> ● Grafika <em>Scott Johnson</em>'
+            jp:
+                title: 'How to lose weight (in the browser)'
+                titleHTML: '<h1>How to lose <span>weight</span></h1><h2>in the browser</h2>'
+                slogan: '決定的なフロントエンドのパフォーマンスガイド'
+                url: 'http://browserdiet.com'
+                bonus: 'Bonus'
+                images: 'Images'
+                server: 'Server'
+                edit: 'Edit'
+                goTop: 'Go to the top'
+                htmlLang: 'ja-JP'
+                credits: 'Develop by <em>Zeno Rocha</em> ● Design by <em>Briza Bueno</em> ● Illustrations by <em>Scott Johnson</em>'
 
         # -----------------------------
         # Site Information
