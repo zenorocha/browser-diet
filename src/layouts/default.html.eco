@@ -17,7 +17,7 @@
   <meta itemprop="description" content="<%= @getLang().slogan %>">
 
   <!-- Style -->
-  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css?v=48">
+  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css?v=50">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
@@ -33,28 +33,23 @@
 
     <div id="top-bar" class="subtitle">
       <div class="center">
+
+        <div id="language-picker">
+          <a href="/<%= @currentLang %>" class="flags" id="flat-<%= @currentLang %>">&nbsp;</a>
+
+          <div class="available-languages">
+            <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">English</a>
+            <a id="flag-es" class="flags" href="http://browserdiet.com/es/" title="Español">Español</a>
+            <a id="flag-pt" class="flags" href="http://browserdiet.com/pt/" title="Português">Português</a>
+            <a id="flag-pl" class="flags" href="http://browserdiet.com/pl/" title="Polski">Polski</a>
+            <a id="flag-zh" class="flags" href="http://browserdiet.com/zh/" title="中国的">中国的</a>
+            <a id="flag-fr" class="flags" href="http://browserdiet.com/fr/" title="Français">Français</a>
+            <a id="flag-cs" class="flags" href="http://browserdiet.com/cs/" title="Česky">česky</a>
+          </div>
+        </div>
+
         <h3><%= @getLang().slogan %></h3>
-        <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">
-          English
-        </a>
-        <a id="flag-es" class="flags" href="http://browserdiet.com/es/" title="Español">
-          Español
-        </a>
-        <a id="flag-pt" class="flags" href="http://browserdiet.com/pt/" title="Português">
-          Português
-        </a>
-        <a id="flag-pl" class="flags" href="http://browserdiet.com/pl/" title="Polski">
-          Polski
-        </a>
-        <a id="flag-zh" class="flags" href="http://browserdiet.com/zh/" title="中国的">
-          中国的
-        </a>
-        <a id="flag-fr" class="flags" href="http://browserdiet.com/fr/" title="Français">
-          Français
-        </a>
-        <a id="flag-cs" class="flags" href="http://browserdiet.com/cs/" title="Česky">
-          česky
-        </a>
+
       </div>
     </div>
 

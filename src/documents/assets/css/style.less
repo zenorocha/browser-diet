@@ -218,26 +218,54 @@ strong {
 /*	--- Languages --- */
 
 #top-bar {
+	height: 45px;
 
 	.center {
-		position: relative;
 		text-align: center;
+		clear: both;
+
+		h3 {
+			float: left;
+		}
 	}
 
 }
 
+#language-picker {
+	width: 50px;
+	float: left;
+	padding-top: 7px;
+	position: relative;
+}
+
+#language-picker .available-languages {
+	position: absolute;
+	top: 0;
+	left: 36px;
+	background: white;
+	padding: 5px 10px;
+	display: none;
+	border-radius: 3px;
+	min-width: 310px;
+}
+
+#language-picker .available-languages a {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+#language-picker:hover .available-languages {
+	display: block
+}
+
 .flags {
-  position: absolute;
-  top: 7px;
   border: 0;
   text-indent: -9999px;
   width: 34px;
   height: 34px;
   background: url(http://browserdiet.com/img/flag-sprite.png?v=6);
-  @media (max-width: 767px) {
-		position: static;
-		display: inline-block;
-	}
+  display: inline-block;
+  float: left;
 }
 
 #flag-en { right: 240px; background-position: 0 0; }
