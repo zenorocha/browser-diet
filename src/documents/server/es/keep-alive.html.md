@@ -9,7 +9,7 @@ Establecer una conexión TCP es un proceso costoso en tiempo y recursos, debido 
 
 Esta opción se llama keep-alive.
 
-La configuración es específica dependiendo del servidor. En Apache, por ejemplo, pueses editar el archivo `htaccess` con estas líneas:
+La configuración es específica dependiendo del servidor. En Apache, por ejemplo, puedes editar el archivo `htaccess` con estas líneas:
 
 ```
 <IfModule mod_headers.c>
