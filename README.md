@@ -127,7 +127,7 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 
 [![Mike Taylor](http://gravatar.com/avatar/8d8b46576d7de08d9e1500587c0fa8ce?s=70)](https://github.com/miketaylr) | [![Emilio Álvarez](http://gravatar.com/avatar/87488b8b39dcff7dc6f34b062dbfce37?s=70)](https://github.com/ecoal95) | [![Lukasz Jakub](http://gravatar.com/avatar/7351c99c580e5aaf32212220d66dc3ba?s=70)](https://github.com/lukasz-jakub-adamczuk) | [![Fordlee](http://gravatar.com/avatar/a0f1f645387cf64667f804e134ce89d1?s=70)](https://github.com/fordlee404) | [![Nicolas Carlo](http://gravatar.com/avatar/46978c87c5c75cea5d05a61fa8b7d95b?s=70)](https://github.com/nicoespeon) | [![Tomas Dvorak](http://gravatar.com/avatar/3d725fd7dc3cec46f01a64fd000274b4?s=70)](https://github.com/todvora) | [![Makoto Tateno](http://gravatar.com/avatar/4317f6e3c1bb7c611d4e3b6c21834ced?s=70)](https://github.com/makotot)
 --- | --- | --- | --- | --- | --- | ---
-[Mike Taylor](https://github.com/miketaylr)<br>English | [Emilio Álvarez](https://github.com/ecoal95)<br>Spanish | [Lukasz Jakub](https://github.com/lukasz-jakub-adamczuk)<br>Polish | [Fordlee](https://github.com/fordlee404)<br>Chinese | [Nicolas Carlo](https://github.com/nicoespeon)<br>French | [Tomas Dvorak](https://github.com/todvora)<br>Czech | [Makoto Tateno](https://github.com/makotot)<br>Japonese
+[Mike Taylor](https://github.com/miketaylr)<br>English | [Emilio Álvarez](https://github.com/ecoal95)<br>Spanish | [Lukasz Jakub](https://github.com/lukasz-jakub-adamczuk)<br>Polish | [Fordlee](https://github.com/fordlee404)<br>Chinese | [Nicolas Carlo](https://github.com/nicoespeon)<br>French | [Tomas Dvorak](https://github.com/todvora)<br>Czech | [Makoto Tateno](https://github.com/makotot)<br>Japanese
 
 ## Credits
 
