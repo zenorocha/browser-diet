@@ -115,7 +115,7 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 
 [![Davidson Fellipe](http://gravatar.com/avatar/054c583ad5dc09a861874e14dcb43e4c?s=70)](https://github.com/davidsonfellipe) | [![Giovanni Keppelen](http://gravatar.com/avatar/8f5c490b5b30ac6d655eced70cea4e5f?s=70)](https://github.com/keppelen) | [![Jaydson Gomes](http://gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=70)](https://github.com/jaydson)
 --- | --- | --- | --- | --- | --- | ---
-[Davidson Fellipe](https://github.com/davidsonfellipe)<br>Globo.com | [Giovanni Keppelen](https://github.com/keppelen)<br>Mobicare | [Jaydson Gomes](https://github.com/jaydson)<br>Terra
+[Davidson Fellipe](https://github.com/davidsonfellipe)<br>Globo.com | [Giovanni Keppelen](https://github.com/keppelen)<br>Planedia | [Jaydson Gomes](https://github.com/jaydson)<br>Terra
 
 #### Reviewers
 
