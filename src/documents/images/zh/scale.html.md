@@ -13,6 +13,6 @@ title: 不要在 <img> 标签中调整图像
 
 但是这个开发者不知道的是，大量的没有用的数据也发送到了客户端。
 
-所以请记住：你可以在标签中设置一个图片的寬高，但不意味着你应该通过这么做来改变图片。
+所以请记住：你可以在标签中定义一个图片的寬高，但不意味着你应该通过这么做来(等比)缩放大图。
 
 *> [参考](https://github.com/zenorocha/browser-diet/wiki/References#dont-rescale-images-in-markup)*
