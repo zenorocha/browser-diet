@@ -1,0 +1,19 @@
+<p>Para manter um código legível é bom escrever comentários e ter cuidado com indentação.</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">960</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* --- Structure --- */</span>
+
+<span class="hljs-class">.intro</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Só que para a máquina, nada disso importa. Por isso, lembre-se de comprimir seu CSS através de uma ferramenta automatizada.</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.center</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"><span class="hljs-number">960</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">0</span> auto</span></span></span>}<span class="hljs-class">.intro</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">100</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value">relative</span></span></span>}
+</code></pre>
+<p>Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.</p>
+<p>Para aqueles que usam pré-processadores como <a href="http://sass-lang.com/">Sass</a>, <a href="http://lesscss.org/">Less</a> e <a href="http://learnboost.github.com/stylus/">Stylus</a>, é possível configurar a compilação para gerar o código já minificado.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">Referências</a></em></p>

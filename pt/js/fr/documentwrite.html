@@ -1,0 +1,27 @@
+<p>L&#39;utilisation de <code>document.write</code> oblige la page à être chargée intégralement pour qu&#39;il soit éxecuté.</p>
+<p>Cette (mauvaise) pratique a été abandonnée depuis des années par les développeurs, mais il y a encore des cas où sont utilisation est toujours obligatoire, comme un plan B pour le chargement asynchrone de fichiers JavaScript.</p>
+<p><a href="https://github.com/h5bp/html5-boilerplate/">HTML5 Boilerplate</a>, par exemple, utilise cette technique pour charger jQuery localement si le <em>CDN</em> de Google ne répond pas.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">window.jQuery || document.write(<span class="hljs-string">'&lt;script src="js/vendor/jquery-1.9.0.min.js"&gt;&lt;\/script&gt;'</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p><strong>&gt; Attention:</strong> <em>L&#39;invocation de <code>document.write</code> pendant ou après l&#39;évènement <code>window.onload</code> remplace l&#39;intégralité du contenu de la page.</em></p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+  window.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    document.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
+  };
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Le résultat de la page finale sera seulement <em>bar</em> et non <em>foobar</em> comme on peut s&#39;y attendre. La même chose se produit quand ceci est exécuté après l&#39;évènement <code>window.onload</code>.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    document.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
+  }, <span class="hljs-number">1000</span>);
+  window.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  <span class="hljs-comment">// ...</span>
+};
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Le résultat sera le même que celui de l&#39;exemple précédent si la fonction planifiée par &#39;setTimeout&#39; est exécutée après l&#39;évènement <code>window.onload</code>.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-documentwrite">References</a></em></p>

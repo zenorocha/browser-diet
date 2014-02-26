@@ -1,0 +1,19 @@
+<p>Pour maintenir un code lisible, une bonne idée est d&#39;écrire des commentaires et d&#39;utiliser l&#39;indentation :</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">960</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* --- Structure --- */</span>
+
+<span class="hljs-class">.intro</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Mais tout ceci n&#39;a aucun intérêt pour le navigateur. C&#39;est pour cela qu&#39;il faut toujours vous rappeler de minimifier votre CSS par des outils automatiques.</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.center</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"><span class="hljs-number">960</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">0</span> auto</span></span></span>}<span class="hljs-class">.intro</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">100</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value">relative</span></span></span>}
+</code></pre>
+<p>Cela va diminuer la taille des fichiers, ce qui se traduira par un temps de chargement, d&#39;analyse et d&#39;exécution plus rapide.</p>
+<p>Pour ceux qui utilisent les préprocesseurs comme <a href="http://sass-lang.com/">Sass</a>, <a href="http://lesscss.org/">Less</a>, et <a href="http://learnboost.github.com/stylus/">Stylus</a>, il est possible de configurer la sortie de votre CSS compilé afin qu&#39;il soit minifié.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets">Outils</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">Références</a></em></p>

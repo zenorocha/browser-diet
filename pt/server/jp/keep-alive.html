@@ -1,0 +1,8 @@
+<p>クライアントとサーバ間の通信があるように、すべてのHTTPリクエストは確立されたTCP接続が必要になります。</p>
+<p>「TCP」接続はコストが掛かり、時間も掛かる（3ウェイハンドシェイクのために）ので、新たに作られたTCP接続に他のHTTPリクエストを同じ「トンネル」へ再利用することがとても重要です。</p>
+<p>この設定はkeep-aliveと呼ばれます。</p>
+<p>設定はサーバーに固有です。 例えばApacheでは、<code>.htaccess</code>で以下の部分を編集します。</p>
+<pre class="highlight"><code class="apache"><span class="hljs-tag">&lt;IfModule mod_headers.c&gt;</span>
+  <span class="hljs-keyword"><span class="hljs-common">Header</span></span> set Connection keep-alive
+<span class="hljs-tag">&lt;/IfModule&gt;</span>
+</code></pre><p><em>&gt; <a href="https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive">リファレンス</a></em></p>

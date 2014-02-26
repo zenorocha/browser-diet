@@ -1,0 +1,19 @@
+<p>生のJavaScriptの機能はほぼ常にjQueryのそれよりも高速です。そのため、<code>jQuery.each</code>を使用する代わりにJavaScriptの<code>for</code>ループを使用しましょう。</p>
+<p>ですが注意してほしいのは、<code>for in</code>はネイティブですが、ほとんどのケースで<code>jQuery.each</code>よりも性能が低いです。</p>
+<p>そしてよくテストされた<code>for</code>ループは、反復処理において集合の長さをキャッシュしておくことでパフォーマンスより良くする機会を与えてくれます。</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = a.length; i &lt; len; i++ ) {
+    e = a[i];
+}
+</code></pre>
+<p>反対の<code>while</code>や<code>for</code>ループはコミュニティにおいてホットなトピックで、反復処理の最速な形式として頻繁に引用されます。 ですが、可読性の低下を理由に一般的には使用されません。</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">// reverse while</span>
+<span class="hljs-keyword">while</span> ( i-- ) {
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// reverse for</span>
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = array.length; i--; ) {
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<p><em>&gt; <a href="http://jsperf.com/browser-diet-jquery-each-vs-for-loop">JSPerfの結果</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each">References</a></em></p>

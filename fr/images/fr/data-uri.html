@@ -1,0 +1,16 @@
+<p>Cette technique est une alternative à l&#39;utilisation des sprites CSS.</p>
+<p>Un <a href="http://fr.wikipedia.org/wiki/Data_URI_scheme">Data-URI</a> est un moyen d&#39;intégrer le contenu de l&#39;URI que vous donneriez au navigateur en temps normal. Dans cet exemple, on l&#39;utilise pour intégrer le contenu des images d&#39;arrière plan en CSS afin de réduire le nombre de requêtes HTTP requises pour charger la page.</p>
+<p>Avant :</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'foo.png'</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Après :</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Tous les navigateurs depuis IE8 et haut-dessus supportent cette technique d&#39;encodage en base64.</p>
+<p>Cette méthode et celle qui utilise les sprites requièrent des outils de développement pour être maintenables. Cette méthode a l&#39;avantage de ne pas avoir besoin de disposer les images manuellement puisqu&#39;elle les conserve dans des fichiers séparés pendant la phase de développement.</p>
+<p>Cependant elle a l&#39;inconvénient d&#39;augmenter la taille de votre HTML/CSS considérablement si vous avez des images volumineuses. Il n&#39;est pas recommendé d&#39;utiliser cette méthode si vous ne gzippez pas votre HTML/CSS pendant les requêtes HTTP puisque le surpoids pourrait contre-balancer la rapidité que vous gagnée en minimisant le nombre de requêtes HTTP.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri">Outils utiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">References</a></em></p>

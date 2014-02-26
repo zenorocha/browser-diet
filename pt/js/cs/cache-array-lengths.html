@@ -1,0 +1,35 @@
+<p>Smyčka je nepochybně jedna z nejpodstatnějších částí ovlivňujících výkon JavaScriptu. Zkuste optimalizovat logiku uvnitř smyčky tak, aby každá iterace byla vykonána užitečně.</p>
+<p>Jedna z cest, jak toho dosáhnout, je uložit si délku pole, se kterým se pracuje, aby nemusela být opakovaně zjišťována v každé iteraci.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
+    len, i;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+  <span class="hljs-comment">// Spatne - velikost musi byt prepocitana 1000x</span>
+}
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = arr.length; i &lt; len; i++) {
+  <span class="hljs-comment">// Dobre - velikost je zjistena jen jednou a ihned ulozena</span>
+}
+</code></pre>
+<p><em><a href="http://jsperf.com/browser-diet-cache-array-length/10/">&gt; Výsledky na JSPerf</a></em></p>
+<p><strong>&gt; Poznámka:</strong> <em>Přestože moderní prohlížeče automaticky optimalizují tento proces, stále je tato doporučovaná technika užitečná pro starší prohlížeče.</em></p>
+<p>Při iterování přes kolekce v HTML, jako jsou seznamy Nodů (<em>NodeList</em>) vytvořené například pomocí volání <code>document.getElementsByTagName(&#39;a&#39;)</code> je celá věc ještě více kritická. Tyto kolekce jsou považovány za &quot;živé&quot; , protože se automaticky aktualizují, když nastane změna v elementu, ke kterému patří.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> links = document.getElementsByTagName(<span class="hljs-string">'a'</span>),
+    len, i;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
+  <span class="hljs-comment">// Spatne - pri kazde iteraci dojde k opetovnemu vypoctu delky pole, kdyby se nahodou zmenila</span>
+}
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = links.length; i &lt; len; i++) {
+  <span class="hljs-comment">// Dobre - delka pole je jednou ziskana a ulozena, pote se v iteraci pouziva jen ta predpoctena</span>
+}
+
+<span class="hljs-comment">// Desive: ukazka nekonecne smycky</span>
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
+  document.body.appendChild(document.createElement(<span class="hljs-string">'a'</span>));
+  <span class="hljs-comment">// Pri kazde iteraci naroste seznam linku, nikdy tak nedojde k naplneni podminky pro ukonceni cyklu</span>
+  <span class="hljs-comment">// to by se nestalo, kdyby se velikost pole predem ulozila do promenne a pak pouzila ve smycce</span>
+}
+</code></pre>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#cache-array-lengths">Reference</a></em></p>

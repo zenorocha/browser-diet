@@ -1,0 +1,24 @@
+<p>A chaque fois que vous touchez au DOM sans en avoir besoin un panda meurt.</p>
+<p>Plus sérieusement, naviguer dans le DOM est coûteux. Bien que les moteurs JavaScript deviennent de plus en plus rapides, préférez toujours l&#39;optimisation du nombre de requêtes dans l&#39;arborescence du DOM.</p>
+<p>Une des solutions les plus simples à adopter, lorsque qu&#39;un élément doit être atteint plus d&#39;une fois, consiste à le sauvegarder dans une variable. Ainsi vous n&#39;exécutez qu&#39;une requête dans le DOM.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">// Très mauvais!</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+  document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
+}
+</code></pre>
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">// Bien mieux :)</span>
+<span class="hljs-keyword">var</span> myList = <span class="hljs-string">""</span>;
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+  myList += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
+}
+
+document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = myList;
+</code></pre>
+<p>```js
+// Bien Bien mieux :)
+var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
+<p>for (var i = 0; i &lt; 100; i++) {
+  myListHTML += &quot;<span>&quot; + i + &quot;</span>&quot;;
+}</p>
+<p><em>&gt; <a href="http://jsperf.com/browser-diet-dom-manipulation/11">Resultats sur JSPerf</a></em></p>

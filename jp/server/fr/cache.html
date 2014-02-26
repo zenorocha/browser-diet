@@ -1,0 +1,17 @@
+<p>La meilleure façon d&#39;optimiser les requêtes faites à partir de votre page est de ne pas en faire, évidemment. Et l&#39;un des moyens les plus efficaces pour éviter les requêtes inutiles, c&#39;est de laisser le navigateur mettre en cache le contenu des pages. Par défaut, le navigateur décide combien de temps il doit garder en cache les fichiers. Mais nous pouvons contrôler le temps exact de conservation du fichier dans le cache.</p>
+<div class="img-right">
+  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/img/15.png" alt="Geek #15" width="141" height="275" />
+</div>
+
+<p>Ce type de configuration est effectuée sur le serveur (et dépendra de la configuration du serveur que vous utilisez). Avec Apache, par exemple, vous pouvez ajouter la configuration suivante dans un fichier <code>.htaccess</code>:</p>
+<pre class="highlight"><code class="mel">ExpiresActive On
+ExpiresByType <span class="hljs-keyword">image</span>/gif <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">image</span>/jpeg <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">image</span>/png <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">text</span>/css <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">text</span>/javascript <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType application/javascript <span class="hljs-string">"access plus 6 months"</span>
+</code></pre><p>Ces instructions mettent en cache les images, CSS et JS pendant 6 mois&mdash;il est recommandé de les mettre en cache pendant au moins un mois. D&#39;autres serveurs peuvent être configurés de façon similaire.</p>
+<p>Une chose importante à retenir est que, une fois mis en cache, le navigateur ne va pas demander à nouveau un fichier. Si nous devons changer le contenu du fichier, l&#39;affichage obtenu ne sera pas le résultat attendu. Pour envoyer une nouvelle version, nous avons besoin de changer le nom du fichier. Une façon de faire est d&#39;ajouter une certaine forme de versioning ou un horodatage au nom du fichier. Par exemple, au lieu de <code>home.js</code> vous pouvez utiliser <code>home-v1.js</code> et quand vous avez besoin de mettre à jour le fichier, changer le nom de <code>home-v2.js</code>, etc.</p>
+<p>Une autre forme courante de rupture de cache est d&#39;utiliser un paramètre GET dans l&#39;URL : <code>home.js?v=1</code> et <code>home.js?v=2</code>. Cette méthode a l&#39;inconvénient par rapport au renommage de fichiers d&#39;être ignorée par certains proxys sur internet (ils ne prennent pas en compte les paramètres GET) mais respecte les règles de cache, ce qui rend impossible la maîtrise de celui-ci (mettre à jour un fichier quand on a besoin).</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#enable-smart-caching">Références</a></em></p>

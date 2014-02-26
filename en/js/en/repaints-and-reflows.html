@@ -1,0 +1,29 @@
+<p>Repaints and reflows are caused when there&#39;s any process of re-rendering the DOM when certain property or element is changed.</p>
+<p>Repaints are triggered when the appearance of an element is changed without changing its layout. Nicole Sullivan describes this as a change of styles like changing a <code>background-color</code>.</p>
+<p>Reflows are the most costly, since they are caused by changing the page layout, such as change the width of an element.</p>
+<p>There is no doubt that excessive reflows and repaints should be avoided, so instead of doing this:</p>
+<div class="img-right">
+  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
+</div>
+
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+    i, len;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
+  lis[i].style.width = div.offsetWidth + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<p>Do this:</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+    widthToSet = div.offsetWidth,
+    i, len;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
+  lis[i].style.width = widthToSet + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<p>When you set <code>style.width</code>, the browser needs to recalculate layout. Usually, changing styles of many elements only results in one reflow, as the browser doesn&#39;t need to think about it until it needs to update the screen. However, in the first example, we ask for <code>offsetWidth</code>, which is the layout-width of the element, so the browser needs to recalculate layout.</p>
+<p>If you need to read layout data from the page, do it all together before setting anything that changes layout, as in the second example.</p>
+<p><em>&gt; <a href="http://jsbin.com/aqavin/2/quiet">Demo</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minimize-repaints-and-reflows">References</a></em></p>

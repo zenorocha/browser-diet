@@ -1,0 +1,8 @@
+<p>Každý HTTP request potřebuje vytvořit &quot;TCP&quot; spojení, aby byla možná komunikace mezi klientem a serverem.</p>
+<p>Vytvoření TCP spojení je nákladný a časově náročný proces (z důvodu &quot;trojcestného handshakingu&quot;). Je tedy velmi důležité opakovaně používat již vytvořené TCP spojení pro přenos dalších HTTP požadavků tím samým &quot;tunelem&quot;.</p>
+<p>Toto nastavení je nazýváno keep-alive.</p>
+<p>Konfigurace se liší podle použitého serveru. Například pro Apache můžete doplnit do <code>htaccess</code> tyto řádky:</p>
+<pre class="highlight"><code class="apache"><span class="hljs-tag">&lt;IfModule mod_headers.c&gt;</span>
+  <span class="hljs-keyword"><span class="hljs-common">Header</span></span> set Connection keep-alive
+<span class="hljs-tag">&lt;/IfModule&gt;</span>
+</code></pre><p><em>&gt; <a href="https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive">Reference</a></em></p>

@@ -1,0 +1,8 @@
+<p>有两种方式可以引入一个外部的样式表：通过 <code>&lt;link&gt;</code> 标签：</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
+</code></pre>
+<p>或者通过 <code>@import</code> 指令 (使用在一个外部样式表中或者页面内嵌的 <code>&lt;style&gt;</code> 标签中):</p>
+<pre class="highlight"><code class="css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-function">url(<span class="hljs-string">'style.css'</span>)</span></span>;
+</code></pre>
+<p>当你在一个外部样式表中使用第二种方式时，浏览器无法通过并行下载的方式下载这个资源，这样就会导致其他资源的下载被阻塞。</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#prefer--over-import">参考</a></em></p>

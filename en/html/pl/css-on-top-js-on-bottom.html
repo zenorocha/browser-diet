@@ -1,0 +1,26 @@
+<p>Kiedy dołączany arkusze styli w znaczniku <code>&lt;head&gt;</code> pozwalamy na stopniowe generowanie strony, co sprawia wrażenie szybszego ładowania.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Browser Diet<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- CSS --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+</code></pre>
+<p>Jeśli jednak umieścimy arkusze na końcu kodu strony, całość zostanie wygenerowana bez styli, dopóki pliki CSS nie zostaną pobrane i zastosowane.</p>
+<p>Z drugiej strony, jeśli omawiamy JavaScript, bardzo ważne jest umieszczenie skryptów na końcu strony, aby nie blokowały generowania w czasie ładowania i wykonywania.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- JS --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"script.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#styles-up-top-scripts-down-bottom">Referencje</a>.</em></p>

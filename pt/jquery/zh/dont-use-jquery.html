@@ -1,0 +1,18 @@
+<p>...除非它是必需的。 :)</p>
+<p>有时vanilla JavaScript要比jQuery简单一些。</p>
+<div class="img-right">
+  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
+</div>
+
+<p>使用<code>attr()</code>方法来查询ID：</p>
+<pre class="highlight"><code class="javascript">$(<span class="hljs-string">'a'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  console.log( $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">'id'</span>) );
+});
+</code></pre>
+<p>如果你能通过<code>this</code>的本身属性获得，还需要上面的方法吗？</p>
+<pre class="highlight"><code class="javascript">$(<span class="hljs-string">'a'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  console.log( <span class="hljs-keyword">this</span>.id );
+});
+</code></pre>
+<p>而且这样还更快。</p>
+<p><em>&gt; <a href="http://jsperf.com/browser-diet-this-attr-id-vs-this-id">Results on JSPerf</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery">参考</a></em></p>

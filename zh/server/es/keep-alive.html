@@ -1,0 +1,8 @@
+<p>Toda solicitud HTTP requiere el establecimiento de una conexión &quot;TCP&quot; para que haya comunicación entre el cliente y el servidor.</p>
+<p>Establecer una conexión TCP es un proceso costoso en tiempo y recursos, debido al proceso de negociación en tres pasos (&quot;three-way handshake&quot;), por eso es muy importante que reaprovechemos las conexiones TCP recién creadas para que otras solicitudes HTTP &quot;usen el mismo túnel&quot;.</p>
+<p>Esta opción se llama keep-alive.</p>
+<p>La configuración es específica dependiendo del servidor. En Apache, por ejemplo, puedes editar el archivo <code>htaccess</code> con estas líneas:</p>
+<pre class="highlight"><code class="apache"><span class="hljs-tag">&lt;IfModule mod_headers.c&gt;</span>
+  <span class="hljs-keyword"><span class="hljs-common">Header</span></span> set Connection keep-alive
+<span class="hljs-tag">&lt;/IfModule&gt;</span>
+</code></pre><p><em>&gt; <a href="https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive">Referencias</a></em></p>

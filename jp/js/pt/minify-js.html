@@ -1,0 +1,18 @@
+<p>Assim como no CSS, para manter um código legível é bom escrever comentários e ter cuidado com indentação.</p>
+<pre class="highlight"><code class="javascript">BrowserDiet.app = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+
+  <span class="hljs-keyword">var</span> foo = <span class="hljs-literal">true</span>;
+
+  <span class="hljs-keyword">return</span> {
+    bar: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      <span class="hljs-comment">// do something</span>
+    }
+  };
+
+};
+</code></pre>
+<p>Só que para a máquina, nada disso importa. Por isso, lembre-se de comprimir seu JavaScript através de uma ferramenta automatizada.</p>
+<pre class="highlight"><code class="javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span><span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>}}}
+</code></pre>
+<p>Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">Referências</a></em></p>

@@ -1,0 +1,29 @@
+<p>Les &quot;repaints&quot; et &quot;reflows&quot; ont lieu lorsque le DOM est ré-actualisé, c&#39;est-à-dire quand une certaine propriété ou élément est modifié.</p>
+<p>Les &quot;repaints&quot; ont lieu lorsque le style d&#39;un élèment est modifié sans que la mise en page ne le soit. Nicole Sullivan décrit ceci comme un changement de propriété tel que &#39;background-color&#39;.</p>
+<p>Les &quot;reflows&quot; sont assez coûteux, puisqu&#39;ils sont causés par le changement de la mise en page, telle que la largeur d&#39;un élèment.</p>
+<p>Il n&#39;y a pas de doute que l&#39;excès de &quot;reflows&quot; et de &quot;repaints&quot; devrait être évité, plutôt que d&#39;écrire ceci :</p>
+<div class="img-right">
+  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
+</div>
+
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+    i, len;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
+  lis[i].style.width = div.offsetWidth + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<p>Faites plutôt cela :</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+    widthToSet = div.offsetWidth,
+    i, len;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
+  lis[i].style.width = widthToSet + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<p>Quand on fixe <code>style.width</code>, le navigateur doit recalculer la mise en page. Habituellement, changer le style de plusieurs éléments entraine un seul &quot;reflow&quot; puisque le navigateur n&#39;a pas besoin de penser à cela tant que l&#39;affichage n&#39;est pas modifié. Cependant, dans le premier exemple, on prend <code>offsetWidth</code> qui est la largeur de cet élément, donc le navigateur doit recalculer la mise en page.</p>
+<p>Si on doit lire des instances de la mise en page du document, il faut le faire avant d&#39;assigner quoi que ce soit qui puisse changer la mise en page, comme le montre le deuxième exemple.</p>
+<p><em>&gt; <a href="http://jsbin.com/aqavin/2/quiet">Demo</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minimize-repaints-and-reflows">References</a></em></p>

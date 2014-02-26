@@ -1,0 +1,7 @@
+<p>总是在<code>img</code>标签中设置<code>width</code>和<code>height</code>属性。这样可以防止渲染过程中的重绘和回流。</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"logo.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Logo"</span>&gt;</span>
+</code></pre>
+<p>知道这个之后，一个开发者将一个<em>700x700px</em>的图像设置为<em>50x50px</em>来显示。</p>
+<p>但是这个开发者不知道的是，大量的没有用的数据也发送到了客户端。</p>
+<p>所以请记住：你可以在标签中定义一个图片的寬高，但不意味着你应该通过这么做来(等比)缩放大图。</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#dont-rescale-images-in-markup">参考</a></em></p>

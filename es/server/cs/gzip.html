@@ -1,0 +1,10 @@
+<p>Velké procento obsahu stránky je prostý text (HTML, CSS, JavaScript, JSON, XML, atd.). Pro tento typ obsahu je dobré zapnout GZIP kompresi na úrovni severu.</p>
+<p>GZIP komprimuje data na serveru před tím, než jsou odeslána do uživatelova prohlížeče, který je za běhu dekóduje zpět. Je to stejný postup, jako zazipovat soubor před tím, než jej někomu odešlete takto zmenšený. Všechny moderní prohlížeče a servery podporují kompresi GZIP.</p>
+<p>Konfigurace se nastavuje na serveru. V případě Apache, pro představu, můžete upravit <code>.htaccess</code> soubor a zapnout tak GZIP pro typy souborů, které chcete komprimovat:</p>
+<pre class="highlight"><code class="applescript">AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/html
+AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/plain
+AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/xml
+AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/css
+AddOutputFilterByType DEFLATE <span class="hljs-type">application</span>/javascript
+</code></pre><p>Všechny populární servery jsou obdobně snadno nastavitelné (v dokumentaci si dohledejte informace pro ten svůj!). Toto je jeden z nejefektivnějších tipů pro vylepšení výkonu stránek.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#gzip">Reference</a></em></p>

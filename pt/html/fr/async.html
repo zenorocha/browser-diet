@@ -1,0 +1,13 @@
+<p>Pour expliquer pourquoi cet attribut est utile pour de meilleurs performances, il vaut mieux comprendre ce qui se passe lorsqu&#39;on ne l&#39;utilise pas.</p>
+<div class="img-left">
+  <img id="geek-20" class="icos-geek" src="http://browserdiet.com/img/20.png" alt="Geek #20" width="118" height="275" />
+</div>
+
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Dans ce formulaire, la page doit attendre que le script soit complétement téléchargé, parsé et exécuté avant de parser et afficher n&#39;importe quel HTML à la suite. Cela peut augmenter le temps de chargement de vore page de manière siginificative. Parfois ce comportement peut être désiré, mais ce n&#39;est généralemet pas le cas.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">async</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Ce script est téléchargé de manière asynchone pendant que le reste de la page continue d&#39;être analysée.
+Le script a l&#39;assurance de s&#39;exécuter dès que son téléchargement sera terminé. Gardez à l&#39;esprit que de multiples téléchargements asynchones ne seront pas exécutés dans un ordre spécifique.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#try-out-async">References</a></em></p>

@@ -1,0 +1,17 @@
+<p>あなたのページからのリクエストを最適化する最善の方法は、間違いなく、リクエストをしないことです。不要なリクエストを避ける有用な手法の1つは、アセットをブラウザにキャッシュさせることです。デフォルトではブラウザがどの期間ファイルをキャッシュするかを決めます。ですが、私たちはキャッシュを保つ期間を正確にコントロールできます。</p>
+<div class="img-right">
+  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/img/15.png" alt="Geek #15" width="141" height="275" />
+</div>
+
+<p>このタイプの構成はサーバ上で行なわれます（そしてあなたが持つサーバの設定に依存します）。例えば、Apacheであれば<code>.htaccess</code>ファイルに以下の設定を加えられます。</p>
+<pre class="highlight"><code class="mel">ExpiresActive On
+ExpiresByType <span class="hljs-keyword">image</span>/gif <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">image</span>/jpeg <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">image</span>/png <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">text</span>/css <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">text</span>/javascript <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType application/javascript <span class="hljs-string">"access plus 6 months"</span>
+</code></pre><p>これらの命令は画像とCSSとJSを6ヶ月キャッシュします。&mdash;少なくとも1ヶ月はキャッシュすることが推奨されます。他のサーバも同じように設定できます。</p>
+<p>1つ覚えておくべき重要なことは、一度キャッシュされるとブラウザが新たにリクエストすることは無いということです。 そのファイルの内容を変更する必要があれば私たちが期待しているようには動きません。 新たなバージョンを送信するにはファイルの名前を変更する必要があります。 その方法としてはバージョンの幾つかの形式を付与するか、ファイル名にタイムスタンプを付けることです。例えば、<code>home.js</code>の代わりに<code>home-v1.js</code>とするか、アップデートする際にファイル名を<code>home-v2.js</code>などに変更することです。</p>
+<p>他のキャッシュ除去の形式はURLでGETパラメータを使用することです: <code>home.js?v=1</code>と<code>home.js?v=2</code>のように。 必要な時にキャッシュを消せなくなるがキャッシュのルールには準拠しているこの方法は、ファイル名の変更をする上で幾つかのインターネットのプロキシはGETパラメータを認識できないデメリットがあります。</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#enable-smart-caching">リファレンス</a></em></p>

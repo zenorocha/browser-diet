@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="es-ES" itemscope itemtype="http://schema.org/CreativeWork">
+<head>
+
+  <title>Cómo perder peso (en el navegador)</title>
+
+  <!-- Metatags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="La guía definitiva para el rendimiento front-end">
+  <meta name="keywords" content="front-end, web performance, cache, compress, minify, combine">
+
+  <!-- Schema.org -->
+  <meta itemprop="name" content="Cómo perder peso (en el navegador)">
+  <meta itemprop="url" content="http://browserdiet.com/es">
+  <meta itemprop="image" content="http://browserdiet.com/assets/img/share.jpg">
+  <meta itemprop="description" content="La guía definitiva para el rendimiento front-end">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="http://browserdiet.com/assets/css/all.min.css?v=50">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="http://browserdiet.com/assets/img/favicon.ico">
+
+</head>
+
+<body class="es">
+
+  <div id="header">
+
+    <div id="top-bar" class="subtitle">
+      <div class="center">
+
+        <div id="language-picker">
+          <a href="/es" class="flags" id="flat-es">&nbsp;</a>
+
+          <div class="available-languages">
+            <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">English</a>
+            <a id="flag-es" class="flags" href="http://browserdiet.com/es/" title="Español">Español</a>
+            <a id="flag-pt" class="flags" href="http://browserdiet.com/pt/" title="Português">Português</a>
+            <a id="flag-pl" class="flags" href="http://browserdiet.com/pl/" title="Polski">Polski</a>
+            <a id="flag-zh" class="flags" href="http://browserdiet.com/zh/" title="中国的">中国的</a>
+            <a id="flag-fr" class="flags" href="http://browserdiet.com/fr/" title="Français">Français</a>
+            <a id="flag-cs" class="flags" href="http://browserdiet.com/cs/" title="Česky">česky</a>
+            <a id="flag-jp" class="flags" href="http://browserdiet.com/jp/" title="日本語">日本語</a>
+          </div>
+        </div>
+
+        <h3>La guía definitiva para el rendimiento front-end</h3>
+
+      </div>
+    </div>
+
+    <a href="https://github.com/zenorocha/browser-diet">
+      <img id="github-ribbon" src="http://browserdiet.com/assets/img/github-fork.png" alt="Fork me on GitHub" width="149" height="149">
+    </a>
+
+    <div class="center">
+      <div class="intro">
+        <hgroup class="intro-titles">
+          <h1>Como perder <span>peso</span></h1><h2>en el navegador</h2>
+        </hgroup>
+
+        <div class="superman">
+          <img class="superman-geek" src="http://browserdiet.com/assets/img/superman.png" alt="Superman">
+          <img class="superman-raios" src="http://browserdiet.com/assets/img/raios.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <div id="menu">
+      <ul class="center">
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#js">JavaScript</a></li>
+        <li><a href="#jquery">jQuery</a></li>
+        <li><a href="#images">Imagenes</a></li>
+        <li><a href="#server">Servidor</a></li>
+        <li><a href="#bonus">Bonus</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div id="content">
+    <div class="center">
+
+      
+    <div class="article">
+      <div class="img-left">
+  <img id="geek-17" class="icos-geek" src="http://browserdiet.com/img/17.png" alt="Geek #17" width="199" height="275" />
+</div>
+
+<p>¿Y si nos juntáramos un grupo de expertos que trabajan en grandes sitios para crear una guía para el rendimiento front-end definitiva?</p>
+<p>Y no sólo una de esas aburridas guías hechas para robots, ¿y si hiciéramos algo divertido? ¿Qué tal reunirse <a href="http://www.brizabueno.com/">Briza Bueno</a> <em>(Americanas.com)</em>, <a href="https://github.com/davidsonfellipe">Davidson Fellipe</a> <em>(Globo.com)</em>, <a href="https://github.com/keppelen">Giovanni Keppelen</a> <em>(ex-Peixe Urbano)</em>, <a href="https://github.com/jaydson">Jaydson Gomes</a> <em>(Terra)</em>, <a href="https://github.com/marcelduran">Marcel Duran</a> <em>(Twitter)</em>, <a href="https://github.com/miketaylr">Mike Taylor</a> <em>(Opera)</em>, <a href="https://github.com/mangini">Renato Mangini</a> <em>(Google)</em> y <a href="http://sergiolopes.org">Sérgio Lopes</a> <em>(Caelum)</em> para crear la mejor referencia posible?</p>
+<p>¡Eso es exactamente lo que hemos hecho! Y nosotros te guiaremos en esta batalla para crear sitios incluso más rápidos.</p>
+<p class="project-leader">&mdash; <a href="http://zenorocha.com/">Zeno Rocha</a>, líder del proyecto.</p>
+    </div>
+
+    <div class="article">
+      <h1 id="performance-matters">
+  <a class="tip-title" href="#performance-matters">¿Realmente importa el rendimiento?</a>
+  <a title="Link" class="anchor" href="#performance-matters">∞</a>
+</h1>
+
+<div class="line">
+  <span class="order">??</span>
+  <a title="Edit" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/intro/en/performance-matters.html">✎</a>
+</div>
+
+<p>Desde luego importa y lo sabes. Entonces, ¿por qué seguimos haciendo sitios lentos que desembocan en una mala experiencia del usuario? Ésta es una guía práctica impulsada por la comunidad que te mostrará cómo hacer sitios web más rápidos. No desperdiciemos tiempo mostrando <a href="https://github.com/zenorocha/browser-diet/wiki/Impact-of-performance">casos millonarios sobre rendimiento</a>, ¡vayamos directos al grano!</p>
+    </div>
+
+
+      <h2 id="html" class="topics"><span>HTML</span></h2>
+
+
+
+  <div class="article" id="article-avoid-inline">
+    <h1 id="avoid-inline">
+      <a class="tip-title" href="#avoid-inline">Evita código en línea/incrustado</a>
+      <a title="Link" class="anchor" href="#avoid-inline">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/html/es/avoid-inline.html.md">✎</a>
+    </div>
+    
+    <p>Hay tres formas básicas de incluir CSS o Javascript en tu página</p>
+<p><strong>1) En línea:</strong> El css es definido dentro de un atributo <code>style</code>, y el JavaScript en un atributo <code>onclick</code> por ejemplo, en cualquier etiqueta HTML.</p>
+<p><strong>2) Incrustado:</strong> El CSS es definido dentro de una etiqueta <code>&lt;style&gt;</code> y el JavaScript dentro de una etiqueta <code>&lt;script&gt;</code>.</p>
+<p><strong>3) Externo:</strong> El CSS es cargado desde una etiqueta <code>&lt;link&gt;</code> y el Javascript desde el atributo <code>src</code> de la etiqueta <code>&lt;script&gt;</code>.</p>
+<p>Las dos primeras opciones, pese a que reducen el número de solicitudes HTTP, aumentan el tamaño de tu documento HTML. Pero esto puede ser útil cuando tienes archivos pequeños y el costo de hacer una solicitud es mayor. En este caso, haz tests para evaluar si hay alguna ganancia en velocidad. Asegúrate de evaluar el propósito de tu página y su audiencia: si esperas que la gente sólo visite tu página una vez, por ejemplo en alguna campaña temporal donde nunca esperas visitantes de vuelta, poner código en línea o incrustado ayudará a reducir el número de solicitudes HTTP.</p>
+<p><em>&gt; Evita escribir manualmente CSS o JS en el medio de tu HTML (es preferible automatizar este proceso con herramientas).</em></p>
+<p>La tercera opción nó solo mejora la organización de tu código, sino que también hace posible al navegador cachearlo. Esta opción suele ser la mejor en la mayoría de los casos, sobre todo cuando estás trabajando con archivos grandes y una gran cantidad de páginas.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code">Herramientas útiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-css-on-top-js-on-bottom">
+    <h1 id="css-on-top-js-on-bottom">
+      <a class="tip-title" href="#css-on-top-js-on-bottom">Los estilos arriba, los scripts al fondo</a>
+      <a title="Link" class="anchor" href="#css-on-top-js-on-bottom">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/html/es/css-on-top-js-on-bottom.html.md">✎</a>
+    </div>
+    
+    <p>Cuando ponemos hojas de estilo en el <code>&lt;head&gt;</code> permitimos a la página mostrarse progresivamente, lo que da la impresión a nuestros usuarios de que la página está cargando rápido.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Browser Diet<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- CSS --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+</code></pre>
+<p>Pero si los ponemos al fondo de la página, la página se renderizará sin estilos hasta que el CSS se descargue y aplique.</p>
+<div class="img-right">
+   <img id="geek-32" class="icos-geek" src="http://browserdiet.com/img/32.png" alt="Geek #32" width="139" height="275" />
+</div>
+
+<p>Por otro lado, cuando tratamos con JavaScript, es importante poner los scripts al fondo de la página ya que bloquean el renderizado mientras se están descargando y ejecutando.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+
+  <span class="hljs-comment">&lt;!-- JS --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"script.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+</code></pre>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#styles-up-top-scripts-down-bottom">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-async">
+    <h1 id="async">
+      <a class="tip-title" href="#async">Prueba async</a>
+      <a title="Link" class="anchor" href="#async">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/html/es/async.html.md">✎</a>
+    </div>
+    
+    <p>Para explicar cómo este atributo es útil para el rendimiento, es mejor entender qué pasa cuando no lo usamos.</p>
+<div class="img-left">
+  <img id="geek-20" class="icos-geek" src="http://browserdiet.com/img/20.png" alt="Geek #20" width="118" height="275" />
+</div>
+
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>De esta forma, la página tiene que esperar a que el script sea descargado, analizado y ejecutado completamente antes de poder seguir mostrando el HTML. Esto puede incrementar significativamente el tiempo de carga de tu página. A veces este comportamiento puede ser el deseado, pero no suele ser el caso.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">async</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>El script es descargado asíncronamente mientras el resto de la página sigue siendo analizada. El script se ejecutará en cuanto se acabe de descargar. Tenga en cuenta que varios scripts asincrónicos se ejecutará sin un orden específico.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#try-out-async">Referencias</a></em></p>
+
+  </div>
+
+
+
+
+      <h2 id="css" class="topics"><span>CSS</span></h2>
+
+
+
+  <div class="article" id="article-minify-css">
+    <h1 id="minify-css">
+      <a class="tip-title" href="#minify-css">Comprime tus hojas de estilo</a>
+      <a title="Link" class="anchor" href="#minify-css">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/css/es/minify-css.html.md">✎</a>
+    </div>
+    
+    <p>Para mantener un código legible, es una buena idea escribir comentarios y usar indentación:</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">960</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* --- Estructura --- */</span>
+
+<span class="hljs-class">.intro</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Pero para el navegador, eso no importa. Por eso, recuerda siempre comprimir tu CSS mediante herramientas automatizadas.</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.center</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"><span class="hljs-number">960</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">0</span> auto</span></span></span>}<span class="hljs-class">.intro</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">100</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value">relative</span></span></span>}
+</code></pre>
+<p>Esto quitará bytes al archivo, lo que resultará en un proceso de descarga, análisis y ejecución más rápido.</p>
+<p>Para los que usan preprocesadores como <a href="http://sass-lang.com/">Sass</a>, <a href="http://lesscss.org/">Less</a>, y <a href="http://learnboost.github.com/stylus/">Stylus</a>, es posible configurarlos para que la salida sea comprimida.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets">Herramientas útiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-combine-css">
+    <h1 id="combine-css">
+      <a class="tip-title" href="#combine-css">Combinando múltiples archivos CSS</a>
+      <a title="Link" class="anchor" href="#combine-css">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/css/es/combine-css.html.md">✎</a>
+    </div>
+    
+    <p>Otra buena práctica para la organización y mantenimiento de tus estilos es separarlos en componentes modulares.</p>
+<div class="img-right">
+  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/img/9.png" alt="Geek #9" width="122" height="275" />
+</div>
+
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"structure.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"banner.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"layout.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"component.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"plugin.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+</code></pre>
+<p>Sin embargo, hace falta una solicitud HTTP para cada archivo (y sabemos que los navegadores sólo pueden descargar un número limitado de recursos en paralelo).</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"main.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+</code></pre>
+<p>Así que combina tu CSS. Tener un menor número de archivos resultará en un menor número de solicitudes y una página más rápida.</p>
+<p>¿Quieres tener lo mejor de ambos mundos? Automatiza este proceso mediante una herramienta de compilación.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files">Herramientas útiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-prefer-link-over-import">
+    <h1 id="prefer-link-over-import">
+      <a class="tip-title" href="#prefer-link-over-import">Usa &lt;link&gt; antes que @import</a>
+      <a title="Link" class="anchor" href="#prefer-link-over-import">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/css/es/prefer-link-over-import.html.md">✎</a>
+    </div>
+    
+    <p>Hay dos formas de incluir hojas de estilo externas en tu página: mediante la etiqueta <code>&lt;link&gt;</code>:</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
+</code></pre>
+<p>O mediante la directiva <code>@import</code> (dentro de una hoja de estilos externa o una etiqueta <code>&lt;style&gt;</code>):</p>
+<pre class="highlight"><code class="css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-function">url(<span class="hljs-string">'style.css'</span>)</span></span>;
+</code></pre>
+<p>Cuando usas la segunda opción dentro de una hoja de estilos externa, el navegador no es capaz de descargar el archivo en paralelo, lo que puede bloquear la descarga de otros archivos.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#prefer--over-import">Referencias</a></em></p>
+
+  </div>
+
+
+
+
+      <h2 id="js" class="topics"><span>JavaScript</span></h2>
+
+
+
+  <div class="article" id="article-3rd-party-async">
+    <h1 id="3rd-party-async">
+      <a class="tip-title" href="#3rd-party-async">Carga contenido de terceros asíncronamente</a>
+      <a title="Link" class="anchor" href="#3rd-party-async">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/es/3rd-party-async.html.md">✎</a>
+    </div>
+    
+    <p>¿Quién nunca ha cargado contenido de terceros para incrustar un video de YouTube o un botón de like/tweet?</p>
+<div class="img-right">
+  <img id="geek-46" class="icos-geek" src="http://browserdiet.com/img/46.png" alt="Geek #46" width="158" height="275" />
+</div>
+
+<p>El gran problema es que esos códigos no son siempre distribuidos eficientemente, ya sea por la conexión del usuario, o la conexión del servidor donde se alojan. O este servicio puede estar caído temporalmente o incluso estar bloqueado por el firewall del usuario o su compañía.</p>
+<p>Para evitar que esto se convierta en un problema crítico, o peor, bloquee la carga de la página completamente, siempre carga estos códigos asíncronamente (o usa <em><a href="https://www.facebook.com/note.php?note_id=10151176218703920">Friendly iFrames</a></em>).</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> script = document.createElement(<span class="hljs-string">'script'</span>),
+    scripts = document.getElementsByTagName(<span class="hljs-string">'script'</span>)[<span class="hljs-number">0</span>];
+script.async = <span class="hljs-literal">true</span>;
+script.src = url;
+scripts.parentNode.insertBefore(script, scripts);
+</code></pre>
+<p>Alternativamente, si quieres cargar varios widgets de terceros, puedes cargarlos asíncronamente con <a href="https://gist.github.com/zenorocha/5161860">este script</a>.</p>
+<p><em>&gt; <a href="http://www.webpagetest.org/video/view.php?id=111011_4e0708d3caa23b21a798cc01d0fdb7882a735a7d">Video</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#load-3rd-party-content-asynchronously">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-cache-array-lengths">
+    <h1 id="cache-array-lengths">
+      <a class="tip-title" href="#cache-array-lengths">Cachea las longitudes de las arrays</a>
+      <a title="Link" class="anchor" href="#cache-array-lengths">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/es/cache-array-lengths.html.md">✎</a>
+    </div>
+    
+    <p>El loop es sin duda una de las partes más importantes relacionadas con el rendimiento de JavaScript. Trata de optimizar la lógica dentro de un loop para que cada interacción sea hecha eficientemente.</p>
+<p>Una forma de hacer esto es almacenar el tamaño de la array sobre la que iteraremos, para que no tenga que ser recalculada cada iteración.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
+    len, i;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+  <span class="hljs-comment">// Mal - arr.length necesita ser recalculada 1000 veces</span>
+}
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = arr.length; i &lt; len; i++) {
+  <span class="hljs-comment">// Bien - arr.length es calculada sólo una vez y entonces es almacenada</span>
+}
+</code></pre>
+<p><em><a href="http://jsperf.com/browser-diet-cache-array-length/10/">&gt; Resultados en JSPerf</a></em></p>
+<p><strong>&gt; Nota:</strong> <em>Pese a que los navegadores modernos automáticamente optimizan este proceso, sigue siendo una buena práctica para adaptarse a los navegadores antiguos que aún perduran.</em></p>
+<p>En iteraciones sobre colecciones en HTML como una lista de nodos (<code>NodeList</code>) generada por ejemplo por <code>document.getElementsByTagName(&#39;a&#39;)</code> esto es particularmente crítico. Estas colecciones son consideradas <em>vivas</em>, es decir, son automáticamente actualizadas cuando hay cambios en el elemento que les pertenece.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> links = document.getElementsByTagName(<span class="hljs-string">'a'</span>),
+    len, i;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
+  <span class="hljs-comment">// Mal - cada iteración la lista será recalculada para ver si hubo algún cambio</span>
+}
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = links.length; i &lt; len; i++) {
+  <span class="hljs-comment">// Bien - el tamaño de la lista es obtenido y almacenado, y entonces comparado cada iteración</span>
+}
+
+<span class="hljs-comment">// Terrible: ejemplo de loop infinito</span>
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
+  document.body.appendChild(document.createElement(<span class="hljs-string">'a'</span>));
+  <span class="hljs-comment">// cada iteración la lista de links aumenta, haciendo quel loop nunca se termine</span>
+  <span class="hljs-comment">// esto no pasaría si el tamaño fuera almacenado y usado como una condición</span>
+}
+</code></pre>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#cache-array-lengths">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-documentwrite">
+    <h1 id="documentwrite">
+      <a class="tip-title" href="#documentwrite">Evita document.write</a>
+      <a title="Link" class="anchor" href="#documentwrite">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/es/documentwrite.html.md">✎</a>
+    </div>
+    
+    <p>El uso de <code>document.write</code> hace que la página dependa de su valor de retorno para cargar completamente.</p>
+<p>Esta (mala) práctica ha sido evitada por los desarrolladores, pero aún hay casos donde es necesaria, como un fallback para algún archivo Javascript.</p>
+<p><a href="https://github.com/h5bp/html5-boilerplate/">HTML5 Boilerplate</a>, por ejemplo, usa esta técnica para cargar jQuery localmente si la <em>CDN</em> de Google no responde.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">window.jQuery || document.write(<span class="hljs-string">'&lt;script src="js/vendor/jquery-1.9.0.min.js"&gt;&lt;\/script&gt;'</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p><strong>&gt; Atención:</strong> <em><code>document.write</code> ejecutado posteriormente o durante el evento <code>window.onload</code> reemplaza todo el contenido de la página actual.</em></p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+  window.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    document.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
+  };
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>El resultado de la página final será sólo <em>bar</em> y no <em>foobar</em> como se esperaría. Lo mismo ocurre cuando se ejecuta tras el evento <code>window.onload</code>.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    document.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
+  }, <span class="hljs-number">1000</span>);
+  window.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    <span class="hljs-comment">// ...</span>
+  };
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>El resultado será el mismo que el ejemplo anterior si la función programada por <code>setTimeout</code> es ejecutada tras <code>window.onload</code>.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-documentwrite">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-repaints-and-reflows">
+    <h1 id="repaints-and-reflows">
+      <a class="tip-title" href="#repaints-and-reflows">Minimiza los Repaints y Reflows</a>
+      <a title="Link" class="anchor" href="#repaints-and-reflows">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/es/repaints-and-reflows.html.md">✎</a>
+    </div>
+    
+    <p>Los repaints y reflows son causados cuando hay cualquier proceso de re-renderización del DOM cuando cierta propiedad o elemento cambia.</p>
+<p>Los repaints se ejecutan cuando la apariencia de un elemento cambia sin cambiar su estructura. Nicole Sullivan describe esto como un cambio de estilos (como cambiar un <code>background-color</code>).</p>
+<p>Reflows son los más costosos, ya que son causados por cambiar la estructura de la página, como cambiar el ancho de un elemento.</p>
+<p>No hay duda de que excesivos reflows y repaints deberían de ser evitados, así que en vez de hacer esto:</p>
+<div class="img-right">
+  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
+</div>
+
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+    i, len;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
+  lis[i].style.width = div.offsetWidth + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<p>Haz esto:</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+    anchoAConfigurar = div.offsetWidth,
+    i, len;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
+  lis[i].style.width = anchoAConfigurar + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<p>Cuando estableces <code>style.width</code>, el navegador necesita recalcular la estructura. Normalmente, cambiar los estilos de varios elementos sólo resulta en un reflow. Sin embargo, en el primer ejemplo, usamos continuamente <code>offsetWidth</code>, que fuerza al navegador a recalcular la estructura cada iteración.</p>
+<p>Si necesitas leer datos sobre la estructura de la página, hazlo todo junto antes de establecer algún valor que cambie la estructora, tal y como en el segundo ejemplo</p>
+<p><em>&gt; <a href="http://jsbin.com/aqavin/2/quiet">Demo</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minimize-repaints-and-reflows">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-dont-touch-dom">
+    <h1 id="dont-touch-dom">
+      <a class="tip-title" href="#dont-touch-dom">Evita manipulaciones del DOM innecesarias</a>
+      <a title="Link" class="anchor" href="#dont-touch-dom">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/es/dont-touch-dom.html.md">✎</a>
+    </div>
+    
+    <p>Cada vez que tocas el DOM sin necesidad muere un panda.</p>
+<p>No, ahora en serio, navegar por los elementos del DOM es costoso. Aunque los motores de JavaScript son cada vez más potentes y rápidos, siempre es preferible optimizar al máximo las consultas al DOM tree.</p>
+<p>Una de las alternativas más simples a adoptar es guardar un elemento en una variable cuando tiene que ser usado más de una vez, por lo que sólo se consulta al DOM una vez.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">// fatal!</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+  document.getElementById(<span class="hljs-string">"mi-elemento"</span>).innerHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
+}
+</code></pre>
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">// mucho mejor :)</span>
+<span class="hljs-keyword">var</span> miLista = <span class="hljs-string">""</span>;
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+  miLista += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
+}
+
+document.getElementById(<span class="hljs-string">"mi-elemento"</span>).innerHTML = miLista;
+</code></pre>
+<p>```js
+// mucho mucho mejor :)
+var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
+<p>for (var i = 0; i &lt; 100; i++) {
+  myListHTML += &quot;<span>&quot; + i + &quot;</span>&quot;;
+}</p>
+<p><em>&gt; <a href="http://jsperf.com/browser-diet-dom-manipulation/11">Resultados en JSPerf</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-minify-js">
+    <h1 id="minify-js">
+      <a class="tip-title" href="#minify-js">Comprime tu script</a>
+      <a title="Link" class="anchor" href="#minify-js">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/es/minify-js.html.md">✎</a>
+    </div>
+    
+    <p>Al igual que con el CSS, para mantener un código legible, es una buena idea escribir comentarios y usar indentación:</p>
+<pre class="highlight"><code class="javascript">BrowserDiet.app = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+
+  <span class="hljs-keyword">var</span> foo = <span class="hljs-literal">true</span>;
+
+  <span class="hljs-keyword">return</span> {
+    bar: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+      <span class="hljs-comment">// do something</span>
+    }
+  };
+
+};
+</code></pre>
+<p>Pero para el navegador, eso no importa. Por eso, recuerda siempre comprimir tu JavaScript mediante herramientas automatizadas.</p>
+<pre class="highlight"><code class="javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span><span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>}}}
+</code></pre>
+<p>Esto quitará bytes al archivo, lo que resultará en un proceso de descarga, análisis y ejecución más rápido.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script">Herramientas útiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-combine-js">
+    <h1 id="combine-js">
+      <a class="tip-title" href="#combine-js">Combina los archivos JS en uno sólo</a>
+      <a title="Link" class="anchor" href="#combine-js">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/es/combine-js.html.md">✎</a>
+    </div>
+    
+    <p>Otra buena práctica para la organización y el mantenimiento de los scripts es separarlos en componentes modulares.</p>
+<div class="img-right">
+  <img id="geek-47" class="icos-geek" src="http://browserdiet.com/img/47.png" alt="Geek #47" width="174" height="275" />
+</div>
+
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"navbar.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"component.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"page.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"framework.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"plugin.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Sin embargo, una solicitud HTTP es necesaria para cada archivo (y sabemos que los navegadores sólo pueden descargar un número limitado de recursos en paralelo).</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"main.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Así que combina tu JavaScript. Tener un menor número de archivos resultará en un menor número de solicitudes y una página más rápida.</p>
+<p>¿Quieres tener lo mejor de ambos mundos? Automatiza este proceso mediante una herramienta de compilación.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one">Herramientas útiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one">Referencias</a></em></p>
+
+  </div>
+
+
+
+
+      <h2 id="jquery" class="topics"><span>jQuery</span></h2>
+
+
+
+  <div class="article" id="article-latest-version">
+    <h1 id="latest-version">
+      <a class="tip-title" href="#latest-version">Usa siempre la última versión de jQuery</a>
+      <a title="Link" class="anchor" href="#latest-version">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/jquery/es/latest-version.html.md">✎</a>
+    </div>
+    
+    <p>El equipo de jQuery siempre está buscando mejorar la librería, mediante mejor legibilidad del código, nuevas funcionalidades, y optimización de algoritmos existentes.</p>
+<div class="img-right">
+  <img id="geek-36" class="icos-geek" src="http://browserdiet.com/img/36.png" alt="Geek #36" width="144" height="275" />
+</div>
+
+<p>Por eso, usa siempre la última versión, que siempre se encuentra aquí, si quieres copiarla en un archivo local:</p>
+<pre class="highlight"><code class="xml">http://code.jquery.com/jquery-latest.js
+</code></pre>
+<p>Pero <em>nunca</em> uses esa url en una etiqueta <code>&lt;script&gt;</code>, puede crear problemas en el futuro ya que nuevas versiones son automáticamente servidas a tu sitio antes de que puedas testarlas. En vez de eso, usa la última versión de jQuery que necesites específicamente.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre>
+<p>Como el sabio <a href="/img/new-is-always-better.gif">Barney Stinson</a> dice, <em>&quot;Lo nuevo es siempre mejor&quot;</em> :P</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#always-use-the-latest-version-of-jquery">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-use-for-instead-of-each">
+    <h1 id="use-for-instead-of-each">
+      <a class="tip-title" href="#use-for-instead-of-each">Usa for en lugar de each</a>
+      <a title="Link" class="anchor" href="#use-for-instead-of-each">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/jquery/es/use-for-instead-of-each.html.md">✎</a>
+    </div>
+    
+    <p>El uso de funciones de JavaScript nativas resulta casi siempre en una ejecución más rápida que usando las de jQuery. Por eso, en vez de usar el método <code>jQuery.each</code> usa el loop <code>for</code> de JavaScript.</p>
+<p>Pero presta atención, pese a que <code>for in</code> es nativo, en muchos casos es más lento que <code>jQuery.each</code>.</p>
+<p>Y el loop <code>for</code> nos da otra oportunidad de acelerar las cosas cacheando el tamaño (<code>length</code>) de las colecciones sobre las que estamos iterando.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = a.length; i &lt; len; i++ ) {
+    e = a[i];
+}
+</code></pre>
+<p>El uso de los loops <code>while</code> y <code>for</code> de forma inversa es un tema caliente de discusión en la comunidad, y son citados frecuentemente como la forma más rápida de iteración. Sin embargo suele ser evitado por ser menos legible.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">// while inverso</span>
+<span class="hljs-keyword">while</span> ( i-- ) {
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// for inverso</span>
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = array.length; i--; ) {
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<p><em>&gt; <a href="http://jsperf.com/browser-diet-jquery-each-vs-for-loop">Resultados en JSPerf</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-dont-use-jquery">
+    <h1 id="dont-use-jquery">
+      <a class="tip-title" href="#dont-use-jquery">No uses siempre jQuery...</a>
+      <a title="Link" class="anchor" href="#dont-use-jquery">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/jquery/es/dont-use-jquery.html.md">✎</a>
+    </div>
+    
+    <p>A veces JavaScript a secas puede ser más fácil y rápido que jQuery.</p>
+<div class="img-right">
+  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
+</div>
+
+<p>Considera el siguiente html:</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"text"</span>&gt;</span>Vamos a cambiar este texto!<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>En lugar de hacer esto:</p>
+<pre class="highlight"><code class="javascript">$(<span class="hljs-string">'#text'</span>).html(<span class="hljs-string">'El texto está cambiado'</span>).css({
+  backgroundColor: <span class="hljs-string">'red'</span>,
+  color: <span class="hljs-string">'yellow'</span>
+});
+</code></pre>
+<p>Usa JavaScript a secas</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> text = document.getElementById(<span class="hljs-string">'text'</span>);
+
+text.innerHTML = <span class="hljs-string">'El texto está cambiado'</span>;
+text.style.backgroundColor = <span class="hljs-string">'red'</span>;
+text.style.color = <span class="hljs-string">'yellow'</span>;
+</code></pre>
+<p>Es sencillo y mucho más rápido. Échale un vistazo a los resultados en JSPerf</p>
+<p><em>&gt; <a href="http://jsperf.com/jquery-vs-javascript-performance-text">Resultados en JSPerf</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery">Referencias</a></em></p>
+
+  </div>
+
+
+
+
+      <h2 id="images" class="topics"><span>Imagenes</span></h2>
+
+
+
+  <div class="article" id="article-sprites">
+    <h1 id="sprites">
+      <a class="tip-title" href="#sprites">Usa sprites</a>
+      <a title="Link" class="anchor" href="#sprites">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/images/es/sprites.html.md">✎</a>
+    </div>
+    
+    <p>Ésta técnica es sobre agrupar varias imágenes en un sólo archivo.</p>
+<p><img id="img-sprite" src="http://browserdiet.com/img/sprite-example.jpg" alt="CSS Sprite Example"></p>
+<p>Y después posicinarlas con CSS.</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'mySprite.png'</span>)</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">10</span>px -<span class="hljs-number">10</span>px</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-class">.icon-bar</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'mySprite.png'</span>)</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">5</span>px -<span class="hljs-number">5</span>px</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Como resultado, has reducido dramáticamente el número de solicitudes HTTP y evitado cualquier retraso potencial de otros recursos en tu página.</p>
+<p>Cuando estás usando tu <em>sprite</em>, evita dejar demasiado espacio en blanco entre imágenes. Esto no afectará al tamaño del archivo, pero tendrá efecto en el consumo de memoria.</p>
+<p>Y pese a que casi todo el mundo conoce las sprites, esta técnica no está demasiado extendida&mdash;tal vez debido a que los desarrolladores no usan herramientas automatizadas para generar sprites. Hemos seleccionado algunas que pueden ayudarte con esto.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites">Herramientas útiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-data-uri">
+    <h1 id="data-uri">
+      <a class="tip-title" href="#data-uri">Data URI</a>
+      <a title="Link" class="anchor" href="#data-uri">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/images/es/data-uri.html.md">✎</a>
+    </div>
+    
+    <p>Esta técnica es una alternativa a usar sprites.</p>
+<p>Una <a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data-URI</a> es una forma de poner en línea el contenido de la URI a la que apuntarías normalmente. En este ejemplo estamos usándolo para poner en línea el contenido de un background-image para reducir el número de solicitudes HTTP requeridas para cargar la página.</p>
+<p>Antes:</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'foo.png'</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Después:</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Todos los navegadores desde IE8 soportan esta técnica.</p>
+<p>Tanto este método como el uso de sprites requieren herramientas para ser mantenibles. Éste método tiene la ventaja de no requerir el posicionamiento manual de las sprites ya que mantiene tus imágenes en archivos individuales durante el desarrollo.</p>
+<p>Sin embargo, tiene la desventaja de aumentar el tamaño de tu HTML/CSS considerablemente si tienes imágenes grandes. Éste método no es recomendado si no estás comprimiendo con gzip tu HTML/CSS durante las solicitudes HTTP, ya que el aumento de tamaño puede sobrepasar a la ganancia en velocidad.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri">Herramientas útiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-scale">
+    <h1 id="scale">
+      <a class="tip-title" href="#scale">No cambies el tamaño de las imágenes en el HTML</a>
+      <a title="Link" class="anchor" href="#scale">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/images/es/scale.html.md">✎</a>
+    </div>
+    
+    <p>Siempre define el atributo <code>width</code> y <code>height</code> de una imagen. Esto ayudará a evitar <em>repaints</em> y <em>reflows</em> durante el renderizado.</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"logo.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Logo"</span>&gt;</span>
+</code></pre>
+<p>Sabiendo esto, Pepe, desarrollador que tiene una imagen de <em>700x700px</em> decide usar esta técnica para mostrar la imágen como <em>50x50px</em>.</p>
+<p>De lo que Pepe no se da cuenta es que se enviarán docenas de <em>kilobytes</em> innecesarios.</p>
+<p>Siempre ten en mente: sólo porque puedas definir el alto y el ancho de una imágen en HTML, no significa que debas usarlo para reducir el tamaño de imágenes grandes.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#dont-rescale-images-in-markup">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-optimize">
+    <h1 id="optimize">
+      <a class="tip-title" href="#optimize">Optimiza tus imágenes</a>
+      <a title="Link" class="anchor" href="#optimize">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/images/es/optimize.html.md">✎</a>
+    </div>
+    
+    <p>Los archivos de imágenes contienen muchísima información inútil en la Web. Por ejemplo una foto JPEG puede tener metadatos <em>Exif</em> sobre la cámara (fecha, modelo de cámara, ubicación, etc.). Una imagen PNG contiene información sobre colores, metadatos, y a veces incluso una miniatura incrustada. Nada de esto es usado por el navegador y contribuye al aumento del tamaño del archivo.</p>
+<p>Hay herramientas para la optimización de imágenes que borrarán estos datos innecesarios y te darán un archivo más ligero sin afectar a la calidad. Decimos que hacen una <em>compresión sin pérdida</em>.</p>
+<p>Otra forma de optimizar imágenes es comprimirlas a cambio de calidad visual. Llamamos a esto una <em>optimización con pérdida</em>. Cuando exportas un JPEG, por ejemplo, puedes escoger el nivel de calidad (un número del uno al 100). Pensando en el rendimiento, siempre escoge el menor número posible mientras la calidad visual sea aceptable. Otra forma común de optimizar con pérdida es reducir la paleta de colores en un PNG, o convertir archivos PNG-24 en PNG-8.</p>
+<p>Para mejorar la percepción de rendimiento del usuario, deberías también transformar todos tus archivos JPEG en JPEGs progresivos. Los JPEGs progresivos son soportados por una gran cantidad de navegadores, son muy simples de crear, y no conllevan ningúna pérdida de rendimiento significativa. La ventaja es que la imagen aparecerá más pronto en la página (<a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg">ver demo</a>).</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images">Herramientas útiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">Referencias</a></em></p>
+
+  </div>
+
+
+
+
+      <h2 id="server" class="topics"><span>Servidor</span></h2>
+
+
+
+  <div class="article" id="article-keep-alive">
+    <h1 id="keep-alive">
+      <a class="tip-title" href="#keep-alive">keep-alive</a>
+      <a title="Link" class="anchor" href="#keep-alive">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/es/keep-alive.html.md">✎</a>
+    </div>
+    
+    <p>Toda solicitud HTTP requiere el establecimiento de una conexión &quot;TCP&quot; para que haya comunicación entre el cliente y el servidor.</p>
+<p>Establecer una conexión TCP es un proceso costoso en tiempo y recursos, debido al proceso de negociación en tres pasos (&quot;three-way handshake&quot;), por eso es muy importante que reaprovechemos las conexiones TCP recién creadas para que otras solicitudes HTTP &quot;usen el mismo túnel&quot;.</p>
+<p>Esta opción se llama keep-alive.</p>
+<p>La configuración es específica dependiendo del servidor. En Apache, por ejemplo, puedes editar el archivo <code>htaccess</code> con estas líneas:</p>
+<pre class="highlight"><code class="apache"><span class="hljs-tag">&lt;IfModule mod_headers.c&gt;</span>
+  <span class="hljs-keyword"><span class="hljs-common">Header</span></span> set Connection keep-alive
+<span class="hljs-tag">&lt;/IfModule&gt;</span>
+</code></pre><p><em>&gt; <a href="https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-cache">
+    <h1 id="cache">
+      <a class="tip-title" href="#cache">Activa una caché inteligente</a>
+      <a title="Link" class="anchor" href="#cache">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/es/cache.html.md">✎</a>
+    </div>
+    
+    <p>La mejor forma de optimizar solicitudes hechas desde tu página es no hacer solicitudes, obviamente. Y una de las formas más útiles de evitar solicitudes innecesarias es dejar al navegador cachear archivos. Por defecto, el navegador tiene el poder de decidir cúanto tarda en cachear archivos, pero podemos controlar el tiempo exacto que un archivo será mantenido en la caché.</p>
+<div class="img-right">
+  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/img/15.png" alt="Geek #15" width="141" height="275" />
+</div>
+
+<p>Este tipo de configuración se hace en el servidor, y dependerá de qué tipo de servidor tengas. Con Apache, por ejemplo, puedes añadir la siguiente configuración el un archivo <code>.htaccess</code>:</p>
+<pre class="highlight"><code class="mel">ExpiresActive On
+ExpiresByType <span class="hljs-keyword">image</span>/gif <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">image</span>/jpeg <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">image</span>/png <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">text</span>/css <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType <span class="hljs-keyword">text</span>/javascript <span class="hljs-string">"access plus 6 months"</span>
+ExpiresByType application/javascript <span class="hljs-string">"access plus 6 months"</span>
+</code></pre><p>Estas instrucciones cachean las imágenes, CSS y JS durante 6 meses&mdash;es recomendado cachearlas durante al menos un mes. Otros servidores pueden ser configurados de manera similar.</p>
+<p>Una cosa importante para recordar es que una vez cacheado, el navegador no solicitará un archivo nuevo otra vez. Si necesitamos cambiar el contenido del archivo, no funcionará tal y como esperamos, para enviar una nueva versión, necesitamos cambiar el nombre del archivo. Una forma de hacerlo es añadir alguna tipo de versión o fecha al archivo. Por ejemplo, en vez de <code>home.js</code> puedes usar <code>home-v1.js</code>, y cuando necesitas actualizar el archivo, cambiar el nombre a <code>home-v2.js</code>, etc.</p>
+<p>Otra forma común de saltarse la caché es usar un parámetro GET en la URL: <code>home.js?v=1</code> y <code>home.js?v=2</code>. Éste método tiene l a desventaja de que algunos proxies ignoran los parámetros GET, lo que añadido a las reglas de caché, te hace incapaz de eliminar la caché en ellos cuando lo necesitas.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#enable-smart-caching">Referencias</a></em></p>
+
+  </div>
+
+
+
+  <div class="article" id="article-gzip">
+    <h1 id="gzip">
+      <a class="tip-title" href="#gzip">GZIP</a>
+      <a title="Link" class="anchor" href="#gzip">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/es/gzip.html.md">✎</a>
+    </div>
+    
+    <p>Un gran porcentaje del contenido de un sitio es simple texto (HTML, CSS, JavaScript, JSON, XML, etc.). Para este tipo de contenido, es una buena práctica activar la compresión GZIP en el servidor.</p>
+<p>GZIP comprime datos en el servidor antes de enviarlos al navegador del usuario, que lo decodifica. Es como comprimir un archivo antes de enviarlo para hacerlo más pequeño. Todos los navegadores y servidores modernos soportan GZIP.</p>
+<p>La configuración se encuentra en el servidor. En apache, por ejemplo, puedes editar el archivo <code>.htaccess</code> y activar la compresión GZIP para los tipos de archivo que quieras:</p>
+<pre class="highlight"><code class="applescript">AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/html
+AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/plain
+AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/xml
+AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/css
+AddOutputFilterByType DEFLATE <span class="hljs-type">application</span>/javascript
+</code></pre><p>Todos los servidores populares son igual de fáciles de configurar (consulta la documentación para el tuyo!) y es uno de los trucos más efectivos para mejorar el rendimiento de la página.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#gzip">Referencias</a></em></p>
+
+  </div>
+
+
+
+
+      <h2 id="bonus" class="topics"><span>Bonus</span></h2>
+
+
+
+  <div class="article" id="article-tools">
+    <h1 id="tools">
+      <a class="tip-title" href="#tools">Herramientas de diagnóstico: tus mejores amigas</a>
+      <a title="Link" class="anchor" href="#tools">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/bonus/es/tools.html.md">✎</a>
+    </div>
+    
+    <div class="img-left">
+  <img id="geek-43" src="http://browserdiet.com/img/43.png" alt="Geek #43" width="157" height="275" />
+</div>
+
+<p>Si quieres aventurarte en este mundo, es imprescindible insalar las extensiones <a href="http://yslow.org/">YSlow</a> y <a href="https://developers.google.com/speed/pagespeed/insights_extensions">PageSpeed</a> en tu navegador <em>Chrome</em> o <em>Firefox</em>. Ellas serán tus mejores amigas a partir de ese momento.</p>
+<p>O si prefieres herramientas online, visite <a href="http://www.webpagetest.org/">WebPageTest</a>, <a href="http://httparchive.org/">HTTP Archive</a> o <a href="http://pagespeed.googlelabs.com/">PageSpeed</a> (sitio).</p>
+<p>En general analizan el rendimiento de tu sitio, y generan un informe que califica a tu sitio con una nota además de darte consejos invaluables para ayudarte a resolver los problemas potenciales.</p>
+
+  </div>
+
+
+
+  <div class="article" id="article-bye">
+    <h1 id="bye">
+      <a class="tip-title" href="#bye">¡Eso es todo por hoy!</a>
+      <a title="Link" class="anchor" href="#bye">∞</a>
+    </h1>
+    
+    <div class="line">
+      <span class="order rule-counter"></span>
+      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/bonus/es/bye.html.md">✎</a>
+    </div>
+    
+    <div class="img-right">
+  <img id="geek-31" src="http://browserdiet.com/img/31.png" alt="Geek #31" width="162" height="275" />
+</div>
+
+<p>Esperamos que tras leer esta guía puedas poner a tu sitio en forma. :)</p>
+<p>Y recuerda, como todo en la vida, <a href="http://www.cs.nott.ac.uk/~cah/G51ISS/Documents/NoSilverBullet.html">no hay una solución milagrosa</a>. La optimización del rendimiento de tu aplicación es un riesgo que vale la pena, pero no debería ser la única base de todas tus decisiones como desarrollador&mdash;A veces necesitarás sopesar los costos y los beneficios.</p>
+<p>¿Quiéres aprender más? Échale un ojo a las <a href="https://github.com/zenorocha/browser-diet/wiki/References">Referencias</a> que usamos para escribir esta guía.</p>
+<p>¿Alguna sugerencia? Envía un tweet a <a href="http://twitter.com/browserdiet/">@BrowserDiet</a> o una <a href="https://github.com/zenorocha/browser-diet">pull request</a> en Github.</p>
+<p>No te olvides de compartir con tus amigos, hagamos una web más rápida para todos. \o/</p>
+
+  </div>
+
+
+
+
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="center">
+      <p>Desarrollo por <em>Zeno Rocha</em> ● Diseño por <em>Briza Bueno</em> ● Ilustraciones por <em>Scott Johnson</em></p>
+    </div>
+  </div>
+
+  <!-- <a title="Ir arriba" id="top" href="#top-bar">
+    <img src="http://browserdiet.com/assets/img/top.png" alt="Ir arriba" width="64" height="64">
+  </a> -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4114546-34']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<p>Občas může být čistý JavaScript jednodušší a výkonější než jQuery.</p>
+<div class="img-right">
+  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
+</div>
+
+<p>Zvažte následující HTML:</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"text"</span>&gt;</span>Let's change this content<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>Místo, abyste napsali:</p>
+<pre class="highlight"><code class="javascript">$(<span class="hljs-string">'#text'</span>).html(<span class="hljs-string">'The content is changed'</span>).css({
+  backgroundColor: <span class="hljs-string">'red'</span>,
+  color: <span class="hljs-string">'yellow'</span>
+});
+</code></pre>
+<p>použijte prostý JavaScript:</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> text = document.getElementById(<span class="hljs-string">'text'</span>);
+text.innerHTML = <span class="hljs-string">'The text is changed'</span>;
+text.style.backgroundColor = <span class="hljs-string">'red'</span>;
+text.style.color = <span class="hljs-string">'yellow'</span>;
+</code></pre>
+<p>Je to jednoduché a <strong>mnohem</strong> rychlejší.</p>
+<p><em>&gt; <a href="http://jsperf.com/jquery-vs-javascript-performance-text">Výsledky na JSPerf</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery">Reference</a></em></p>

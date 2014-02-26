@@ -1,0 +1,22 @@
+<p>時に生のJavaScriptはjQueryよりも容易でより高性能です。</p>
+<div class="img-right">
+  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
+</div>
+
+<p>以下のようなHTMLがあったとして:</p>
+<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"text"</span>&gt;</span>Let's change this content<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>このようにする代わりに:</p>
+<pre class="highlight"><code class="javascript">$(<span class="hljs-string">'#text'</span>).html(<span class="hljs-string">'The content has changed'</span>).css({
+  backgroundColor: <span class="hljs-string">'red'</span>,
+  color: <span class="hljs-string">'yellow'</span>
+});
+</code></pre>
+<p>生のJavaScriptを使用しましょう:</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> text = document.getElementById(<span class="hljs-string">'text'</span>);
+text.innerHTML = <span class="hljs-string">'The content has changed'</span>;
+text.style.backgroundColor = <span class="hljs-string">'red'</span>;
+text.style.color = <span class="hljs-string">'yellow'</span>;
+</code></pre>
+<p>この方がシンプルで <strong>より</strong>高速です。</p>
+<p><em>&gt; <a href="http://jsperf.com/jquery-vs-javascript-performance-text">JSPerfの結果</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#dont-use-jquery">リファレンス</a></em></p>

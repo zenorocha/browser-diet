@@ -1,0 +1,19 @@
+<p>El uso de funciones de JavaScript nativas resulta casi siempre en una ejecución más rápida que usando las de jQuery. Por eso, en vez de usar el método <code>jQuery.each</code> usa el loop <code>for</code> de JavaScript.</p>
+<p>Pero presta atención, pese a que <code>for in</code> es nativo, en muchos casos es más lento que <code>jQuery.each</code>.</p>
+<p>Y el loop <code>for</code> nos da otra oportunidad de acelerar las cosas cacheando el tamaño (<code>length</code>) de las colecciones sobre las que estamos iterando.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = a.length; i &lt; len; i++ ) {
+    e = a[i];
+}
+</code></pre>
+<p>El uso de los loops <code>while</code> y <code>for</code> de forma inversa es un tema caliente de discusión en la comunidad, y son citados frecuentemente como la forma más rápida de iteración. Sin embargo suele ser evitado por ser menos legible.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">// while inverso</span>
+<span class="hljs-keyword">while</span> ( i-- ) {
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// for inverso</span>
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = array.length; i--; ) {
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<p><em>&gt; <a href="http://jsperf.com/browser-diet-jquery-each-vs-for-loop">Resultados en JSPerf</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each">Referencias</a></em></p>

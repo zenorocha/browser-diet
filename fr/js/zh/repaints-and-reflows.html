@@ -1,0 +1,29 @@
+<p>当有任何属性或元素发生改变时，都会引起DOM元素的重绘和回流。</p>
+<p>当一个元素的布局不变，外观发生改变时，就会引起重绘。Nicole Sullivan描述这个就像是样式的改变，例如改变<code>background-color</code>。</p>
+<p>回流的代价是最高的，当改变一个页面的布局时就会发生回流，例如改变一个元素的宽。</p>
+<p>毫无疑问，应当避免过多的重绘和回流，所以，对于下面的代码：</p>
+<div class="img-right">
+  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
+</div>
+
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+    i, len;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
+  lis[i].style.width = div.offsetWidth + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<p>应当变为：</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+    widthToSet = div.offsetWidth,
+    i, len;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
+  lis[i].style.width = widthToSet + <span class="hljs-string">'px'</span>;
+}
+</code></pre>
+<p>当你设置<code>style.width</code>时，浏览器需要重新计算布局。通常，浏览器暂时是不需要知道改变了元素的样式的，直到它需要更新屏幕时，正因为如此，改变多个元素的样式只会产生一次回流。然而，在第一个例子中，我们每次请求<code>offsetWidth</code>时，都会使浏览器重新计算布局。</p>
+<p>如果需要得到页面中的布局数据，那么请参照第二个例子，将这些操作放在任何会改变布局的设置前。</p>
+<p><em>&gt; <a href="http://jsbin.com/aqavin/2/quiet">示例</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minimize-repaints-and-reflows">参考</a></em></p>

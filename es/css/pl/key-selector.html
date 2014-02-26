@@ -1,0 +1,11 @@
+<p>Odpowiedni selektor to klucz do twoich wydajnych wyrażeń CSS. Rzadko, koderzy koncentrują się na złożoności reguł, bo nie wiedzą dokładnie jak one działają.</p>
+<pre class="highlight"><code class="css"><span class="hljs-tag">header</span> <span class="hljs-tag">nav</span> <span class="hljs-tag">ul</span> <span class="hljs-tag">li</span> <span class="hljs-tag">a</span> <span class="hljs-rules">{<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Spójrz na powyższe wyrażenie. Co dzieje się kiedy przeglądarka rozpoczyna analizowanie wyrażenia CSS od prawej strony&mdash;w tym przypadku kluczowe jest <code>a</code>. Takie wyrażenie wymaga od przeglądarki sporo pracy. Na początku szukamy wszystkich elementów <code>a</code> w kodzie HTML, później wszystkich elementów <code>li</code>, zawierających <code>a</code>, aż do momentu znalezienia <code>header nav ul li a</code>.</p>
+<pre class="highlight"><code class="css"><span class="hljs-tag">header</span> <span class="hljs-tag">nav</span> <span class="hljs-tag">ul</span> <span class="hljs-tag">li</span> * <span class="hljs-rules">{ <span class="hljs-comment">/* źle */</span> <span class="hljs-rule">}</span></span>
+<span class="hljs-tag">header</span> <span class="hljs-tag">nav</span> <span class="hljs-tag">ul</span> <span class="hljs-tag">li</span> <span class="hljs-tag">a</span> <span class="hljs-rules">{ <span class="hljs-comment">/* gorzej */</span> <span class="hljs-rule">}</span></span>
+<span class="hljs-tag">nav</span> <span class="hljs-tag">a</span> <span class="hljs-rules">{ <span class="hljs-comment">/* źle */</span> <span class="hljs-rule">}</span></span>
+<span class="hljs-tag">nav</span> <span class="hljs-tag">a</span><span class="hljs-class">.nav-link</span> <span class="hljs-rules">{ <span class="hljs-comment">/* lepiej */</span> <span class="hljs-rule">}</span></span>
+<span class="hljs-tag">nav</span> <span class="hljs-class">.nav-link</span> <span class="hljs-rules">{ <span class="hljs-comment">/* lepiej */</span> <span class="hljs-rule">}</span></span>
+<span class="hljs-class">.nav-link</span> <span class="hljs-rules">{ <span class="hljs-comment">/* lepiej */</span> <span class="hljs-rule">}</span></span>
+</code></pre>

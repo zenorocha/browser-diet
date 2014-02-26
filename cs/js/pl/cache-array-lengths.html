@@ -1,0 +1,33 @@
+<p>Pętla jest bez wątpienia jednym z najważniejszych elementów związanych z wydajności JavaScript. Optymalizacja logiki wewnątrz pętli jest ważna, ponieważ każda z operacji jest wykonywana wielokrotnie.</p>
+<p>Jednym ze sposobów na to jest zapisanie rozmiaru tablicy, która będzie przetwarzana, z tego powodu nie będzie konieczne jego obliczanie przy każdej iteracji.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+  <span class="hljs-comment">// źle - rozmiar jest obliczany 1000 razy</span>
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = arr.length; i &lt; len; i++) {
+  <span class="hljs-comment">// dobrze - rozmiar jest obliczny 1 raz i dalej przechowywany</span>
+}
+</code></pre>
+<p><em><a href="http://jsperf.com/browser-diet-cache-array-length/">&gt; Wyniki w JSPerf</a></em></p>
+<p><strong>&gt; Uwaga:</strong> <em>Chociaż silniki nowoczesnych przeglądarek automatycznie optymalizują ten proces, pamiętaj o dobrych praktykach programistycznych w starszych przeglądarkach.</em></p>
+<p>Przetwarzanie kolekcji w HTML jako listy węzłów (<em>NodeList</em>) generowanej przykładowo przez <code>document.getElementsByTagName(&#39;a&#39;)</code> jest krytyczne. Takie kolekcje są traktowane &quot;dynamicznie&quot;, co oznacza automatyczne aktualizowanie w przypadku zmian w elemencie nadrzędnym.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> links = document.getElementsByTagName(<span class="hljs-string">'a'</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
+  <span class="hljs-comment">// źle - każda iteracja pętli wymaga przeliczenia listy, czy nie nastąpiła zmiana</span>
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = links.length; i &lt; len; i++) {
+  <span class="hljs-comment">// dobrze - rozmiar listy jest uzyskany i przechowywany, później porównywany w kolejnych iteracjach</span>
+}
+
+<span class="hljs-comment">// Straszne: przykład pętli nieskończonej</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
+  document.body.appendChild(document.createElement(<span class="hljs-string">'a'</span>));
+  <span class="hljs-comment">// każda iteracji pętli zwiększa liczbę elementów, warunek końca pętli nie zostanie nigdy osiągnięty</span>
+  <span class="hljs-comment">// Byłoby inaczej, gdyby rozmiar listy był przechowywany i używany jako warunek pętli</span>
+}
+</code></pre>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#cache-array-lengths">Referencje</a></em></p>

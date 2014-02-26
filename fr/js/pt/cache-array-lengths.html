@@ -1,0 +1,35 @@
+<p>O loop é sem dúvida é uma das partes mais importantes com relação a performance no JavaScript. Busque otimizar a lógica dentro de um loop para que cada iteração seja feita de forma eficiente.</p>
+<p>Um modo para fazer isso é armazenando o tamanho do array que será percorrido, assim ele não precisa ser recalculado toda vez que o loop for iterado.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
+    len, i;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
+  <span class="hljs-comment">// Ruim - o tamanho precisa ser calculado 1000 vezes</span>
+}
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = arr.length; i &lt; len; i++) {
+  <span class="hljs-comment">// Bom - o tamanho só é calculado 1 vez e depois armazenado</span>
+}
+</code></pre>
+<p><em><a href="http://jsperf.com/browser-diet-cache-array-length/10/">&gt; Resultado no JSPerf</a></em></p>
+<p><strong>&gt; Observação:</strong> <em>Embora engines de browsers modernos otimizam automaticamente esse processo, continua sendo uma boa prática atender o legado de browsers que ainda perduram.</em></p>
+<p>Em iterações sobre coleções HTML como uma lista de Nodes (<em>NodeList</em>) geradas por exemplo através de <code>document.getElementsByTagName(&#39;a&#39;)</code>, isto é particularmente crítico e essencial. Essas coleções são consideradas &quot;vivas&quot;, ou seja, são automaticamente atualizadas quando há alterações no elemento à qual pertencem.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> links = document.getElementsByTagName(<span class="hljs-string">'a'</span>),
+    len, i;
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
+  <span class="hljs-comment">// Ruim - a cada iteração a lista de links será recalculada para verificar se houve mudança</span>
+}
+
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = links.length; i &lt; len; i++) {
+  <span class="hljs-comment">// Bom - o tamanho da lista é primeiramente obtido e armazenado, depois comparado a cada iteração</span>
+}
+
+<span class="hljs-comment">// Péssimo: exemplo de loop infinito</span>
+<span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
+  document.body.appendChild(document.createElement(<span class="hljs-string">'a'</span>));
+  <span class="hljs-comment">// a cada iteração a lista de links aumenta, nunca satisfazendo a condição de término do loop</span>
+  <span class="hljs-comment">// isso não aconteceria se o tamanho da lista fosse armazenado e usado como condição</span>
+}
+</code></pre>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#cache-array-lengths">Referências</a></em></p>

@@ -1,0 +1,16 @@
+<p>Tato technika je alternativou k používání CSS spritů.</p>
+<p><a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data-URI</a> je způsob, jak inlinově vložit obsah namísto jeho odkazování pomocí URI, jak je to běžné. V tomto případě to použijeme k inlinovému vložení obrázku ve vlastnosti CSS background. Snížíme tak počet HTTP požadavků, které stránka potřebuje.</p>
+<p>Předtím:</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'foo.png'</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Potom:</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Všechny prohlížeče od IE8 a vyšší podporují techniku kódování pomocí base64.</p>
+<p>Stejně tak jako CSS sprity, i tato metoda potřebuje nástroje, které činnost zautomatizují v okamžiku buildu. Tato metoda je výhodná v tom, že obrázky mohou být každý ve svém souboru a při vývoji tak nekomplikuje práci.</p>
+<p>Naopak nevýhoda je ve značně narůstající velikosti HTML/CSS, jestliže máte velké obrázky. Využití metody se nedoporučuje, pokud nepoužíváte gzipování vašich HTML/CSS. Režie pro zakódování a vložení do stránky může negativně převážit zrychlení získané nižším počtem HTTP požadavků.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">Reference</a></em></p>

@@ -1,0 +1,20 @@
+<p>L&#39;utilisation de fonction native en JavaScript conduit presque toujours à un résultat plus rapide à l&#39;exécution qu&#39;en utilisant jQuery. Pour cette raison, au lieu d&#39;utililser la méthode <code>jQuery.each</code>, préférez la version JavaScript <code>for</code> pour les boucles.</p>
+<p>Mais attention car, si <code>for in</code> est natif, sa performance sera moindre qu&#39;un <code>jQuery.each</code> dans beaucoup de situations.</p>
+<p>Et la bonne vielle boucle <code>for</code> nous donne la possibilité d&#39;accélerer les choses en mettant en cache la longueur de la collection sur laquelle on va itérer.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = a.length; i &lt; len; i++ ) {
+    e = a[i];
+}
+</code></pre>
+<p>L&#39;utilisation de <code>while</code> inversé et de boucle <code>for</code> inversée est un sujet sensible dans la communauté et ces itérations sont souvent cités comme les formes les plus rapides. Cependant, on les évite souvent car elles sont moins lisibles.</p>
+<pre class="highlight"><code class="javascript"><span class="hljs-comment">// while inversé</span>
+<span class="hljs-keyword">while</span> ( i-- ) {
+  <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// for inversé</span>
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = array.length; i--; ) {
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<p>Check who has the best performance on the link below:
+<em>&gt; <a href="http://jsperf.com/browser-diet-jquery-each-vs-for-loop">Resultats sur JSPerf</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each">References</a></em></p>

@@ -1,0 +1,19 @@
+<p>Pro udržení čitelného kódu je rozumné psát komentáře a používat odsazení:</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">960</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
+<span class="hljs-rule">}</span></span>
+
+<span class="hljs-comment">/* --- Structure --- */</span>
+
+<span class="hljs-class">.intro</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
+<span class="hljs-rule">}</span></span>
+</code></pre>
+<p>Ale prohlížeči na ničem z toho nezáleží. Proto vždy pamatujte na minimalizaci vašich CSS pomocí automatizovaných nástrojů.</p>
+<pre class="highlight"><code class="css"><span class="hljs-class">.center</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"><span class="hljs-number">960</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">0</span> auto</span></span></span>}<span class="hljs-class">.intro</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">100</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value">relative</span></span></span>}
+</code></pre>
+<p>Minimalizace ořeže přebytečné bajty ze souboru, což vede k rychlejšímu stažení, parsování a spuštění.</p>
+<p>Pro ty, kteří používají pre-procesory jako <a href="http://sass-lang.com/">Sass</a>, <a href="http://lesscss.org/">Less</a>, a <a href="http://learnboost.github.com/stylus/">Stylus</a>, je možné nakonfigurovat, aby byl kompilovaný CSS výstup minimalizován.</p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">Reference</a></em></p>
