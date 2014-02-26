@@ -35,7 +35,7 @@
       <div class="center">
 
         <div id="language-picker">
-          <a href="/pt" class="flags" id="flat-pt">&nbsp;</a>
+          <a href="/pt" class="flags" id="flag-pt">&nbsp;</a>
 
           <div class="available-languages">
             <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">English</a>
@@ -89,7 +89,7 @@
   <div id="content">
     <div class="center">
 
-
+      
     <div class="article">
       <div class="img-left">
   <img id="geek-17" class="icos-geek" src="http://browserdiet.com/en/assets/img/17.png" alt="Geek #17" width="199" height="275" />
@@ -125,12 +125,12 @@
       <a class="tip-title" href="#avoid-inline">Evite código inline/incorporado</a>
       <a title="Link" class="anchor" href="#avoid-inline">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/html/pt/avoid-inline.html.md">✎</a>
     </div>
-
+    
     <p>Existem três formas básicas de você lidar com CSS e Javascript:</p>
 <p><strong>1) Inline:</strong> onde o CSS é definido dentro do atributo <code>style</code> e o JavaScript dentro de um atributo <code>onclick</code> por exemplo, em qualquer tag HTML;</p>
 <p><strong>2) Incorporado:</strong> onde o CSS é definido dentro da tag <code>&lt;style&gt;</code> e o JavaScript dentro da tag <code>&lt;script&gt;</code>;</p>
@@ -149,12 +149,12 @@
       <a class="tip-title" href="#css-on-top-js-on-bottom">Estilos no topo, Scripts no rodapé</a>
       <a title="Link" class="anchor" href="#css-on-top-js-on-bottom">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/html/pt/css-on-top-js-on-bottom.html.md">✎</a>
     </div>
-
+    
     <p>Quando colocamos as folhas de estilo no <code>&lt;head&gt;</code> permitimos que a página renderize progressivamente, o que causa uma percepção ao usuário de que está carregando mais rápido.</p>
 <pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
@@ -188,12 +188,12 @@
       <a class="tip-title" href="#async">experimente o async &amp; defer</a>
       <a title="Link" class="anchor" href="#async">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/html/pt/async.html.md">✎</a>
     </div>
-
+    
     <p>Para explicar como esse atributo é útil para melhorar a performance, é melhor entender o que acontece quando não utilizamos ele.</p>
 <div class="img-left">
   <img id="geek-20" class="icos-geek" src="http://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
@@ -221,12 +221,12 @@
       <a class="tip-title" href="#minify-css">Comprima sua folha de estilo</a>
       <a title="Link" class="anchor" href="#minify-css">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/css/pt/minify-css.html.md">✎</a>
     </div>
-
+    
     <p>Para manter um código legível é bom escrever comentários e ter cuidado com indentação.</p>
 <pre class="highlight"><code class="css"><span class="hljs-class">.center</span> <span class="hljs-rules">{
   <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">960</span>px</span></span>;
@@ -256,12 +256,12 @@
       <a class="tip-title" href="#combine-css">Combine vários arquivos CSS em um só</a>
       <a title="Link" class="anchor" href="#combine-css">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/css/pt/combine-css.html.md">✎</a>
     </div>
-
+    
     <p>Outra boa prática para organização e manutenção é separar seu estilo em diversos arquivos.</p>
 <div class="img-right">
   <img id="geek-9" class="icos-geek" src="http://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
@@ -289,12 +289,12 @@
       <a class="tip-title" href="#prefer-link-over-import">Prefira &lt;link&gt; a @import</a>
       <a title="Link" class="anchor" href="#prefer-link-over-import">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/css/pt/prefer-link-over-import.html.md">✎</a>
     </div>
-
+    
     <p>Há duas maneiras de incluir uma folha de estilo externa na sua página, pode ser através da tag <code>&lt;link&gt;</code>:</p>
 <pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
 </code></pre>
@@ -318,12 +318,12 @@
       <a class="tip-title" href="#3rd-party-async">Carregue código de terceiros de forma assíncrona</a>
       <a title="Link" class="anchor" href="#3rd-party-async">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/pt/3rd-party-async.html.md">✎</a>
     </div>
-
+    
     <p>Quem nunca carregou um código de terceiros para embedar um vídeo do YouTube ou colocar um botão de like/tweet?</p>
 <p>O grande problema é que nem sempre esses códigos são entregues de maneira eficiente, seja pela conexão do usuário, ou pela conexão no servidor onde estão hospedados. Ou esse serviço pode estar temporariamente fora do ar ou mesmo ser bloqueado pelo firewall do usuário ou da empresa dele.</p>
 <div class="img-right">
@@ -349,12 +349,12 @@ scripts.parentNode.insertBefore(script, scripts);
       <a class="tip-title" href="#cache-array-lengths">Guarde o tamanho do Array</a>
       <a title="Link" class="anchor" href="#cache-array-lengths">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/pt/cache-array-lengths.html.md">✎</a>
     </div>
-
+    
     <p>O loop é sem dúvida é uma das partes mais importantes com relação a performance no JavaScript. Busque otimizar a lógica dentro de um loop para que cada iteração seja feita de forma eficiente.</p>
 <p>Um modo para fazer isso é armazenando o tamanho do array que será percorrido, assim ele não precisa ser recalculado toda vez que o loop for iterado.</p>
 <pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
@@ -400,12 +400,12 @@ scripts.parentNode.insertBefore(script, scripts);
       <a class="tip-title" href="#documentwrite">Evite document.write</a>
       <a title="Link" class="anchor" href="#documentwrite">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/pt/documentwrite.html.md">✎</a>
     </div>
-
+    
     <p>O uso do <code>document.write</code> faz com que a página fique na dependência do seu retorno para ser completamente carregada.</p>
 <p>Essa (má) prática já foi abolida há anos pelos desenvolvedores, mas ainda existem casos onde seu uso ainda é necessário, como no fallback síncrono de algum arquivo JavaScript.</p>
 <p>O <a href="https://github.com/h5bp/html5-boilerplate/">HTML5 Boilerplate</a>, por exemplo, faz o uso desta técnica para carregar o jQuery localmente, caso a <em>CDN</em> do Google não responda.</p>
@@ -443,12 +443,12 @@ scripts.parentNode.insertBefore(script, scripts);
       <a class="tip-title" href="#repaints-and-reflows">Minimize Repaints e Reflows</a>
       <a title="Link" class="anchor" href="#repaints-and-reflows">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/pt/repaints-and-reflows.html.md">✎</a>
     </div>
-
+    
     <p>Repaints e reflows são causados quando existe alguma re-renderização no DOM quando determinada propriedade ou elemento é alterado.</p>
 <p>Repaints são disparados quando a aparência de um elemento é alterada sem alterar seu layout. Nicole Sullivan descreve isso como uma mudança de estilo como o ato de alterar um <code>background-color</code>.</p>
 <p>Reflows são os mais custosos, causados quando as mudanças alterando o layout da página, como por exemplo alterar o width de um elemento.</p>
@@ -488,12 +488,12 @@ scripts.parentNode.insertBefore(script, scripts);
       <a class="tip-title" href="#dont-touch-dom">Evite manipulações desnecessárias no DOM</a>
       <a title="Link" class="anchor" href="#dont-touch-dom">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/pt/dont-touch-dom.html.md">✎</a>
     </div>
-
+    
     <p>Toda vez que você toca no DOM sem realmente precisar, um panda morre.</p>
 <p>Sério, navegar por elementos do DOM é custoso. Apesar das engines JavaScript estarem cada vez mais poderosas e rápidas, prefira sempre otimizar ao máximo as consultas na árvore do DOM.</p>
 <p>Uma das alternativas mais simples de serem adotadas é: quando um elemento precisar ser acessado mais de uma vez, guarde-o numa váriavel, e assim você não vai fazer mais do que uma consulta no DOM.</p>
@@ -529,12 +529,12 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
       <a class="tip-title" href="#minify-js">Comprima seu script</a>
       <a title="Link" class="anchor" href="#minify-js">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/pt/minify-js.html.md">✎</a>
     </div>
-
+    
     <p>Assim como no CSS, para manter um código legível é bom escrever comentários e ter cuidado com indentação.</p>
 <pre class="highlight"><code class="javascript">BrowserDiet.app = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
 
@@ -563,12 +563,12 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
       <a class="tip-title" href="#combine-js">Combine vários arquivos JS em um só</a>
       <a title="Link" class="anchor" href="#combine-js">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/js/pt/combine-js.html.md">✎</a>
     </div>
-
+    
     <p>Outra boa prática para organização e manutenção é separar seu script em diversos arquivos.</p>
 <div class="img-right">
   <img id="geek-47" class="icos-geek" src="http://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
@@ -601,12 +601,12 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
       <a class="tip-title" href="#latest-version">Use sempre a última versão do jQuery</a>
       <a title="Link" class="anchor" href="#latest-version">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/jquery/pt/latest-version.html.md">✎</a>
     </div>
-
+    
     <p>Os membros do core do jQuery estão sempre buscando trazer novidades para a biblioteca. Estes ajustes, muitas vezes, estão relacionados a melhorias da legibilidade do código, novas funcionalidades e, principalmente, otimização de algoritmos.</p>
 <div class="img-right">
   <img id="geek-36" class="icos-geek" src="http://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
@@ -630,12 +630,12 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
       <a class="tip-title" href="#use-for-instead-of-each">Use for ao invés de each</a>
       <a title="Link" class="anchor" href="#use-for-instead-of-each">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/jquery/pt/use-for-instead-of-each.html.md">✎</a>
     </div>
-
+    
     <p>O uso das funções nativas do JavaScript, quase sempre, trazem execuções mais rápidas que as respectivas em jQuery. Sendo assim, ao invés de utilizar o método <code>jQuery.each</code>, use o <code>for</code> do próprio JavaScript.</p>
 <p>Mas atenção, apesar do <code>for in</code> ser nativo, sua performance muitas vezes é pior que o <code>jQuery.each</code>.</p>
 <p>Já o bom e velho <code>for</code> nos traz uma melhor forma de deixar nossas iterações mais rápidas, e você ainda pode aplicar um cache para o tamanho total do array e conseguirá aumentar o número de operações por segundo.</p>
@@ -666,12 +666,12 @@ mais rápida de se fazer uma iteração com JavaScript, porém é bastante criti
       <a class="tip-title" href="#dont-use-jquery">Não use jQuery sempre...</a>
       <a title="Link" class="anchor" href="#dont-use-jquery">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/jquery/pt/dont-use-jquery.html.md">✎</a>
     </div>
-
+    
     <p>Às vezes JavaScript puro pode ser mais fácil e mais performático que jQuery.</p>
 <div class="img-right">
   <img id="geek-6" class="icos-geek" src="http://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
@@ -709,12 +709,12 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
       <a class="tip-title" href="#sprites">Use CSS Sprites</a>
       <a title="Link" class="anchor" href="#sprites">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/images/pt/sprites.html.md">✎</a>
     </div>
-
+    
     <p>Essa técnica consiste em agrupar diversas imagens em uma só.</p>
 <p><img id="img-sprite" src="http://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example"></p>
 <p>E depois posicioná-las através de CSS.</p>
@@ -742,12 +742,12 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
       <a class="tip-title" href="#data-uri">Data URI</a>
       <a title="Link" class="anchor" href="#data-uri">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/images/pt/data-uri.html.md">✎</a>
     </div>
-
+    
     <p>Essa técnica é uma alternativa para o uso de CSS sprites.</p>
 <p><a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data-URI</a> é uma maneira de adicionar conteúdo inline de uma URI que você normalmente iria apontar. Nesse exemplo, nós estamos utilizando para adicionar conteúdo inline no background de uma imagem no CSS, a fim de reduzir o número de requisições HTTP necessárias para carregar uma página.</p>
 <p>Antes:</p>
@@ -774,12 +774,12 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
       <a class="tip-title" href="#scale">Não escale imagens direto no código</a>
       <a title="Link" class="anchor" href="#scale">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/images/pt/scale.html.md">✎</a>
     </div>
-
+    
     <p>Defina sempre o <code>width</code> e o <code>height</code> de uma imagem, isso irá reduzir o tempo de renderização evitando repaints e reflows desnecessários.</p>
 <pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"logo.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Logo"</span>&gt;</span>
 </code></pre>
@@ -797,12 +797,12 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
       <a class="tip-title" href="#optimize">Otimize suas imagens</a>
       <a title="Link" class="anchor" href="#optimize">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/images/pt/optimize.html.md">✎</a>
     </div>
-
+    
     <p>Arquivos de imagens possuem muitos KB de informações desnecessárias na Web. Por exemplo, uma foto JPEG tem um monte de metadados <em>Exif</em> colocados pela câmera (data da foto, modelo da câmera, local etc). Um PNG possui uma série de informações sobre cores, metadados e, às vezes, até uma miniatura da imagem embutida no meio. Nada disso é importante para a renderização da imagem no navegador e só gasta bytes de rede.</p>
 <p>Existem ferramentas de otimização de imagens que removem todas essas informações desnecessárias e te dão um arquivo mais enxuto mas visualmente idêntico. Elas fazem uma compressão sem perda de qualidade visual (chamamos de <em>lossless</em>).</p>
 <p>Outra forma de otimizar imagens é comprimi-las com certas perdas visuais aceitáveis. Esse tipo de operação é chamada de otimização <em>lossy</em>. Quando você exportar um JPEG, por exemplo, pode escolher a qualidade (um número de 0 a 100). Pensando em performance, pegue sempre o número mais baixo onde a qualidade visual ainda é aceitável. Outra otimização <em>lossy</em> famosa é diminuir o número de cores na paleta de um PNG, ou transformar arquivos PNG-24 em PNG-8.</p>
@@ -823,12 +823,12 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
       <a class="tip-title" href="#keep-alive">keep-alive</a>
       <a title="Link" class="anchor" href="#keep-alive">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/pt/keep-alive.html.md">✎</a>
     </div>
-
+    
     <p>Toda requisição HTTP precisa obrigatoriamente de uma conexão TCP estabelecida para que haja a comunicação entre o cliente e o servidor.</p>
 <p>Estabelecer uma conexão TCP é um processo custoso e demorado (devido ao three-Way handshake), por isso é muito importante que consigamos reaproveitar conexões TCP recém criadas para trafegar outras requisições HTTP pelo mesmo &quot;túnel&quot;.</p>
 <p>Esta configuração é chamada de keep-alive.</p>
@@ -849,12 +849,12 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
       <a class="tip-title" href="#cache">Habilite o cache dos arquivos</a>
       <a title="Link" class="anchor" href="#cache">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/pt/cache.html.md">✎</a>
     </div>
-
+    
     <p>A melhor forma de otimizar os requests da sua página é não fazer requests na página, claro. E uma das maneiras mais úteis pra evitar requisições desnecessárias é deixar o navegador fazer cache dos arquivos. Por padrão, o navegador não faz cache das coisas, pra evitar ficar com arquivos desatualizados. Mas nós podemos indicar que determinado arquivo pode ser, sim, guardado em cache.</p>
 <div class="img-right">
   <img id="geek-15" class="icos-geek" src="http://browserdiet.com/en/assets/img/15.png" alt="Geek #15" width="141" height="275" />
@@ -882,12 +882,12 @@ ExpiresByType application/javascript <span class="hljs-string">"access plus 6 mo
       <a class="tip-title" href="#gzip">Gzip</a>
       <a title="Link" class="anchor" href="#gzip">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/pt/gzip.html.md">✎</a>
     </div>
-
+    
     <p>Boa parte do conteúdo que trafegamos em um site é texto (HTML, CSS, JavaScript, JSON, XML etc). Para esse tipo de conteúdo, é uma boa prática habilitar a compressão GZIP no servidor.</p>
 <p>O GZIP comprime os dados no servidor antes de enviar via rede para o navegador do usuário, que descomprime na hora que recebe. É como zipar um arquivo antes de mandar pra alguém, o tamanho final fica bem menor. Todos os navegadores modernos têm suporte a GZIP, assim como os servidores.</p>
 <p>A configuração é específica de servidor, então é difícil falar de todos aqui. Mas costuma ser bem simples. No Apache, por exemplo, você pode editar o arquivo <code>.htaccess</code> e habilitar o deflate para os tipos de arquivo que quiser:</p>
@@ -913,12 +913,12 @@ AddOutputFilterByType DEFLATE <span class="hljs-type">application</span>/javascr
       <a class="tip-title" href="#tools">Ferramentas de diagnóstico: suas melhores amigas</a>
       <a title="Link" class="anchor" href="#tools">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/bonus/pt/tools.html.md">✎</a>
     </div>
-
+    
     <div class="img-left">
   <img id="geek-43" src="http://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
@@ -936,12 +936,12 @@ AddOutputFilterByType DEFLATE <span class="hljs-type">application</span>/javascr
       <a class="tip-title" href="#bye">Por hoje é só!</a>
       <a title="Link" class="anchor" href="#bye">∞</a>
     </h1>
-
+    
     <div class="line">
       <span class="order rule-counter"></span>
       <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/bonus/pt/bye.html.md">✎</a>
     </div>
-
+    
     <div class="img-right">
   <img id="geek-31" src="http://browserdiet.com/en/assets/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
