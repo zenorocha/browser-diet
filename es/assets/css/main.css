@@ -27,7 +27,7 @@ strong{color:#e60014;}
 #language-picker .available-languages{position:absolute;top:0;left:36px;background:white;padding:5px 10px;display:none;border-radius:3px;min-width:355px;}
 #language-picker .available-languages a{margin-right:10px;display:inline-block;}
 #language-picker:hover .available-languages{display:block;}
-.flags{border:0;text-indent:-9999px;width:34px;height:34px;background:url(http://browserdiet.com/img/flag-sprite.png);display:inline-block;float:left;}
+.flags{border:0;text-indent:-9999px;width:34px;height:34px;background:url(../img/flag-sprite.png);display:inline-block;float:left;}
 #flag-en{background-position:0 0;}
 #flag-es{background-position:0 -64px;}
 #flag-pt{background-position:0 -32px;}
