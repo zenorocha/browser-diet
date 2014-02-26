@@ -35,7 +35,7 @@
       <div class="center">
 
         <div id="language-picker">
-          <a href="/<%= @currentLang %>" class="flags" id="flat-<%= @currentLang %>">&nbsp;</a>
+          <a href="/<%= @currentLang %>" class="flags" id="flag-<%= @currentLang %>">&nbsp;</a>
 
           <div class="available-languages">
             <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">English</a>

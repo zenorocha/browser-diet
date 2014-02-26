@@ -150,7 +150,7 @@ module.exports =
             templateData:
                 site:
                     url: 'http://localhost:9778'
-                    assets: 'http://localhost:9778/assets'
+                    assets: 'http://localhost:9778/en/assets'
 
     # =================================
     # DocPad Events
