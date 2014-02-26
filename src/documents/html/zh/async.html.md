@@ -6,7 +6,7 @@ title: 尝试async
 为了解释这个属性对于性能优化是多么有用，我们应该先明白，当不使用它时会发生什么。
 
 <div class="img-left">
-  <img id="geek-20" class="icos-geek" src="http://browserdiet.com/img/20.png" alt="Geek #20" width="118" height="275" />
+  <img id="geek-20" class="icos-geek" src="http://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
 </div>
 
 ``` html

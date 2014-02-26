@@ -4,7 +4,7 @@ title: Diagnosis tools: your best friend
 ---
 
 <div class="img-left">
-  <img id="geek-43" class="icos-geek" src="http://browserdiet.com/img/43.png" alt="Geek #43" width="157" height="275" />
+  <img id="geek-43" class="icos-geek" src="http://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
 
 If you'd like to venture into this world of web performance, it's crucial to install the [YSlow](http://yslow.org/) and [PageSpeed](https://developers.google.com/speed/pagespeed/insights_extensions) extensions in your browser&mdash;they'll be your best friends from now on.

@@ -5,7 +5,7 @@ title: Použijte CSS Sprites
 
 Tato technika se zabývá skládáním různých obrázků do jediného souboru.
 
-<img id="img-sprite" src="http://browserdiet.com/img/sprite-example.jpg" alt="CSS Sprite Example">
+<img id="img-sprite" src="http://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
 
 A jejich následném pozicování pomocí CSS.
 

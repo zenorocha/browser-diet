@@ -18,7 +18,7 @@ Když vložíme styly do `<head>`, umožníme tak progresivní vykreslení strá
 Pokud ale vložíme styly na konec stránky, nejprve dojde k vykreslení beze stylů, až poté jsou styly staženy a aplikovány.
 
 <div class="img-right">
-  <img id="geek-32" class="icos-geek" src="http://browserdiet.com/img/32.png" alt="Geek #32" width="139" height="275" />
+  <img id="geek-32" class="icos-geek" src="http://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
 </div>
 
 Na druhou stranu když jde o JavaScript, je důležité umístit skripty na spodek stránky, protože ty blokují vykreslování stránky, zatímco jsou načítány a spouštěny.

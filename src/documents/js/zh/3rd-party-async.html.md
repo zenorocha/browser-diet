@@ -6,7 +6,7 @@ title: 异步加载第三方内容
 嵌入一个Youtube视频或者一个like/tweet按钮，有人没有加载过这样的第三方内容吗？
 
 <div class="img-right">
-  <img id="geek-46" class="icos-geek" src="http://browserdiet.com/img/46.png" alt="Geek #46" width="158" height="275" />
+  <img id="geek-46" class="icos-geek" src="http://browserdiet.com/en/assets/img/46.png" alt="Geek #46" width="158" height="275" />
 </div>
 
 问题在于，不管是用户端的还是服务器端的连接，都无法保证这些代码是正常有效的工作的。这些服务有可能临时dowan掉或者是被用户或者其公司的防火墙阻止。

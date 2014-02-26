@@ -6,7 +6,7 @@ title: Charger les librairies tiers de façon asynchrone
 Qui n'a jamais chargé du contenu extérieur pour incorporer une vidéo Youtube ou un bouton like/tweet?
 
 <div class="img-right">
-  <img id="geek-46" class="icos-geek" src="http://browserdiet.com/img/46.png" alt="Geek #46" width="158" height="275" />
+  <img id="geek-46" class="icos-geek" src="http://browserdiet.com/en/assets/img/46.png" alt="Geek #46" width="158" height="275" />
 </div>
 
 Le gros problème est que ce code n'est pas tout le temps chargé de façon optimale, soit à cause de la connexion de l'utilisateur, soit à cause de la connexion au serveur. Le service pourrait aussi être indisponible temporairement, ou même bloqué par le firewall d'une entreprise.

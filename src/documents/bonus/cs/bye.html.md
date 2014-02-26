@@ -4,7 +4,7 @@ title: A to je pro dnešek vše!
 ---
 
 <div class="img-right">
-  <img id="geek-31" src="http://browserdiet.com/img/31.png" alt="Geek #31" width="162" height="275" />
+  <img id="geek-31" src="http://browserdiet.com/en/assets/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
 
 Doufáme, že po přečtení této příručky dovedete dát vaše stránky do formy. :-)

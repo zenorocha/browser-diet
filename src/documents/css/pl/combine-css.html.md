@@ -6,7 +6,7 @@ title: Scalanie wielu plików CSS
 Kolejna dobra praktyka dla organizacji i obsługi stylów to dzielenie ich na mniejsze moduły.
 
 <div class="img-right">
-  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/img/9.png" alt="Geek #9" width="122" height="275" />
+  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
 </div>
 
 ```html

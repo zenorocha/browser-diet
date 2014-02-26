@@ -6,7 +6,7 @@ title: Aktywuj inteligentne buforowanie
 Najlepszym sposobem na optymalizację żądań ze strony jest brak żądań, ale to oczywiste. Jednym z najbardziej, użytecznych sposobów uniknięcia niepotrzebnych żądań to buforowanie w pamięci podręcznej przeglądarki. Domyślnie przeglądarka sama decyduje o czsie buforowania plików, ale możliwe jest ustawienie dokładnego czasu przechowywania plików w pamięci podręcznej.
 
 <div class="img-right">
-  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/img/15.png" alt="Geek #15" width="141" height="275" />
+  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/en/assets/img/15.png" alt="Geek #15" width="141" height="275" />
 </div>
 
 Konfiguracja taka jest umieszczona na serwerze. Apache, przykładowo umożliwia ustawienie buforowania w pliku `.htaccess`:

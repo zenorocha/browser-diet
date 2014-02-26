@@ -6,7 +6,7 @@ title: Combining multiple CSS files
 Another best practice for organization and maintenance of styles is to separate them into modular components.
 
 <div class="img-right">
-  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/img/9.png" alt="Geek #9" width="122" height="275" />
+  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
 </div>
 
 ```html

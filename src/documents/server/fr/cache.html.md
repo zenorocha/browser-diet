@@ -6,7 +6,7 @@ title: Activer le cache intelligent
 La meilleure façon d'optimiser les requêtes faites à partir de votre page est de ne pas en faire, évidemment. Et l'un des moyens les plus efficaces pour éviter les requêtes inutiles, c'est de laisser le navigateur mettre en cache le contenu des pages. Par défaut, le navigateur décide combien de temps il doit garder en cache les fichiers. Mais nous pouvons contrôler le temps exact de conservation du fichier dans le cache.
 
 <div class="img-right">
-  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/img/15.png" alt="Geek #15" width="141" height="275" />
+  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/en/assets/img/15.png" alt="Geek #15" width="141" height="275" />
 </div>
 
 Ce type de configuration est effectuée sur le serveur (et dépendra de la configuration du serveur que vous utilisez). Avec Apache, par exemple, vous pouvez ajouter la configuration suivante dans un fichier `.htaccess`:

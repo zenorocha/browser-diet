@@ -4,7 +4,7 @@ title: 'Poznaj wojowników, którzy pomogą Ci w starciu!'
 ---
 
 <div class="img-left">
-  <img id="geek-17" class="icos-geek" src="http://browserdiet.com/img/17.png" alt="Geek #17" width="199" height="275" />
+  <img id="geek-17" class="icos-geek" src="http://browserdiet.com/en/assets/img/17.png" alt="Geek #17" width="199" height="275" />
 </div>
 
 Co powiesz, jeśli zebraliśmy razem grono ekspertów, pracujących przy dużych serwisach dla stworzenia przewodnika wydajności?

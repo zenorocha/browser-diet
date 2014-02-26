@@ -18,7 +18,7 @@ Quando colocamos as folhas de estilo no `<head>` permitimos que a página render
 Enquanto que se colocássemos próximo ao fim da página, ela seria renderizada sem estilo algum até que o download do CSS terminasse.
 
 <div class="img-right">
-  <img id="geek-32" class="icos-geek" src="http://browserdiet.com/img/32.png" alt="Geek #32" width="139" height="275" />
+  <img id="geek-32" class="icos-geek" src="http://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
 </div>
 
 Com relação ao JavaScript, é importante manter a chamada dos scripts no fim do página, já que eles bloqueiam a renderização da página enquanto são carregados e executados.

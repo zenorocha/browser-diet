@@ -6,7 +6,7 @@ title: jQueryを常に使用しない・・・
 時に生のJavaScriptはjQueryよりも容易でより高性能です。
 
 <div class="img-right">
-  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/img/6.png" alt="Geek #6" width="156" height="275" />
+  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
 </div>
 
 以下のようなHTMLがあったとして:

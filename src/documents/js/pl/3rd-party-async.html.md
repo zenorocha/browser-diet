@@ -6,7 +6,7 @@ title: Załaduj zewnętrzny kod asynchronicznie
 Kto nie używał zewnętrznego kodu do osadzenia wideo z YouTube lub przycisku Like/Tweet?
 
 <div class="img-right">
-  <img id="geek-46" class="icos-geek" src="http://browserdiet.com/img/46.png" alt="Geek #46" width="158" height="275" />
+  <img id="geek-46" class="icos-geek" src="http://browserdiet.com/en/assets/img/46.png" alt="Geek #46" width="158" height="275" />
 </div>
 
 Kod zewnętrzny nie zawsze jest sprawnie dostarczany, czasami przez połączenie użytkownika z internetem, innym ze względu na serwer gdzie jest umieszczony, co często stanowi duży problem. Zdarza się, że usługa bywa nawet tymczasowo niedostępna lub zablokowana przez firewall.

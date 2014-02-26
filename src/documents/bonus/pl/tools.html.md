@@ -4,7 +4,7 @@ title: Narzędzia diagnostyczne: twój najlepszy przyjaciel
 ---
 
 <div class="img-left">
-  <img id="geek-43" class="icos-geek" src="http://browserdiet.com/img/43.png" alt="Geek #43" width="157" height="275" />
+  <img id="geek-43" class="icos-geek" src="http://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
 
 Jeśli chcesz dołączyć do świata wydajności internetowej, kluczowe będzie zainstalowanie wtyczek [YSlow](http://yslow.org/) i [PageSpeed](https://developers.google.com/speed/pagespeed/insights_extensions) w twojej przeglądarce&mdash;od teraz będą twoimi najlepszymi przyjaciółmi.

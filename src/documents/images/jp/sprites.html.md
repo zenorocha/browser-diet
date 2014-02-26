@@ -5,7 +5,7 @@ title: CSSスプライトを使用する
 
 このテクニックは多様な画像を全て1つのファイルにグルーピングします。
 
-<img id="img-sprite" src="http://browserdiet.com/img/sprite-example.jpg" alt="CSS Sprite Example">
+<img id="img-sprite" src="http://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
 
 そしてCSSでそれらを配置します。
 

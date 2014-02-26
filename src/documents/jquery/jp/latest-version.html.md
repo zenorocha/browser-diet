@@ -6,7 +6,7 @@ title: 常に最新のバージョンのjQueryを使用する
 jQueryの開発チームは、より良い可読性、新たな機能と既存アルゴリズムの最適化などを通じて、常にライブラリの改善をもたらしています。
 
 <div class="img-right">
-  <img id="geek-36" class="icos-geek" src="http://browserdiet.com/img/36.png" alt="Geek #36" width="144" height="275" />
+  <img id="geek-36" class="icos-geek" src="http://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
 </div>
 
 このため、以下URLからコピーして利用できる最新バージョンのjQueryを常に利用しましょう。:

@@ -6,7 +6,7 @@ title: Aktivujte chytré kešování
 Nejlepší způsob, jak optimalizovat requesty z vaší stránky, je nedělat žádné requesty. A jedna z nejužitečnějších cest, jak se vyhnout nepotřebným requestům, je kešování v prohlížeči. Ve výchozím nastavení je ponecháno na prohlížeči, jak dlouho bude soubory kešovat. My ale můžeme nastavit přesnou dobu, po kterou budou soubory uchovány v keši.
 
 <div class="img-right">
-  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/img/15.png" alt="Geek #15" width="141" height="275" />
+  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/en/assets/img/15.png" alt="Geek #15" width="141" height="275" />
 </div>
 
 Konfigurace se nastavuje na serveru (a závisí na tom, jakou serverovou konfiguraci máte). V případě Apache, pro představu, můžete přidat následující konfiguraci do `.htaccess` souboru:

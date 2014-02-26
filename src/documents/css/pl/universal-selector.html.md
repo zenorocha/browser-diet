@@ -6,7 +6,7 @@ title: Nie używaj selektora uniwersalnego
 Unikaj stosowania selektora ogólnego, ponieważ zmusza przeglądarkę do przeszukiwania **wszystkich** elementów HTML na stronie i stosowania reguł do każdego z nich.
 
 <div class="img-right">
-  <img src="http://browserdiet.com/img/4.png" alt="Geek #4" class="icos-geek" width="162" height="275" />
+  <img src="http://browserdiet.com/en/assets/img/4.png" alt="Geek #4" class="icos-geek" width="162" height="275" />
 </div>
 
 ```CSS

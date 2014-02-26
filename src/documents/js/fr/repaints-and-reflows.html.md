@@ -12,7 +12,7 @@ Les "reflows" sont assez coûteux, puisqu'ils sont causés par le changement de 
 Il n'y a pas de doute que l'excès de "reflows" et de "repaints" devrait être évité, plutôt que d'écrire ceci :
 
 <div class="img-right">
-  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
+  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
 ```js

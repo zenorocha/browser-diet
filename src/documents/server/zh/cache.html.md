@@ -6,7 +6,7 @@ title: 启用缓存
 优化页面请求的最好的方法就是不要发送请求。避免不必要的请求最有效的方法之一就是让浏览器缓存资源。浏览器会默认决定缓存一个文件多久。但是我们能够控制这个缓存时间。
 
 <div class="img-right">
-  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/img/15.png" alt="Geek #15" width="141" height="275" />
+  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/en/assets/img/15.png" alt="Geek #15" width="141" height="275" />
 </div>
 
 这个配置是在服务器上设置的。以Apache为例，你可以将下面的配置添加到`.htaccess`文件中：

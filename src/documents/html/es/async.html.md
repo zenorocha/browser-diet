@@ -6,7 +6,7 @@ title: Prueba async
 Para explicar cómo este atributo es útil para el rendimiento, es mejor entender qué pasa cuando no lo usamos.
 
 <div class="img-left">
-  <img id="geek-20" class="icos-geek" src="http://browserdiet.com/img/20.png" alt="Geek #20" width="118" height="275" />
+  <img id="geek-20" class="icos-geek" src="http://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
 </div>
 
 ``` html

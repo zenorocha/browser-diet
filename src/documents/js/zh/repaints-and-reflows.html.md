@@ -12,7 +12,7 @@ title: 最小化重绘和回流
 毫无疑问，应当避免过多的重绘和回流，所以，对于下面的代码：
 
 <div class="img-right">
-  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/img/55.png" alt="Geek #55" width="163" height="275" />
+  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
 ```js
