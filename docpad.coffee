@@ -10,14 +10,14 @@ module.exports =
         # -----------------------------
         # Language Definition
 
-        currentLang: 'en'
+        currentLang: 'jp'
 
         lang:
             en:
                 title: 'How to lose weight (in the browser)'
                 titleHTML: '<h1>How to lose <span>weight</span></h1><h2>in the browser</h2>'
                 slogan: 'The definitive front-end performance guide'
-                url: 'http://zenorocha.github.io/en'
+                url: 'http://zenorocha.github.io/browser-diet/en'
                 bonus: 'Bonus'
                 images: 'Images'
                 server: 'Server'
@@ -29,7 +29,7 @@ module.exports =
                 title: 'Como perder peso (no browser)'
                 titleHTML: '<h1>Como perder <span>peso</span></h1><h2>no browser</h2>'
                 slogan: 'O guia definitivo de performance front-end'
-                url: 'http://zenorocha.github.io/pt'
+                url: 'http://zenorocha.github.io/browser-diet/pt'
                 bonus: 'Bônus'
                 images: 'Imagens'
                 server: 'Servidor'
@@ -41,7 +41,7 @@ module.exports =
                 title: 'Cómo perder peso (en el navegador)'
                 titleHTML: '<h1>Como perder <span>peso</span></h1><h2>en el navegador</h2>'
                 slogan: 'La guía definitiva para el rendimiento front-end'
-                url: 'http://zenorocha.github.io/es'
+                url: 'http://zenorocha.github.io/browser-diet/es'
                 bonus: 'Bonus'
                 images: 'Imagenes'
                 server: 'Servidor'
@@ -53,7 +53,7 @@ module.exports =
                 title: 'Jak schudnąć (w przeglądarce)'
                 titleHTML: '<h1>Jak schudnąć <span>weight</span></h1><h2>w przeglądarce</h2>'
                 slogan: 'Ostateczny przewodnik wydajności dla stron internetowych'
-                url: 'http://zenorocha.github.io'
+                url: 'http://zenorocha.github.io/browser-diet'
                 bonus: 'Bonus'
                 images: 'Obrazy'
                 server: 'Serwer'
@@ -65,7 +65,7 @@ module.exports =
                 title: 'How to lose weight (in the browser)'
                 titleHTML: '<h1>How to lose <span>weight</span></h1><h2>in the browser</h2>'
                 slogan: '权威的前端性能指南'
-                url: 'http://zenorocha.github.io'
+                url: 'http://zenorocha.github.io/browser-diet'
                 bonus: 'Bonus'
                 images: 'Images'
                 server: 'Server'
@@ -77,7 +77,7 @@ module.exports =
                 title: 'Comment perdre du poids (dans le navigateur)'
                 titleHTML: '<h1>Comment perdre du <span>poids</span></h1><h2>dans le navigateur</h2>'
                 slogan: 'Le guide ultime des performances côté client'
-                url: 'http://zenorocha.github.io'
+                url: 'http://zenorocha.github.io/browser-diet'
                 bonus: 'Bonus'
                 images: 'Images'
                 server: 'Serveur'
@@ -89,7 +89,7 @@ module.exports =
                 title: 'Jak shodit váhu (v prohlížeči)'
                 titleHTML: '<h1>Jak shodit <span>váhu</span></h1><h2>v prohlížeči</h2>'
                 slogan: 'Definitivní příručka pro výkon webu'
-                url: 'http://zenorocha.github.io'
+                url: 'http://zenorocha.github.io/browser-diet'
                 bonus: 'Bonus'
                 images: 'Obrázky'
                 server: 'Server'
@@ -101,7 +101,7 @@ module.exports =
                 title: 'How to lose weight (in the browser)'
                 titleHTML: '<h1>How to lose <span>weight</span></h1><h2>in the browser</h2>'
                 slogan: '決定的なフロントエンドのパフォーマンスガイド'
-                url: 'http://zenorocha.github.io'
+                url: 'http://zenorocha.github.io/browser-diet'
                 bonus: 'Bonus'
                 images: 'Images'
                 server: 'Server'
@@ -114,7 +114,7 @@ module.exports =
         # Site Information
 
         site:
-            assets: 'http://zenorocha.github.io/en/assets'
+            assets: 'http://zenorocha.github.io/browser-diet/en/assets'
 
         getGruntedStyles: ->
             _ = require 'underscore'
