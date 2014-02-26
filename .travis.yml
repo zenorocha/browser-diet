@@ -1,8 +1,0 @@
-language: node_js
-node_js:
-  - 0.8
-before_script:
-  - npm install -g docpad@6.40.0
-branches:
-  only:
-    - master
