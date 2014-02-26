@@ -6,3 +6,5 @@ before_script:
 branches:
   only:
     - master
+git:
+  submodules: false
