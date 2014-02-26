@@ -10,7 +10,7 @@ module.exports =
         # -----------------------------
         # Language Definition
 
-        currentLang: 'jp'
+        currentLang: 'en'
 
         lang:
             en:
