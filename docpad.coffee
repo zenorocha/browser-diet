@@ -114,7 +114,7 @@ module.exports =
         # Site Information
 
         site:
-            assets: 'http://zenorocha.github.io/assets'
+            assets: 'http://zenorocha.github.io/en/assets'
 
         getGruntedStyles: ->
             _ = require 'underscore'
