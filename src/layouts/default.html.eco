@@ -66,7 +66,7 @@
 
         <div class="superman">
           <img class="superman-geek" src="<%= @site.assets %>/img/superman.png" alt="Superman">
-          <img class="superman-raios" src="<%= @site.assets %>/img/raios.png" alt="">
+          <img id="superman-raios" class="superman-raios" src="<%= @site.assets %>/img/raios.png" alt="">
         </div>
       </div>
 
@@ -129,6 +129,7 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  <script type="text/javascript" src="<%= @site.assets %>/js/superman-animation.js" async></script>
 
 </body>
 </html>
