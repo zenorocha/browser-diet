@@ -11,4 +11,4 @@ title: 优化你的图片。
 
 为了提升用户的体验，你还应该将你的JPEG文件转换为渐进式的。现在大多数的浏览器都支持渐进式JPEG文件，并且这种格式的文件创建简单，没有明显的性能损失问题。页面中的这种格式的图片能够更快的展现([see demo](http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg)).
 
-*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*
+*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*

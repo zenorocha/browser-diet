@@ -27,4 +27,4 @@ Połącz swoje pliki CSS. Mniejsza liczba plików, daje w rezultacie mniejszą l
 
 Chcesz najlepszych wyników? Automatyzacja tego procesu poprzez narzędzia budowania.
 
-*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

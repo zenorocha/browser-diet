@@ -27,4 +27,4 @@ Así que combina tu CSS. Tener un menor número de archivos resultará en un men
 
 ¿Quieres tener lo mejor de ambos mundos? Automatiza este proceso mediante una herramienta de compilación.
 
-*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*
+*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

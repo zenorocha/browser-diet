@@ -28,4 +28,4 @@ styleの構成とメンテナンスのための別のベストプラクティス
 いずれの長所も欲しい場合はどうでしょう？ ビルドツールを使ってこのプロセスを自動化しましょう。
 
 
-*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*
+*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

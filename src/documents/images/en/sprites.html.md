@@ -27,4 +27,4 @@ When using your *sprite*, avoid leaving too much white space between images. Thi
 
 And despite nearly everyone knowing about sprites, this technique isn't widely used&mdash;perhaps due to developers not using automated tools to generate sprites. We've highlighted a few that can help you out with this.
 
-*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites) / [References](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites) / [References](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*

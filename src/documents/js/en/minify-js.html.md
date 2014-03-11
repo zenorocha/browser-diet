@@ -27,4 +27,4 @@ BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 
 This will shave bytes from the filesize, which results in faster downloads, parsing and execution.
 
-*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [References](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script) / [References](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*

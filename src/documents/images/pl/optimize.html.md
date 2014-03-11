@@ -11,4 +11,4 @@ Inny sposób optymalizacji obrazów to kompresja kosztem pogorszenia jakości ob
 
 Aby zwiększyć wydaność postrzeganą przez użytkownika należy przekształcić wszystkie pliki JPEG do wersji progresywnych. Progresywne pliki JPEG mają dobrą obsługę w przeglądarkach, są bardzo proste do tworzenia i nie mają znaczącego spadku wydajności. Plusem jest to, że obraz pojawi się wcześniej na stronie ([zobacz prezentację](http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg)).
 
-*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*

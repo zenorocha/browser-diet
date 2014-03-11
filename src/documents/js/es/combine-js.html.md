@@ -27,4 +27,4 @@ Así que combina tu JavaScript. Tener un menor número de archivos resultará en
 
 ¿Quieres tener lo mejor de ambos mundos? Automatiza este proceso mediante una herramienta de compilación.
 
-*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*
+*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

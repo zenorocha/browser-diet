@@ -28,4 +28,4 @@ title: CSSスプライトを使用する
 ほぼ全ての開発者がスプライトについて知っているのに反して、このテクニックは広く使われていません&mdash;おそらくスプライトを生成するのに自動化ツールを使用していないからでしょう。このことに関してはあなたを助ける幾つかを強調してきました。
 
 
-*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*
+*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*

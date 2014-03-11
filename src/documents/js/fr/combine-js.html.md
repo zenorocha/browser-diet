@@ -27,4 +27,4 @@ Vous devriez donc combiner votre JS. Avoir un nombre plus petit de fichiers entr
 
 Vous voulez avoir le meilleur des deux mondes ? Automatisez ce processus avec un outil de build.
 
-*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [References](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*
+*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one) / [References](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

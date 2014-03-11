@@ -27,4 +27,4 @@ BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 
 这样做能够减小文件的大小，从而得到更快的下载、解析和执行。
 
-*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*
+*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*

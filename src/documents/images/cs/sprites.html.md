@@ -27,4 +27,4 @@ Když používáte *sprite*, vyhněte se příliš velkým bílým místům mezi
 
 I přes to, že skoro každý techniku spritů zná, není její použití široce rozšířeno&mdash;pravděpodobně proto, že vývojáři nepoužívají automatizační nástroje pro generování spritů. Vypíchli jsme několik takových, které vám s tím mohou pomoci.
 
-*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*
+*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*

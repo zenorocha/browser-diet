@@ -27,4 +27,4 @@ Tak tedy kombinujte své JS. Menší počet souborů vede k menšímu počtu req
 
 Chcete využít to nejlepší z obou světů? Automatizujte tento proces pomocí buildovacích nástrojů.
 
-*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*
+*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

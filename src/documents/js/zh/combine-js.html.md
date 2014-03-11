@@ -27,4 +27,4 @@ title: 将多个JS文件合并
 
 想要两全其美？通过构建工具自动化这个过程吧。
 
-*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*
+*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

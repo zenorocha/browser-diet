@@ -27,4 +27,4 @@ So combine your JS. Having a smaller number of files will result in a smaller nu
 
 Want to have the best of both worlds? Automate this process through a build tool.
 
-*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [References](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*
+*> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one) / [References](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

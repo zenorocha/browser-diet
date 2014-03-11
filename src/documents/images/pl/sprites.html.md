@@ -27,4 +27,4 @@ Kiedy używamy *ikonek*, unikamy pozostawiania zbyt dużej pustej przestrzeni mi
 
 Pomimo szerokiej wiedzy na temat sprite'ów, technika ta nie jest często stosowana&mdash;może, ze względu na brak stosowania narzędzi do automatycznego generowania sprite'ów. Poniżej przedstawiamy listę narzędzi, które okażą się bardzo pomocne.
 
-*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)

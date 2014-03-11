@@ -29,4 +29,4 @@ title: スタイルシートをミニファイ
 
 [Sass](http://sass-lang.com/)や [Less](http://lesscss.org/)、[Stylus](http://learnboost.github.com/stylus/)のようなプリプロセッサーを利用することで、ミニファイされたCSSをコンパイル時に出力するように設定することが出来ます。
 
-*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*
+*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*

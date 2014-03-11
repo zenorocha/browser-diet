@@ -27,4 +27,4 @@ BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 
 Esto quitará bytes al archivo, lo que resultará en un proceso de descarga, análisis y ejecución más rápido.
 
-*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*
+*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*

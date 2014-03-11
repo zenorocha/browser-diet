@@ -27,4 +27,4 @@ Lorsque vous utilisez votre *sprite*, évitez de laisser trop d'espace entre les
 
 Bien que cette technique soit assez connue, son utilisation n'est pas très répandue&ndash;ce qui est peut-être dû au fait que les développeurs n'utilisent pas d'outils automatisés pour générer des sprites. Nous en avons sélectionné quelques-uns qui peuvent vous aider à faire ceci.
 
-*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites) / [References](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*
+*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites) / [References](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*

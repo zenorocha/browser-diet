@@ -24,4 +24,4 @@ BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 
 Cela réduira la taille de votre fichier, ce qui accélérera le téléchargement, le traitement et l'exécution de votre page.
 
-*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [References](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*
+*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script) / [References](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*

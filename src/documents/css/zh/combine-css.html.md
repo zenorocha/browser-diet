@@ -27,4 +27,4 @@ title: 合并多个CSS文件
 
 Want to have the best of both worlds? Automate this process through a build tool.
 
-*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*
+*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

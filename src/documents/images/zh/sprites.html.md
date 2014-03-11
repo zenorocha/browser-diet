@@ -27,4 +27,4 @@ title: 使用CSS Sprites
 
 尽管每个人都知道sprites，但是这种技术并没有被广泛使用&mdash;或许是由于开发者没有使用自动化工具去生成。 我们着重介绍了一些工具，或许可以帮到你。
 
-*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*
+*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*

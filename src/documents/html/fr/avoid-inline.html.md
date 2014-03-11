@@ -17,4 +17,4 @@ Les deux premières options, bien que réduisant le nombre de requêtes HTTP, au
 
 La troisième option, outre le fait qu'elle améliore l'organisation de votre code, donne la possiblité à votre navigateur de mettre en cache vos fichiers. Cette option doit être préférée dans la majorité des cas, surtout lorsque vous travaillez sur des fichiers volumineux et beaucoup de pages.
 
-*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code) / [Réferences](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*
+*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code) / [Réferences](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*

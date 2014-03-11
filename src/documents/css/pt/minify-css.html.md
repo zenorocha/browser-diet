@@ -29,4 +29,4 @@ Isso irá economizar muitos e muitos bytes, acelerando assim o download, anális
 
 Para aqueles que usam pré-processadores como [Sass](http://sass-lang.com/), [Less](http://lesscss.org/) e [Stylus](http://learnboost.github.com/stylus/), é possível configurar a compilação para gerar o código já minificado.
 
-*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*
+*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*

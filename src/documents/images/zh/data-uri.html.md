@@ -27,4 +27,4 @@ title: Data URI
 
 然而坏处是，随着你的HTML/CSS文件的增大增多，你必须考虑你可能会有一个非常大的图片。如果你在HTTP请求中没有使用gzip技术压缩你的HTML/CSS，那么我们不推荐使用这种方法，因为减少HTTP请求数得到的大文件对于速度来说可能带来相反的结果。
 
-*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#data-uri)*
+*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-data-uri) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#data-uri)*

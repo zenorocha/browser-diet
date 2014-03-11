@@ -27,4 +27,4 @@ Tak tedy kombinujte svá CSS. Menší počet souborů vede k menšímu počtu re
 
 Chcete využít to nejlepší z obou světů? Automatizujte tento proces pomocí buidlovacích nástrojů.
 
-*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*
+*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

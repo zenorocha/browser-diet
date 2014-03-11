@@ -29,4 +29,4 @@ Minimalizace ořeže přebytečné bajty ze souboru, což vede k rychlejšímu s
 
 Pro ty, kteří používají pre-procesory jako [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), a [Stylus](http://learnboost.github.com/stylus/), je možné nakonfigurovat, aby byl kompilovaný CSS výstup minimalizován.
 
-*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*
+*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*

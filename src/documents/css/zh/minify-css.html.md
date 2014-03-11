@@ -29,4 +29,4 @@ title: 压缩你的样式表
 
 对于使用预处理器例如 [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), and [Stylus](http://learnboost.github.com/stylus/), 你可以通过配置缩小编译输出的CSS代码。
 
-*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*
+*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*

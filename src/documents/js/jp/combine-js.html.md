@@ -27,4 +27,4 @@ scriptの構成とメンテナンスのための別のベストプラクティ�
 
 いずれの長所も欲しい場合ばどうでしょう？ ビルドツールを使ってこのプロセスを自動化しましょう。
 
-*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*
+*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

@@ -17,4 +17,4 @@ title: インライン/埋め込みのコードを避ける
 
 3つ目の方法は、あなたのコードの構成を改善するだけでなく、ブラウザにキャッシュさせることも可能になります。この方法は、ほとんどの場合に望ましい方法であり、大きなファイルや大量のページを扱うときには特に望ましいです。
 
-*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*
+*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*

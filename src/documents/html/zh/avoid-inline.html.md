@@ -17,4 +17,4 @@ title: 避免 内联式/嵌入式 代码
 
 第三种方式不仅使你的代码更有序，而且使得浏览器能够缓存它。这种方式在大多数的情况下都是首选，特别是一些大文件和多页面的情况。
 
-*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*
+*> [小工具](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code) / [参考](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*

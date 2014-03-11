@@ -27,4 +27,4 @@ BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
 
 Takie golenie rozmiaru pliku, pozwoli w rezultacie na szybsze pobieranie, analizowanie i uruchamianie strony.
 
-*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script)*

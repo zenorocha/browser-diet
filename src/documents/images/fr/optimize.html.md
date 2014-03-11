@@ -11,4 +11,4 @@ Un autre moyen d'optimiser les images est de les compresser au risque de perdre 
 
 Pour améliorer la performance perçue par l'utilisateur, vous devriez aussi convertir tous vos fichiers JPEG en version progressive. Les JPEG progressifs sont très bien supportés dans les navigateurs, sont très simples à créer et n'ont pas de perte significative de qualité. L'avantage est que l'image apparaîtra plus tôt sur la page ([Regardez la démo](http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg)).
 
-*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images) / [References](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*
+*> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images) / [References](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*

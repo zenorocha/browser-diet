@@ -12,4 +12,4 @@ title: 画像の最適化
 ユーザー体感のパフォーマンスを改善するために、JPEGファイルをプログレッシブJPEGへ変換すべきです。プログレッシブJPEGはブラウザのサポートが充実していて、作成が容易で、パフォーマンス面での大きな問題もありません。この利点はページに素早く画像を表示できることです（[デモ](http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg)）。
 
 
-*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*
+*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*

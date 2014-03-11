@@ -27,4 +27,4 @@ Combinez donc vos CSS. Avoir moins de fichiers produira moins de requêtes et un
 
 Vous voulez avoir le meilleur des deux mondes ? Automatisez ce processus à travers un outil de build.
 
-*> [Outils](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [Références](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*
+*> [Outils](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files) / [Références](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

@@ -27,4 +27,4 @@ Logo, combine seu CSS. Quanto menor for o número de arquivos, menor será o nú
 
 Quer ter o melhor dos dois mundos? Automatize esse processo através de uma ferramenta de build.
 
-*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*
+*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

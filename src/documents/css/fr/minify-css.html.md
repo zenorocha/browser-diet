@@ -29,4 +29,4 @@ Cela va diminuer la taille des fichiers, ce qui se traduira par un temps de char
 
 Pour ceux qui utilisent les préprocesseurs comme [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), et [Stylus](http://learnboost.github.com/stylus/), il est possible de configurer la sortie de votre CSS compilé afin qu'il soit minifié.
 
-*> [Outils](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets) / [Références](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*
+*> [Outils](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets) / [Références](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*

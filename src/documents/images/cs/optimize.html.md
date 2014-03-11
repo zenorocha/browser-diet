@@ -12,4 +12,4 @@ Další možnost, jak optimalizovat obrázky, je komprese na vrub vizuální kva
 K vylepšení vjemového výkonu je vhodné převést všechny JPEG soubory na jejich progresivní varianty. Progresivní JPEGy mají skvělou podporu v prohlížečích, je snadné vytvořit je a nemají žádné výkonové nevýhody. Výhodou je, že se obrázek načte na stránce dříve ([viz demo](http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg)).
 
 
-*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*
+*> [Užitečné nástroje](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images) / [Reference](https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images)*

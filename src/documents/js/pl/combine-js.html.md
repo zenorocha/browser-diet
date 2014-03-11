@@ -27,4 +27,4 @@ Połącz swoje pliki JS. Mniejsza liczba plików, daje w rezultacie mniejszą li
 
 Chcesz najlepszych wyników? Automatyzacja tego procesu poprzez narzędzia budowania.
 
-*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

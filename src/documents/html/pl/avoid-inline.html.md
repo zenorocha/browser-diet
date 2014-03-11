@@ -17,4 +17,4 @@ Pierwsze dwie opcje, wprawdzie zmniejszają liczbę żądań HTTP, jednak zwięk
 
 Trzecia opcja nie tylko poprawia organizację twojego kodu, ale również umożliwia przeglądarce jego przechowywanie w cache. Takie rozwiązanie jest zalecane w większości przypadków, szczególnie przy plikach dużych rozmiarów, gdzie koszt stosowania kodu wbudowanego jest wiekszy.
 
-*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code).*
+*> [Przydatne narzędzia](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code) / [Referencje](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code).*

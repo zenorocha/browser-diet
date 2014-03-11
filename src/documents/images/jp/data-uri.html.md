@@ -27,4 +27,4 @@ IE8以上の全てのブラウザはbase64エンコードがサポートされ�
 
 ですが、大きな画像を持っていた場合にはHTML/CSSのサイズを増大させるデメリットもあります。サイズのオーバーヘッドなどのHTTPリクエストは、HTTPリクエストの数を最少化することによるスピードの改善がなされないので、HTML/CSSをgzipしない場合には推奨されません。
 
-*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#data-uri)*
+*> [有用なツール](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-data-uri) / [リファレンス](https://github.com/zenorocha/browser-diet/wiki/References#data-uri)*

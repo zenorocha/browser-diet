@@ -28,4 +28,4 @@ Esto quitará bytes al archivo, lo que resultará en un proceso de descarga, an�
 
 Para los que usan preprocesadores como [Sass](http://sass-lang.com/), [Less](http://lesscss.org/), y [Stylus](http://learnboost.github.com/stylus/), es posible configurarlos para que la salida sea comprimida.
 
-*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*
+*> [Herramientas útiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets) / [Referencias](https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets)*
