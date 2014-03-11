@@ -32,4 +32,4 @@ Com relação ao JavaScript, é importante manter a chamada dos scripts no fim d
 </body>
 ```
 
-*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#styles-up-top-scripts-down-bottom)*
+*> [Referências](https://github.com/zenorocha/browser-diet/wiki/References#wiki-styles-up-top-scripts-down-bottom)*
