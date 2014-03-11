@@ -138,7 +138,7 @@
 <p>尽管前两种方式减少了HTTP请求数，可是实际上却增加了HTML文档的体积。不过，当你的页面中的CSS或者Javascript代码足够少，反而是开启一个HTTP请求的花费要更大时，采用这两种方式却是最有用的。因此，你需要测试评估这种方式是否真的提升了速度。同时也要考虑到你的页面的目标和它的受众：如果你期望人们只会访问它一次，例如对一些临时活动来说，你决不会期望有回访客出现，那么使用内联式/嵌入式代码能够帮助减少HTTP请求数。</p>
 <p><em>&gt; 尽量避免在你的HTML中手工编写CSS/JS（首选的方法是通过工具实现这个过程的自动化）。</em></p>
 <p>第三种方式不仅使你的代码更有序，而且使得浏览器能够缓存它。这种方式在大多数的情况下都是首选，特别是一些大文件和多页面的情况。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code">参考</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code">参考</a></em></p>
 
   </div>
 
@@ -245,7 +245,7 @@
 </code></pre>
 <p>这样做能够减小文件的大小，从而得到更快的下载、解析和执行。</p>
 <p>对于使用预处理器例如 <a href="http://sass-lang.com/">Sass</a>, <a href="http://lesscss.org/">Less</a>, and <a href="http://learnboost.github.com/stylus/">Stylus</a>, 你可以通过配置缩小编译输出的CSS代码。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">参考</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">参考</a></em></p>
 
   </div>
 
@@ -278,7 +278,7 @@
 </code></pre>
 <p>所以，合并你的CSS文件。文件数量的减少就会带来请求数量的减少和更快的页面加载速度。</p>
 <p>Want to have the best of both worlds? Automate this process through a build tool.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files">参考</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files">参考</a></em></p>
 
   </div>
 
@@ -551,7 +551,7 @@ var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
 <pre class="highlight"><code class="javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span><span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>}}}
 </code></pre>
 <p>这样做能够减小文件的大小，从而得到更快的下载、解析和执行。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">参考</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">参考</a></em></p>
 
   </div>
 
@@ -584,7 +584,7 @@ var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
 </code></pre>
 <p>所以，合并你的JS文件。文件数量的减少就会带来请求数量的减少和更快的页面加载速度。</p>
 <p>想要两全其美？通过构建工具自动化这个过程吧。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one">参考</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one">参考</a></em></p>
 
   </div>
 
@@ -725,7 +725,7 @@ var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
 <p>这么做的结果就是，减少了HTTP请求数，避免延迟页面上的其他资源。</p>
 <p>在使用<em>sprite</em>时，应当避免在每个图片之间的空隙过大。这个虽然不会影响到文件的大小，但是会影响到内存的消耗。</p>
 <p>尽管每个人都知道sprites，但是这种技术并没有被广泛使用&mdash;或许是由于开发者没有使用自动化工具去生成。 我们着重介绍了一些工具，或许可以帮到你。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites">参考</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites">参考</a></em></p>
 
   </div>
 
@@ -757,7 +757,7 @@ var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
 <p>所有的现代浏览器和IE8及以上版本的IE都支持这个方法，图片需要使用base64方法编码。</p>
 <p>这种技术和CSS Sprites技术都是可以使用构建工具得到的。使用构建工具的好处是不用手工去进行图片的拼合替换，在开发时使用单独的文件就可以。</p>
 <p>然而坏处是，随着你的HTML/CSS文件的增大增多，你必须考虑你可能会有一个非常大的图片。如果你在HTTP请求中没有使用gzip技术压缩你的HTML/CSS，那么我们不推荐使用这种方法，因为减少HTTP请求数得到的大文件对于速度来说可能带来相反的结果。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">参考</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-data-uri">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">参考</a></em></p>
 
   </div>
 
@@ -801,7 +801,7 @@ var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
 <p>有很多工具能够帮你从图片中去除这些信息，并且不会降低图片的质量。我们把这个称做<em>无损</em>压缩。</p>
 <p>另一种优化图片的方式是，以图片质量为代价进行压缩。我们称之为<em>有损</em>压缩。举例来说，当你到处一个JPEG图片时，你可以选择导出的图片质量（从0到100）。考虑到性能，总是选择可接受范围内的最低值。在PNG图片中，另一个常见的有损技术是减少颜色数量，或者将PNG-24格式转换为PNG-8格式。</p>
 <p>为了提升用户的体验，你还应该将你的JPEG文件转换为渐进式的。现在大多数的浏览器都支持渐进式JPEG文件，并且这种格式的文件创建简单，没有明显的性能损失问题。页面中的这种格式的图片能够更快的展现(<a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg">see demo</a>).</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">参考</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">参考</a></em></p>
 
   </div>
 

@@ -139,7 +139,7 @@
 <p>最初の2つの方法は、HTTPリクエストの数を減少する一方で、HTMLドキュメントのサイズを増大します。 ですがこれは、あなたが小さなアセットしか持たないけれども、リクエストのコストがより大きい場合に有用です。 この場合には、実際にスピード面で効果があるかを評価するテストをしましょう。 また、あなたのページとそのユーザーの目的を評価しましょう: もし、訪問者が二度と戻らないと想定される期間限定のキャンペーンのように、一度だけユーザーが訪れることを想定するなら、インライン/埋め込みのコードはHTTPリクエストの数を減少させる助けになるでしょう。</p>
 <p><em>&gt; HTMLの中で手作業でCSS/JSを編集するのは避けましょう（ツールを用いてこの行程を自動化することが望ましいです）。</em></p>
 <p>3つ目の方法は、あなたのコードの構成を改善するだけでなく、ブラウザにキャッシュさせることも可能になります。この方法は、ほとんどの場合に望ましい方法であり、大きなファイルや大量のページを扱うときには特に望ましいです。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code">リファレンス</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code">リファレンス</a></em></p>
 
   </div>
 
@@ -246,7 +246,7 @@
 </code></pre>
 <p>それがファイルサイズを削ることになり、高速なダウンロード、解析、実行へとつながります。</p>
 <p><a href="http://sass-lang.com/">Sass</a>や <a href="http://lesscss.org/">Less</a>、<a href="http://learnboost.github.com/stylus/">Stylus</a>のようなプリプロセッサーを利用することで、ミニファイされたCSSをコンパイル時に出力するように設定することが出来ます。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">リファレンス</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">リファレンス</a></em></p>
 
   </div>
 
@@ -279,7 +279,7 @@
 </code></pre>
 <p>なのでCSSを結合しましょう。少数のファイルで構成することはリクエストの数を少なくすることになり、より高速にページを読み込みます。</p>
 <p>いずれの長所も欲しい場合はどうでしょう？ ビルドツールを使ってこのプロセスを自動化しましょう。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files">リファレンス</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files">リファレンス</a></em></p>
 
   </div>
 
@@ -553,7 +553,7 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
 <pre class="highlight"><code class="javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span><span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>}}}
 </code></pre>
 <p>それがファイルサイズを削ることになり、高速なダウンロード、解析、実行へとつながります。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">リファレンス</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">リファレンス</a></em></p>
 
   </div>
 
@@ -586,7 +586,7 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
 </code></pre>
 <p>なのでJSを結合しましょう。少数のファイルで構成することはリクエスト数を少なくすることになり、より高速にページを読み込みます。</p>
 <p>いずれの長所も欲しい場合ばどうでしょう？ ビルドツールを使ってこのプロセスを自動化しましょう。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one">リファレンス</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one">リファレンス</a></em></p>
 
   </div>
 
@@ -752,7 +752,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>結果的に、あなたは劇的にHTTPリクエストの数を減少させ、ページの他のリソースの滞在的な遅れを避けることになります。</p>
 <p><em>スプライト</em>を使うとき、あまりに多くの画像間の空白を残すことは避けましょう。ファイルサイズへの影響はありませんが、メモリーの消費量に影響があります。</p>
 <p>ほぼ全ての開発者がスプライトについて知っているのに反して、このテクニックは広く使われていません&mdash;おそらくスプライトを生成するのに自動化ツールを使用していないからでしょう。このことに関してはあなたを助ける幾つかを強調してきました。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites">リファレンス</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites">リファレンス</a></em></p>
 
   </div>
 
@@ -784,7 +784,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>IE8以上の全てのブラウザはbase64エンコードがサポートされています。</p>
 <p>この方法とCSSスプライトのいずれもがメンテナンスしていくのにビルドツールを必要とします。この方法は、開発中に個別のファイルで画像を維持するのに手動でのスプライトの配置を不要とするアドバンテージがあります。</p>
 <p>ですが、大きな画像を持っていた場合にはHTML/CSSのサイズを増大させるデメリットもあります。サイズのオーバーヘッドなどのHTTPリクエストは、HTTPリクエストの数を最少化することによるスピードの改善がなされないので、HTML/CSSをgzipしない場合には推奨されません。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">リファレンス</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-data-uri">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">リファレンス</a></em></p>
 
   </div>
 
@@ -828,7 +828,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>不要なデータを削除し、画質を劣化させることなく同様の画像を生成する、画像の最適化ツールがあります。ツールを用いて<em>欠損</em>なしの圧縮ができます。</p>
 <p>画像最適化の別の方法は、視覚的な質を犠牲にして圧縮することです。 私たちはこれを<em>損失のある</em>最適化と呼びます。例えば、JPEGをエクスポートするときに品質レベル（0から100の数値で）を選ぶことができます。パフォーマンスを考えて、視覚的に許容範囲の中で最も低い数値を選びましょう。その他の損失のある最適化テクニックはPNGのカラーパレットを減少するかPNG-24のファイルをPNG-8に変換することです。</p>
 <p>ユーザー体感のパフォーマンスを改善するために、JPEGファイルをプログレッシブJPEGへ変換すべきです。プログレッシブJPEGはブラウザのサポートが充実していて、作成が容易で、パフォーマンス面での大きな問題もありません。この利点はページに素早く画像を表示できることです（<a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg">デモ</a>）。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">リファレンス</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">リファレンス</a></em></p>
 
   </div>
 

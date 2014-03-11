@@ -138,7 +138,7 @@
 <p>As duas primeiras opções, apesar de reduzirem o número de requisições, aumentam o tamanho do documento HTML. Elas podem ser interessante quando você tem arquivos pequenos e o custo de uma requisição é maior. Nesse caso, faça testes para avaliar se há realmente ganho. Avalie também o objetivo da página e sua audiência, se o esperado é que usuários visitem essa página somente uma única vez, como por exemplo uma campanha temporária onde não se espera futuras visitas à mesma, utilizar inline/incorporado ajudará na redução do número de requisições.</p>
 <p><em>&gt; Evite escrever manualmente o CSS/JS no meio do HTML (use uma ferramenta que automatize esse processo).</em></p>
 <p>Já a terceira opção, não só melhora a organização do seu código, como também possibilita que eles sejam armazenados no cache do navegador. Prefira essa opção para a maior parte dos casos, quando lidamos com arquivos grandes e muitas páginas.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#wiki-avoid-inlineembedded-code">Referências</a></em></p>
 
   </div>
 
@@ -177,7 +177,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"script.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
 </code></pre>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#styles-up-top-scripts-down-bottom">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#wiki-styles-up-top-scripts-down-bottom">Referências</a></em></p>
 
   </div>
 
@@ -205,7 +205,7 @@
 <pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">async</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>O download do script é feito de forma assíncrona enquanto o processo de renderização da página continua a ser feito. O script é executado depois que o download estiver completo. Tenha em mente que caso tenha vários scripts com async, eles  serão executados em nenhuma ordem específica.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#try-out-async">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#wiki-try-out-async">Referências</a></em></p>
 
   </div>
 
@@ -245,7 +245,7 @@
 </code></pre>
 <p>Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.</p>
 <p>Para aqueles que usam pré-processadores como <a href="http://sass-lang.com/">Sass</a>, <a href="http://lesscss.org/">Less</a> e <a href="http://learnboost.github.com/stylus/">Stylus</a>, é possível configurar a compilação para gerar o código já minificado.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">Referências</a></em></p>
 
   </div>
 
@@ -278,7 +278,7 @@
 </code></pre>
 <p>Logo, combine seu CSS. Quanto menor for o número de arquivos, menor será o número de requisições feitas e mais rápida sua página carregará.</p>
 <p>Quer ter o melhor dos dois mundos? Automatize esse processo através de uma ferramenta de build.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files">Referências</a></em></p>
 
   </div>
 
@@ -552,7 +552,7 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
 <pre class="highlight"><code class="javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span><span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>}}}
 </code></pre>
 <p>Isso irá economizar muitos e muitos bytes, acelerando assim o download, análise e tempo de execução.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">Referências</a></em></p>
 
   </div>
 
@@ -585,7 +585,7 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
 </code></pre>
 <p>Logo, combine seu JS. Quanto menor for o número de arquivos, menor será o número de requisições feitas e mais rápida sua página carregará.</p>
 <p>Quer ter o melhor dos dois mundos? Automatize esse processo através de uma ferramenta de build.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one">Referências</a></em></p>
 
   </div>
 
@@ -731,7 +731,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>Isso faz com que diminua absurdamente o número de requisições HTTP e evite atrasos no download de outros recursos da sua página.</p>
 <p>Ao montar seu <em>sprite</em>, evite deixar muito espaço em branco entre as imagens, isso não afeta o peso do arquivo, mas sim o uso de memória para processar o mapa de pixels.</p>
 <p>Apesar de extremamente difundida, essa técnica é pouco usada já que os desenvolvedores não utilizam ferramentas que automatizam o processo de geração dessa imagem. Por isso, separamos algumas que podem te ajudar nisso.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites">Referências</a></em></p>
 
   </div>
 
@@ -763,7 +763,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>Todos os navegadores do IE8 para cima suportam essa técnica de codificação base64.</p>
 <p>Ambos esse método e CSS sprites precisam de ferramentas de build para serem de fácil manutenção. Esse método tem a vantagem de não exigir reposicionamento manual do sprite já que mantém suas imagens em arquivos individuais durante o desenvolvimento.</p>
 <p>Entretanto tem a desvantagem de aumentar consideravelmente o tamanho do seu HTML/CSS se você possuir imagens grandes. Não é recomendado utilizar esse método se você não está utilizando a técnica de gzip no seu HTML/CSS durante as requisições HTTP já que a sobrecarga de tamanho pode anular os ganhos de velocidade sobre minimizar o número de requisições HTTP.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-data-uri">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">Referências</a></em></p>
 
   </div>
 
@@ -807,7 +807,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>Existem ferramentas de otimização de imagens que removem todas essas informações desnecessárias e te dão um arquivo mais enxuto mas visualmente idêntico. Elas fazem uma compressão sem perda de qualidade visual (chamamos de <em>lossless</em>).</p>
 <p>Outra forma de otimizar imagens é comprimi-las com certas perdas visuais aceitáveis. Esse tipo de operação é chamada de otimização <em>lossy</em>. Quando você exportar um JPEG, por exemplo, pode escolher a qualidade (um número de 0 a 100). Pensando em performance, pegue sempre o número mais baixo onde a qualidade visual ainda é aceitável. Outra otimização <em>lossy</em> famosa é diminuir o número de cores na paleta de um PNG, ou transformar arquivos PNG-24 em PNG-8.</p>
 <p>Para melhorar a performance percebida pelo usuário, você deve transformar todos seus arquivos JPEGs em progressivos. JPEGs progressivos têm ótimo suporte nos navegadores, são muito fáceis de criar e não têm nenhum problema de performance significativo. O bom é que a imagem vai aparecer bem antes na página (<a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg">ver exemplo</a>).</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">Referências</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#wiki-optimize-your-images">Referências</a></em></p>
 
   </div>
 

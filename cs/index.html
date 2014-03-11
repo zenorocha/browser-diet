@@ -138,7 +138,7 @@
 <p>První dvě varianty, nehledě na to, že snižují počet HTTP požadavků, ve skutečnosti zvětšují velikost HTML dokumentu. Přesto to může být výhodné, pokud máte malé soubory a náklady na request jsou větší problém. V takovém případě spusťe testy a vyhodnoťte, zda nastane zrychlení. Také zvažte smysl vaší stránky a její návštěvnost: pokud očekáváte, že uživatel navštíví stránku jen jednou, například při nějaké dočasné kampani, kde nečekáte, že se uživatel bude vracet, inlinový/vložený kód pomůže snížit počet HTTP požadavků.</p>
 <p><em>&gt; Vyhněte se psaní CSS/JS uvnitř vašeho HTML (raději jej automatizujte pomocí nástrojů).</em></p>
 <p>Třetí varianta nejen zlepšuje organizaci vašeho kódu, ale také umožňuje prohlížečům aktivovat kešování. Tato varianta by měla být preferována pro naprostou většinu případů, zvláště pokud pracujete s velkými soubory a mnoha stránkami.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code">Reference</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code">Reference</a></em></p>
 
   </div>
 
@@ -245,7 +245,7 @@
 </code></pre>
 <p>Minimalizace ořeže přebytečné bajty ze souboru, což vede k rychlejšímu stažení, parsování a spuštění.</p>
 <p>Pro ty, kteří používají pre-procesory jako <a href="http://sass-lang.com/">Sass</a>, <a href="http://lesscss.org/">Less</a>, a <a href="http://learnboost.github.com/stylus/">Stylus</a>, je možné nakonfigurovat, aby byl kompilovaný CSS výstup minimalizován.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-stylesheets">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">Reference</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-stylesheets">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-stylesheets">Reference</a></em></p>
 
   </div>
 
@@ -278,7 +278,7 @@
 </code></pre>
 <p>Tak tedy kombinujte svá CSS. Menší počet souborů vede k menšímu počtu requestů a rychlejšímu načtení stránky.</p>
 <p>Chcete využít to nejlepší z obou světů? Automatizujte tento proces pomocí buidlovacích nástrojů.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combining-multiple-css-files">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files">Reference</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files">Reference</a></em></p>
 
   </div>
 
@@ -552,7 +552,7 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
 <pre class="highlight"><code class="javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span><span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>}}}
 </code></pre>
 <p>Minimalizace ořeže přebytečné byty ze souboru, což vede k rychlejšímu stažení, parsování a spuštění.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#minify-your-script">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">Reference</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">Reference</a></em></p>
 
   </div>
 
@@ -585,7 +585,7 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
 </code></pre>
 <p>Tak tedy kombinujte své JS. Menší počet souborů vede k menšímu počtu requestů a rychlejšímu načtení stránky.</p>
 <p>Chcete využít to nejlepší z obou světů? Automatizujte tento proces pomocí buildovacích nástrojů.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#combine-multiple-js-files-into-one">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one">Reference</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one">Reference</a></em></p>
 
   </div>
 
@@ -742,7 +742,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>Výsledkem je zásadní snížení počtu HTTP požadavků a nehrozí tak zdržování načítání dalších zdrojů vašich stránek.</p>
 <p>Když používáte <em>sprite</em>, vyhněte se příliš velkým bílým místům mezi obrázky. Sice to neovlivňuje velikost souboru, má to ale vliv na spotřebu paměti.</p>
 <p>I přes to, že skoro každý techniku spritů zná, není její použití široce rozšířeno&mdash;pravděpodobně proto, že vývojáři nepoužívají automatizační nástroje pro generování spritů. Vypíchli jsme několik takových, které vám s tím mohou pomoci.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#use-css-sprites">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites">Reference</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites">Reference</a></em></p>
 
   </div>
 
@@ -774,7 +774,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>Všechny prohlížeče od IE8 a vyšší podporují techniku kódování pomocí base64.</p>
 <p>Stejně tak jako CSS sprity, i tato metoda potřebuje nástroje, které činnost zautomatizují v okamžiku buildu. Tato metoda je výhodná v tom, že obrázky mohou být každý ve svém souboru a při vývoji tak nekomplikuje práci.</p>
 <p>Naopak nevýhoda je ve značně narůstající velikosti HTML/CSS, jestliže máte velké obrázky. Využití metody se nedoporučuje, pokud nepoužíváte gzipování vašich HTML/CSS. Režie pro zakódování a vložení do stránky může negativně převážit zrychlení získané nižším počtem HTTP požadavků.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#data-uri">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">Reference</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-data-uri">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#data-uri">Reference</a></em></p>
 
   </div>
 
@@ -818,7 +818,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>Existují nástroje pro optimalizaci obrázku, které odstraní nepotřebná data a výsledkem je menší soubor i bez ztráty kvality. Říkáme tomu <em>bezztrátová</em> komprese.</p>
 <p>Další možnost, jak optimalizovat obrázky, je komprese na vrub vizuální kvality. Tomu říkáme <em>ztrátová</em> optimalizace. Například, když exportujete JPEG, můžete si zvolit úroveň kvality (číslo mezi 0 a 100). Když jde o výkon, vždy volte nejnižší možné číslo, které stále ještě zachová přijatelnou vizuální podobu. Další běžná ztrátová technika je zredukování barevné palety v PNG nebo konverze PNG-24 na PNG-8.</p>
 <p>K vylepšení vjemového výkonu je vhodné převést všechny JPEG soubory na jejich progresivní varianty. Progresivní JPEGy mají skvělou podporu v prohlížečích, je snadné vytvořit je a nemají žádné výkonové nevýhody. Výhodou je, že se obrázek načte na stránce dříve (<a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg">viz demo</a>).</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#optimize-your-images">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">Reference</a></em></p>
+<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">Reference</a></em></p>
 
   </div>
 
