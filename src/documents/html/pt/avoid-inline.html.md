@@ -17,4 +17,4 @@ As duas primeiras opções, apesar de reduzirem o número de requisições, aume
 
 Já a terceira opção, não só melhora a organização do seu código, como também possibilita que eles sejam armazenados no cache do navegador. Prefira essa opção para a maior parte dos casos, quando lidamos com arquivos grandes e muitas páginas.
 
-*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#avoid-inlineembedded-code) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code)*
+*> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#wiki-avoid-inlineembedded-code)*
