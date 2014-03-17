@@ -15,5 +15,5 @@ A configuração é específica de servidor, então é difícil falar de todos a
 <IfModule mod_headers.c>
   Header set Connection keep-alive
 </IfModule>
-
+```
 *> [Referências](https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive)*
