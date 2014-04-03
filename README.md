@@ -1,4 +1,4 @@
-# How to lose weight (in the browser) [![Build Status](https://secure.travis-ci.org/zenorocha/browser-diet.png?branch=master)](https://travis-ci.org/zenorocha/browser-diet)
+# How to lose weight (in the browser) [![Build Status](https://secure.travis-ci.org/zenorocha/browser-diet.svg?branch=master)](https://travis-ci.org/zenorocha/browser-diet)
 
 The definitive front-end performance guide.
 
