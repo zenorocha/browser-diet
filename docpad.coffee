@@ -114,7 +114,7 @@ module.exports =
         # Site Information
 
         site:
-            assets: 'http://zenorocha.github.io/browser-diet/en/assets'
+            assets: 'http://zenorocha.github.io/browser-diet/assets'
 
         getGruntedStyles: ->
             _ = require 'underscore'
@@ -150,7 +150,7 @@ module.exports =
             templateData:
                 site:
                     url: 'http://localhost:9778'
-                    assets: 'http://localhost:9778/en/assets'
+                    assets: 'http://localhost:9778/assets'
 
     # =================================
     # DocPad Events
