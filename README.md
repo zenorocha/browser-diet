@@ -15,29 +15,34 @@ If you want to add new tips or edit the existing ones, just go to the [src/docum
 1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have them already.
 
 2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
-```bash
-[sudo] npm install -g docpad@6.40.0
-```
+
+  ```sh
+  $ [sudo] npm install -g docpad@6.40.0
+  ```
 
 3. Now clone it:
-```bash
-git clone git@github.com:<your-github-username>/browser-diet.git
-```
+
+  ```sh
+  $ git clone git@github.com:<your-github-username>/browser-diet.git
+  ```
 
 4. Then go to the project's folder:
-```bash
-cd browser-diet
-```
+
+  ```sh
+  $ cd browser-diet
+  ```
 
 5. Install all dependencies:
-```bash
-docpad install
-```
+
+  ```sh
+  $ docpad install
+  ```
 
 6. And finally run:
-```bash
-docpad run
-```
+
+  ```sh
+  $ docpad run
+  ```
 
 Now you can see the website running at `localhost:9778` :D
 
@@ -143,10 +148,7 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 #### Illustrations
 
 * The 56 Geeks Project by [Scott Johnson](http://myextralife.com/56geeks/)
-
-#### Flag icons
-* GoSquared 2600 Flag Icon Set by [GoSquared](https://www.gosquared.com/resources/flag-icons/)
-
+* Flag Icon Set by [GoSquared](https://www.gosquared.com/resources/flag-icons/)
 
 ## License
 
