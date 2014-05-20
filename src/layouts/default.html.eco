@@ -79,7 +79,6 @@
         <li><a href="#js">JavaScript</a></li>
         <li><a href="#jquery">jQuery</a></li>
         <li><a href="#images"><%= @getLang().images %></a></li>
-        <li><a href="#server"><%= @getLang().server %></a></li>
         <li><a href="#bonus"><%= @getLang().bonus %></a></li>
       </ul>
     </div>
@@ -100,8 +99,6 @@
       <%- @partial('section.html.eco', { sectionTitle: 'jQuery', sectionID: 'jquery', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
       <%- @partial('section.html.eco', { sectionTitle: @getLang().images, sectionID: 'images', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
-
-      <%- @partial('section.html.eco', { sectionTitle: @getLang().server, sectionID: 'server', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
       <%- @partial('section.html.eco', { sectionTitle: @getLang().bonus, sectionID: 'bonus', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
 
