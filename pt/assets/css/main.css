@@ -11,7 +11,7 @@ strong{color:#e60014;}
 #header{background:#ffde00;}
 #content{background:#fff;}
 .superman{display:inline-block;padding:6em;overflow:hidden;position:absolute;top:-1.875em;right:-50px;z-index:-1;}@media (max-width:420px){.superman{padding:3em;}}
-.superman-raios{position:absolute;top:0;left:-2.8125em;z-index:-1;height:35em;width:33.5625em;-webkit-animation:20s superman infinite linear;-moz-animation:20s superman infinite linear;-o-animation:20s superman infinite linear;animation:20s superman infinite linear;}
+.superman-rays{position:absolute;top:0;left:-2.8125em;z-index:-1;height:35em;width:33.5625em;-webkit-animation:20s superman infinite linear;-moz-animation:20s superman infinite linear;-o-animation:20s superman infinite linear;animation:20s superman infinite linear;}
 .superman-geek{height:24.5625em;width:20em;}
 @-webkit-keyframes superman{to{-webkit-transform:rotate(360deg);}}@-moz-keyframes superman{to{-moz-transform:rotate(360deg);}}@-o-keyframes superman{to{-o-transform:rotate(360deg);}}@keyframes superman{to{transform:rotate(360deg);}}.subtitle{background:#e60014;height:42px;}
 #github-ribbon{position:fixed;top:0;right:0;border:0;z-index:2;}
