@@ -79,7 +79,6 @@
         <li><a href="#js">JavaScript</a></li>
         <li><a href="#jquery">jQuery</a></li>
         <li><a href="#images">Images</a></li>
-        <li><a href="#server">Serveur</a></li>
         <li><a href="#bonus">Bonus</a></li>
       </ul>
     </div>
@@ -806,94 +805,6 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>Un autre moyen d&#39;optimiser les images est de les compresser au risque de perdre en qualité visuelle. On appelle cela des optimisations <em>avec pertes</em>. Quand vous exportez une image JPEG, par exemple, vous pouvez choisir le niveau de qualité (un nombre entre 0 et 100). En pensant à la performance, choisissez toujours le plus petit nombre pour lequel la qualité visuelle est encore acceptable. Une autre technique avec perte commune consiste à réduire la palette des couleurs dans une image PNG ou de convertir les PNG-24 en PNG-8.</p>
 <p>Pour améliorer la performance perçue par l&#39;utilisateur, vous devriez aussi convertir tous vos fichiers JPEG en version progressive. Les JPEG progressifs sont très bien supportés dans les navigateurs, sont très simples à créer et n&#39;ont pas de perte significative de qualité. L&#39;avantage est que l&#39;image apparaîtra plus tôt sur la page (<a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg">Regardez la démo</a>).</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images">Outils utiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">References</a></em></p>
-
-  </div>
-
-
-
-
-      <h2 id="server" class="topics"><span>Serveur</span></h2>
-
-
-
-  <div class="article" id="article-keep-alive">
-    <h1 id="keep-alive">
-      <a class="tip-title" href="#keep-alive">keep-alive</a>
-      <a title="Link" class="anchor" href="#keep-alive">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Éditer" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/fr/keep-alive.html.md">✎</a>
-    </div>
-    
-    <p>Chaque requête HTTP établit une connexion &quot;TCP&quot; pour que le client et le serveur puissent communiquer.</p>
-<p>Établir une connexion &quot;TCP&quot; est un processus coûteux qui prend du temps (à cause du &quot;three-way handshake&quot;) et il est donc très important de demander aux connexions TCP nouvellement créées de faire transiter d&#39;autres requêtes HTTP dans le même &quot;tunnel&quot;.</p>
-<p>Cette configuration est appellée <em>keep-alive</em>.</p>
-<p>Elle est spécifique à chaque serveur. Sur Apache, par exemple, vous pouvez ajouter les lignes suivantes dans le <code>.htaccess</code> :</p>
-<pre class="highlight"><code class="apache"><span class="hljs-tag">&lt;IfModule mod_headers.c&gt;</span>
-  <span class="hljs-keyword"><span class="hljs-common">Header</span></span> set Connection keep-alive
-<span class="hljs-tag">&lt;/IfModule&gt;</span>
-</code></pre><p><em>&gt; <a href="https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive">Références</a></em></p>
-
-  </div>
-
-
-
-  <div class="article" id="article-cache">
-    <h1 id="cache">
-      <a class="tip-title" href="#cache">Activer le cache intelligent</a>
-      <a title="Link" class="anchor" href="#cache">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Éditer" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/fr/cache.html.md">✎</a>
-    </div>
-    
-    <p>La meilleure façon d&#39;optimiser les requêtes faites à partir de votre page est de ne pas en faire, évidemment. Et l&#39;un des moyens les plus efficaces pour éviter les requêtes inutiles, c&#39;est de laisser le navigateur mettre en cache le contenu des pages. Par défaut, le navigateur décide combien de temps il doit garder en cache les fichiers. Mais nous pouvons contrôler le temps exact de conservation du fichier dans le cache.</p>
-<div class="img-right">
-  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/en/assets/img/15.png" alt="Geek #15" width="141" height="275" />
-</div>
-
-<p>Ce type de configuration est effectuée sur le serveur (et dépendra de la configuration du serveur que vous utilisez). Avec Apache, par exemple, vous pouvez ajouter la configuration suivante dans un fichier <code>.htaccess</code>:</p>
-<pre class="highlight"><code class="mel">ExpiresActive On
-ExpiresByType <span class="hljs-keyword">image</span>/gif <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">image</span>/jpeg <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">image</span>/png <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">text</span>/css <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">text</span>/javascript <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType application/javascript <span class="hljs-string">"access plus 6 months"</span>
-</code></pre><p>Ces instructions mettent en cache les images, CSS et JS pendant 6 mois&mdash;il est recommandé de les mettre en cache pendant au moins un mois. D&#39;autres serveurs peuvent être configurés de façon similaire.</p>
-<p>Une chose importante à retenir est que, une fois mis en cache, le navigateur ne va pas demander à nouveau un fichier. Si nous devons changer le contenu du fichier, l&#39;affichage obtenu ne sera pas le résultat attendu. Pour envoyer une nouvelle version, nous avons besoin de changer le nom du fichier. Une façon de faire est d&#39;ajouter une certaine forme de versioning ou un horodatage au nom du fichier. Par exemple, au lieu de <code>home.js</code> vous pouvez utiliser <code>home-v1.js</code> et quand vous avez besoin de mettre à jour le fichier, changer le nom de <code>home-v2.js</code>, etc.</p>
-<p>Une autre forme courante de rupture de cache est d&#39;utiliser un paramètre GET dans l&#39;URL : <code>home.js?v=1</code> et <code>home.js?v=2</code>. Cette méthode a l&#39;inconvénient par rapport au renommage de fichiers d&#39;être ignorée par certains proxys sur internet (ils ne prennent pas en compte les paramètres GET) mais respecte les règles de cache, ce qui rend impossible la maîtrise de celui-ci (mettre à jour un fichier quand on a besoin).</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#enable-smart-caching">Références</a></em></p>
-
-  </div>
-
-
-
-  <div class="article" id="article-gzip">
-    <h1 id="gzip">
-      <a class="tip-title" href="#gzip">GZIP</a>
-      <a title="Link" class="anchor" href="#gzip">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Éditer" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/fr/gzip.html.md">✎</a>
-    </div>
-    
-    <p>Un large pourcentage du contenu d&#39;un site est simplement du texte (HTML, CSS, JavaScript, JSON, XML, etc.). Pour ce type de contenu, c&#39;est une bonne pratique d&#39;activer la compression GZIP au niveau du serveur.</p>
-<p>GZIP compresse les données sur le serveur avant de l&#39;envoyer via le réseau au navigateur de l&#39;utilisateur, qui le décompresse à la volée. C&#39;est comme compresser un fichier avant de l&#39;envoyer à quelqu&#39;un pour le rendre plus petit. Tous les navigateurs et les serveurs modernes supportent GZIP.</p>
-<p>La configuration est mise en place sur le serveur. Sur Apache, par exemple, vous pouvez éditer le fichier <code>.htaccess</code> et activer GZIP pour les types de fichiers que vous souhaitez :</p>
-<pre class="highlight"><code class="applescript">AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/html
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/plain
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/xml
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/css
-AddOutputFilterByType DEFLATE <span class="hljs-type">application</span>/javascript
-</code></pre><p>Les serveurs les populaires permettent une mise en place assez simple (consultez la documentation pour le votre !) et c&#39;est l&#39;un des conseils les plus efficaces pour améliorer les performances d&#39;une page.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#gzip">Références</a></em></p>
 
   </div>
 

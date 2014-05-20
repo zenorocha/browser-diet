@@ -79,7 +79,6 @@
         <li><a href="#js">JavaScript</a></li>
         <li><a href="#jquery">jQuery</a></li>
         <li><a href="#images">Images</a></li>
-        <li><a href="#server">Server</a></li>
         <li><a href="#bonus">Bonus</a></li>
       </ul>
     </div>
@@ -829,94 +828,6 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>画像最適化の別の方法は、視覚的な質を犠牲にして圧縮することです。 私たちはこれを<em>損失のある</em>最適化と呼びます。例えば、JPEGをエクスポートするときに品質レベル（0から100の数値で）を選ぶことができます。パフォーマンスを考えて、視覚的に許容範囲の中で最も低い数値を選びましょう。その他の損失のある最適化テクニックはPNGのカラーパレットを減少するかPNG-24のファイルをPNG-8に変換することです。</p>
 <p>ユーザー体感のパフォーマンスを改善するために、JPEGファイルをプログレッシブJPEGへ変換すべきです。プログレッシブJPEGはブラウザのサポートが充実していて、作成が容易で、パフォーマンス面での大きな問題もありません。この利点はページに素早く画像を表示できることです（<a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg">デモ</a>）。</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">リファレンス</a></em></p>
-
-  </div>
-
-
-
-
-      <h2 id="server" class="topics"><span>Server</span></h2>
-
-
-
-  <div class="article" id="article-keep-alive">
-    <h1 id="keep-alive">
-      <a class="tip-title" href="#keep-alive">keep-alive</a>
-      <a title="Link" class="anchor" href="#keep-alive">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Edit" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/jp/keep-alive.html.md">✎</a>
-    </div>
-    
-    <p>クライアントとサーバ間の通信があるように、すべてのHTTPリクエストは確立されたTCP接続が必要になります。</p>
-<p>「TCP」接続はコストが掛かり、時間も掛かる（3ウェイハンドシェイクのために）ので、新たに作られたTCP接続に他のHTTPリクエストを同じ「トンネル」へ再利用することがとても重要です。</p>
-<p>この設定はkeep-aliveと呼ばれます。</p>
-<p>設定はサーバーに固有です。 例えばApacheでは、<code>.htaccess</code>で以下の部分を編集します。</p>
-<pre class="highlight"><code class="apache"><span class="hljs-tag">&lt;IfModule mod_headers.c&gt;</span>
-  <span class="hljs-keyword"><span class="hljs-common">Header</span></span> set Connection keep-alive
-<span class="hljs-tag">&lt;/IfModule&gt;</span>
-</code></pre><p><em>&gt; <a href="https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive">リファレンス</a></em></p>
-
-  </div>
-
-
-
-  <div class="article" id="article-cache">
-    <h1 id="cache">
-      <a class="tip-title" href="#cache">賢いキャッシュを有効に</a>
-      <a title="Link" class="anchor" href="#cache">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Edit" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/jp/cache.html.md">✎</a>
-    </div>
-    
-    <p>あなたのページからのリクエストを最適化する最善の方法は、間違いなく、リクエストをしないことです。不要なリクエストを避ける有用な手法の1つは、アセットをブラウザにキャッシュさせることです。デフォルトではブラウザがどの期間ファイルをキャッシュするかを決めます。ですが、私たちはキャッシュを保つ期間を正確にコントロールできます。</p>
-<div class="img-right">
-  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/en/assets/img/15.png" alt="Geek #15" width="141" height="275" />
-</div>
-
-<p>このタイプの構成はサーバ上で行なわれます（そしてあなたが持つサーバの設定に依存します）。例えば、Apacheであれば<code>.htaccess</code>ファイルに以下の設定を加えられます。</p>
-<pre class="highlight"><code class="mel">ExpiresActive On
-ExpiresByType <span class="hljs-keyword">image</span>/gif <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">image</span>/jpeg <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">image</span>/png <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">text</span>/css <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">text</span>/javascript <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType application/javascript <span class="hljs-string">"access plus 6 months"</span>
-</code></pre><p>これらの命令は画像とCSSとJSを6ヶ月キャッシュします。&mdash;少なくとも1ヶ月はキャッシュすることが推奨されます。他のサーバも同じように設定できます。</p>
-<p>1つ覚えておくべき重要なことは、一度キャッシュされるとブラウザが新たにリクエストすることは無いということです。 そのファイルの内容を変更する必要があれば私たちが期待しているようには動きません。 新たなバージョンを送信するにはファイルの名前を変更する必要があります。 その方法としてはバージョンの幾つかの形式を付与するか、ファイル名にタイムスタンプを付けることです。例えば、<code>home.js</code>の代わりに<code>home-v1.js</code>とするか、アップデートする際にファイル名を<code>home-v2.js</code>などに変更することです。</p>
-<p>他のキャッシュ除去の形式はURLでGETパラメータを使用することです: <code>home.js?v=1</code>と<code>home.js?v=2</code>のように。 必要な時にキャッシュを消せなくなるがキャッシュのルールには準拠しているこの方法は、ファイル名の変更をする上で幾つかのインターネットのプロキシはGETパラメータを認識できないデメリットがあります。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#enable-smart-caching">リファレンス</a></em></p>
-
-  </div>
-
-
-
-  <div class="article" id="article-gzip">
-    <h1 id="gzip">
-      <a class="tip-title" href="#gzip">GZIP</a>
-      <a title="Link" class="anchor" href="#gzip">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Edit" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/jp/gzip.html.md">✎</a>
-    </div>
-    
-    <p>サイトのコンテンツの大部分を占めるのは、シンプルなテキスト（HTML、CSS、JavaScript、JSON、XMLなど）です。この種のコンテンツには、サーバーでGZIP圧縮を有効にするのが良いプラクティスです。</p>
-<p>ユーザーのブラウザに送信される前にサーバーでデータをGZIP圧縮します。これは何かファイルを送る前にそれを小さくするためzip圧縮することに似ています。</p>
-<p>構成はサーバー上に設定されます。例えばApacheでは<code>.htaccess</code>ファイルを編集し、ファイルのタイプによってGZIPを有効にできます。</p>
-<pre class="highlight"><code class="applescript">AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/html
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/plain
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/xml
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/css
-AddOutputFilterByType DEFLATE <span class="hljs-type">application</span>/javascript
-</code></pre><p>全てのポピュラーなサーバーは、簡単に設定できるようになっていて（ドキュメントを見てください）、パフォーマンスを改善する効果的な手段の1つです。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#gzip">リファレンス</a></em></p>
 
   </div>
 

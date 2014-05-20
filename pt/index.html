@@ -79,7 +79,6 @@
         <li><a href="#js">JavaScript</a></li>
         <li><a href="#jquery">jQuery</a></li>
         <li><a href="#images">Imagens</a></li>
-        <li><a href="#server">Servidor</a></li>
         <li><a href="#bonus">Bônus</a></li>
       </ul>
     </div>
@@ -808,96 +807,6 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
 <p>Outra forma de otimizar imagens é comprimi-las com certas perdas visuais aceitáveis. Esse tipo de operação é chamada de otimização <em>lossy</em>. Quando você exportar um JPEG, por exemplo, pode escolher a qualidade (um número de 0 a 100). Pensando em performance, pegue sempre o número mais baixo onde a qualidade visual ainda é aceitável. Outra otimização <em>lossy</em> famosa é diminuir o número de cores na paleta de um PNG, ou transformar arquivos PNG-24 em PNG-8.</p>
 <p>Para melhorar a performance percebida pelo usuário, você deve transformar todos seus arquivos JPEGs em progressivos. JPEGs progressivos têm ótimo suporte nos navegadores, são muito fáceis de criar e não têm nenhum problema de performance significativo. O bom é que a imagem vai aparecer bem antes na página (<a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg">ver exemplo</a>).</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images">Ferramentas úteis</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#wiki-optimize-your-images">Referências</a></em></p>
-
-  </div>
-
-
-
-
-      <h2 id="server" class="topics"><span>Servidor</span></h2>
-
-
-
-  <div class="article" id="article-keep-alive">
-    <h1 id="keep-alive">
-      <a class="tip-title" href="#keep-alive">keep-alive</a>
-      <a title="Link" class="anchor" href="#keep-alive">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/pt/keep-alive.html.md">✎</a>
-    </div>
-    
-    <p>Toda requisição HTTP precisa obrigatoriamente de uma conexão TCP estabelecida para que haja a comunicação entre o cliente e o servidor.</p>
-<p>Estabelecer uma conexão TCP é um processo custoso e demorado (devido ao three-Way handshake), por isso é muito importante que consigamos reaproveitar conexões TCP recém criadas para trafegar outras requisições HTTP pelo mesmo &quot;túnel&quot;.</p>
-<p>Esta configuração é chamada de keep-alive.</p>
-<p>A configuração é específica de servidor, então é difícil falar de todos aqui. Mas costuma ser bem simples. No Apache, por exemplo, você pode editar o arquivo <code>.htaccess</code>, veja:</p>
-<p>```</p>
-<IfModule mod_headers.c>
-  Header set Connection keep-alive
-</IfModule>
-
-<p><em>&gt; <a href="https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive">Referências</a></em></p>
-
-  </div>
-
-
-
-  <div class="article" id="article-cache">
-    <h1 id="cache">
-      <a class="tip-title" href="#cache">Habilite o cache dos arquivos</a>
-      <a title="Link" class="anchor" href="#cache">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/pt/cache.html.md">✎</a>
-    </div>
-    
-    <p>A melhor forma de otimizar os requests da sua página é não fazer requests na página, claro. E uma das maneiras mais úteis pra evitar requisições desnecessárias é deixar o navegador fazer cache dos arquivos. Por padrão, o navegador não faz cache das coisas, pra evitar ficar com arquivos desatualizados. Mas nós podemos indicar que determinado arquivo pode ser, sim, guardado em cache.</p>
-<div class="img-right">
-  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/en/assets/img/15.png" alt="Geek #15" width="141" height="275" />
-</div>
-
-<p>Essa configuração é feita no servidor e depende de qual você estiver usando. No Apache, por exemplo, você pode editar seu arquivo <code>.htaccess</code> e colocar a seguinte configuração:</p>
-<pre class="highlight"><code class="mel">ExpiresActive On
-ExpiresByType <span class="hljs-keyword">image</span>/gif <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">image</span>/jpeg <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">image</span>/png <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">text</span>/css <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">text</span>/javascript <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType application/javascript <span class="hljs-string">"access plus 6 months"</span>
-</code></pre><p>A configuração acima habilita um cache de 6 meses para imagens, CSS e JS — o recomendado é pelo menos 1 mês de cache. Outros servidores têm configurações parecidas.</p>
-<p>Um ponto importante é que, uma vez cacheado, o browser não refaz mais o request. Se precisarmos alterar o conteúdo daquele arquivo, não conseguimos. Pra enviar uma versão nova, precisamos mudar o nome do arquivo. Uma forma recomendada é colocar algum tipo de código de versão ou timestamp no nome do arquivo. Por exemplo, ao invés de <code>home.js</code>, você pode usar <code>home-v1.js</code> e, quando precisar atualizar o arquivo, renomeia ele pra <code>home-v2.js</code>.</p>
-<p>Outra forma comum é passar um parâmetro GET na URL: <code>home.js?v=1</code> e <code>home.js?v=2</code>. Esse método tem a desvantagem sobre a alternativa de renomear já que alguns proxies na internet ignoram parâmetros GET, mas aderem as regras de cache, o que lhe permite utilizá-las quando precisar.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#enable-smart-caching">Referências</a></em></p>
-
-  </div>
-
-
-
-  <div class="article" id="article-gzip">
-    <h1 id="gzip">
-      <a class="tip-title" href="#gzip">Gzip</a>
-      <a title="Link" class="anchor" href="#gzip">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Editar" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/pt/gzip.html.md">✎</a>
-    </div>
-    
-    <p>Boa parte do conteúdo que trafegamos em um site é texto (HTML, CSS, JavaScript, JSON, XML etc). Para esse tipo de conteúdo, é uma boa prática habilitar a compressão GZIP no servidor.</p>
-<p>O GZIP comprime os dados no servidor antes de enviar via rede para o navegador do usuário, que descomprime na hora que recebe. É como zipar um arquivo antes de mandar pra alguém, o tamanho final fica bem menor. Todos os navegadores modernos têm suporte a GZIP, assim como os servidores.</p>
-<p>A configuração é específica de servidor, então é difícil falar de todos aqui. Mas costuma ser bem simples. No Apache, por exemplo, você pode editar o arquivo <code>.htaccess</code> e habilitar o deflate para os tipos de arquivo que quiser:</p>
-<pre class="highlight"><code class="applescript">AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/html
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/plain
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/xml
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/css
-AddOutputFilterByType DEFLATE <span class="hljs-type">application</span>/javascript
-</code></pre><p>Essa configuração costuma ser bem simples de fazer em todos os servidores do mercado (veja na documentação do seu!) e é uma das dicas mais eficientes para se melhorar a performance da página.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#gzip">Referências</a></em></p>
 
   </div>
 

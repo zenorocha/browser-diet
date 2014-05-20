@@ -79,7 +79,6 @@
         <li><a href="#js">JavaScript</a></li>
         <li><a href="#jquery">jQuery</a></li>
         <li><a href="#images">Images</a></li>
-        <li><a href="#server">Server</a></li>
         <li><a href="#bonus">Bonus</a></li>
       </ul>
     </div>
@@ -802,70 +801,6 @@ var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
 <p>另一种优化图片的方式是，以图片质量为代价进行压缩。我们称之为<em>有损</em>压缩。举例来说，当你到处一个JPEG图片时，你可以选择导出的图片质量（从0到100）。考虑到性能，总是选择可接受范围内的最低值。在PNG图片中，另一个常见的有损技术是减少颜色数量，或者将PNG-24格式转换为PNG-8格式。</p>
 <p>为了提升用户的体验，你还应该将你的JPEG文件转换为渐进式的。现在大多数的浏览器都支持渐进式JPEG文件，并且这种格式的文件创建简单，没有明显的性能损失问题。页面中的这种格式的图片能够更快的展现(<a href="http://www.patrickmeenan.com/progressive/view.php?img=http://farm2.staticflickr.com/1434/1002257937_021cb46a33_o.jpg">see demo</a>).</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-optimize-your-images">小工具</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#optimize-your-images">参考</a></em></p>
-
-  </div>
-
-
-
-
-      <h2 id="server" class="topics"><span>Server</span></h2>
-
-
-
-  <div class="article" id="article-cache">
-    <h1 id="cache">
-      <a class="tip-title" href="#cache">启用缓存</a>
-      <a title="Link" class="anchor" href="#cache">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Edit" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/zh/cache.html.md">✎</a>
-    </div>
-    
-    <p>优化页面请求的最好的方法就是不要发送请求。避免不必要的请求最有效的方法之一就是让浏览器缓存资源。浏览器会默认决定缓存一个文件多久。但是我们能够控制这个缓存时间。</p>
-<div class="img-right">
-  <img id="geek-15" class="icos-geek" src="http://browserdiet.com/en/assets/img/15.png" alt="Geek #15" width="141" height="275" />
-</div>
-
-<p>这个配置是在服务器上设置的。以Apache为例，你可以将下面的配置添加到<code>.htaccess</code>文件中：</p>
-<pre class="highlight"><code class="mel">ExpiresActive On
-ExpiresByType <span class="hljs-keyword">image</span>/gif <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">image</span>/jpeg <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">image</span>/png <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">text</span>/css <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType <span class="hljs-keyword">text</span>/javascript <span class="hljs-string">"access plus 6 months"</span>
-ExpiresByType application/javascript <span class="hljs-string">"access plus 6 months"</span>
-</code></pre><p>这些配置设置图片、CSS和JS文件的缓存时间为6个月&mdash;推荐设置为最少一个月。其他服务器的设置类似。</p>
-<p>需要牢记的一个事情时，一旦被浏览器缓存，那么这段时间内就不会去请求新的文件。如果我们改变了文件内容，浏览器使用的可能仍然是旧的文件。那么为了使用新的版本，我们需要改变这个文件的文件名。这么做的一种方法是在文件名中添加一些版本控制或时间戳的标记。举例来说，我们将<code>home.js</code>命名为<code>home-v1.js</code>，当需要更新版本时，将文件名改为<code>home-v2.js</code>等等.</p>
-<p>另一种常见的做法是在文件URL中添加GET请求参数:类似<code>home.js?v=1</code>和<code>home.js?v=2</code>。这种做法与改变文件名的方法相比，缺点是有些代理服务器可能会忽略GET请求参数，这样的话你就没办法破坏浏览器的缓存了。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#enable-smart-caching">参数</a></em></p>
-
-  </div>
-
-
-
-  <div class="article" id="article-gzip">
-    <h1 id="gzip">
-      <a class="tip-title" href="#gzip">GZIP</a>
-      <a title="Link" class="anchor" href="#gzip">∞</a>
-    </h1>
-    
-    <div class="line">
-      <span class="order rule-counter"></span>
-      <a title="Edit" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/server/zh/gzip.html.md">✎</a>
-    </div>
-    
-    <p>在一个网站中，站百分比最多的内容就是简单的文本(HTML, CSS, JavaScript, JSON, XML等)。对于这种内容来说，最好的实践就是在服务器端开启GZIP压缩。</p>
-<p>在服务器发送数据前，使用GZIP进行压缩，然后再进行传输，当浏览器接收到数据后会进行解压缩。就像是给某人发文件前，先使用压缩来让文件变得更小。所有的现代浏览器和服务器都支持GZIP。</p>
-<p>同样是需要在服务器上进行相应的设置。以Apache为例，你可以将下面的配置加入<code>.htaccess</code>文件中:</p>
-<pre class="highlight"><code class="applescript">AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/html
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/plain
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/xml
-AddOutputFilterByType DEFLATE <span class="hljs-type">text</span>/css
-AddOutputFilterByType DEFLATE <span class="hljs-type">application</span>/javascript
-</code></pre><p>所有当前流行的服务器都很容易设置(请查阅你的文档！)。这对提升页面性能来说是一个最有用的技巧。</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#gzip">参考</a></em></p>
 
   </div>
 
