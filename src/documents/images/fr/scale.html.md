@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 4
 title: Ne re-dimensionnez pas vos images dans la mise en page
 ---
 

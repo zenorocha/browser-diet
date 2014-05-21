@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 19
 title: Scalanie wielu plików CSS
 ---
 

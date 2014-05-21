@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 8
 title: Používejte for namísto each
 ---
 Využití nativních funkcí JavaScriptu téměř vždy vede k rychlejšímu provedení než obdoby v JQuery. Z toho důvodu raději než metodu `jQuery.each` používejte nativní `for` smyčku.

@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 14
 title: Minimalizujte Repaints a Reflows
 ---
 

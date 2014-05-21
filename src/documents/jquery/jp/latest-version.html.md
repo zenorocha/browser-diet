@@ -1,5 +1,5 @@
 ---
-order: 12
+order: 10
 title: 常に最新のバージョンのjQueryを使用する
 ---
 

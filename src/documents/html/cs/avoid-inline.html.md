@@ -1,5 +1,5 @@
 ---
-order: 26
+order: 23
 title: Vyhněte se inline/vloženému kódu
 ---
 

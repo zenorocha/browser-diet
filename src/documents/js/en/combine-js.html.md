@@ -1,5 +1,5 @@
 ---
-order: 13
+order: 11
 title: Combine multiple JS files into one
 ---
 

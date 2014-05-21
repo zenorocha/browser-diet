@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 8
 title: Korzystaj z `for` zamiast `each`
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 14
+order: 13
 title: 不要なDOM操作を避ける
 ---
 

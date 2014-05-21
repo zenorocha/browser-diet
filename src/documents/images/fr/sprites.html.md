@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 6
 title: Utiliser des sprites pour le CSS
 ---
 

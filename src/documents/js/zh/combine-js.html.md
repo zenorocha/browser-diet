@@ -1,5 +1,5 @@
 ---
-order: 13
+order: 11
 title: 将多个JS文件合并
 ---
 

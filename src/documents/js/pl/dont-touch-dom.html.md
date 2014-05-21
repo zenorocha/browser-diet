@@ -1,5 +1,5 @@
 ---
-order: 14
+order: 13
 title: Unikaj niepotrzebnych manipulacji DOM
 ---
 

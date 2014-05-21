@@ -1,5 +1,5 @@
 ---
-order: 17
+order: 16
 title: Mettre en cache la longueur d'un tableau
 ---
 

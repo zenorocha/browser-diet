@@ -1,5 +1,5 @@
 ---
-order: 13
+order: 11
 title: Combinez plusieurs fichiers JS en un seul
 ---
 

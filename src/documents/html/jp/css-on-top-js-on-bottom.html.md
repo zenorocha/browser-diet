@@ -1,5 +1,5 @@
 ---
-order: 25
+order: 22
 title: styleは上へ、scriptは下へ
 ---
 

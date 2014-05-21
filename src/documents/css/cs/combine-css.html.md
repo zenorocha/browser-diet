@@ -1,5 +1,5 @@
 ---
-order: 21
+order: 19
 title: Sloučení více CSS souborů
 ---
 

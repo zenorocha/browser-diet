@@ -1,5 +1,5 @@
 ---
-order: 25
+order: 22
 title: Los estilos arriba, los scripts al fondo
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 20
+order: 18
 title: 使用 <link> 标签而不是 @import
 ---
 

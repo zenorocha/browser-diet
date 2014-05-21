@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 8
 title: 使用for，而不是each
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 25
+order: 22
 title: Les styles en haut, les scripts en bas
 ---
 

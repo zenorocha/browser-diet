@@ -1,5 +1,5 @@
 ---
-order: 18
+order: 17
 title: Charger les librairies tiers de façon asynchrone
 ---
 

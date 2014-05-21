@@ -1,5 +1,5 @@
 ---
-order: 23
+order: 21
 title: experimente o async & defer
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 13
+order: 11
 title: Scalanie wielu plików JS w jeden
 ---
 

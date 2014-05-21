@@ -1,5 +1,5 @@
 ---
-order: 22
+order: 20
 title: Minifier vos feuilles de styles
 ---
 

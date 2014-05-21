@@ -1,5 +1,5 @@
 ---
-order: 23
+order: 21
 title: Try out async
 ---
 

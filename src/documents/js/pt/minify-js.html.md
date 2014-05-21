@@ -1,5 +1,5 @@
 ---
-order: 14
+order: 12
 title: Comprima seu script
 ---
 

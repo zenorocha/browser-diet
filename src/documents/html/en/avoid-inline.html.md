@@ -1,5 +1,5 @@
 ---
-order: 26
+order: 23
 title: Avoid inline/embedded code
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 4
 title: 不要在 <img> 标签中调整图像
 ---
 

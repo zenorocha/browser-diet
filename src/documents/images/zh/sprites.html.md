@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 6
 title: 使用CSS Sprites
 ---
 

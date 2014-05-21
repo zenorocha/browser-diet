@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 4
 title: No cambies el tamaño de las imágenes en el HTML
 ---
 

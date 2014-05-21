@@ -1,5 +1,5 @@
 ---
-order: 16
+order: 15
 title: 避免使用document.write
 ---
 

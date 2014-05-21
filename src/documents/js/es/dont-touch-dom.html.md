@@ -1,5 +1,5 @@
 ---
-order: 14
+order: 13
 title: Evita manipulaciones del DOM innecesarias
 ---
 

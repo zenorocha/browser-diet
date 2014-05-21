@@ -11,7 +11,7 @@ module.exports =
         # Language Definition
 
         lang: require('./i18n')
-        currentLang: 'zh'
+        currentLang: 'en'
 
         # -----------------------------
         # Site Information

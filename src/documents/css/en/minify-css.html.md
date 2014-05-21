@@ -1,5 +1,5 @@
 ---
-order: 22
+order: 20
 title: Minify your stylesheets
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 12
+order: 10
 title: 总是使用最新版本jQuery
 ---
 

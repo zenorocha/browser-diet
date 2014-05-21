@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 14
 title: Minimiza los Repaints y Reflows
 ---
 

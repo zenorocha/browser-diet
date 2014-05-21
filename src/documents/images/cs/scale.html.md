@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 4
 title: Neměňte velikost obrázků ve stránce
 ---
 

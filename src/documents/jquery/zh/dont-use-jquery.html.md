@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 7
 title: 不要使用jQuery...
 ---
 

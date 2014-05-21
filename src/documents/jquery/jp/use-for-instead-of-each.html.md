@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 8
 title: eachの代わりにforを使用する
 ---
 

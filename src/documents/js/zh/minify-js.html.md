@@ -1,5 +1,5 @@
 ---
-order: 14
+order: 12
 title: 压缩你的脚本
 ---
 
