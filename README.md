@@ -2,7 +2,7 @@
 
 The definitive front-end performance guide.
 
-![image](http://f.cl.ly/items/0H2J2d2r2S402o180B2n/five-geeks.jpg)
+![image](https://cloud.githubusercontent.com/assets/398893/3528424/3368fc18-078f-11e4-9226-cdda8e13e5c9.jpg)
 
 ## Contributing
 
@@ -56,7 +56,7 @@ Then you just need to run `docpad run` again.
 
 We do care about it.
 
-![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png)
+![IE](https://cloud.githubusercontent.com/assets/398893/3528325/20373e76-078e-11e4-8e3a-1cb86cf506f0.png) | ![Chrome](https://cloud.githubusercontent.com/assets/398893/3528328/23bc7bc4-078e-11e4-8752-ba2809bf5cce.png) | ![Firefox](https://cloud.githubusercontent.com/assets/398893/3528329/26283ab0-078e-11e4-84d4-db2cf1009953.png) | ![Opera](https://cloud.githubusercontent.com/assets/398893/3528330/27ec9fa8-078e-11e4-95cb-709fd11dac16.png) | ![Safari](https://cloud.githubusercontent.com/assets/398893/3528331/29df8618-078e-11e4-8e3e-ed8ac738693f.png)
 --- | --- | --- | --- | --- |
 IE 9+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
 
@@ -97,12 +97,6 @@ Lists all NodeJS dependencies.
 ## Team
 
 BrowserDiet was made with love by these people and a bunch of awesome [contributors](https://github.com/zenorocha/browser-diet/graphs/contributors).
-
-#### Maintainer
-
-[![Djalma Araújo](http://gravatar.com/avatar/be74fd9a577ea5ef1ab2e7c71bcfa4b5?s=70)](https://github.com/djalmaaraujo) |
---- | --- | --- | --- | --- | --- | ---
-[Djalma Araújo](https://github.com/djalmaaraujo)<br>Wobo, Inc. |
 
 #### Creator
 
