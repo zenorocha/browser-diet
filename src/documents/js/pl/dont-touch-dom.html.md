@@ -27,13 +27,4 @@ for (var i = 0; i < 100; i++) {
 document.getElementById("myList").innerHTML = myList;
 ```
 
-```js
-// dużo, *dużo* better :)
-var myListHTML = document.getElementById("myList").innerHTML;
-
-for (var i = 0; i < 100; i++) {
-  myListHTML += "<span>" + i + "</span>";
-}
-```
-
 *> [Wuniki w JSPerf](http://jsperf.com/browser-diet-dom-manipulation/11)*
