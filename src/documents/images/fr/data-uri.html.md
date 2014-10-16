@@ -27,6 +27,6 @@ Tous les navigateurs depuis IE8 et haut-dessus supportent cette technique d'enco
 
 Cette méthode et celle qui utilise les sprites requièrent des outils de développement pour être maintenables. Cette méthode a l'avantage de ne pas avoir besoin de disposer les images manuellement puisqu'elle les conserve dans des fichiers séparés pendant la phase de développement.
 
-Cependant elle a l'inconvénient d'augmenter la taille de votre HTML/CSS considérablement si vous avez des images volumineuses. Il n'est pas recommendé d'utiliser cette méthode si vous ne gzippez pas votre HTML/CSS pendant les requêtes HTTP puisque le surpoids pourrait contre-balancer la rapidité que vous gagnée en minimisant le nombre de requêtes HTTP.
+Cependant elle a l'inconvénient d'augmenter la taille de votre HTML/CSS considérablement si vous avez des images volumineuses. Il n'est pas recommendé d'utiliser cette méthode si vous ne gzippez pas votre HTML/CSS pendant les requêtes HTTP puisque le surpoids pourrait contre-balancer la rapidité que vous gagnez en minimisant le nombre de requêtes HTTP.
 
 *> [Outils utiles](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-data-uri) / [References](https://github.com/zenorocha/browser-diet/wiki/References#data-uri)*

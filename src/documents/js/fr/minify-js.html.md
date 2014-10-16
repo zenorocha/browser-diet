@@ -16,7 +16,7 @@ BrowserDiet.app = function() {
 };
 ```
 
-Mais tout ceci n'a aucun intérêt pour le navigateur. C'est pour cela qu'il faut toujours vous rappeler de minimifier votre JavaScript par des outils automatiques.
+Mais tout ceci n'a aucun intérêt pour le navigateur. C'est pour cela qu'il faut toujours vous rappeler de minifier votre JavaScript par des outils automatiques.
 
 ```js
 BrowserDiet.app=function(){var a=!0;return{bar:function(){}}}
