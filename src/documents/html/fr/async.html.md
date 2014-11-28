@@ -13,13 +13,13 @@ Pour expliquer pourquoi cet attribut est utile pour de meilleurs performances, i
 <script src="example.js"></script>
 ```
 
-Dans ce formulaire, la page doit attendre que le script soit complétement téléchargé, parsé et exécuté avant de parser et afficher n'importe quel HTML à la suite. Cela peut augmenter le temps de chargement de vore page de manière siginificative. Parfois ce comportement peut être désiré, mais ce n'est généralemet pas le cas.
+Dans ce formulaire, la page doit attendre que le script soit complètement téléchargé, parsé et exécuté avant de parser et afficher n'importe quel HTML à la suite. Cela peut augmenter le temps de chargement de vore page de manière siginificative. Parfois ce comportement peut être désiré, mais ce n'est généralement pas le cas.
 
 ``` html
 <script async src="example.js"></script>
 ```
 
-Ce script est téléchargé de manière asynchone pendant que le reste de la page continue d'être analysée.
-Le script a l'assurance de s'exécuter dès que son téléchargement sera terminé. Gardez à l'esprit que de multiples téléchargements asynchones ne seront pas exécutés dans un ordre spécifique.
+Ce script est téléchargé de manière asynchrone pendant que le reste de la page continue d'être analysé.
+Le script a l'assurance de s'exécuter dès que son téléchargement sera terminé. Gardez à l'esprit que de multiples téléchargements asynchrones ne seront pas exécutés dans un ordre spécifique.
 
 *> [References](https://github.com/zenorocha/browser-diet/wiki/References#try-out-async)*

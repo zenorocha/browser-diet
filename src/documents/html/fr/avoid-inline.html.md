@@ -11,7 +11,7 @@ Il y a trois façons basiques d'inclure du CSS ou du JavaScript sur votre page :
 
 **3) Externe :** le CSS est chargé depuis un `<link>` et le JavaScript depuis un attribut `src` d'une balise `<script>`.
 
-Les deux premières options, bien que réduisant le nombre de requêtes HTTP, augmentent en réalité la taille de votre document HTML. Cela peut-être utile quand vous avez peu de CSS/JavaScript et que le coût d'une nouvelle requête serait plus important. Dans ce cas, faites des testz et évalueé si cela conduit bien à un gain de vitesse. De plus, soyez sûr d'analyser le but de votre page et son public. Si par exemple votre page est une campagne temporaire et que vous ne vous attendez pas à ce que les utilisateurs reviennent, le code inlining/embedded vous aidera à réduire le nombre de requêtes HTTP.
+Les deux premières options, bien que réduisant le nombre de requêtes HTTP, augmentent en réalité la taille de votre document HTML. Cela peut-être utile quand vous avez peu de CSS/JavaScript et que le coût d'une nouvelle requête serait plus important. Dans ce cas, faites des tests et évaluez si cela conduit bien à un gain de vitesse. De plus, soyez sûr d'analyser le but de votre page et son public. Si par exemple votre page est une campagne temporaire et que vous ne vous attendez pas à ce que les utilisateurs reviennent, le code inlining/embedded vous aidera à réduire le nombre de requêtes HTTP.
 
 *> Evitez d'éditer manuellement le CSS/JS au milieu de votre HTML (automatiser le processus avec un outil est préférable).*
 
