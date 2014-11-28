@@ -12,8 +12,8 @@
   },
   "devDependencies": {
     "grunt": "~0.4.0",
-    "grunt-cli": "0.1.6",
-    "grunt-contrib-cssmin": "~0.7.0"
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-cssmin": "~0.10.0"
   },
   "scripts": {
     "test": "docpad generate"
