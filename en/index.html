@@ -908,6 +908,16 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+
+    // Script for nice navigation
+    window.onscroll = function(){
+      var TopElement = window.pageYOffset || document.documentElement.scrollTop
+      if (TopElement > 565){
+        document.getElementById("menu").className = "fixar";
+      }else {
+        document.getElementById("menu").className = "";
+      }
+    }
   </script>
 
 </body>
