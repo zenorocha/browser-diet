@@ -112,26 +112,12 @@
   <!-- <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
     <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">
   </a> -->
-
-   <script type="text/javascript">
-      // Script
+  
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript">
       window.addEventListener('scroll',
          ThrottleFixedMenu
       );
-
-      function ThrottleFixedMenu(){
-         var TopElement = document.getElementById('menu').offsetTop;
-         var MainMenu   = document.getElementById("menu");
-         var TamScroll  = window.pageYOffset || document.documentElement.scrollTop;
-         var TamGlobal  = 562;
-
-         if(TopElement <= TamScroll){
-           MainMenu.className = "fixar";
-         }
-         if(TamScroll <= TamGlobal){
-          MainMenu.className = "";
-         }
-      } // Finish
 
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-4114546-34']);
