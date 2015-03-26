@@ -1,8 +1,17 @@
+/* --- Mixins --- */
+
+.mq-gh-ribbon(@lang, @selector, @width) {
+  @media (max-width: @width) {
+    @{lang} @{selector} { display: none; }
+  }
+}
+
 /* --- Vars --- */
 
 @yellow: #FFDE00;
 @red: #E60014;
 @orange: #FFBF00;
+@gh-ribbon: ~'img[alt="Fork me on GitHub"]';
 
 /* --- Reset --- */
 
@@ -132,18 +141,9 @@ strong {
 
 /*	--- Header --- */
 
-#github-ribbon {
-	position: fixed;
-	top: 0;
-	right: 0;
-	border: 0;
-	z-index: 2;
+@{gh-ribbon} {
+  z-index: 2;
 }
-
-	// Remove ribbon from small view
-	@media (max-width: 1260px) {
-		#github-ribbon { display: none; }
-	}
 
 .subtitle h3 {
   text-align: left;
