@@ -19,9 +19,9 @@ But _never_ reference that URL in a `<script>` tag, it may create problems in th
 before you've had a chance to test them. Instead, link to the latest version of jQuery that you need specifically.
 
 ```html
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 ```
 
-Just like the wise [Barney Stinson](/img/new-is-always-better.gif) says, *"New is always better"* :P
+Just like the wise [Barney Stinson](http://browserdiet.com/en/assets/img/new-is-always-better.gif) says, *"New is always better"* :P
 
 *> [References](https://github.com/zenorocha/browser-diet/wiki/References#always-use-the-latest-version-of-jquery)*
