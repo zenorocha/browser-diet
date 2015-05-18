@@ -112,18 +112,23 @@
   <!-- <a title="<%= @getLang().goTop %>" id="top" href="#top-bar">
     <img src="<%= @site.assets %>/img/top.png" alt="<%= @getLang().goTop %>" width="64" height="64">
   </a> -->
+  
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('scroll',
+         ThrottleFixedMenu
+      );
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-4114546-34']);
-    _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-4114546-34']);
+      _gaq.push(['_trackPageview']);
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+      (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+   </script>
 
 </body>
 </html>
