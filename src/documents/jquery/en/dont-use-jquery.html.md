@@ -3,7 +3,7 @@ order: 7
 title: Don't always use jQuery...
 ---
 
-Sometimes vanilla JavaScript can be easier and more performant than jQuery.
+Sometimes vanilla JavaScript can be easier to use and have better performance than jQuery.
 
 <div class="img-right">
   <img id="geek-6" class="icos-geek" src="http://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
