@@ -2,12 +2,12 @@
   "private": true,
   "dependencies": {
     "bal-util": "~1.15.3",
-    "docpad": "6.40.0",
-    "docpad-plugin-eco": "2.x",
-    "docpad-plugin-highlightjs": "2.x",
-    "docpad-plugin-less": "~2.1.2",
-    "docpad-plugin-marked": "2.x",
-    "docpad-plugin-partials": "~2.5.0",
+    "docpad": "6.78.4",
+    "docpad-plugin-eco": "~2.1.0",
+    "docpad-plugin-highlightjs": "~2.3.0",
+    "docpad-plugin-less": "~2.4.1",
+    "docpad-plugin-marked": "~2.3.0",
+    "docpad-plugin-partials": "~2.9.2",
     "underscore": "~1.4.3"
   },
   "devDependencies": {
