@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     cssmin: {
       dist: {
         src: ['out/assets/css/main.css'],
-        dest: 'out/en/assets/css/all.min.css'
+        dest: 'out/assets/css/all.min.css'
       }
     }
   });
