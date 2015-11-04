@@ -35,7 +35,7 @@ If you want to add new tips or edit the existing ones, just go to the [src/docum
 5. Install all dependencies:
 
   ```sh
-  $ docpad install
+  $ npm install
   ```
 
 6. And finally run:
