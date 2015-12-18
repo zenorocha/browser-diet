@@ -4,7 +4,7 @@ title: Herramientas de diagnóstico: tus mejores amigas
 ---
 
 <div class="img-left">
-  <img id="geek-43" src="http://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
+  <img id="geek-43" src="https://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
 
 Si quieres aventurarte en este mundo, es imprescindible insalar la extension [YSlow](http://yslow.org/) en tu navegador *Chrome* o *Firefox*. Ellas serán tus mejores amigas a partir de ese momento.

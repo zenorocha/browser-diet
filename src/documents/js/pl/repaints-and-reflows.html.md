@@ -12,7 +12,7 @@ Ponowne rysowanie jest najbardziej kosztowne, ponieważ jest spowodowane przez z
 Nie ma wątpliwości, że zarówno ponowne malowanie i rysowanie elementów powinny być unikane, więc zamiast w ten sposób:
 
 <div class="img-right">
-  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
+  <img id="geek-55" class="icos-geek" src="https://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
 ```js

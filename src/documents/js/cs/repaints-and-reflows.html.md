@@ -12,7 +12,7 @@ Reflow je mnohem nákladnější, protože je způsoben změnou layoutu stránky
 Není pochyb, že je dobré se těmto náročným repaints a reflows vyhnout, takže například místo tohoto:
 
 <div class="img-right">
-  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
+  <img id="geek-55" class="icos-geek" src="https://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
 ```js

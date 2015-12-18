@@ -6,7 +6,7 @@ title: Slučujte více JS souborů do jediného
 Další doporučovanou technikou pro organizaci a správu skriptů je rozdělení na modulární komponenty.
 
 <div class="img-right">
-  <img id="geek-47" class="icos-geek" src="http://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
+  <img id="geek-47" class="icos-geek" src="https://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
 </div>
 
 ```html

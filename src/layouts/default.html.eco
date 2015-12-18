@@ -38,14 +38,14 @@
           <a href="/<%= @currentLang %>" class="flags" id="flag-<%= @currentLang %>">&nbsp;</a>
 
           <div class="available-languages">
-            <a id="flag-en" rel="alternate" hreflang="en" class="flags" href="http://browserdiet.com/" title="English">English</a>
-            <a id="flag-es" rel="alternate" hreflang="es" class="flags" href="http://browserdiet.com/es/" title="Español">Español</a>
-            <a id="flag-pt" rel="alternate" hreflang="pt" class="flags" href="http://browserdiet.com/pt/" title="Português">Português</a>
-            <a id="flag-pl" rel="alternate" hreflang="pl" class="flags" href="http://browserdiet.com/pl/" title="Polski">Polski</a>
-            <a id="flag-zh" rel="alternate" hreflang="zh" class="flags" href="http://browserdiet.com/zh/" title="中国的">中国的</a>
-            <a id="flag-fr" rel="alternate" hreflang="fr" class="flags" href="http://browserdiet.com/fr/" title="Français">Français</a>
-            <a id="flag-cs" rel="alternate" hreflang="cs" class="flags" href="http://browserdiet.com/cs/" title="Česky">česky</a>
-            <a id="flag-jp" rel="alternate" hreflang="ja" class="flags" href="http://browserdiet.com/jp/" title="日本語">日本語</a>
+            <a id="flag-en" rel="alternate" hreflang="en" class="flags" href="https://browserdiet.com/" title="English">English</a>
+            <a id="flag-es" rel="alternate" hreflang="es" class="flags" href="https://browserdiet.com/es/" title="Español">Español</a>
+            <a id="flag-pt" rel="alternate" hreflang="pt" class="flags" href="https://browserdiet.com/pt/" title="Português">Português</a>
+            <a id="flag-pl" rel="alternate" hreflang="pl" class="flags" href="https://browserdiet.com/pl/" title="Polski">Polski</a>
+            <a id="flag-zh" rel="alternate" hreflang="zh" class="flags" href="https://browserdiet.com/zh/" title="中国的">中国的</a>
+            <a id="flag-fr" rel="alternate" hreflang="fr" class="flags" href="https://browserdiet.com/fr/" title="Français">Français</a>
+            <a id="flag-cs" rel="alternate" hreflang="cs" class="flags" href="https://browserdiet.com/cs/" title="Česky">česky</a>
+            <a id="flag-jp" rel="alternate" hreflang="ja" class="flags" href="https://browserdiet.com/jp/" title="日本語">日本語</a>
           </div>
         </div>
 

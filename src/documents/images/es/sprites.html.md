@@ -5,7 +5,7 @@ title: Usa sprites
 
 Ésta técnica es sobre agrupar varias imágenes en un sólo archivo.
 
-<img id="img-sprite" src="http://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
+<img id="img-sprite" src="https://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
 
 Y después posicinarlas con CSS.
 

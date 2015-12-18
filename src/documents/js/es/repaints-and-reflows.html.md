@@ -12,7 +12,7 @@ Reflows son los más costosos, ya que son causados por cambiar la estructura de 
 No hay duda de que excesivos reflows y repaints deberían de ser evitados, así que en vez de hacer esto:
 
 <div class="img-right">
-  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
+  <img id="geek-55" class="icos-geek" src="https://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
 ```js

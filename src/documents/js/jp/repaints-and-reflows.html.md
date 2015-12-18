@@ -12,7 +12,7 @@ title: 再描画と再フローを最少化
 過度の再描画と再フローを避けるべきであることは明白ですので、このようにする代わりに:
 
 <div class="img-right">
-  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
+  <img id="geek-55" class="icos-geek" src="https://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
 ```js

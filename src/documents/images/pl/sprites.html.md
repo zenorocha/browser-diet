@@ -5,7 +5,7 @@ title: Korzystaj ze sprite'ów CSS
 
 Technika ta polega na grupowaniu różnych obrazów w jednym pliku.
 
-<img id="img-sprite" src="http://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
+<img id="img-sprite" src="https://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
 
 A następnie umieszczaniu ich w CSS.
 

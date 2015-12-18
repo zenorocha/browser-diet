@@ -17,7 +17,7 @@ module.exports =
         # Site Information
 
         site:
-            assets: 'http://zenorocha.github.io/browser-diet/assets'
+            assets: 'https://zenorocha.github.io/browser-diet/assets'
 
 
         getLang: ->

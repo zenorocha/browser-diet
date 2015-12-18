@@ -8,7 +8,7 @@ title: 不要使用jQuery...
 有时vanilla JavaScript要比jQuery简单一些。
 
 <div class="img-right">
-  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
+  <img id="geek-6" class="icos-geek" src="https://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
 </div>
 
 使用`attr()`方法来查询ID：

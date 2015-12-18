@@ -6,7 +6,7 @@ title: Vždy používejte nejnovější verzi jQuery
 Vývojáři jádra JQuery se stále snaží vylepšovat knihovnu, ať už jde o lepší čitelnost kódu, nové funkce nebo optimalizace stávajících algoritmů.
 
 <div class="img-right">
-  <img id="geek-36" class="icos-geek" src="http://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
+  <img id="geek-36" class="icos-geek" src="https://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
 </div>
 
 Proto vždy používejte nejnovější verzi JQuery. Dostupná je zde, pokud si ji chcete uložit k sobě do souboru:

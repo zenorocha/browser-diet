@@ -6,7 +6,7 @@ title: Combine vários arquivos JS em um só
 Outra boa prática para organização e manutenção é separar seu script em diversos arquivos.
 
 <div class="img-right">
-  <img id="geek-47" class="icos-geek" src="http://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
+  <img id="geek-47" class="icos-geek" src="https://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
 </div>
 
 ```html

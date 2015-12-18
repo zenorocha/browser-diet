@@ -4,7 +4,7 @@ title: 診断ツール: あなたの親友
 ---
 
 <div class="img-left">
-  <img id="geek-43" class="icos-geek" src="http://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
+  <img id="geek-43" class="icos-geek" src="https://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
 
 あなたがウェブパフォーマンスの世界に挑もうと思うのであれば、ブラウザに[YSlow](http://yslow.org/) の拡張機能をインストールすることは極めて重要です&mdash;その瞬間から彼らはあなたの親友となります。

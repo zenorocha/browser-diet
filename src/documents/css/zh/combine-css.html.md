@@ -6,7 +6,7 @@ title: 合并多个CSS文件
 对于样式的组织和维护，另一个好方法是将他们模块化。
 
 <div class="img-right">
-  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
+  <img id="geek-9" class="icos-geek" src="https://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
 </div>
 
 ```html

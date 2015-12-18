@@ -6,7 +6,7 @@ title: 将多个JS文件合并
 对于脚本的组织和维护，另一个好方法是将他们模块化。
 
 <div class="img-right">
-  <img id="geek-47" class="icos-geek" src="http://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
+  <img id="geek-47" class="icos-geek" src="https://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
 </div>
 
 ```html

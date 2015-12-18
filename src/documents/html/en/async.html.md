@@ -6,7 +6,7 @@ title: Try out async
 To explain how this attribute is useful for better performance, it's better to understand what happens when we don't use it.
 
 <div class="img-left">
-  <img id="geek-20" class="icos-geek" src="http://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
+  <img id="geek-20" class="icos-geek" src="https://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
 </div>
 
 ``` html

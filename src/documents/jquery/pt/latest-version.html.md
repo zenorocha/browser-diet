@@ -6,7 +6,7 @@ title: Use sempre a última versão do jQuery
 Os membros do core do jQuery estão sempre buscando trazer novidades para a biblioteca. Estes ajustes, muitas vezes, estão relacionados a melhorias da legibilidade do código, novas funcionalidades e, principalmente, otimização de algoritmos.
 
 <div class="img-right">
-  <img id="geek-36" class="icos-geek" src="http://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
+  <img id="geek-36" class="icos-geek" src="https://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
 </div>
 
 Por isso use sempre a última versão do jQuery, que está sempre disponível aqui, caso você queira copiar para um arquivo local:

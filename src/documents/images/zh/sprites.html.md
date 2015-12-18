@@ -5,7 +5,7 @@ title: 使用CSS Sprites
 
 这个技术就是将各种图片整合到一个文件中去。
 
-<img id="img-sprite" src="http://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
+<img id="img-sprite" src="https://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
 
 然后通过CSS去定位它们。
 

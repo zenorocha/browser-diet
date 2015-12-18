@@ -6,7 +6,7 @@ title: Toujours utiliser la dernière version de jQuery
 L'équipe en charge du noyau de jQuery cherche constamment à améliorer la performance de la librairie, en utilisant du code plus lisible, de nouvelles fonctionnalités et en optimisant les algorithmes existants.
 
 <div class="img-right">
-  <img id="geek-36" class="icos-geek" src="http://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
+  <img id="geek-36" class="icos-geek" src="https://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
 </div>
 
 Pour cette raison, utilisez toujours la dernière version de jQuery, elle est toujours disponible ici si vous voulez la copier localement :

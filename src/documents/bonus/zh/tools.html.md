@@ -4,7 +4,7 @@ title: 诊断工具：你最好的朋友
 ---
 
 <div class="img-left">
-  <img id="geek-43" class="icos-geek" src="http://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
+  <img id="geek-43" class="icos-geek" src="https://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
 
 如果你想知道这个世界上的Web性能，那么你一定要给你的浏览器安装[YSlow](http://yslow.org/) 从现在起，它们将是你最好的朋友。
