@@ -1,10 +1,10 @@
 <p>Al igual que con el CSS, para mantener un código legible, es una buena idea escribir comentarios y usar indentación:</p>
-<pre class="highlight"><code class="javascript">BrowserDiet.app = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+<pre class="highlight"><code class="hljs javascript">BrowserDiet.app = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
 
   <span class="hljs-keyword">var</span> foo = <span class="hljs-literal">true</span>;
 
   <span class="hljs-keyword">return</span> {
-    bar: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    bar: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// do something</span>
     }
   };
@@ -12,7 +12,7 @@
 };
 </code></pre>
 <p>Pero para el navegador, eso no importa. Por eso, recuerda siempre comprimir tu JavaScript mediante herramientas automatizadas.</p>
-<pre class="highlight"><code class="javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span><span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>}}}
+<pre class="highlight"><code class="hljs javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{<span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{}}}
 </code></pre>
 <p>Esto quitará bytes al archivo, lo que resultará en un proceso de descarga, análisis y ejecución más rápido.</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script">Herramientas útiles</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">Referencias</a></em></p>

@@ -1,22 +1,22 @@
 <p>Pokaždé, když sáhnete na DOM zbytečně, jedno koťátko zemře.</p>
 <p>Vážně, průchod DOMem je nákladný. I přes to, že jsou dnes JavaScriptové enginy výrazně rychlejší a vykonnější, vždy se snažte optimalizovat dotazy nad DOM.</p>
 <p>Jedna z nejužitečnějších rad zní: když přistupujete k elementu více než jedenkrát, uložte si jej do proměnné, ať se nemusíte dotazovat DOMu vícekrát.</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// opravdu spatne!</span>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// opravdu spatne!</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
-  document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
 }
 </code></pre>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// mnohem lepsi :)</span>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// mnohem lepsi :)</span>
 <span class="hljs-keyword">var</span> myList = <span class="hljs-string">""</span>;
 
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
   myList += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
 }
 
-document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = myList;
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = myList;
 </code></pre>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// mnohem mnohem lepsi :)</span>
-<span class="hljs-keyword">var</span> myListHTML = document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML;
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// mnohem mnohem lepsi :)</span>
+<span class="hljs-keyword">var</span> myListHTML = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML;
 
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
   myListHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;

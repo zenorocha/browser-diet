@@ -1,13 +1,13 @@
 <p>Essa técnica é uma alternativa para o uso de CSS sprites.</p>
 <p><a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data-URI</a> é uma maneira de adicionar conteúdo inline de uma URI que você normalmente iria apontar. Nesse exemplo, nós estamos utilizando para adicionar conteúdo inline no background de uma imagem no CSS, a fim de reduzir o número de requisições HTTP necessárias para carregar uma página.</p>
 <p>Antes:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'foo.png'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'foo.png'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>Depois:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>Todos os navegadores do IE8 para cima suportam essa técnica de codificação base64.</p>

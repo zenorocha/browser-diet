@@ -1,0 +1,11 @@
+<ul>
+<li><blockquote>
+<p>This tip needs to be translated. <a href="https://github.com/zenorocha/browser-diet/blob/master/src/documents/jquery/pt/selectors.html.md">Contribute.</a></p>
+</blockquote>
+</li>
+</ul>
+<p>Selectors is one of the most important issues in the use of jQuery. There are many different ways to select an element from the DOM, but that doesn&#39;t mean they have the same performance, you can select an element using classes, IDs or methods like <code>find()</code>, <code>children()</code>.</p>
+<p>Among all of them, select an ID is the fastest one, because its based on a native DOM operation:</p>
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">"#foo"</span>);
+</code></pre>
+<p><em><a href="http://jsperf.com/browser-diet-jquery-selectors">&gt; Results on JSPerf</a></em></p>

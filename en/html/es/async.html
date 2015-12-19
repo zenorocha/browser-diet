@@ -1,12 +1,12 @@
 <p>Para explicar cómo este atributo es útil para el rendimiento, es mejor entender qué pasa cuando no lo usamos.</p>
 <div class="img-left">
-  <img id="geek-20" class="icos-geek" src="http://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
+  <img id="geek-20" class="icos-geek" src="https://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
 </div>
 
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>De esta forma, la página tiene que esperar a que el script sea descargado, analizado y ejecutado completamente antes de poder seguir mostrando el HTML. Esto puede incrementar significativamente el tiempo de carga de tu página. A veces este comportamiento puede ser el deseado, pero no suele ser el caso.</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">async</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">async</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>El script es descargado asíncronamente mientras el resto de la página sigue siendo analizada. El script se ejecutará en cuanto se acabe de descargar. Tenga en cuenta que varios scripts asincrónicos se ejecutará sin un orden específico.</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#try-out-async">Referencias</a></em></p>

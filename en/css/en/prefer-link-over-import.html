@@ -1,8 +1,8 @@
 <p>There&#39;s two ways to include an external stylesheet in your page: either via the <code>&lt;link&gt;</code> tag:</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
 </code></pre>
 <p>Or through the <code>@import</code> directive (inside an external stylesheet or in an inline <code>&lt;style&gt;</code> tag):</p>
-<pre class="highlight"><code class="css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-function">url(<span class="hljs-string">'style.css'</span>)</span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-function">url</span>(<span class="hljs-string">'style.css'</span>)</span>;
 </code></pre>
 <p>When you use the second option through an external stylesheet, the browser is incapable of downloading the asset in parallel, which can block the download of other assets.</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#prefer--over-import">References</a></em></p>

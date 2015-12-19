@@ -1,16 +1,16 @@
 <p>Další doporučovaná technika pro organizaci a správu stylů je rozdělení na modulární komponenty.</p>
 <div class="img-right">
-  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
+  <img id="geek-9" class="icos-geek" src="https://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
 </div>
 
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"structure.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"structure.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"banner.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"layout.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"component.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"plugin.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 </code></pre>
 <p>Pak je ale třeba pro každý takový soubor jeden HTTP request (a je známo, že prohlížeče mohou stahovat jen omezený počet zdrojů souběžně).</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"main.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"main.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 </code></pre>
 <p>Tak tedy kombinujte svá CSS. Menší počet souborů vede k menšímu počtu requestů a rychlejšímu načtení stránky.</p>
 <p>Chcete využít to nejlepší z obou světů? Automatizujte tento proces pomocí buidlovacích nástrojů.</p>

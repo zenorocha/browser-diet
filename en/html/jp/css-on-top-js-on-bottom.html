@@ -1,5 +1,5 @@
 <p>スタイルシートを<code>&lt;head&gt;</code>の中に置くとき、ページを徐々にレンダリングすることが許容され、ユーザーに対してページが高速に読み込まれている印象を与えます。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Browser Diet<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
 
@@ -9,11 +9,11 @@
 </code></pre>
 <p>もしページの最後にそれらを置いた場合、ページはCSSがダウンロードされて適応されるまでの間スタイルなしでレンダリングされます。</p>
 <div class="img-right">
-  <img id="geek-32" class="icos-geek" src="http://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
+  <img id="geek-32" class="icos-geek" src="https://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
 </div>
 
 <p>一方で、JavaScriptについては、scriptが読み込まれて実行される間にレンダリングをブロックするので、ページの最後に配置することが重要です。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
   <span class="hljs-comment">&lt;!-- JS --&gt;</span>

@@ -1,13 +1,13 @@
 <p>Tato technika je alternativou k používání CSS spritů.</p>
 <p><a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data-URI</a> je způsob, jak inlinově vložit obsah namísto jeho odkazování pomocí URI, jak je to běžné. V tomto případě to použijeme k inlinovému vložení obrázku ve vlastnosti CSS background. Snížíme tak počet HTTP požadavků, které stránka potřebuje.</p>
 <p>Předtím:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'foo.png'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'foo.png'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>Potom:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>Všechny prohlížeče od IE8 a vyšší podporují techniku kódování pomocí base64.</p>

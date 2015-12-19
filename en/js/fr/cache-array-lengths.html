@@ -1,6 +1,6 @@
 <p>La boucle est sans doute l&#39;un des aspects les plus importants en ce qui concerne la perfomance en JavaScript. Essayez d&#39;optimiser la logique dans la boucle pour que chaque itération soit effectuée de façon optimale.</p>
 <p>Une façon de faire ceci est de garder en mémoire la taille du tableau. Ainsi, elle n&#39;est pas recalculée à chaque fois qu&#39;on itère dans la boucle.</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
     len, i;
 
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
@@ -14,7 +14,7 @@
 <p><em><a href="http://jsperf.com/browser-diet-cache-array-length/10/">&gt; Results on JSPerf</a></em></p>
 <p><strong>&gt; A Noter :</strong> <em>Bien que les navigateurs de recherche actuels optimisent ce processus automatiquement, ceci demeure une bonne méthode pour convenir aux navigateurs plus anciens qui subsistent.</em></p>
 <p>Ceci est particulièrement utile pour les itérations effectuées dans une collection de noeuds (<em>NodeList</em>) en HTML, générée par <code>document.getElementsByTagName(&#39;a&#39;)</code>. Ces collections sont considérées comme étant &quot;live&quot;, c&#39;est-à-dire qu&#39;elles sont automatiquement modifiées quand il y a des changements dans l&#39;élément auquel elles appartiennent.</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> links = document.getElementsByTagName(<span class="hljs-string">'a'</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> links = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'a'</span>),
     len, i;
 
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
@@ -27,7 +27,7 @@
 
 <span class="hljs-comment">// Terrible: boucle infinie</span>
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
-  document.body.appendChild(document.createElement(<span class="hljs-string">'a'</span>));
+  <span class="hljs-built_in">document</span>.body.appendChild(<span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'a'</span>));
   <span class="hljs-comment">// à chaque itération la liste de liens augmente, la condition de terminaison de la boucle ne sera jamais vérifiée</span>
   <span class="hljs-comment">// ceci n'aurait pas lieux si la taille de la liste était mise en mémoire cache et utilisée comme la condition d'éxecution de la boucle</span>
 }

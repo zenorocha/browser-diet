@@ -1,5 +1,5 @@
 <p>Quand nous ajoutons les feuilles de style dans le <code>&lt;head&gt;</code>, nous permettons à la page de s&#39;afficher progressivement, ce qui donne l&#39;impression à nos utilisateurs qu&#39;elle se charge rapidement.</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Browser Diet<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
 
@@ -9,11 +9,11 @@
 </code></pre>
 <p>Mais si nous les mettons à la fin de la page, la page sera rendue sans style jusqu&#39;à ce que le CSS soit chargé et appliqué.</p>
 <div class="img-right">
-  <img id="geek-32" class="icos-geek" src="http://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
+  <img id="geek-32" class="icos-geek" src="https://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
 </div>
 
 <p>En revanche, lorsqu&#39;il s&#39;agit de JavaScript, il est important de placer les scripts au bas de la page parce-qu&#39;ils bloquent le rendu (affichage) pendant leur chargement et exécution.</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
   <span class="hljs-comment">&lt;!-- JS --&gt;</span>

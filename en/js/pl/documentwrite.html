@@ -1,24 +1,24 @@
 <p>Używanie <code>document.write</code> powoduje, że strona jest zależna, a w konsekwencji ponownie ładowana.</p>
 <p>Ta (zła) praktyka była zabroniona przez lata, choć dalej istnieją przypadki, kiedy jest wymagana, jak w synchronicznej obsłudze niektorych plików JavaScript.</p>
 <p>Przykładowo, <a href="https://github.com/h5bp/html5-boilerplate/">HTML5 Boilerplate</a> używa tej techniki do ładowania jQuery lokalnie, jeśli <em>CDN</em> Google nie odpowiada.</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">window.jQuery || document.write(<span class="hljs-string">'&lt;script src="js/vendor/jquery-1.9.0.min.js"&gt;&lt;\/script&gt;'</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">window</span>.jQuery || <span class="hljs-built_in">document</span>.write(<span class="hljs-string">'&lt;script src="js/vendor/jquery-1.9.0.min.js"&gt;&lt;\/script&gt;'</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p><strong>&gt; Uwaga:</strong> <em><code>document.write</code> jest wykonywane w trakcie lub po zdarzeniu <code>window.onload</code> i zastępuje całą zawartość bieżącej strony.</em></p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
-  window.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    document.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
+  <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">document</span>.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
   };
 </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>Wynikiem ostatecznej strony będzie <em>bar</em>, a nie <em>foobar</em>, jakbyśmy oczekiwali. To samo dzieje się przy wywołaniu po zdarzeniu <code>window.onload</code>.</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
-  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    document.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">document</span>.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
   }, <span class="hljs-number">1000</span>);
-  window.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">// ...</span>
   };
 </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>

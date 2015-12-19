@@ -1,13 +1,13 @@
 <p>Opisana technika jest alternatywą dla używania &#39;CSS sprites&#39;.</p>
 <p>Technika <a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data-URI</a> jest sposobem na wstawienie danych z określonego adresu. W tym przypadku używamy jej do wstawienia treści jako tła obrazka dla właściwości CSS w celu ograniczenia liczby żądań HTTP potrzebnych do załadowania strony.</p>
 <p>Przed:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'foo.png'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'foo.png'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>Po:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>Wszystkie przeglądarki od IE8 i nowsze wspierają technikę kodowania base64.</p>

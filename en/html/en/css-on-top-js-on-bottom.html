@@ -1,5 +1,5 @@
 <p>When we put stylesheets in the <code>&lt;head&gt;</code> we allow the page to render progressively, which gives the impression to our users that the page is loading quickly.</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Browser Diet<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
 
@@ -9,11 +9,11 @@
 </code></pre>
 <p>But if we put them at the end of the page, the page will be rendered without styles until the CSS is downloaded and applied.</p>
 <div class="img-right">
-  <img id="geek-32" class="icos-geek" src="http://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
+  <img id="geek-32" class="icos-geek" src="https://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
 </div>
 
 <p>On the other hand, when dealing with JavaScript, it&#39;s important to place scripts at the bottom of the page as they block rendering while they&#39;re being loaded and executed.</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
   <span class="hljs-comment">&lt;!-- JS --&gt;</span>

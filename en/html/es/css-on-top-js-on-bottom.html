@@ -1,5 +1,5 @@
 <p>Cuando ponemos hojas de estilo en el <code>&lt;head&gt;</code> permitimos a la página mostrarse progresivamente, lo que da la impresión a nuestros usuarios de que la página está cargando rápido.</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Browser Diet<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
 
@@ -9,11 +9,11 @@
 </code></pre>
 <p>Pero si los ponemos al fondo de la página, la página se renderizará sin estilos hasta que el CSS se descargue y aplique.</p>
 <div class="img-right">
-   <img id="geek-32" class="icos-geek" src="http://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
+   <img id="geek-32" class="icos-geek" src="https://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
 </div>
 
 <p>Por otro lado, cuando tratamos con JavaScript, es importante poner los scripts al fondo de la página ya que bloquean el renderizado mientras se están descargando y ejecutando.</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
   <span class="hljs-comment">&lt;!-- JS --&gt;</span>

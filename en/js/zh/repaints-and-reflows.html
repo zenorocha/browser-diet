@@ -3,11 +3,11 @@
 <p>回流的代价是最高的，当改变一个页面的布局时就会发生回流，例如改变一个元素的宽。</p>
 <p>毫无疑问，应当避免过多的重绘和回流，所以，对于下面的代码：</p>
 <div class="img-right">
-  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
+  <img id="geek-55" class="icos-geek" src="https://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
-    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> div = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'li'</span>),
     i, len;
 
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
@@ -15,8 +15,8 @@
 }
 </code></pre>
 <p>应当变为：</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
-    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> div = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'li'</span>),
     widthToSet = div.offsetWidth,
     i, len;
 

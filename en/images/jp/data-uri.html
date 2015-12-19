@@ -1,13 +1,13 @@
 <p>このテクニックはCSSスプライトの代わりになります。</p>
 <p><a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data-URI</a>は、通常はURIのコンテンツのインライン化を目的とする方法です。 この例では、私たちはページの読み込みで必要となるHTTPリクエストを削減するためにCSSのbackground imageのコンテンツをインライン化するのに使っています。</p>
 <p>Before:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'foo.png'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'foo.png'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>After:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>IE8以上の全てのブラウザはbase64エンコードがサポートされています。</p>

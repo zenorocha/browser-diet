@@ -1,22 +1,22 @@
 <p>Everytime you touch the DOM without needing to do so, a Panda dies.</p>
 <p>Seriously, browsing by DOM elements is costly. Although JavaScript engines are becoming increasingly powerful and fast, always prefer to optimize queries of the DOM tree.</p>
 <p>One of the simplest optimizations is the caching of frequently accessed DOM elements. For example, instead of querying the DOM every iteration of a loop, query it once and save the result in a variable, using that every iteration of the loop instead.</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// really bad!</span>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// really bad!</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
-  document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
 }
 </code></pre>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// much better :)</span>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// much better :)</span>
 <span class="hljs-keyword">var</span> myList = <span class="hljs-string">""</span>;
 
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
   myList += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
 }
 
-document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = myList;
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = myList;
 </code></pre>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// much *much* better :)</span>
-<span class="hljs-keyword">var</span> myListHTML = document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML;
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// much *much* better :)</span>
+<span class="hljs-keyword">var</span> myListHTML = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML;
 
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
   myListHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;

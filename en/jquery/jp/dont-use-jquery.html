@@ -1,19 +1,19 @@
 <p>時に生のJavaScriptはjQueryよりも容易でより高性能です。</p>
 <div class="img-right">
-  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
+  <img id="geek-6" class="icos-geek" src="https://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
 </div>
 
 <p>以下のようなHTMLがあったとして:</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"text"</span>&gt;</span>Let's change this content<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"text"</span>&gt;</span>Let's change this content<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 <p>このようにする代わりに:</p>
-<pre class="highlight"><code class="javascript">$(<span class="hljs-string">'#text'</span>).html(<span class="hljs-string">'The content has changed'</span>).css({
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#text'</span>).html(<span class="hljs-string">'The content has changed'</span>).css({
   backgroundColor: <span class="hljs-string">'red'</span>,
   color: <span class="hljs-string">'yellow'</span>
 });
 </code></pre>
 <p>生のJavaScriptを使用しましょう:</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> text = document.getElementById(<span class="hljs-string">'text'</span>);
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> text = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'text'</span>);
 text.innerHTML = <span class="hljs-string">'The content has changed'</span>;
 text.style.backgroundColor = <span class="hljs-string">'red'</span>;
 text.style.color = <span class="hljs-string">'yellow'</span>;

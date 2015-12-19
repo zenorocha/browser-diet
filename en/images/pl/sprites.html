@@ -1,14 +1,14 @@
 <p>Technika ta polega na grupowaniu różnych obrazów w jednym pliku.</p>
-<p><img id="img-sprite" src="http://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example"></p>
+<p><img id="img-sprite" src="https://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example"></p>
 <p>A następnie umieszczaniu ich w CSS.</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'mySprite.png'</span>)</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">10</span>px -<span class="hljs-number">10</span>px</span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'mySprite.png'</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">10px</span> -<span class="hljs-number">10px</span></span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.icon-bar</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'mySprite.png'</span>)</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">5</span>px -<span class="hljs-number">5</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'mySprite.png'</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">5px</span> -<span class="hljs-number">5px</span></span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>W rezultacie, znacznie zmniejszamy liczbę żądań HTTP i unikamy potencjalnych opóźnień dla innych zasobów naszej strony.</p>

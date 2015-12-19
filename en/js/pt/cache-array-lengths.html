@@ -1,6 +1,6 @@
-<p>O loop é sem dúvida é uma das partes mais importantes com relação a performance no JavaScript. Busque otimizar a lógica dentro de um loop para que cada iteração seja feita de forma eficiente.</p>
+<p>O loop é sem dúvida uma das partes mais importantes com relação a performance no JavaScript. Busque otimizar a lógica dentro de um loop para que cada iteração seja feita de forma eficiente.</p>
 <p>Um modo para fazer isso é armazenando o tamanho do array que será percorrido, assim ele não precisa ser recalculado toda vez que o loop for iterado.</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
     len, i;
 
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
@@ -14,7 +14,7 @@
 <p><em><a href="http://jsperf.com/browser-diet-cache-array-length/10/">&gt; Resultado no JSPerf</a></em></p>
 <p><strong>&gt; Observação:</strong> <em>Embora engines de browsers modernos otimizam automaticamente esse processo, continua sendo uma boa prática atender o legado de browsers que ainda perduram.</em></p>
 <p>Em iterações sobre coleções HTML como uma lista de Nodes (<em>NodeList</em>) geradas por exemplo através de <code>document.getElementsByTagName(&#39;a&#39;)</code>, isto é particularmente crítico e essencial. Essas coleções são consideradas &quot;vivas&quot;, ou seja, são automaticamente atualizadas quando há alterações no elemento à qual pertencem.</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> links = document.getElementsByTagName(<span class="hljs-string">'a'</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> links = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'a'</span>),
     len, i;
 
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
@@ -27,7 +27,7 @@
 
 <span class="hljs-comment">// Péssimo: exemplo de loop infinito</span>
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
-  document.body.appendChild(document.createElement(<span class="hljs-string">'a'</span>));
+  <span class="hljs-built_in">document</span>.body.appendChild(<span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'a'</span>));
   <span class="hljs-comment">// a cada iteração a lista de links aumenta, nunca satisfazendo a condição de término do loop</span>
   <span class="hljs-comment">// isso não aconteceria se o tamanho da lista fosse armazenado e usado como condição</span>
 }

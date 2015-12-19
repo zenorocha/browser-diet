@@ -1,19 +1,19 @@
 <p>Às vezes JavaScript puro pode ser mais fácil e mais performático que jQuery.</p>
 <div class="img-right">
-  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
+  <img id="geek-6" class="icos-geek" src="https://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
 </div>
 
 <p>Considere o seguinte HTML:</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"text"</span>&gt;</span>Vamos mudar esse conteúdo.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"text"</span>&gt;</span>Vamos mudar esse conteúdo.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 <p>Ao invés de fazer isso:</p>
-<pre class="highlight"><code class="javascript">$(<span class="hljs-string">'#text'</span>).html(<span class="hljs-string">'O conteúdo mudou'</span>).css({
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#text'</span>).html(<span class="hljs-string">'O conteúdo mudou'</span>).css({
   backgroundColor: <span class="hljs-string">'red'</span>,
     color: <span class="hljs-string">'yellow'</span>
   });
 </code></pre>
 <p>Usamos JavaScript puro:</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> text = document.getElementById(<span class="hljs-string">'text'</span>);
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> text = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'text'</span>);
 text.innerHTML = <span class="hljs-string">'O conteúdo mudou'</span>;
 text.style.backgroundColor = <span class="hljs-string">'red'</span>;
 text.style.color = <span class="hljs-string">'yellow'</span>;

@@ -1,8 +1,0 @@
-<p>Każde żądanie HTTP wymaga ustanowienia połączenia TCP dla komunikacji klienta z serwerem.</p>
-<p>Taki proces jest kosztowny i czasochłonny, szczególnie ze względu na &quot;trzy-stopniowy uścisk dłoni&quot;. Ważne jest korzystanie z utworzonych połączeń podczas transportowania danych przez kolejne żądania.</p>
-<p>Ustawienie takie określa dyrektywa <code>keep-alive</code>.</p>
-<p>Konfiguracja zależy od typu serwera. Na przykład, Apache określa ten stan poprze plik <code>.htaccess</code>:</p>
-<pre class="highlight"><code class="apache"><span class="hljs-tag">&lt;IfModule mod_headers.c&gt;</span>
-  <span class="hljs-keyword"><span class="hljs-common">Header</span></span> set Connection keep-alive
-<span class="hljs-tag">&lt;/IfModule&gt;</span>
-</code></pre><p><em>&gt; <a href="https://github.com/cleberdantas/browser-diet/wiki/References#wiki-keep-alive">Referencje</a></em></p>
