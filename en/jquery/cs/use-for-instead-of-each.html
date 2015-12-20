@@ -1,9 +1,0 @@
-<p>Využití nativních funkcí JavaScriptu téměř vždy vede k rychlejšímu provedení než obdoby v JQuery. Z toho důvodu raději než metodu <code>jQuery.each</code> používejte nativní <code>for</code> smyčku.</p>
-<p>Ale pozor na to, že i když je <code>for in</code> nativní, v mnoha případech je výkon horší, než <code>jQuery.each</code>.</p>
-<p>Těžce zkoušená smyčka <code>for</code> nám dává další příležitost k urychlení věcí pomocí kešování délky kolekce, přes kterou iterujeme.</p>
-<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = a.length; i &lt; len; i++ ) {
-    e = a[i];
-}
-</code></pre>
-<p>Použití obráceného <code>while</code> a obrácené <code>for</code> smyčky je žhavé téma v komunitě a je často citováno jako nejrychlejší forma iterace. Kvůli špatné čitelnosti se ale používá jen výjimečně.</p>
-<p><em>&gt; <a href="http://jsperf.com/browser-diet-jquery-each-vs-for-loop">Výsledky na JSPerf</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#use-for-instead-of-each">Reference</a></em></p>

@@ -1,8 +1,0 @@
-<p>Há duas maneiras de incluir uma folha de estilo externa na sua página, pode ser através da tag <code>&lt;link&gt;</code>:</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
-</code></pre>
-<p>Ou da propriedade <code>@import</code> dentro de uma folha de estilo externa ou inline em uma tag <code>&lt;style&gt;</code>:</p>
-<pre class="highlight"><code class="css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-function">url(<span class="hljs-string">'style.css'</span>)</span></span>;
-</code></pre>
-<p>Quando você utiliza a segunda opção a partir de uma folha de estilo externa, o navegador é incapaz de realizar o download em paralelo, o que causa atraso na cascata de carregamento dos arquivos.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#prefer--over-import">Referências</a></em></p>

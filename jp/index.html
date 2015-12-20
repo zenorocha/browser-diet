@@ -12,18 +12,18 @@
 
   <!-- Schema.org -->
   <meta itemprop="name" content="How to lose weight (in the browser)">
-  <meta itemprop="url" content="http://zenorocha.github.io/browser-diet">
-  <meta itemprop="image" content="http://zenorocha.github.io/browser-diet/en/assets/img/share.jpg">
+  <meta itemprop="url" content="https://browserdiet.com/jp">
+  <meta itemprop="image" content="https://browserdiet.com/assets/img/share.jpg">
   <meta itemprop="description" content="決定的なフロントエンドのパフォーマンスガイド">
 
   <!-- Style -->
-  <link rel="stylesheet" href="http://zenorocha.github.io/browser-diet/en/assets/css/all.min.css">
+  <link rel="stylesheet" href="https://browserdiet.com/assets/css/all.min.css">
 
   <!-- Fonts -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="http://zenorocha.github.io/browser-diet/en/assets/img/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://browserdiet.com/assets/img/favicon.ico">
 
 </head>
 
@@ -38,14 +38,14 @@
           <a href="/jp" class="flags" id="flag-jp">&nbsp;</a>
 
           <div class="available-languages">
-            <a id="flag-en" class="flags" href="http://browserdiet.com/" title="English">English</a>
-            <a id="flag-es" class="flags" href="http://browserdiet.com/es/" title="Español">Español</a>
-            <a id="flag-pt" class="flags" href="http://browserdiet.com/pt/" title="Português">Português</a>
-            <a id="flag-pl" class="flags" href="http://browserdiet.com/pl/" title="Polski">Polski</a>
-            <a id="flag-zh" class="flags" href="http://browserdiet.com/zh/" title="中国的">中国的</a>
-            <a id="flag-fr" class="flags" href="http://browserdiet.com/fr/" title="Français">Français</a>
-            <a id="flag-cs" class="flags" href="http://browserdiet.com/cs/" title="Česky">česky</a>
-            <a id="flag-jp" class="flags" href="http://browserdiet.com/jp/" title="日本語">日本語</a>
+            <a id="flag-en" rel="alternate" hreflang="en" class="flags" href="https://browserdiet.com/" title="English">English</a>
+            <a id="flag-es" rel="alternate" hreflang="es" class="flags" href="https://browserdiet.com/es/" title="Español">Español</a>
+            <a id="flag-pt" rel="alternate" hreflang="pt" class="flags" href="https://browserdiet.com/pt/" title="Português">Português</a>
+            <a id="flag-pl" rel="alternate" hreflang="pl" class="flags" href="https://browserdiet.com/pl/" title="Polski">Polski</a>
+            <a id="flag-zh" rel="alternate" hreflang="zh" class="flags" href="https://browserdiet.com/zh/" title="中国的">中国的</a>
+            <a id="flag-fr" rel="alternate" hreflang="fr" class="flags" href="https://browserdiet.com/fr/" title="Français">Français</a>
+            <a id="flag-cs" rel="alternate" hreflang="cs" class="flags" href="https://browserdiet.com/cs/" title="Česky">česky</a>
+            <a id="flag-jp" rel="alternate" hreflang="ja" class="flags" href="https://browserdiet.com/jp/" title="日本語">日本語</a>
           </div>
         </div>
 
@@ -63,8 +63,8 @@
         </hgroup>
 
         <div class="superman">
-          <img class="superman-geek" src="http://zenorocha.github.io/browser-diet/en/assets/img/superman.png" alt="Superman">
-          <img class="superman-rays" src="http://zenorocha.github.io/browser-diet/en/assets/img/rays.png" alt="">
+          <img class="superman-geek" src="https://browserdiet.com/assets/img/superman.png" alt="Superman">
+          <img class="superman-rays" src="https://browserdiet.com/assets/img/rays.png" alt="">
         </div>
       </div>
 
@@ -89,7 +89,7 @@
       
     <div class="article">
       <div class="img-left">
-  <img id="geek-17" class="icos-geek" src="http://browserdiet.com/en/assets/img/17.png" alt="Geek #17" width="199" height="275" />
+  <img id="geek-17" class="icos-geek" src="https://browserdiet.com/en/assets/img/17.png" alt="Geek #17" width="199" height="275" />
 </div>
 
 <p>決定的なフロントエンドのパフォーマンスガイドを作成するのに、大規模サイトの開発をしている熟練者たちを集められたらどうでしょう？</p>
@@ -154,7 +154,7 @@
     </div>
     
     <p>スタイルシートを<code>&lt;head&gt;</code>の中に置くとき、ページを徐々にレンダリングすることが許容され、ユーザーに対してページが高速に読み込まれている印象を与えます。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>Browser Diet<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
 
@@ -164,11 +164,11 @@
 </code></pre>
 <p>もしページの最後にそれらを置いた場合、ページはCSSがダウンロードされて適応されるまでの間スタイルなしでレンダリングされます。</p>
 <div class="img-right">
-  <img id="geek-32" class="icos-geek" src="http://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
+  <img id="geek-32" class="icos-geek" src="https://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
 </div>
 
 <p>一方で、JavaScriptについては、scriptが読み込まれて実行される間にレンダリングをブロックするので、ページの最後に配置することが重要です。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Lorem ipsum dolor sit amet.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
 
   <span class="hljs-comment">&lt;!-- JS --&gt;</span>
@@ -194,13 +194,13 @@
     
     <p>この属性が、よりよいパフォーマンスのために有用であることを説明するには、これを使わないときに何が起きるかを理解した方がいいでしょう。</p>
 <div class="img-left">
-  <img id="geek-20" class="icos-geek" src="http://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
+  <img id="geek-20" class="icos-geek" src="https://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
 </div>
 
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>この形式だとページは、それ以降のHTMLの解析とレンダリングをする前にscriptが完全にダウンロード、解析、実行されるのを待つ必要があります。 これはロード時間を大幅に増やすことになります。 時にはこの振る舞いが望ましいことがあるかもしれませんが、一般的には違います。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">async</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">async</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"example.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>scriptは、ページの残りの部分を解析している間に非同期でダウンロードされます。 scriptはダウンロードが完了したらすぐに実行されることが保証されます。</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#try-out-async">リファレンス</a></em></p>
@@ -226,20 +226,20 @@
     </div>
     
     <p>可読性の高いコードを保つためには、コメントやインデントは良いアイディアです。</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.center</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">960</span>px</span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.center</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">960px</span></span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">0</span> auto</span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-comment">/* --- Structure --- */</span>
 
 <span class="hljs-class">.intro</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">100</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">100px</span></span></span>;
   <span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value"> relative</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>ですがブラウザにとってはそれは重要ではありません。従って、自動化ツールを使ってCSSをミニファイすることを常に覚えておいてください。</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.center</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"><span class="hljs-number">960</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">0</span> auto</span></span></span>}<span class="hljs-class">.intro</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">100</span>px</span></span>;<span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value">relative</span></span></span>}
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.center</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"><span class="hljs-number">960px</span></span></span>;<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">0</span> auto</span></span></span>}<span class="hljs-class">.intro</span><span class="hljs-rules">{<span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"><span class="hljs-number">100px</span></span></span>;<span class="hljs-rule"><span class="hljs-attribute">position</span>:<span class="hljs-value">relative</span></span></span>}
 </code></pre>
 <p>それがファイルサイズを削ることになり、高速なダウンロード、解析、実行へとつながります。</p>
 <p><a href="http://sass-lang.com/">Sass</a>や <a href="http://lesscss.org/">Less</a>、<a href="http://learnboost.github.com/stylus/">Stylus</a>のようなプリプロセッサーを利用することで、ミニファイされたCSSをコンパイル時に出力するように設定することが出来ます。</p>
@@ -262,17 +262,17 @@
     
     <p>styleの構成とメンテナンスのための別のベストプラクティスは、モジュールの構成要素に分割することです。</p>
 <div class="img-right">
-  <img id="geek-9" class="icos-geek" src="http://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
+  <img id="geek-9" class="icos-geek" src="https://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
 </div>
 
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"structure.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"structure.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"banner.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"layout.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"component.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"plugin.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 </code></pre>
 <p>ですが、これらのファイル毎にHTTPリクエストが必要になります（そして私たちはブラウザが並列で限られた数のリソースのみをダウンロードすることを知っています）。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"main.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"main.css"</span> <span class="hljs-attribute">media</span>=<span class="hljs-value">"all"</span>&gt;</span>
 </code></pre>
 <p>なのでCSSを結合しましょう。少数のファイルで構成することはリクエストの数を少なくすることになり、より高速にページを読み込みます。</p>
 <p>いずれの長所も欲しい場合はどうでしょう？ ビルドツールを使ってこのプロセスを自動化しましょう。</p>
@@ -294,10 +294,10 @@
     </div>
     
     <p>ページに外部ファイルのスタイルシートを読み込む方法は2つあります: 一方は<code>&lt;link&gt;</code>タグ:</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"style.css"</span>&gt;</span>
 </code></pre>
 <p>または<code>@import</code>です（外部のスタイルシートか<code>&lt;style&gt;</code>タグの中で）。</p>
-<pre class="highlight"><code class="css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-function">url(<span class="hljs-string">'style.css'</span>)</span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-function">url</span>(<span class="hljs-string">'style.css'</span>)</span>;
 </code></pre>
 <p>外部ファイルで2番目の方法を用いると、ほかのアセットのダウンロードをブロックすることになり、ブラウザは並列でアセットをダウンロードすることができません。</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#prefer--over-import">リファレンス</a></em></p>
@@ -324,13 +324,13 @@
     
     <p>Youtubeのビデオやlike/tweetボタンを埋め込むためのサードパーティのコンテンツを読み込んだことがない人がいますか？</p>
 <div class="img-right">
-  <img id="geek-46" class="icos-geek" src="http://browserdiet.com/en/assets/img/46.png" alt="Geek #46" width="158" height="275" />
+  <img id="geek-46" class="icos-geek" src="https://browserdiet.com/en/assets/img/46.png" alt="Geek #46" width="158" height="275" />
 </div>
 
 <p>これらのコードの大きな問題は、ユーザーの接続環境かホスティングされているサーバーの接続状態によって、常に効果的に配信される訳ではないということです。また、サービスが一時的にダウンしていたり、ユーザーかユーザーの会社のファイアウォールによってブロックされていることさえ有り得ます。</p>
 <p>これがページの読み込み時に大きな問題とならないように、ページ全体の読み込みをロックするには、常にこれらのコードを非同期で読み込みましょう(もしくは <em><a href="https://www.facebook.com/note.php?note_id=10151176218703920">Friendly iFrames</a></em> を使いましょう)。</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> script = document.createElement(<span class="hljs-string">'script'</span>),
-    scripts = document.getElementsByTagName(<span class="hljs-string">'script'</span>)[<span class="hljs-number">0</span>];
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> script = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'script'</span>),
+    scripts = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'script'</span>)[<span class="hljs-number">0</span>];
 script.async = <span class="hljs-literal">true</span>;
 script.src = url;
 scripts.parentNode.insertBefore(script, scripts);
@@ -355,7 +355,7 @@ scripts.parentNode.insertBefore(script, scripts);
     
     <p>ループは確実にJavaScriptのパフォーマンスに関する最も重要な部分の1つです。反復処理が効果的に行われるようにループの内部のロジックを最適化しましょう。</p>
 <p>1つの手段は、包まれる配列のサイズを保持しておくことで、それによってループが繰り返される度に再度計算する必要がなくなります。</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1000</span>),
     len, i;
 
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; arr.length; i++) {
@@ -369,7 +369,7 @@ scripts.parentNode.insertBefore(script, scripts);
 <p><em><a href="http://jsperf.com/browser-diet-cache-array-length/10/">&gt; JSPerfの結果</a></em></p>
 <p><strong>&gt; 注:</strong> <em>モダンブラウザのエンジンは自動的にこのプロセスを最適化しますが、未だに残るレガシーブラウザ向けの良いプラクティスとして残しています。</em></p>
 <p>例えば<code>document.getElementsByTagName(&#39;a&#39;)</code>によって生成されたNode（<em>NodeList</em>）のリストのようなHTMLの集合に対する反復処理の場合に、これはとりわけ重要です。これらの集合は&quot;生きている&quot;と見なされます。即ち、それらはその属する要素の変化に応じて自動的に更新されるのです。</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> links = document.getElementsByTagName(<span class="hljs-string">'a'</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> links = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'a'</span>),
     len, i;
 
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
@@ -382,7 +382,7 @@ scripts.parentNode.insertBefore(script, scripts);
 
 <span class="hljs-comment">// 恐ろしい: 無限ループの例</span>
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; links.length; i++) {
-  document.body.appendChild(document.createElement(<span class="hljs-string">'a'</span>));
+  <span class="hljs-built_in">document</span>.body.appendChild(<span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'a'</span>));
   <span class="hljs-comment">// リンクのリストが増加する反復処理毎に、ループの終了条件が満たされることがありません</span>
   <span class="hljs-comment">// リストのサイズが保持され条件として使われる場合には起きないことです</span>
 }
@@ -407,24 +407,24 @@ scripts.parentNode.insertBefore(script, scripts);
     <p><code>document.write</code>を使用することは、ページが完全に読み込まれるその戻りでページへの依存を引き起こします。</p>
 <p>この（悪い）プラクティスは開発者たちによって長年にわたって使用されなくなりましたが、幾つかのJavaScriptファイルのための同期フォールバックとして、必要なケースで未だに利用されています。</p>
 <p>例えば、<a href="https://github.com/h5bp/html5-boilerplate/">HTML5 Boilerplate</a>では、Googleの<em>CDN</em>が応答しない場合にローカルのjQueryを読み込むテクニックとして使っています。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">window.jQuery || document.write(<span class="hljs-string">'&lt;script src="js/vendor/jquery-1.9.0.min.js"&gt;&lt;\/script&gt;'</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">window</span>.jQuery || <span class="hljs-built_in">document</span>.write(<span class="hljs-string">'&lt;script src="js/vendor/jquery-1.9.0.min.js"&gt;&lt;\/script&gt;'</span>)</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p><strong>&gt; 注:</strong> <em><code>window.onload</code>の間か後に<code>document.write</code>を実行するのはページの全コンテンツを置き換えます。</em></p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
-  window.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    document.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
+  <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">document</span>.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
   };
 </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>ページの結果は予想している<em>foobar</em>ではなく<em>bar</em>だけです。<code>window.onload</code>イベントの後に実行されたときも同様です。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>foo<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
-  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
-    document.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">document</span>.write(<span class="hljs-string">'&lt;span&gt;bar&lt;/span&gt;'</span>);
   }, <span class="hljs-number">1000</span>);
-  window.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+  <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-comment">// ...</span>
   };
 </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
@@ -452,11 +452,11 @@ scripts.parentNode.insertBefore(script, scripts);
 <p>再フローは、要素のwidthの変更のような、ページのレイアウトの変更によって引き起こされるので最も高コストです。</p>
 <p>過度の再描画と再フローを避けるべきであることは明白ですので、このようにする代わりに:</p>
 <div class="img-right">
-  <img id="geek-55" class="icos-geek" src="http://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
+  <img id="geek-55" class="icos-geek" src="https://browserdiet.com/en/assets/img/55.png" alt="Geek #55" width="163" height="275" />
 </div>
 
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
-    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> div = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'li'</span>),
     i, len;
 
 <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>, len = lis.length; i &lt; len; i++) {
@@ -464,8 +464,8 @@ scripts.parentNode.insertBefore(script, scripts);
 }
 </code></pre>
 <p>こうすべきです:</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> div = document.getElementById(<span class="hljs-string">"to-measure"</span>),
-    lis = document.getElementsByTagName(<span class="hljs-string">'li'</span>),
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> div = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"to-measure"</span>),
+    lis = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'li'</span>),
     widthToSet = div.offsetWidth,
     i, len;
 
@@ -495,22 +495,22 @@ scripts.parentNode.insertBefore(script, scripts);
     <p>必要がないのにDOMを操作する度、パンダは死にます。</p>
 <p>冗談抜きに、DOM要素のブラウジングは高コストです。JavaScriptのエンジンは強力に高速になってきってはいますが、常にDOMツリーのクエリーを最適化した方がよいでしょう。</p>
 <p>最も簡単な最適化の1つは、頻繁にアクセスされるDOM要素のキャッシングです。 例えば、ループの反復処理毎にDOMの検索をする代わりに、一度だけ検索してその結果を変数に保持し、その変数をループの反復処理毎に使いましょう。</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// 本当に良くないです！</span>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// 本当に良くないです！</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
-  document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
 }
 </code></pre>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// ずっといいです :)</span>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// ずっといいです :)</span>
 <span class="hljs-keyword">var</span> myList = <span class="hljs-string">""</span>;
 
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
   myList += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
 }
 
-document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = myList;
+<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = myList;
 </code></pre>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// ずっとずっといいです :)</span>
-<span class="hljs-keyword">var</span> myListHTML = document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML;
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// ずっとずっといいです :)</span>
+<span class="hljs-keyword">var</span> myListHTML = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML;
 
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
   myListHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
@@ -534,12 +534,12 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
     </div>
     
     <p>CSSのように、可読性の高いコードを保つためには、コメントやインデントは良いアイディアです。</p>
-<pre class="highlight"><code class="javascript">BrowserDiet.app = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+<pre class="highlight"><code class="hljs javascript">BrowserDiet.app = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
 
   <span class="hljs-keyword">var</span> foo = <span class="hljs-literal">true</span>;
 
   <span class="hljs-keyword">return</span> {
-    bar: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> {</span>
+    bar: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
       <span class="hljs-comment">// do something</span>
     }
   };
@@ -547,7 +547,7 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
 };
 </code></pre>
 <p>ですがブラウザにとってはそれは重要ではありません。従って、自動化ツールを使ってJavaScriptをミニファイすることを常に覚えておいてください。</p>
-<pre class="highlight"><code class="javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span><span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span>{</span>}}}
+<pre class="highlight"><code class="hljs javascript">BrowserDiet.app=<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{<span class="hljs-keyword">var</span> a=!<span class="hljs-number">0</span>;<span class="hljs-keyword">return</span>{bar:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{}}}
 </code></pre>
 <p>それがファイルサイズを削ることになり、高速なダウンロード、解析、実行へとつながります。</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-minify-your-script">有用なツール</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#minify-your-script">リファレンス</a></em></p>
@@ -569,17 +569,17 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
     
     <p>scriptの構成とメンテナンスのための別のベストプラクティスは、モジュールの構成要素に分割することです。</p>
 <div class="img-right">
-  <img id="geek-47" class="icos-geek" src="http://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
+  <img id="geek-47" class="icos-geek" src="https://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
 </div>
 
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"navbar.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"navbar.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"component.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"page.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"framework.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"plugin.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>ですが、これらのファイル毎にHTTPリクエストが必要になります（そして私たちはブラウザが並列で限られた数のリソースのみをダウンロードすることを知っています）。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"main.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"main.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>なのでJSを結合しましょう。少数のファイルで構成することはリクエスト数を少なくすることになり、より高速にページを読み込みます。</p>
 <p>いずれの長所も欲しい場合ばどうでしょう？ ビルドツールを使ってこのプロセスを自動化しましょう。</p>
@@ -607,14 +607,14 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
     
     <p>jQueryの開発チームは、より良い可読性、新たな機能と既存アルゴリズムの最適化などを通じて、常にライブラリの改善をもたらしています。</p>
 <div class="img-right">
-  <img id="geek-36" class="icos-geek" src="http://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
+  <img id="geek-36" class="icos-geek" src="https://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
 </div>
 
 <p>このため、以下URLからコピーして利用できる最新バージョンのjQueryを常に利用しましょう。:</p>
-<pre class="highlight"><code class="xml">http://code.jquery.com/jquery-latest.js
+<pre class="highlight"><code class="hljs xml">http://code.jquery.com/jquery-latest.js
 </code></pre>
 <p>ですが、テストをする機会を持てずに新しいバージョンが自動的にあなたのサイトに配信される問題が生じるので、<em>決して</em><code>&lt;script&gt;</code>タグでこのURLを参照してはいけません。 代わりに、あなたが特に必要としているjQueryの最新バージョンにリンクしましょう。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
 </code></pre>
 <p>賢明な<a href="/img/new-is-always-better.gif">Barney Stinson</a>が言ったように、<em>&quot;新しいものは常に優れている&quot;</em> :P。</p>
 <p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#always-use-the-latest-version-of-jquery">リファレンス</a></em></p>
@@ -636,7 +636,7 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
     
     <p>セレクターはjQueryの使用上最も重要な問題の1つです。 DOMから要素を選択するにはclassやIDを利用したり<code>find()</code>や<code>children()</code>のようなメソッドを用いるなど、多様な方法がありますが、それらが同様のパフォーマンスであることを意味している訳ではありません。</p>
 <p>それら全ての中で、IDを選択することがネイティブのDOM操作に基づくので最速となります。</p>
-<pre class="highlight"><code class="javascript">$(<span class="hljs-string">"#foo"</span>);
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">"#foo"</span>);
 </code></pre>
 <p><em><a href="http://jsperf.com/browser-diet-jquery-selectors">&gt; JSPerfの結果</a></em></p>
 
@@ -658,12 +658,12 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
     <p>生のJavaScriptの機能はほぼ常にjQueryのそれよりも高速です。そのため、<code>jQuery.each</code>を使用する代わりにJavaScriptの<code>for</code>ループを使用しましょう。</p>
 <p>ですが注意してほしいのは、<code>for in</code>はネイティブですが、ほとんどのケースで<code>jQuery.each</code>よりも性能が低いです。</p>
 <p>そしてよくテストされた<code>for</code>ループは、反復処理において集合の長さをキャッシュしておくことでパフォーマンスより良くする機会を与えてくれます。</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = a.length; i &lt; len; i++ ) {
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = a.length; i &lt; len; i++ ) {
     e = a[i];
 }
 </code></pre>
 <p>反対の<code>while</code>や<code>for</code>ループはコミュニティにおいてホットなトピックで、反復処理の最速な形式として頻繁に引用されます。 ですが、可読性の低下を理由に一般的には使用されません。</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-comment">// reverse while</span>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// reverse while</span>
 <span class="hljs-keyword">while</span> ( i-- ) {
   <span class="hljs-comment">// ...</span>
 }
@@ -692,20 +692,20 @@ document.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = m
     
     <p>時に生のJavaScriptはjQueryよりも容易でより高性能です。</p>
 <div class="img-right">
-  <img id="geek-6" class="icos-geek" src="http://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
+  <img id="geek-6" class="icos-geek" src="https://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
 </div>
 
 <p>以下のようなHTMLがあったとして:</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"text"</span>&gt;</span>Let's change this content<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"text"</span>&gt;</span>Let's change this content<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 <p>このようにする代わりに:</p>
-<pre class="highlight"><code class="javascript">$(<span class="hljs-string">'#text'</span>).html(<span class="hljs-string">'The content has changed'</span>).css({
+<pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">'#text'</span>).html(<span class="hljs-string">'The content has changed'</span>).css({
   backgroundColor: <span class="hljs-string">'red'</span>,
   color: <span class="hljs-string">'yellow'</span>
 });
 </code></pre>
 <p>生のJavaScriptを使用しましょう:</p>
-<pre class="highlight"><code class="javascript"><span class="hljs-keyword">var</span> text = document.getElementById(<span class="hljs-string">'text'</span>);
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-keyword">var</span> text = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'text'</span>);
 text.innerHTML = <span class="hljs-string">'The content has changed'</span>;
 text.style.backgroundColor = <span class="hljs-string">'red'</span>;
 text.style.color = <span class="hljs-string">'yellow'</span>;
@@ -734,16 +734,16 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
     </div>
     
     <p>このテクニックは多様な画像を全て1つのファイルにグルーピングします。</p>
-<p><img id="img-sprite" src="http://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example"></p>
+<p><img id="img-sprite" src="https://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example"></p>
 <p>そしてCSSでそれらを配置します。</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'mySprite.png'</span>)</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">10</span>px -<span class="hljs-number">10</span>px</span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'mySprite.png'</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">10px</span> -<span class="hljs-number">10px</span></span></span>;
 <span class="hljs-rule">}</span></span>
 
 <span class="hljs-class">.icon-bar</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'mySprite.png'</span>)</span></span></span>;
-  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">5</span>px -<span class="hljs-number">5</span>px</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'mySprite.png'</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background-position</span>:<span class="hljs-value"> -<span class="hljs-number">5px</span> -<span class="hljs-number">5px</span></span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>結果的に、あなたは劇的にHTTPリクエストの数を減少させ、ページの他のリソースの滞在的な遅れを避けることになります。</p>
@@ -769,13 +769,13 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
     <p>このテクニックはCSSスプライトの代わりになります。</p>
 <p><a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data-URI</a>は、通常はURIのコンテンツのインライン化を目的とする方法です。 この例では、私たちはページの読み込みで必要となるHTTPリクエストを削減するためにCSSのbackground imageのコンテンツをインライン化するのに使っています。</p>
 <p>Before:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'foo.png'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'foo.png'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>After:</p>
-<pre class="highlight"><code class="css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
-  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span></span>;
+<pre class="highlight"><code class="hljs css"><span class="hljs-class">.icon-foo</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">background-image</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjYAAAAAIAAeIhvDMAAAAASUVORK5CYII%3D'</span>)</span></span>;
 <span class="hljs-rule">}</span></span>
 </code></pre>
 <p>IE8以上の全てのブラウザはbase64エンコードがサポートされています。</p>
@@ -799,7 +799,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
     </div>
     
     <p>画像の<code>width</code>と<code>height</code>の属性を常に記述しましょう。これはレンダリング中の不要な再描画と再フローを避けることにつながります。</p>
-<pre class="highlight"><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"logo.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Logo"</span>&gt;</span>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"logo.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Logo"</span>&gt;</span>
 </code></pre>
 <p>このことを知って、開発者のJohn Qは<em>700x700px</em>の画像を<em>50x50px</em>の画像として表示することにしました。</p>
 <p>この開発者が理解していないことは、不要な数十<em>キロバイト</em>がネットワーク上で送信されることです。</p>
@@ -848,11 +848,11 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
     </div>
     
     <div class="img-left">
-  <img id="geek-43" class="icos-geek" src="http://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
+  <img id="geek-43" class="icos-geek" src="https://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
 
-<p>あなたがウェブパフォーマンスの世界に挑もうと思うのであれば、ブラウザに<a href="http://yslow.org/">YSlow</a>と<a href="https://developers.google.com/speed/pagespeed/insights_extensions">PageSpeed</a>の拡張機能をインストールすることは極めて重要です&mdash;その瞬間から彼らはあなたの親友となります。</p>
-<p>それか、オンラインツールを希望するのであれば、<a href="http://www.webpagetest.org/">WebPageTest</a>、<a href="http://httparchive.org/">HTTP Archive</a>か<a href="http://pagespeed.googlelabs.com/">PageSpeed</a>のサイトを訪れてください。</p>
+<p>あなたがウェブパフォーマンスの世界に挑もうと思うのであれば、ブラウザに<a href="http://yslow.org/">YSlow</a> の拡張機能をインストールすることは極めて重要です&mdash;その瞬間から彼らはあなたの親友となります。</p>
+<p>それか、オンラインツールを希望するのであれば、<a href="http://www.webpagetest.org/">WebPageTest</a>、<a href="http://httparchive.org/">HTTP Archive</a>か<a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed</a>のサイトを訪れてください。</p>
 <p>一般的にそれらはあなたのサイトのパフォーマンスを解析し、あなたのサイトに対する滞在的な問題を解決して助けてくれる非常に貴重なアドバイスを伴った成績のレポートを作成してくれます。</p>
 
   </div>
@@ -871,7 +871,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
     </div>
     
     <div class="img-right">
-  <img id="geek-31" src="http://browserdiet.com/en/assets/img/31.png" alt="Geek #31" width="162" height="275" />
+  <img id="geek-31" src="https://browserdiet.com/en/assets/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
 
 <p>このガイドを読み終えた後、あなたがサイトを整備できることを、私たちは期待しています。 :)</p>
@@ -895,19 +895,17 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
   </div>
 
   <!-- <a title="Go to the top" id="top" href="#top-bar">
-    <img src="http://zenorocha.github.io/browser-diet/en/assets/img/top.png" alt="Go to the top" width="64" height="64">
+    <img src="https://browserdiet.com/assets/img/top.png" alt="Go to the top" width="64" height="64">
   </a> -->
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-4114546-34']);
-    _gaq.push(['_trackPageview']);
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+  ga('create', 'UA-4114546-34', 'auto');
+  ga('send', 'pageview');
   </script>
 
 </body>

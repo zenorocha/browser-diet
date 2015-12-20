@@ -1,7 +1,0 @@
-<p>Toujours définir les attributs &#39;width&#39; et &#39;height&#39; d&#39;une image. Ceci évitera les &quot;repaints&quot; et &quot;reflows&quot; inutiles pendant la mise en page du rendu.</p>
-<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"100"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"logo.jpg"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Logo"</span>&gt;</span>
-</code></pre>
-<p>Sachant cela, John Q. Developer ayant une image de taille <em>700x700px</em>, décide d&#39;utiliser cette technique pour afficher une image de <em>50x50px</em>.</p>
-<p>Ce que M. Developper ne réalise pas, c&#39;est que des dizaines de <em>kilobytes</em> inutiles seront alors envoyés aux clients.</p>
-<p>Gardez toujours cela en tête : ce n&#39;est pas parce que vous pouvez définir la largeur et hauteur d&#39;une image en HTML que vous devez le faire pour re-dimensionner de larges images.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/References#dont-rescale-images-in-markup">References</a></em></p>

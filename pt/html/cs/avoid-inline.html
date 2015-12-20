@@ -1,8 +1,0 @@
-<p>Existují tři základní cesty, jak vložit CSS nebo JavaScript do stránky:</p>
-<p><strong>1) Inline:</strong> CSS je definováno uvnitř <code>style</code> atributu a JavaScript například uvnitř <code>onclick</code> atributu u libovolné HTML značky.</p>
-<p><strong>2) Vložené:</strong> CSS je definováno uvnitř <code>&lt;style&gt;</code> tagu a JavaScript uvnitř <code>&lt;script&gt;</code> tagu.</p>
-<p><strong>3) Externí:</strong> CSS je nahráno z <code>&lt;link&gt;</code> a JavaScript z <code>src</code> atributu tagu <code>&lt;script&gt;</code>.</p>
-<p>První dvě varianty, nehledě na to, že snižují počet HTTP požadavků, ve skutečnosti zvětšují velikost HTML dokumentu. Přesto to může být výhodné, pokud máte malé soubory a náklady na request jsou větší problém. V takovém případě spusťe testy a vyhodnoťte, zda nastane zrychlení. Také zvažte smysl vaší stránky a její návštěvnost: pokud očekáváte, že uživatel navštíví stránku jen jednou, například při nějaké dočasné kampani, kde nečekáte, že se uživatel bude vracet, inlinový/vložený kód pomůže snížit počet HTTP požadavků.</p>
-<p><em>&gt; Vyhněte se psaní CSS/JS uvnitř vašeho HTML (raději jej automatizujte pomocí nástrojů).</em></p>
-<p>Třetí varianta nejen zlepšuje organizaci vašeho kódu, ale také umožňuje prohlížečům aktivovat kešování. Tato varianta by měla být preferována pro naprostou většinu případů, zvláště pokud pracujete s velkými soubory a mnoha stránkami.</p>
-<p><em>&gt; <a href="https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-avoid-inlineembedded-code">Užitečné nástroje</a> / <a href="https://github.com/zenorocha/browser-diet/wiki/References#avoid-inlineembedded-code">Reference</a></em></p>
