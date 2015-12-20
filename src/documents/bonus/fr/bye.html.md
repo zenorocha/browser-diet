@@ -4,7 +4,7 @@ title: C'est tout pour aujourd'hui !
 ---
 
 <div class="img-right">
-  <img id="geek-31" class="icos-geek" src="https://browserdiet.com/en/assets/img/31.png" alt="Geek #31" width="162" height="275" />
+  <img id="geek-31" class="icos-geek" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
 
 Nous espérons qu'après avoir lu ce guide, vous pourrez garder votre site en forme. :)

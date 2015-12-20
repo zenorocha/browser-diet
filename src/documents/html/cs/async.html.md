@@ -6,7 +6,7 @@ title: Zkuste async
 Abychom vysvětlili, jak je tento atribut užitečný pro lepší výkon, je dobré pochopit, co se děje, když jej nepoužijeme.
 
 <div class="img-left">
-  <img id="geek-20" class="icos-geek" src="https://browserdiet.com/en/assets/img/20.png" alt="Geek #20" width="118" height="275" />
+  <img id="geek-20" class="icos-geek" src="https://browserdiet.com/assets/img/20.png" alt="Geek #20" width="118" height="275" />
 </div>
 
 ``` html

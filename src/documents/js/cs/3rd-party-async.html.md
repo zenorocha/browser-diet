@@ -6,7 +6,7 @@ title: Nahrávejte obsah třetích stran asynchronně
 Kdo nikdy nenahrával obsah třetích stran k vložení Youtube videa nebo like/tweet tlačítka?
 
 <div class="img-right">
-  <img id="geek-46" class="icos-geek" src="https://browserdiet.com/en/assets/img/46.png" alt="Geek #46" width="158" height="275" />
+  <img id="geek-46" class="icos-geek" src="https://browserdiet.com/assets/img/46.png" alt="Geek #46" width="158" height="275" />
 </div>
 
 Velký problém je, že tyto kódy nejsou vždy nahrávány efektivně. Ať už z důvodu špatného připojení uživatele nebo serveru, kde jsou hostovány. Nebo tato služba může být dočasně mimo provoz, blokována uživatelem nebo firemním firewallem.

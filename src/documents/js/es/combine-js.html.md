@@ -6,7 +6,7 @@ title: Combina los archivos JS en uno sólo
 Otra buena práctica para la organización y el mantenimiento de los scripts es separarlos en componentes modulares.
 
 <div class="img-right">
-  <img id="geek-47" class="icos-geek" src="https://browserdiet.com/en/assets/img/47.png" alt="Geek #47" width="174" height="275" />
+  <img id="geek-47" class="icos-geek" src="https://browserdiet.com/assets/img/47.png" alt="Geek #47" width="174" height="275" />
 </div>
 
 ```html

@@ -5,7 +5,7 @@ title: Utiliser des sprites pour le CSS
 
 Cette technique consiste à grouper plusieurs images dans un seul fichier.
 
-<img id="img-sprite" src="https://browserdiet.com/en/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
+<img id="img-sprite" src="https://browserdiet.com/assets/img/sprite-example.jpg" alt="CSS Sprite Example">
 
 Et ensuite de les positionner avec CSS.
 

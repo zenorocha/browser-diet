@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css">
 
   <!-- Fonts -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="<%= @site.assets %>/img/favicon.ico">
@@ -38,7 +38,7 @@
           <a href="/<%= @currentLang %>" class="flags" id="flag-<%= @currentLang %>">&nbsp;</a>
 
           <div class="available-languages">
-            <a id="flag-en" rel="alternate" hreflang="en" class="flags" href="https://browserdiet.com/" title="English">English</a>
+            <a id="flag-en" rel="alternate" hreflang="en" class="flags" href="https://browserdiet.com/en/" title="English">English</a>
             <a id="flag-es" rel="alternate" hreflang="es" class="flags" href="https://browserdiet.com/es/" title="Español">Español</a>
             <a id="flag-pt" rel="alternate" hreflang="pt" class="flags" href="https://browserdiet.com/pt/" title="Português">Português</a>
             <a id="flag-pl" rel="alternate" hreflang="pl" class="flags" href="https://browserdiet.com/pl/" title="Polski">Polski</a>

@@ -6,7 +6,7 @@ title: Carga contenido de terceros asíncronamente
 ¿Quién nunca ha cargado contenido de terceros para incrustar un video de YouTube o un botón de like/tweet?
 
 <div class="img-right">
-  <img id="geek-46" class="icos-geek" src="https://browserdiet.com/en/assets/img/46.png" alt="Geek #46" width="158" height="275" />
+  <img id="geek-46" class="icos-geek" src="https://browserdiet.com/assets/img/46.png" alt="Geek #46" width="158" height="275" />
 </div>
 
 El gran problema es que esos códigos no son siempre distribuidos eficientemente, ya sea por la conexión del usuario, o la conexión del servidor donde se alojan. O este servicio puede estar caído temporalmente o incluso estar bloqueado por el firewall del usuario o su compañía.

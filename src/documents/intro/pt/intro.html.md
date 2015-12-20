@@ -4,7 +4,7 @@ title: 'Conheça os guerreiros que vão te ajudar nessa!'
 ---
 
 <div class="img-left">
-  <img id="geek-17" class="icos-geek" src="https://browserdiet.com/en/assets/img/17.png" alt="Geek #17" width="199" height="275" />
+  <img id="geek-17" class="icos-geek" src="https://browserdiet.com/assets/img/17.png" alt="Geek #17" width="199" height="275" />
 </div>
 
 E se juntássemos os feras que trabalham em grandes portais para criar o guia definitivo de performance para front-end?

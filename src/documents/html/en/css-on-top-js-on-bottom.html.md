@@ -18,7 +18,7 @@ When we put stylesheets in the `<head>` we allow the page to render progressivel
 But if we put them at the end of the page, the page will be rendered without styles until the CSS is downloaded and applied.
 
 <div class="img-right">
-  <img id="geek-32" class="icos-geek" src="https://browserdiet.com/en/assets/img/32.png" alt="Geek #32" width="139" height="275" />
+  <img id="geek-32" class="icos-geek" src="https://browserdiet.com/assets/img/32.png" alt="Geek #32" width="139" height="275" />
 </div>
 
 On the other hand, when dealing with JavaScript, it's important to place scripts at the bottom of the page as they block rendering while they're being loaded and executed.

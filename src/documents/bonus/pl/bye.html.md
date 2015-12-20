@@ -4,7 +4,7 @@ title: To wszystko na dziś!
 ---
 
 <div class="img-right">
-  <img id="geek-31" src="https://browserdiet.com/en/assets/img/31.png" alt="Geek #31" width="162" height="275" />
+  <img id="geek-31" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
 
 Mamy nadzieję, że po przeczytaniu tego poradnika Twoja strona będzie lepsza. :)

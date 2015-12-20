@@ -4,7 +4,7 @@ title: Outils de diagnostic: votre meilleur ami
 ---
 
 <div class="img-left">
-  <img id="geek-43" class="icos-geek" src="https://browserdiet.com/en/assets/img/43.png" alt="Geek #43" width="157" height="275" />
+  <img id="geek-43" class="icos-geek" src="https://browserdiet.com/assets/img/43.png" alt="Geek #43" width="157" height="275" />
 </div>
 
 Si vous voulez vous aventurer dans le monde des perfomances web, il est crucial d'installer le extension [YSlow](http://yslow.org/) dans votre navigateur&mdash;ils seront vos meilleurs amis à partir de maintenant.

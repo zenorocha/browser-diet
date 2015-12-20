@@ -4,7 +4,7 @@ title: 'Rencontrez les guerriers qui vont vous aider pour ça!'
 ---
 
 <div class="img-left">
-  <img id="geek-17" class="icos-geek" src="https://browserdiet.com/en/assets/img/17.png" alt="Geek #17" width="199" height="275" />
+  <img id="geek-17" class="icos-geek" src="https://browserdiet.com/assets/img/17.png" alt="Geek #17" width="199" height="275" />
 </div>
 
 Que se passerait-il si on mettait ensemble un groupe d'experts, travaillant sur ​​de gros sites, afin de créer le guide définitif de la performance front-end ?

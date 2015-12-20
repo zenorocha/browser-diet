@@ -4,7 +4,7 @@ title: 'これであなたを助け出す戦士と出会いましょう！'
 ---
 
 <div class="img-left">
-  <img id="geek-17" class="icos-geek" src="https://browserdiet.com/en/assets/img/17.png" alt="Geek #17" width="199" height="275" />
+  <img id="geek-17" class="icos-geek" src="https://browserdiet.com/assets/img/17.png" alt="Geek #17" width="199" height="275" />
 </div>
 
 決定的なフロントエンドのパフォーマンスガイドを作成するのに、大規模サイトの開発をしている熟練者たちを集められたらどうでしょう？

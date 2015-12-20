@@ -6,7 +6,7 @@ title: No uses siempre jQuery...
 A veces JavaScript a secas puede ser más fácil y rápido que jQuery.
 
 <div class="img-right">
-  <img id="geek-6" class="icos-geek" src="https://browserdiet.com/en/assets/img/6.png" alt="Geek #6" width="156" height="275" />
+  <img id="geek-6" class="icos-geek" src="https://browserdiet.com/assets/img/6.png" alt="Geek #6" width="156" height="275" />
 </div>
 
 Considera el siguiente html:

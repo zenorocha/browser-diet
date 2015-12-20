@@ -4,7 +4,7 @@ title: 'Meet the warriors who will help you out with this!'
 ---
 
 <div class="img-left">
-  <img id="geek-17" class="icos-geek" src="https://browserdiet.com/en/assets/img/17.png" alt="Geek #17" width="199" height="275" />
+  <img id="geek-17" class="icos-geek" src="https://browserdiet.com/assets/img/17.png" alt="Geek #17" width="199" height="275" />
 </div>
 
 A co kdybychom dali dohromady partu expertů, kteří se podílí na tvorbě velkých webových stránek, abychom vytvořili definitivní příručku pro výkon front-endu?

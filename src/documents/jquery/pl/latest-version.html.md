@@ -6,7 +6,7 @@ title: Zawsze korzystaj z najnowszej wersji jQuery
 Główny zespół jQuery zawsze stara się wnieść poprawki do biblioteki, dzięki lepszej czytelności kodu, nowym funkcjonalnościom i optymalizacji istniejących algorytmów.
 
 <div class="img-right">
-  <img id="geek-36" class="icos-geek" src="https://browserdiet.com/en/assets/img/36.png" alt="Geek #36" width="144" height="275" />
+  <img id="geek-36" class="icos-geek" src="https://browserdiet.com/assets/img/36.png" alt="Geek #36" width="144" height="275" />
 </div>
 
 Z tego powodu, zawsze używaj najnowszej wersji jQuery, która jest dostępna tutaj, jeśli chcesz skopiować skrypt lokalnie:

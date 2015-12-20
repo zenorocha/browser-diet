@@ -6,7 +6,7 @@ title: Sloučení více CSS souborů
 Další doporučovaná technika pro organizaci a správu stylů je rozdělení na modulární komponenty.
 
 <div class="img-right">
-  <img id="geek-9" class="icos-geek" src="https://browserdiet.com/en/assets/img/9.png" alt="Geek #9" width="122" height="275" />
+  <img id="geek-9" class="icos-geek" src="https://browserdiet.com/assets/img/9.png" alt="Geek #9" width="122" height="275" />
 </div>
 
 ```html
