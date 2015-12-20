@@ -13,6 +13,7 @@
     "grunt-contrib-cssmin": "~0.14.0"
   },
   "scripts": {
+    "build": "docpad generate --env static",
     "test": "docpad generate"
   }
 }

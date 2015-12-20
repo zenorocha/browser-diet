@@ -39,4 +39,5 @@ module.exports =
 
     plugins:
         grunt:
-            writeAfter: ['cssmin']
+            writeAfter: false
+            generateAfter: ['cssmin']
