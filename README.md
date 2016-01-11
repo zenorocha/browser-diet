@@ -6,15 +6,15 @@ The definitive front-end performance guide.
 
 ## Contributing
 
-If you want to add new tips or edit the existing ones, just go to the [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents) folder. There you can find all of them in [Markdown (.md)](http://pt.wikipedia.org/wiki/Markdown) format. Remember to add references on each tip that you write at [References](https://github.com/zenorocha/browser-diet/wiki/References) wiki.
+If you want to add new tips or edit the existing ones, just go to the [src/documents](https://github.com/zenorocha/browser-diet/blob/master/src/documents) folder. There you can find all of them in [Markdown (.md)](https://pt.wikipedia.org/wiki/Markdown) format. Remember to add references on each tip that you write at [References](https://github.com/zenorocha/browser-diet/wiki/References) wiki.
 
 ## Instructions
 
 #### How can I locally run the project?
 
-1. Install [Git](http://git-scm.com/downloads) and [NodeJS](http://nodejs.org/download/), if you don't have them already.
+1. Install [Git](http://git-scm.com/downloads) and [NodeJS](https://nodejs.org/download/), if you don't have them already.
 
-2. Open your terminal and download [DocPad](https://github.com/bevry/docpad) through this command:
+2. Open your terminal and download [DocPad](https://github.com/docpad/docpad) through this command:
 
   ```sh
   $ [sudo] npm install -g docpad@6.78.4
@@ -136,12 +136,12 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 #### Fonts
 
 * Pacifico by [Vernon Adams](http://www.fontsquirrel.com/license/pacifico)
-* Open Sans by [Steve Matteson](http://www.google.com/webfonts/specimen/Open+Sans)
+* Open Sans by [Steve Matteson](https://www.google.com/fonts/specimen/Open+Sans)
 * Horseshoes by [Lauren Ashpole](http://www.laurenashpole.com/licensing.html)
 
 #### Illustrations
 
-* The 56 Geeks Project by [Scott Johnson](http://myextralife.com/56geeks/)
+* The 56 Geeks Project by [Scott Johnson](http://www.myextralife.com/56geeks/)
 * Flag Icon Set by [GoSquared](https://www.gosquared.com/resources/flag-icons/)
 
 ## License
