@@ -11,7 +11,7 @@ module.exports =
         edit: 'Edit'
         goTop: 'Go to the top'
         htmlLang: 'en-US'
-        credits: 'Develop by <em>Zeno Rocha</em> ● Design by <em>Briza Bueno</em> ● Illustrations by <em>Scott Johnson</em>'
+        credits: '<p>Designed by <a href="http://brizabueno.com">Briza Bueno</a> ● Illustrated by <a href="http://www.myextralife.com">Scott Johnson</a></p><p>Made by <a href="http://zenorocha.com">Zeno Rocha</a> ● Brought to you by <a href="http://www.liferay.com">Liferay</a></p>'
     pt:
         title: 'Como perder peso (no browser)'
         titleHTML: '<h1>Como perder <span>peso</span></h1><h2>no browser</h2>'
@@ -23,7 +23,7 @@ module.exports =
         edit: 'Editar'
         goTop: 'Ir para o topo'
         htmlLang: 'pt-BR'
-        credits: 'Desenvolvido por <em>Zeno Rocha</em> ● Design por <em>Briza Bueno</em> ● Ilustrações por <em>Scott Johnson</em>'
+        credits: '<p>Design por <a href="http://brizabueno.com">Briza Bueno</a> ● Ilustrações por <a href="http://www.myextralife.com">Scott Johnson</a></p><p>Criado por <a href="http://zenorocha.com">Zeno Rocha</a> ● Trazido para você por <a href="http://www.liferay.com">Liferay</a></p>'
     es:
         title: 'Cómo perder peso (en el navegador)'
         titleHTML: '<h1>Como perder <span>peso</span></h1><h2>en el navegador</h2>'
@@ -35,7 +35,7 @@ module.exports =
         edit: 'Editar'
         goTop: 'Ir arriba'
         htmlLang: 'es-ES'
-        credits: 'Desarrollo por <em>Zeno Rocha</em> ● Diseño por <em>Briza Bueno</em> ● Ilustraciones por <em>Scott Johnson</em>'
+        credits: '<p>Diseño por <a href="http://brizabueno.com">Briza Bueno</a> ● Ilustraciones por <a href="http://www.myextralife.com">Scott Johnson</a></p><p>Creado por <a href="http://zenorocha.com">Zeno Rocha</a> ● Traído a usted por <a href="http://www.liferay.com">Liferay</a></p>'
     pl:
         title: 'Jak schudnąć (w przeglądarce)'
         titleHTML: '<h1>Jak schudnąć <span>weight</span></h1><h2>w przeglądarce</h2>'
@@ -47,7 +47,7 @@ module.exports =
         edit: 'Edytuj'
         goTop: 'Do góry'
         htmlLang: 'pl-PL'
-        credits: 'Rozwijane przez <em>Zeno Rocha</em> ● Zaprojektowane przez <em>Briza Bueno</em> ● Ilustracje wykonane przez <em>Scott Johnson</em>'
+        credits: '<p>Zaprojektowane przez <a href="http://brizabueno.com">Briza Bueno</a> ● Ilustracje wykonane przez <a href="http://www.myextralife.com">Scott Johnson</a></p><p>Stworzone przez <a href="http://zenorocha.com">Zeno Rocha</a> ● Dostarczone przez <a href="http://www.liferay.com">Liferay</a></p>'
     zh:
         title: 'How to lose weight (in the browser)'
         titleHTML: '<h1>How to lose <span>weight</span></h1><h2>in the browser</h2>'
@@ -59,7 +59,7 @@ module.exports =
         edit: 'Edit'
         goTop: 'Go to the top'
         htmlLang: 'zh-CN'
-        credits: 'Develop by <em>Zeno Rocha</em> ● Design by <em>Briza Bueno</em> ● Illustrations by <em>Scott Johnson</em>'
+        credits: '<p>Designed by <a href="http://brizabueno.com">Briza Bueno</a> ● Illustrated by <a href="http://www.myextralife.com">Scott Johnson</a></p><p>Created by <a href="http://zenorocha.com">Zeno Rocha</a> ● Brought to you by <a href="http://www.liferay.com">Liferay</a></p>'
     fr:
         title: 'Comment perdre du poids (dans le navigateur)'
         titleHTML: '<h1>Comment perdre du <span>poids</span></h1><h2>dans le navigateur</h2>'
@@ -71,7 +71,7 @@ module.exports =
         edit: 'Éditer'
         goTop: 'Aller vers le haut'
         htmlLang: 'fr-FR'
-        credits: 'Développé par <em>Zeno Rocha</em> ● Désigné par <em>Briza Bueno</em> ● Illustrations par <em>Scott Johnson</em>'
+        credits: '<p>Désigné par <a href="http://brizabueno.com">Briza Bueno</a> ● Illustrations par <a href="http://www.myextralife.com">Scott Johnson</a></p><p>Créé par <a href="http://zenorocha.com">Zeno Rocha</a> ● Présenté par <a href="http://www.liferay.com">Liferay</a></p>'
     cs:
         title: 'Jak shodit váhu (v prohlížeči)'
         titleHTML: '<h1>Jak shodit <span>váhu</span></h1><h2>v prohlížeči</h2>'
@@ -83,7 +83,7 @@ module.exports =
         edit: 'Editovat'
         goTop: 'Nahoru'
         htmlLang: 'cs-CZ'
-        credits: 'Vytvořil <em>Zeno Rocha</em> ● Design <em>Briza Bueno</em> ● Grafika <em>Scott Johnson</em>'
+        credits: '<p>Design <a href="http://brizabueno.com">Briza Bueno</a> ● Grafika <a href="http://www.myextralife.com">Scott Johnson</a></p><p>Vytvořeno <a href="http://zenorocha.com">Zeno Rocha</a> ● Vám přináší <a href="http://www.liferay.com">Liferay</a></p>'
     jp:
         title: 'How to lose weight (in the browser)'
         titleHTML: '<h1>How to lose <span>weight</span></h1><h2>in the browser</h2>'
@@ -95,4 +95,4 @@ module.exports =
         edit: 'Edit'
         goTop: 'Go to the top'
         htmlLang: 'ja-JP'
-        credits: 'Develop by <em>Zeno Rocha</em> ● Design by <em>Briza Bueno</em> ● Illustrations by <em>Scott Johnson</em>'
+        credits: '<p>Designed by <a href="http://brizabueno.com">Briza Bueno</a> ● Illustrated by <a href="http://www.myextralife.com">Scott Johnson</a></p><p>Created by <a href="http://zenorocha.com">Zeno Rocha</a> ● Brought to you by <a href="http://www.liferay.com">Liferay</a></p>'
