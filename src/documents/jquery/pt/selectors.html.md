@@ -1,6 +1,6 @@
 ---
 order: 9
-title: Selectors
+title: Seletores
 ---
 
 Seletores são uma das mais importantes questões no uso do jQuery. Há vários modos para selecionar um elemento do DOM, mas não significa que eles têm a mesma perfomance. Você pode selecionar um elemento usando classes, IDs ou métodos como `find()`, `children()`.
