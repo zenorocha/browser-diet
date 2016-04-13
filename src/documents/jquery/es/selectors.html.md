@@ -13,4 +13,4 @@ Entre todos ellos, seleccionar un ID es la via mas rapida porque esta basada en 
 $("#foo");
 ```
 
-*[> Results on JSPerf](http://jsperf.com/browser-diet-jquery-selectors)*
+*[> Resultados en JSPerf](http://jsperf.com/browser-diet-jquery-selectors)*
