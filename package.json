@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "docpad-plugin-grunt": "~2.2.0",
-    "grunt-contrib-cssmin": "~0.14.0"
+    "grunt-contrib-cssmin": "^1.0.1"
   },
   "scripts": {
     "build": "docpad generate --env static",
