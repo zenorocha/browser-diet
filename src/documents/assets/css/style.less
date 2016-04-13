@@ -63,6 +63,7 @@ strong {
 	position: relative;
 	line-height: (517 / 16em);
 	z-index: 1;
+	width: 100%;
 	max-width: 51em;
 	overflow: hidden;
 	margin-left: auto;
@@ -151,7 +152,7 @@ strong {
 
 .subtitle h3,
 #menu a {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	line-height: 1.3;
 	padding: 0.35em 0;
 	display: block;
@@ -159,8 +160,8 @@ strong {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 
-	@media (max-width: 550px) {
-		font-size: 0.95em;
+	@media (min-width: 550px) {
+		font-size: 1.4em;
 	}
 }
 
@@ -246,7 +247,9 @@ strong {
 	padding: 5px 10px;
 	display: none;
 	border-radius: 3px;
-	min-width: 355px;
+	min-width: initial;
+	
+	@media (min-width: 570px) { min-width: 355px; }
 }
 
 #language-picker .available-languages a {
