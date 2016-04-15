@@ -2,8 +2,86 @@
 layout: default
 ---
 
-<% for item in @getCollection("documents").findAll({ url: $startsWith: '/intro/' + @currentLang}, [order:1]).toJSON(): %>
-    <div class="article">
-      <%- item.contentRenderedWithoutLayouts %>
+<div id="header">
+
+  <div id="top-bar" class="subtitle">
+    <div class="center">
+
+      <div id="language-picker">
+        <a href="/<%= @currentLang %>" class="flags" id="flag-<%= @currentLang %>">&nbsp;</a>
+
+        <div class="available-languages">
+          <a id="flag-en" rel="alternate" hreflang="en" class="flags" href="https://browserdiet.com/" title="English">English</a>
+          <a id="flag-es" rel="alternate" hreflang="es" class="flags" href="https://browserdiet.com/es/" title="Español">Español</a>
+          <a id="flag-pt" rel="alternate" hreflang="pt" class="flags" href="https://browserdiet.com/pt/" title="Português">Português</a>
+          <a id="flag-pl" rel="alternate" hreflang="pl" class="flags" href="https://browserdiet.com/pl/" title="Polski">Polski</a>
+          <a id="flag-zh" rel="alternate" hreflang="zh" class="flags" href="https://browserdiet.com/zh/" title="中国的">中国的</a>
+          <a id="flag-fr" rel="alternate" hreflang="fr" class="flags" href="https://browserdiet.com/fr/" title="Français">Français</a>
+          <a id="flag-cs" rel="alternate" hreflang="cs" class="flags" href="https://browserdiet.com/cs/" title="Česky">česky</a>
+          <a id="flag-jp" rel="alternate" hreflang="ja" class="flags" href="https://browserdiet.com/jp/" title="日本語">日本語</a>
+        </div>
+      </div>
+
+      <h3><%= @getLang().slogan %></h3>
+
     </div>
-<% end %>
+  </div>
+
+  <a href="https://github.com/zenorocha/browser-diet"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+  <div class="center">
+    <div class="intro">
+      <hgroup class="intro-titles">
+        <%- @getLang().titleHTML %>
+      </hgroup>
+
+      <div class="superman">
+        <img class="superman-geek" src="<%= @site.assets %>/img/superman.png" alt="Superman">
+        <img class="superman-rays" src="<%= @site.assets %>/img/rays.png" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <div id="menu">
+    <ul class="center">
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#js">JavaScript</a></li>
+      <li><a href="#jquery">jQuery</a></li>
+      <li><a href="#images"><%= @getLang().images %></a></li>
+      <li><a href="#bonus"><%= @getLang().bonus %></a></li>
+    </ul>
+  </div>
+
+</div>
+
+<div id="content">
+  <div class="center">
+
+    <% for item in @getCollection("documents").findAll({ url: $startsWith: '/intro/' + @currentLang}, [order:1]).toJSON(): %>
+        <div class="article">
+          <%- item.contentRenderedWithoutLayouts %>
+        </div>
+    <% end %>
+
+    <%- @partial('section.html.eco', { sectionTitle: 'HTML', sectionID: 'html', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+
+    <%- @partial('section.html.eco', { sectionTitle: 'CSS', sectionID: 'css', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+
+    <%- @partial('section.html.eco', { sectionTitle: 'JavaScript', sectionID: 'js', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+
+    <%- @partial('section.html.eco', { sectionTitle: 'jQuery', sectionID: 'jquery', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+
+    <%- @partial('section.html.eco', { sectionTitle: @getLang().images, sectionID: 'images', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+
+    <%- @partial('section.html.eco', { sectionTitle: @getLang().bonus, sectionID: 'bonus', docs: @getCollection("documents"), lang: @currentLang, edit: @getLang().edit }) %>
+
+  </div>
+</div>
+
+<div id="footer">
+  <div class="center">
+    <p><%- @getLang().credits %></p>
+  </div>
+</div>
