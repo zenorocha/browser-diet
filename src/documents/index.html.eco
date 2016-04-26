@@ -9,14 +9,14 @@ layout: default
       <h3><%= @getLang().slogan %> |</h3>
 
       <select id="language-picker">
-        <option value="cs">Česky</option>
-        <option value="en" selected>English</option>
-        <option value="es">Español</option>
-        <option value="fr">Français</option>
-        <option value="ja">日本語</option>
-        <option value="pl">Polski</option>
-        <option value="pt">Português</option>
-        <option value="zh">中国的</option>
+        <option value="cs" <% if @currentLang == 'cs': %>selected<% end %>>Česky</option>
+        <option value="en" <% if @currentLang == 'en': %>selected<% end %>>English</option>
+        <option value="es" <% if @currentLang == 'es': %>selected<% end %>>Español</option>
+        <option value="fr" <% if @currentLang == 'fr': %>selected<% end %>>Français</option>
+        <option value="ja" <% if @currentLang == 'ja': %>selected<% end %>>日本語</option>
+        <option value="pl" <% if @currentLang == 'pl': %>selected<% end %>>Polski</option>
+        <option value="pt" <% if @currentLang == 'pt': %>selected<% end %>>Português</option>
+        <option value="zh" <% if @currentLang == 'zh': %>selected<% end %>>中国的</option>
       </select>
     </div>
   </div>
