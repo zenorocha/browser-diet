@@ -1,17 +1,8 @@
-/* --- Mixins --- */
-
-.mq-gh-ribbon(@lang, @selector, @width) {
-  @media (max-width: @width) {
-    @{lang} @{selector} { display: none; }
-  }
-}
-
 /* --- Vars --- */
 
 @yellow: #FFDE00;
 @red: #E60014;
 @orange: #FFBF00;
-@gh-ribbon: ~'img[alt="Fork me on GitHub"]';
 
 /* --- Reset --- */
 
@@ -141,8 +132,13 @@ strong {
 
 /*	--- Header --- */
 
-@{gh-ribbon} {
-  z-index: 2;
+.github-fork-ribbon {
+  border: 0;
+  display: none;
+
+  @media (min-width: 665px) {
+    display: block;
+  }
 }
 
 .subtitle h3 {
