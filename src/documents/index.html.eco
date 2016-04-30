@@ -4,9 +4,9 @@ layout: default
 
 <div id="header">
 
-  <div id="top-bar" class="subtitle">
+  <div id="topbar" class="subtitle">
     <div class="center">
-      <h3><%= @getLang().slogan %> |</h3>
+      <h3><%= @getLang().slogan %></h3>
 
       <select id="language-picker">
         <option value="cs" <% if @currentLang == 'cs': %>selected<% end %>>Česky</option>
