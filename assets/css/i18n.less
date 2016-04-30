@@ -6,7 +6,19 @@
 
 .pl .intro h1 { font-size: 3.7em; }
 .pl .intro h1 span { font-size: 2.3em; }
-.pl .subtitle h3 { font-size: 1.2em; margin-left: -85px; }
+.pl .subtitle h3 {
+  font-size: 1.2em;
+  padding: .5em 0;
+  @media (max-width: 592px) {
+    font-size: .75em;
+    padding: 1.2em 0;
+  }
+}
 
 .es .intro h1 span { font-size: 3.1em; }
-.es .subtitle h3 { margin-left: -15px; }
+.es .subtitle h3 {
+  @media (max-width: 555px) {
+    font-size: .95em;
+    padding: .8em 0;
+  }
+}
