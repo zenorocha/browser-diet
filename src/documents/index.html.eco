@@ -13,7 +13,7 @@ layout: default
         <option value="en" <% if @currentLang == 'en': %>selected<% end %>>English</option>
         <option value="es" <% if @currentLang == 'es': %>selected<% end %>>Español</option>
         <option value="fr" <% if @currentLang == 'fr': %>selected<% end %>>Français</option>
-        <option value="ja" <% if @currentLang == 'ja': %>selected<% end %>>日本語</option>
+        <option value="jp" <% if @currentLang == 'jp': %>selected<% end %>>日本語</option>
         <option value="pl" <% if @currentLang == 'pl': %>selected<% end %>>Polski</option>
         <option value="pt" <% if @currentLang == 'pt': %>selected<% end %>>Português</option>
         <option value="zh" <% if @currentLang == 'zh': %>selected<% end %>>中国的</option>
