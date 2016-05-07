@@ -34,5 +34,6 @@ var myListHTML = document.getElementById("myList").innerHTML;
 for (var i = 0; i < 100; i++) {
   myListHTML += "<span>" + i + "</span>";
 }
+```
 
 *> [Results on JSPerf](http://jsperf.com/browser-diet-dom-manipulation/11)*
