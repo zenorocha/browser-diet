@@ -512,12 +512,13 @@ scripts.parentNode.insertBefore(script, scripts);
 
 <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML = myList;
 </code></pre>
-<p>```js
-// much <em>much</em> better :)
-var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
-<p>for (var i = 0; i &lt; 100; i++) {
-  myListHTML += &quot;<span>&quot; + i + &quot;</span>&quot;;
-}</p>
+<pre class="highlight"><code class="hljs javascript"><span class="hljs-comment">// much *much* better :)</span>
+<span class="hljs-keyword">var</span> myListHTML = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myList"</span>).innerHTML;
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">100</span>; i++) {
+  myListHTML += <span class="hljs-string">"&lt;span&gt;"</span> + i + <span class="hljs-string">"&lt;/span&gt;"</span>;
+}
+</code></pre>
 <p><em>&gt; <a href="http://jsperf.com/browser-diet-dom-manipulation/11">Results on JSPerf</a></em></p>
 
   </div>
@@ -636,14 +637,8 @@ var myListHTML = document.getElementById(&quot;myList&quot;).innerHTML;</p>
       <a title="Edit" class="edit" href="https://github.com/zenorocha/browser-diet/edit/master/src/documents/jquery/zh/selectors.html.md">✎</a>
     </div>
     
-    <ul>
-<li><blockquote>
-<p>This tip needs to be translated. <a href="https://github.com/zenorocha/browser-diet/blob/master/src/documents/jquery/zh/selectors.html.md">Contribute.</a></p>
-</blockquote>
-</li>
-</ul>
-<p>Selectors is one of the most important issues in the use of jQuery. There are many different ways to select an element from the DOM, but that doesn&#39;t mean they have the same performance, you can select an element using classes, IDs or methods like <code>find()</code>, <code>children()</code>.</p>
-<p>Among all of them, select an ID is the fastest one, because its based on a native DOM operation:</p>
+    <p>在使用jQuery时，选择器也是一个重要的问题。有许多方法可以从DOM中选取元素，但这不意味着这些方法有相同的性能，你可以用classes、IDs或者find()、children()等方法选取元素。</p>
+<p>在这些方法中，使用ID选择器是最快的，因为它是原生DOM操作。</p>
 <pre class="highlight"><code class="hljs javascript">$(<span class="hljs-string">"#foo"</span>);
 </code></pre>
 <p><em><a href="http://jsperf.com/browser-diet-jquery-selectors">&gt; Results on JSPerf</a></em></p>
