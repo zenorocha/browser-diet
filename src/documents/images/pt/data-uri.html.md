@@ -27,4 +27,6 @@ Ambos esse método e CSS sprites precisam de ferramentas de build para serem de 
 
 Entretanto tem a desvantagem de aumentar consideravelmente o tamanho do seu HTML/CSS se você possuir imagens grandes. Não é recomendado utilizar esse método se você não está utilizando a técnica de gzip no seu HTML/CSS durante as requisições HTTP já que a sobrecarga de tamanho pode anular os ganhos de velocidade sobre minimizar o número de requisições HTTP.
 
+Com HTTP/2, é possível usar o recurso *server push* para forçar o envio de determinado arquivo junto com o request inicial sem precisar de embuti-lo com data URIs inline. Na prática tem a mesma vantagem do inline sem suas desvantagens. Se já estiver usando HTTP/2 avalie essa opção.
+
 *> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-data-uri) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#data-uri)*
