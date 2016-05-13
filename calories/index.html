@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en-US" itemscope itemtype="http://schema.org/CreativeWork">
+<head>
+
+  <title>How to lose weight (in the browser)</title>
+
+  <!-- Metatags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The definitive front-end performance guide">
+  <meta name="keywords" content="front-end, web performance, cache, compress, minify, combine">
+
+  <!-- Schema.org -->
+  <meta itemprop="name" content="How to lose weight (in the browser)">
+  <meta itemprop="url" content="https://browserdiet.com/en">
+  <meta itemprop="image" content="https://browserdiet.com/assets/img/share.jpg">
+  <meta itemprop="description" content="The definitive front-end performance guide">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="https://browserdiet.com/assets/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://browserdiet.com/assets/img/favicon.ico">
+
+  <!-- Languages -->
+  <link rel="alternate" hreflang="cs" href="https://browserdiet.com/cs/">
+  <link rel="alternate" hreflang="en" href="https://browserdiet.com/">
+  <link rel="alternate" hreflang="es" href="https://browserdiet.com/es/">
+  <link rel="alternate" hreflang="fr" href="https://browserdiet.com/fr/">
+  <link rel="alternate" hreflang="jp" href="https://browserdiet.com/jp/">
+  <link rel="alternate" hreflang="pl" href="https://browserdiet.com/pl/">
+  <link rel="alternate" hreflang="pt" href="https://browserdiet.com/pt/">
+  <link rel="alternate" hreflang="zh" href="https://browserdiet.com/zh/">
+</head>
+
+<body class="en">
+
+  <div id="header">
+  <div id="topbar" class="subtitle">
+    <div class="center">
+      <h3>The easiest way to measure your performance budget</h3>
+    </div>
+  </div>
+
+  <a class="github-fork-ribbon" href="https://github.com/zenorocha/browser-calories-chrome" title="Fork me on GitHub">Fork me on GitHub</a>
+
+  <div class="center">
+    <div class="intro-tech">
+      <hgroup class="intro-tech-titles">
+        <h1>Browser <span>Calories</span></h1>
+        <h2>for chrome</h2>
+      </hgroup>
+
+      <div class="supertech">
+        <img class="supertech-geek" src="https://browserdiet.com/assets/img/supertech.png" alt="Supertech">
+        <img class="supertech-rays" src="https://browserdiet.com/assets/img/rays.png" alt="Rays">
+      </div>
+    </div>
+  </div>
+
+  <div id="menu">
+    <ul class="center">
+      <li><a href="#install">Install</a></li>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="content">
+  <div class="center">
+    <div class="article">
+      <div class="img-left">
+        <img id="geek-47" class="icos-geek" src="https://browserdiet.com/assets/img/47.png" alt="Geek #47" width="174" height="275">
+      </div>
+
+      <p>The web is getting fatter. If you take a look at the <a href="https://www.igvita.com/2016/01/12/the-average-page-is-a-myth/">median of top 1 million sites</a>, you will see that page weight is now bigger than <a href="http://www.dosgamesarchive.com/download/simcity-2000/">SimCity 2000</a>. Can you believe that?</p>
+
+      <p>Page weight is a super important metric and affects conversion, retention, and SEO. Actually, it not only costs user engagement — <a href="https://whatdoesmysitecost.com/">it costs money</a>.</p>
+
+      <p>That's why <a href="https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco">Browser Calories</a> exists.</p>
+
+      <p>This tool will help you set a <a href="https://www.youtube.com/watch?v=yqejmZrtmNg">performance budget</a> and measure if a page is exceeding that particular budget or not.</p>
+    </div>
+
+    <h2 id="install" class="topics"><span>Install</span></h2>
+
+    <div class="article">
+      <p>At this moment, <strong>Browser Calories is only available as a <a href="https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco">Chrome Extension</a></strong>. This may change in the future depending on how the community will react to this project. There's definitely room for a <a href="https://github.com/zenorocha/browser-calories-chrome/issues/10">Firefox extension</a> or even a <a href="https://github.com/zenorocha/browser-calories-chrome/issues/11">separate web app</a> if people find this useful. Treat this as a <a href="https://en.wikipedia.org/wiki/Minimum_viable_product">"MVP"</a> ;)</p>
+    </div>
+
+    <h2 id="usage" class="topics"><span>Usage</span></h2>
+
+    <div class="article">
+      <p>Once you install this extension, you'll see a donut icon next to the address bar. Every time you hit that donut, we'll calculate a performance budget based on the tab that is currently open in your browser.</p>
+      <p>Behind the scenes, a new HTTP request is made and the response is broken down by resource type. Then, we compare the size of each resource with the top 100 sites listed on <a href="http://httparchive.org/interesting.php?a=All&l=May%201%202016&s=Top100">HTTP Archive</a>. You can also configure your own budget comparison based on competitors or whatever number you come up with your team.</p>
+    </div>
+
+    <h2 id="faq" class="topics"><span>FAQ</span></h2>
+
+    <div class="article">
+      <h1 id="why-not-others">
+        <a class="tip-title" href="#why-not-others">Why not PageSpeed, YSlow, or WebPageTest?</a>
+        <a title="Link" class="anchor" href="#why-not-others">∞</a>
+      </h1>
+
+      <div class="line">
+        <span class="order">??</span>
+      </div>
+
+      <p>If you're new to web development, it's easy to get confused with all the <a href="http://perf.rocks/tools/">tools available out there</a>. In fact, people tend to believe that new tools are only made to replace existing ones, which is not always the case.</p>
+      <p>Browser Calories was created to do only one thing really simply and really well. It shows <strong>page weight and nothing else</strong>. Note that this tool does not try to compete with any of the projects mentioned above. Instead, it complements your toolbelt.</p>
+    </div>
+
+    <div class="article">
+      <h1 id="why-not-others">
+        <a class="tip-title" href="#why-not-others">Can I test pages that are running locally?</a>
+        <a title="Link" class="anchor" href="#why-not-others">∞</a>
+      </h1>
+
+      <div class="line">
+        <span class="order">??</span>
+      </div>
+
+      <p>Unfortunately not.</p>
+      <p>If the page you're trying to measure isn't accessible from the public internet or requires some kind of authentication to be accessed, this is not going to work.</em></p>
+    </div>
+
+    <div class="article">
+      <h1 id="how-can-i-help-this-project">
+        <a class="tip-title" href="#how-can-i-help-this-project">How can I help this project?</a>
+        <a title="Link" class="anchor" href="#how-can-i-help-this-project">∞</a>
+      </h1>
+
+      <div class="line">
+        <span class="order">??</span>
+      </div>
+
+      <p>The first thing you can do is to share this cute little project with your friends! They will love it and you'll create awareness about web performance optimization. You can also write a review or simply rate this extension on the <a href="https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco/reviews">Chrome Web Store</a>.</p>
+      <p>Feel free to ask questions, report bugs, or send pull requests to this <a href="https://github.com/zenorocha/browser-diet">particular page</a> or to the <a href="https://github.com/zenorocha/browser-calories-chrome">extension itself</a>.</p>
+      <p>Let's make a faster web for everyone <strong>\o/</strong></p>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="center">
+    <p><p>Designed by <a href="http://brizabueno.com">Briza Bueno</a> ● Illustrated by <a href="http://www.myextralife.com">Scott Johnson</a></p><p>Made by <a href="http://zenorocha.com">Zeno Rocha</a> ● Brought to you by <a href="http://www.liferay.com">Liferay</a></p></p>
+  </div>
+</div>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4114546-34', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+</body>
+</html>
