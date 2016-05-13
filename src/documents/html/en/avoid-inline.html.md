@@ -13,6 +13,8 @@ There are three basic ways for you to include CSS or JavaScript on your page:
 
 The first two options, despite reducing the number of HTTP requests, actually increase the size of your HTML document. But this can be useful when you have small assets and the cost of making a request is greater. In this case, run tests to evaluate if there's any actual gains in speed. Also be sure to evaluate the purpose of your page and its audience: if you expect people to only visit it once, for example for some temporary campaign where you never expect return visitors, inlining/embedded code will help in reducing the number of HTTP requests.
 
+In HTTP/2, it's possible to use a new feature called *server push* to force specific files to be pushed directly to the client right after the initial HTML response without inlining. It has the same advantage as embedding a resource without its problems. If you already uses HTTP/2 consider using *server push*.
+
 *> Avoid manually authoring CSS/JS in the middle of your HTML (automating this process with tools is preferred).*
 
 The third option not only improves the organization of your code, but also makes it possible for the browser to cache it. This option should be preferred for the majority of cases, especially when working with large files and lots of pages.
