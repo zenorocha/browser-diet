@@ -27,4 +27,6 @@ Ao montar seu *sprite*, evite deixar muito espaço em branco entre as imagens, i
 
 Apesar de extremamente difundida, essa técnica é pouco usada já que os desenvolvedores não utilizam ferramentas que automatizam o processo de geração dessa imagem. Por isso, separamos algumas que podem te ajudar nisso.
 
+É bom ter em mente também que o custo dos requests cai bastante no novo HTTP/2. Talvez não seja necessário se preocupar tanto com sprites. Não quer dizer que usar centenas de arquivos seja uma boa ideia, afinal os requests ainda têm um custo. Mas vale a pena medir se ter alguns poucos arquivos separados já não é suficiente. As vantagens são melhor modularidade, independência de cache e simplificar o build.
+
 *> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*
