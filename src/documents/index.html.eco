@@ -2,8 +2,16 @@
 layout: default
 ---
 
-<div id="header">
+<link rel="alternate" hreflang="cs" href="https://browserdiet.com/cs/">
+<link rel="alternate" hreflang="en" href="https://browserdiet.com/">
+<link rel="alternate" hreflang="es" href="https://browserdiet.com/es/">
+<link rel="alternate" hreflang="fr" href="https://browserdiet.com/fr/">
+<link rel="alternate" hreflang="jp" href="https://browserdiet.com/jp/">
+<link rel="alternate" hreflang="pl" href="https://browserdiet.com/pl/">
+<link rel="alternate" hreflang="pt" href="https://browserdiet.com/pt/">
+<link rel="alternate" hreflang="zh" href="https://browserdiet.com/zh/">
 
+<div id="header">
   <div id="topbar" class="subtitle">
     <div class="center">
       <h3><%= @getLang().slogan %></h3>
@@ -79,3 +87,14 @@ layout: default
     <p><%- @getLang().credits %></p>
   </div>
 </div>
+
+<script>
+  var lang = document.querySelector('#language-picker');
+  lang.addEventListener('change', function(e) {
+    if (e.target.value === 'en') {
+      window.location = '/';
+    } else {
+      window.location = '/' + e.target.value;
+    }
+  });
+</script>
