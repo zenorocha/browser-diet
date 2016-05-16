@@ -8,11 +8,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The definitive front-end performance guide">
-  <meta name="keywords" content="front-end, web performance, cache, compress, minify, combine">
 
   <!-- Schema.org -->
   <meta itemprop="name" content="How to lose weight (in the browser)">
-  <meta itemprop="url" content="https://browserdiet.com/en">
+  <meta itemprop="url" content="https://browserdiet.com">
   <meta itemprop="image" content="https://browserdiet.com/assets/img/share.jpg">
   <meta itemprop="description" content="The definitive front-end performance guide">
 
@@ -25,22 +24,20 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="https://browserdiet.com/assets/img/favicon.ico">
-
-  <!-- Languages -->
-  <link rel="alternate" hreflang="cs" href="https://browserdiet.com/cs/">
-  <link rel="alternate" hreflang="en" href="https://browserdiet.com/">
-  <link rel="alternate" hreflang="es" href="https://browserdiet.com/es/">
-  <link rel="alternate" hreflang="fr" href="https://browserdiet.com/fr/">
-  <link rel="alternate" hreflang="jp" href="https://browserdiet.com/jp/">
-  <link rel="alternate" hreflang="pl" href="https://browserdiet.com/pl/">
-  <link rel="alternate" hreflang="pt" href="https://browserdiet.com/pt/">
-  <link rel="alternate" hreflang="zh" href="https://browserdiet.com/zh/">
 </head>
 
 <body class="en">
 
-  <div id="header">
+  <link rel="alternate" hreflang="cs" href="https://browserdiet.com/cs/">
+<link rel="alternate" hreflang="en" href="https://browserdiet.com/">
+<link rel="alternate" hreflang="es" href="https://browserdiet.com/es/">
+<link rel="alternate" hreflang="fr" href="https://browserdiet.com/fr/">
+<link rel="alternate" hreflang="jp" href="https://browserdiet.com/jp/">
+<link rel="alternate" hreflang="pl" href="https://browserdiet.com/pl/">
+<link rel="alternate" hreflang="pt" href="https://browserdiet.com/pt/">
+<link rel="alternate" hreflang="zh" href="https://browserdiet.com/zh/">
 
+<div id="header">
   <div id="topbar" class="subtitle">
     <div class="center">
       <h3>The definitive front-end performance guide</h3>
@@ -875,7 +872,7 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
     </div>
     
     <div class="img-right">
-  <img id="geek-31" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
+  <img id="geek-31" class="icos-geek" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
 
 <p>We hope that after reading this guide you can get your site in shape. :)</p>
@@ -898,16 +895,16 @@ text.style.color = <span class="hljs-string">'yellow'</span>;
   </div>
 </div>
 
-  <script>
-    var lang = document.querySelector('#language-picker');
-    lang.addEventListener('change', function(e) {
-      if (e.target.value === 'en') {
-        window.location = '/';
-      } else {
-        window.location = '/' + e.target.value;
-      }
-    });
-  </script>
+<script>
+  var lang = document.querySelector('#language-picker');
+  lang.addEventListener('change', function(e) {
+    if (e.target.value === 'en') {
+      window.location = '/';
+    } else {
+      window.location = '/' + e.target.value;
+    }
+  });
+</script>
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -2,19 +2,18 @@
 <html lang="en-US" itemscope itemtype="http://schema.org/CreativeWork">
 <head>
 
-  <title>How to lose weight (in the browser)</title>
+  <title>Browser Calories</title>
 
   <!-- Metatags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The definitive front-end performance guide">
-  <meta name="keywords" content="front-end, web performance, cache, compress, minify, combine">
+  <meta name="description" content="The easiest way to measure your performance budget">
 
   <!-- Schema.org -->
-  <meta itemprop="name" content="How to lose weight (in the browser)">
-  <meta itemprop="url" content="https://browserdiet.com/en">
+  <meta itemprop="name" content="Browser Calories">
+  <meta itemprop="url" content="/calories/index.html">
   <meta itemprop="image" content="https://browserdiet.com/assets/img/share.jpg">
-  <meta itemprop="description" content="The definitive front-end performance guide">
+  <meta itemprop="description" content="The easiest way to measure your performance budget">
 
   <!-- Style -->
   <link rel="stylesheet" href="https://browserdiet.com/assets/css/all.min.css">
@@ -25,16 +24,6 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="https://browserdiet.com/assets/img/favicon.ico">
-
-  <!-- Languages -->
-  <link rel="alternate" hreflang="cs" href="https://browserdiet.com/cs/">
-  <link rel="alternate" hreflang="en" href="https://browserdiet.com/">
-  <link rel="alternate" hreflang="es" href="https://browserdiet.com/es/">
-  <link rel="alternate" hreflang="fr" href="https://browserdiet.com/fr/">
-  <link rel="alternate" hreflang="jp" href="https://browserdiet.com/jp/">
-  <link rel="alternate" hreflang="pl" href="https://browserdiet.com/pl/">
-  <link rel="alternate" hreflang="pt" href="https://browserdiet.com/pt/">
-  <link rel="alternate" hreflang="zh" href="https://browserdiet.com/zh/">
 </head>
 
 <body class="en">
@@ -78,13 +67,11 @@
         <img id="geek-47" class="icos-geek" src="https://browserdiet.com/assets/img/47.png" alt="Geek #47" width="174" height="275">
       </div>
 
-      <p>The web is getting fatter. If you take a look at the <a href="https://www.igvita.com/2016/01/12/the-average-page-is-a-myth/">median of top 1 million sites</a>, you will see that page weight is now bigger than <a href="http://www.dosgamesarchive.com/download/simcity-2000/">SimCity 2000</a>. Can you believe that?</p>
+      <p>The web is getting fatter. If you take a look at the top 1 million sites, you will see that <a href="https://www.igvita.com/2016/01/12/the-average-page-is-a-myth/">median page weight</a> is now bigger than <a href="http://www.dosgamesarchive.com/download/simcity-2000/">SimCity 2000</a>. Can you believe that?</p>
 
       <p>Page weight is a super important metric and affects conversion, retention, and SEO. Actually, it not only costs user engagement — <a href="https://whatdoesmysitecost.com/">it costs money</a>.</p>
 
-      <p>That's why <a href="https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco">Browser Calories</a> exists.</p>
-
-      <p>This tool will help you set a <a href="https://www.youtube.com/watch?v=yqejmZrtmNg">performance budget</a> and measure if a page is exceeding that particular budget or not.</p>
+      <p>That's why <a href="https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco">Browser Calories</a> exists. We will help you set a <a href="https://www.youtube.com/watch?v=yqejmZrtmNg">performance budget</a> and measure if a page is exceeding these numbers or not.</p>
     </div>
 
     <h2 id="install" class="topics"><span>Install</span></h2>
@@ -97,7 +84,8 @@
 
     <div class="article">
       <p>Once you install this extension, you'll see a donut icon next to the address bar. Every time you hit that donut, we'll calculate a performance budget based on the tab that is currently open in your browser.</p>
-      <p>Behind the scenes, a new HTTP request is made and the response is broken down by resource type. Then, we compare the size of each resource with the top 100 sites listed on <a href="http://httparchive.org/interesting.php?a=All&l=May%201%202016&s=Top100">HTTP Archive</a>. You can also configure your own budget comparison based on competitors or whatever number you come up with your team.</p>
+      <p>Behind the scenes, a new HTTP request is made and the response is broken down by resource type. Then, we compare the size of each resource with the <a href="http://httparchive.org/interesting.php?a=All&l=May%201%202016&s=Top100">page weight from top 100 sites</a>.</p>
+      <p>You can also configure your own budget comparison based on competitors or whatever number you come up with your team.</p>
     </div>
 
     <h2 id="faq" class="topics"><span>FAQ</span></h2>
