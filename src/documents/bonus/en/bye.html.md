@@ -4,7 +4,7 @@ title: That's it for today!
 ---
 
 <div class="img-right">
-  <img id="geek-31" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
+  <img id="geek-31" class="icos-geek" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
 
 We hope that after reading this guide you can get your site in shape. :)

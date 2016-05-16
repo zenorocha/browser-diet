@@ -4,7 +4,7 @@ title: That's it for today!
 ---
 
 <div class="img-right">
-  <img id="geek-31" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
+  <img id="geek-31" class="icos-geek" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
 
 我们希望，在阅读了这篇指南之后，你就能够对你的网站进行瘦身了。:)

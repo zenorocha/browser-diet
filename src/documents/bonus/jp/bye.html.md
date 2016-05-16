@@ -4,7 +4,7 @@ title: 今日はこれでおしまいです！
 ---
 
 <div class="img-right">
-  <img id="geek-31" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
+  <img id="geek-31" class="icos-geek" src="https://browserdiet.com/assets/img/31.png" alt="Geek #31" width="162" height="275" />
 </div>
 
 このガイドを読み終えた後、あなたがサイトを整備できることを、私たちは期待しています。 :)
