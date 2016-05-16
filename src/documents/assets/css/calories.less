@@ -1,0 +1,96 @@
+.supertech {
+  display: inline-block;
+  padding: 6em;
+  overflow: hidden;
+  position: absolute;
+  top: -3em;
+  right: -50px;
+  z-index: -1;
+
+  @media (max-width: 420px) {
+    padding: 3em;
+  }
+}
+
+.supertech-rays {
+  position: absolute;
+  top: 1em;
+  left: -5em;
+  z-index: -1;
+  height: 560 / 16em;
+  width: 537 / 16em;
+  -webkit-animation: 20s superman infinite linear;
+  -moz-animation: 20s superman infinite linear;
+  -o-animation: 20s superman infinite linear;
+  animation: 20s superman infinite linear;
+}
+
+.supertech-geek {
+  height: 443 / 16em;
+  width: 240 / 16em;
+}
+
+
+.intro-tech {
+  font-size: 0.5em;
+
+  @media (min-width: 400px) { font-size: 0.55em; }
+  @media (min-width: 450px) { font-size: 0.6em; }
+  @media (min-width: 570px) { font-size: 0.7em; }
+  @media (min-width: 690px) { font-size: 0.8em; }
+  @media (min-width: 800px) { font-size: 0.9em; }
+  @media (min-width: 910px) { font-size: 1em; }
+}
+
+.intro-tech-titles {
+  display: inline-block;
+  width: 350 / 16em;
+  vertical-align: middle;
+}
+
+.intro-tech {
+  position: relative;
+  line-height: (517 / 16em);
+  z-index: 1;
+  max-width: 51em;
+  overflow: hidden;
+  margin-left: auto;
+
+  @media (max-width: 550px) {
+    line-height: (450 / 16em);
+  }
+}
+
+.intro-tech h1 {
+  font-family: 'Horseshoes', sans-serif;
+  font-size: 6.4em;
+  line-height: 0.8em;
+  color: @red;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 0px #9E0D08;
+  position: relative;
+  font-weight: normal;
+
+  span { font-size: 1em; }
+}
+
+.intro-tech h1 span {
+  line-height: 1em;
+  text-shadow: 0.035em 0px #9E0D08;
+}
+
+.intro-tech h2 {
+  background: url('../img/subtitle-bg.png') no-repeat center center;
+  background-size: 100%;
+  margin: 0 0 0 (20 / (16 * 3em));
+  font-family: 'Pacifico', cursive;
+  padding: 0 0.7em 0.4em 0.4em;
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 0px #000;
+  vertical-align: middle;
+  font-weight: normal;
+  font-size: 2.6em;
+  line-height: 1.2em;
+}
