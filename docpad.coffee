@@ -24,6 +24,24 @@ module.exports =
             currentLang = @currentLang.toString()
             return @lang[currentLang]
 
+        getTitle: ->
+            if @document.title
+              return @document.title
+            else
+              return @getLang().title
+
+        getSlogan: ->
+            if @document.slogan
+              return @document.slogan
+            else
+              return @getLang().slogan
+
+        getUrl: ->
+            if @document.url
+              return @document.url
+            else
+              return @getLang().url
+
     # =================================
     # Environments
 

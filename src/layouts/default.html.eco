@@ -2,19 +2,18 @@
 <html lang="<%= @getLang().htmlLang %>" itemscope itemtype="http://schema.org/CreativeWork">
 <head>
 
-  <title><%= @getLang().title %></title>
+  <title><%= @getTitle() %></title>
 
   <!-- Metatags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="<%= @getLang().slogan %>">
-  <meta name="keywords" content="front-end, web performance, cache, compress, minify, combine">
+  <meta name="description" content="<%= @getSlogan() %>">
 
   <!-- Schema.org -->
-  <meta itemprop="name" content="<%= @getLang().title %>">
-  <meta itemprop="url" content="<%= @getLang().url %>">
+  <meta itemprop="name" content="<%= @getTitle() %>">
+  <meta itemprop="url" content="<%= @getUrl() %>">
   <meta itemprop="image" content="<%= @site.assets %>/img/share.jpg">
-  <meta itemprop="description" content="<%= @getLang().slogan %>">
+  <meta itemprop="description" content="<%= @getSlogan() %>">
 
   <!-- Style -->
   <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css">
