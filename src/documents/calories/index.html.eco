@@ -15,15 +15,15 @@ layout: default
 
   <div class="center">
     <div class="intro-tech">
-      <hgroup class="intro-tech-titles">
-        <h1>Browser <span>Calories</span></h1>
-        <h2>for chrome</h2>
-      </hgroup>
-
       <div class="supertech">
         <img class="supertech-geek" src="<%= @site.assets %>/img/supertech.png" alt="Supertech">
         <img class="supertech-rays" src="<%= @site.assets %>/img/rays.png" alt="Rays">
       </div>
+
+      <hgroup class="intro-tech-titles">
+        <h1>Browser <span>Calories</span></h1>
+        <h2>extensions</h2>
+      </hgroup>
     </div>
   </div>
 

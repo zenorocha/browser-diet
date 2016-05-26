@@ -1,20 +1,18 @@
 .supertech {
   display: inline-block;
-  padding: 6em;
+  padding: 2em 6em;
   overflow: hidden;
-  position: absolute;
-  top: -3em;
-  right: -50px;
+  position: relative;
   z-index: -1;
 
-  @media (max-width: 420px) {
-    padding: 3em;
+  @media (max-width: 550px) {
+    padding: 1em 3em;
   }
 }
 
 .supertech-rays {
   position: absolute;
-  top: 1em;
+  top: -1em;
   left: -5em;
   z-index: -1;
   height: 560 / 16em;
@@ -23,6 +21,11 @@
   -moz-animation: 20s superman infinite linear;
   -o-animation: 20s superman infinite linear;
   animation: 20s superman infinite linear;
+
+  @media (max-width: 550px) {
+    top: -3em;
+    left: -7em;
+  }
 }
 
 .supertech-geek {
@@ -46,18 +49,22 @@
   display: inline-block;
   width: 350 / 16em;
   vertical-align: middle;
+  position: absolute;
+  top: 7em;
+  right: 3em;
 }
 
 .intro-tech {
   position: relative;
-  line-height: (517 / 16em);
+  height: 32em;
   z-index: 1;
   max-width: 51em;
   overflow: hidden;
-  margin-left: auto;
+  margin-left: 3em;
 
   @media (max-width: 550px) {
-    line-height: (450 / 16em);
+    height: 28em;
+    margin-left: 0;
   }
 }
 
