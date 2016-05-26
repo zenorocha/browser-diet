@@ -2,6 +2,8 @@
 title: 'Browser Calories'
 slogan: 'The easiest way to measure your performance budget'
 layout: default
+imageurl: https://browserdiet.com/assets/img/fb-calories.jpg
+pageurl: https://browserdiet.com/calories
 ---
 
 <div id="header">

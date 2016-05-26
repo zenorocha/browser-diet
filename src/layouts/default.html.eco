@@ -11,9 +11,14 @@
 
   <!-- Schema.org -->
   <meta itemprop="name" content="<%= @getTitle() %>">
-  <meta itemprop="url" content="<%= @getUrl() %>">
-  <meta itemprop="image" content="<%= @site.assets %>/img/share.jpg">
   <meta itemprop="description" content="<%= @getSlogan() %>">
+  <meta itemprop="url" content="<%= @getUrl() %>">
+  <meta itemprop="image" content="<%= @getImageUrl() %>">
+
+  <meta property="og:title" content="<%= @getTitle() %>">
+  <meta property="og:description" content="<%= @getSlogan() %>">
+  <meta property="og:url" content="<%= @getUrl() %>">
+  <meta property="og:image" content="<%= @getImageUrl() %>">
 
   <!-- Style -->
   <link rel="stylesheet" href="<%= @site.assets %>/css/main.css">

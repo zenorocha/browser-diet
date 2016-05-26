@@ -37,10 +37,16 @@ module.exports =
               return @getLang().slogan
 
         getUrl: ->
-            if @document.url
-              return @document.url
+            if @document.pageurl
+              return @document.pageurl
             else
               return @getLang().url
+
+        getImageUrl: ->
+            if @document.imageurl
+              return @document.imageurl
+            else
+              return 'https://browserdiet.com/assets/img/fb-diet.jpg'
 
     # =================================
     # Environments
