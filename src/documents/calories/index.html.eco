@@ -55,7 +55,19 @@ pageurl: https://browserdiet.com/calories
     <h2 id="install" class="topics"><span>Install</span></h2>
 
     <div class="article">
-      <p>At this moment, <strong>Browser Calories is only available as a <a href="https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco">Chrome Extension</a></strong>. This may change in the future depending on how the community will react to this project. There's definitely room for a <a href="https://github.com/zenorocha/browser-calories-chrome/issues/10">Firefox extension</a> or even a <a href="https://github.com/zenorocha/browser-calories-chrome/issues/11">separate web app</a> if people find this useful. Treat this as a <a href="https://en.wikipedia.org/wiki/Minimum_viable_product">"MVP"</a> ;)</p>
+      <div class="calories-install">
+        <a href="https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco">
+          <img src="https://cloud.githubusercontent.com/assets/398893/15528951/e9f5dc0a-21fd-11e6-86e7-8a0cad6e7548.png" width="48px" height="48px" alt="Chrome logo">
+        </a>
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/browser-calories/">
+          <img src="https://cloud.githubusercontent.com/assets/398893/15528952/ea095cc6-21fd-11e6-9aae-d67479edd442.png" width="48px" height="48px" alt="Firefox logo">
+        </a>
+        <a href="https://addons.opera.com/en/extensions/details/browser-calories">
+          <img src="https://cloud.githubusercontent.com/assets/398893/15528953/ea1ef482-21fd-11e6-9ba2-252aa0bcc1d2.png" width="48px" height="48px" alt="Opera logo">
+        </a>
+      </div>
+
+      <p>At this moment, <strong>Browser Calories is available as a browser extension for <a href="https://chrome.google.com/webstore/detail/browser-calories/pdkibgfjegigkoaleelbkdpkgceljfco">Chrome</a></strong>, <a href="https://addons.mozilla.org/en-US/firefox/addon/browser-calories/">Firefox</a> and <a href="https://addons.opera.com/en/extensions/details/browser-calories/">Opera</a></strong>. This may change in the future depending on how the community will react to this project. There's definitely room for a <a href="https://github.com/zenorocha/browser-calories-chrome/issues/11">separate web app</a> if people find this useful. Treat this as a <a href="https://en.wikipedia.org/wiki/Minimum_viable_product">"MVP"</a> ;)</p>
     </div>
 
     <h2 id="usage" class="topics"><span>Usage</span></h2>
