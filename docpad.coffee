@@ -51,11 +51,3 @@ module.exports =
                 site:
                     url: 'http://localhost:9778'
                     assets: 'http://localhost:9778/assets'
-
-    # =================================
-    # DocPad Grunt Plugin
-
-    plugins:
-        grunt:
-            writeAfter: false
-            generateAfter: ['cssmin']

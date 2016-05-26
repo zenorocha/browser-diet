@@ -16,7 +16,7 @@
   <meta itemprop="description" content="<%= @getSlogan() %>">
 
   <!-- Style -->
-  <link rel="stylesheet" href="<%= @site.assets %>/css/all.min.css">
+  <link rel="stylesheet" href="<%= @site.assets %>/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css">
 
   <!-- Fonts -->

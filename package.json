@@ -8,10 +8,6 @@
     "docpad-plugin-marked": "~2.3.0",
     "docpad-plugin-partials": "~2.9.2"
   },
-  "devDependencies": {
-    "docpad-plugin-grunt": "~2.2.0",
-    "grunt-contrib-cssmin": "^1.0.1"
-  },
   "scripts": {
     "build": "docpad generate --env static",
     "test": "docpad generate"
