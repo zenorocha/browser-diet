@@ -43,3 +43,5 @@ When you set `style.width`, the browser needs to recalculate layout. Usually, ch
 If you need to read layout data from the page, do it all together before setting anything that changes layout, as in the second example.
 
 *> [Demo](http://jsbin.com/aqavin/2/quiet) / [References](https://github.com/zenorocha/browser-diet/wiki/References#minimize-repaints-and-reflows)*
+
+Take note that when creating animations in your website, you don't always need to trigger reflows, to change the position or size of an element. There are specific css properties you can animate, which don't trigger a reflow or even a repaint. Take a look at [this html5rocks.com article](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/) for more about repaints, reflows and layers.
