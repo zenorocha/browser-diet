@@ -10,13 +10,15 @@ Essa técnica consiste em agrupar diversas imagens em uma só.
 E depois posicioná-las através de CSS.
 
 ```css
-.icon-foo {
+.icon {
   background-image: url('mySprite.png');
+}
+
+.icon-foo {
   background-position: -10px -10px;
 }
 
 .icon-bar {
-  background-image: url('mySprite.png');
   background-position: -5px -5px;
 }
 ```
