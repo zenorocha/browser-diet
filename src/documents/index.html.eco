@@ -24,7 +24,7 @@ layout: default
         <option value="jp" <% if @currentLang == 'jp': %>selected<% end %>>日本語</option>
         <option value="pl" <% if @currentLang == 'pl': %>selected<% end %>>Polski</option>
         <option value="pt" <% if @currentLang == 'pt': %>selected<% end %>>Português</option>
-        <option value="zh" <% if @currentLang == 'zh': %>selected<% end %>>中国的</option>
+        <option value="zh" <% if @currentLang == 'zh': %>selected<% end %>>中文(简体)</option>
       </select>
     </div>
   </div>
