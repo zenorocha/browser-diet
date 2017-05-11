@@ -101,25 +101,25 @@ BrowserDiet was made with love by these people and a bunch of awesome [contribut
 #### Creator
 
 [![Zeno Rocha](http://gravatar.com/avatar/e190023b66e2b8aa73a842b106920c93?s=70)](https://github.com/zenorocha) |
---- | --- | --- | --- | --- | --- | ---
+--- |
 [Zeno Rocha](https://github.com/zenorocha)<br>Liferay, Inc. |
 
 #### Design
 
 [![Briza Bueno](http://gravatar.com/avatar/c272a0a8972473fdf231f2b2d897c242?s=70)](https://github.com/brizabueno) |
---- | --- | --- | --- | --- | --- | ---
+--- | 
 [Briza Bueno](https://github.com/brizabueno)<br>Americanas |
 
 #### Authors
 
 [![Davidson Fellipe](http://gravatar.com/avatar/054c583ad5dc09a861874e14dcb43e4c?s=70)](https://github.com/davidsonfellipe) | [![Giovanni Keppelen](http://gravatar.com/avatar/8f5c490b5b30ac6d655eced70cea4e5f?s=70)](https://github.com/keppelen) | [![Jaydson Gomes](http://gravatar.com/avatar/572696200604e59baa59ee90d61f7d02?s=70)](https://github.com/jaydson)
---- | --- | --- | --- | --- | --- | ---
+--- | --- | ---
 [Davidson Fellipe](https://github.com/davidsonfellipe)<br>Globo.com | [Giovanni Keppelen](https://github.com/keppelen)<br>Planedia | [Jaydson Gomes](https://github.com/jaydson)<br>Terra
 
 #### Reviewers
 
 [![Marcel Duran](http://gravatar.com/avatar/87ce1e1fe50034eb0f7b6eaeb5dd9a76?s=70)](https://github.com/marcelduran) | [![Renato Mangini](http://gravatar.com/avatar/61ffaf1af13c5626d3cd975275b2ddfd?s=70)](https://github.com/mangini) | [![Sérgio Lopes](http://gravatar.com/avatar/3244c236c487924b4309fdd53cbb8633?s=70)](https://github.com/sergiolopes)
---- | --- | --- | --- | --- | --- | ---
+--- | --- | --- 
 [Marcel Duran](https://github.com/marcelduran)<br>Twitter | [Renato Mangini](https://github.com/mangini)<br>Google | [Sérgio Lopes](https://github.com/sergiolopes)<br>Caelum
 
 #### Translations
