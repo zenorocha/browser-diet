@@ -27,4 +27,6 @@ Logo, combine seu CSS. Quanto menor for o número de arquivos, menor será o nú
 
 Quer ter o melhor dos dois mundos? Automatize esse processo através de uma ferramenta de build.
 
+É bom ter em mente também que o custo dos requests cai bastante no novo HTTP/2. Talvez não seja necessário concatenar tanto os arquivos CSS. Não quer dizer que usar centenas de arquivos seja uma boa ideia, afinal os requests ainda têm um custo. Mas vale a pena medir se ter alguns poucos arquivos separados já não é suficiente, ao invés de concatenar tudo em um só. As vantagens são melhor modularidade, independência de cache e simplificar o build.
+
 *> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combining-multiple-css-files) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#combining-multiple-css-files)*

@@ -27,4 +27,6 @@ Logo, combine seu JS. Quanto menor for o número de arquivos, menor será o núm
 
 Quer ter o melhor dos dois mundos? Automatize esse processo através de uma ferramenta de build.
 
+É bom ter em mente também que o custo dos requests cai bastante no novo HTTP/2. Talvez não seja necessário concatenar tanto os arquivos JS. Não quer dizer que usar centenas de arquivos seja uma boa ideia, afinal os requests ainda têm um custo. Mas vale a pena medir se ter alguns poucos arquivos separados já não é suficiente, ao invés de concatenar tudo em um só. As vantagens são melhor modularidade, independência de cache e simplificar o build. E se você carregá-los assincronamente, o código é executado mais rapidamente, conforme as respostas forem chegando.
+
 *> [Ferramentas úteis](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-combine-multiple-js-files-into-one) / [Referências](https://github.com/zenorocha/browser-diet/wiki/References#combine-multiple-js-files-into-one)*

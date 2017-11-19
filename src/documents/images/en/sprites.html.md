@@ -27,4 +27,6 @@ When using your *sprite*, avoid leaving too much white space between images. Thi
 
 And despite nearly everyone knowing about sprites, this technique isn't widely used&mdash;perhaps due to developers not using automated tools to generate sprites. We've highlighted a few that can help you out with this.
 
+It's good to have in mind that the cost of new requests is much cheaper with HTTP/2. Maybe you shouldn't group all your images in a single sprite. It doesn't mean that we should use hundreds of different files. Requests still have a cost. But it's worth measuring the impact of having a few separated files instead of a single one. We get better modularity, cache independency and a simpler build process.
+
 *> [Useful tools](https://github.com/zenorocha/browser-diet/wiki/Tools#wiki-use-css-sprites) / [References](https://github.com/zenorocha/browser-diet/wiki/References#use-css-sprites)*

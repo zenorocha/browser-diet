@@ -13,6 +13,8 @@ Existem três formas básicas de você lidar com CSS e Javascript:
 
 As duas primeiras opções, apesar de reduzirem o número de requisições, aumentam o tamanho do documento HTML. Elas podem ser interessante quando você tem arquivos pequenos e o custo de uma requisição é maior. Nesse caso, faça testes para avaliar se há realmente ganho. Avalie também o objetivo da página e sua audiência, se o esperado é que usuários visitem essa página somente uma única vez, como por exemplo uma campanha temporária onde não se espera futuras visitas à mesma, utilizar inline/incorporado ajudará na redução do número de requisições.
 
+Com HTTP/2, é possível usar o recurso *server push* para forçar o envio de determinado arquivo junto com o HTML inicial sem precisar de inline. Na prática tem a mesma vantagem do inline sem suas desvantagens. Se já estiver usando HTTP/2 avalie essa opção.
+
 *> Evite escrever manualmente o CSS/JS no meio do HTML (use uma ferramenta que automatize esse processo).*
 
 Já a terceira opção, não só melhora a organização do seu código, como também possibilita que eles sejam armazenados no cache do navegador. Prefira essa opção para a maior parte dos casos, quando lidamos com arquivos grandes e muitas páginas.
