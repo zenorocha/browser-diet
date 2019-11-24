@@ -12,7 +12,7 @@ Os membros do core do jQuery estão sempre buscando trazer novidades para a bibl
 Por isso use sempre a última versão do jQuery, que está sempre disponível aqui, caso você queira copiar para um arquivo local:
 
 ```html
-http://code.jquery.com/jquery-latest.js
+https://jquery.com/download/
 ```
 
 Mas _nunca_ referencie essa URL em uma tag `<script>`: isso pode criar problemas no futuro, já que novas versões são automaticamente servidas no seu site antes mesmo de você ter a chance de testá-las. Em vez disso, use a última versão específica do jQuery que você precisa.
