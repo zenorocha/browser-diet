@@ -29,11 +29,16 @@ document.getElementById("myList").innerHTML = myList;
 
 ```js
 // bem bem melhor :)
-var myListHTML = document.getElementById("myList").innerHTML;
+var myList="";
+
+var myListHTML = document.getElementById("myList");
 
 for (var i = 0; i < 100; i++) {
-  myListHTML += "<span>" + i + "</span>";
+  myList += "<span>" + i + "</span>";
 }
+
+myListHTML.innerHTML=myList;
+
 ```
 
 *> [Resultados no JSPerf](http://jsperf.com/browser-diet-dom-manipulation/11)*
